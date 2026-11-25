@@ -38,7 +38,7 @@ jobs:
         with:
           ref: ${{ env.TAG }}
       - name: Set up uv
-        uses: astral-sh/setup-uv@v10
+        uses: astral-sh/setup-uv@v10.4.0
       - name: Testes
         run: |
           uv sync --locked
