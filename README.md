@@ -57,7 +57,7 @@ NFS-e (nota de serviço) não é suportada. Os provedores municipais Betha e Gin
 Instalação
 -----------
 
-O pacote se chama `pynotas-br` (o nome `pynotas` já é de outro projeto) e o import é `pynotas`.
+O pacote se chama `pynotas-br` e o import é `pynotas`.
 
 Como dependência de outro projeto, pela tag da versão no repositório:
 
