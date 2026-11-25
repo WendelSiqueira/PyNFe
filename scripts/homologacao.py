@@ -16,6 +16,13 @@ Uso (na raiz do projeto):
     uv run python scripts/homologacao.py status
     uv run python scripts/homologacao.py emitir
     uv run python scripts/homologacao.py emitir --reforma
+    uv run python scripts/homologacao.py notas
+    uv run python scripts/homologacao.py consultar [CHAVE]
+    uv run python scripts/homologacao.py cce [CHAVE] --correcao "texto da correcao"
+    uv run python scripts/homologacao.py cancelar [CHAVE]
+    uv run python scripts/homologacao.py inutilizar --inicio N --fim N
+
+Sem CHAVE, consultar, cce e cancelar usam a ultima nota emitida.
 
 A ferramenta usa sempre o ambiente de homologacao; nao ha opcao de producao.
 """
@@ -35,6 +42,7 @@ from lxml import etree
 
 from pynotas.entidades.cliente import Cliente
 from pynotas.entidades.emitente import Emitente
+from pynotas.entidades.evento import EventoCancelarNota, EventoCartaCorrecao
 from pynotas.entidades.fonte_dados import _fonte_dados
 from pynotas.entidades.notafiscal import NotaFiscal
 from pynotas.processamento.assinatura import AssinaturaA1
@@ -146,6 +154,26 @@ def registrar(nota):
     notas = carregar_registro()
     notas.append(nota)
     salvar("notas.json", json.dumps(notas, indent=2, ensure_ascii=False).encode())
+
+
+def atualizar_registro(chave, **campos):
+    notas = carregar_registro()
+    for nota in notas:
+        if nota["chave"] == chave:
+            nota.update(campos)
+    salvar("notas.json", json.dumps(notas, indent=2, ensure_ascii=False).encode())
+
+
+def nota_do_registro(chave=None):
+    notas = carregar_registro()
+    if not notas:
+        raise SystemExit("Nenhuma nota emitida registrada; rode 'emitir' antes")
+    if chave is None:
+        return notas[-1]
+    for nota in notas:
+        if nota["chave"] == chave:
+            return nota
+    raise SystemExit(f"Chave {chave} nao esta no registro local ({REGISTRO})")
 
 
 def carregar_registro():
@@ -335,6 +363,108 @@ def cmd_emitir(ctx, args):
     return 1
 
 
+def imprimir_retornos(conteudo):
+    """Imprime todos os pares cStat/xMotivo de uma resposta da SEFAZ."""
+    xml = etree.fromstring(conteudo)
+    pares = list(
+        zip(
+            xml.xpath("//*[local-name()='cStat']/text()"),
+            xml.xpath("//*[local-name()='xMotivo']/text()"),
+        )
+    )
+    for c, m in pares:
+        print(f"cStat {c} - {m}")
+    return xml, [c for c, _ in pares]
+
+
+def cmd_notas(ctx, args):
+    notas = carregar_registro()
+    if not notas:
+        print("Nenhuma nota registrada.")
+        return 0
+    for n in notas:
+        situacao = n.get("situacao", "autorizada")
+        print(f"{n['chave']} | serie {n['serie']} numero {n['numero']} | {situacao}")
+    return 0
+
+
+def cmd_consultar(ctx, args):
+    chave = args.chave or nota_do_registro()["chave"]
+    print(f"Consulta da NF-e {chave}")
+    resposta = ctx["con"].consulta_nota("nfe", chave)
+    salvar(f"consulta_{chave}.xml", resposta.content)
+    _, cstats = imprimir_retornos(resposta.content)
+    return 0 if cstats and cstats[0] in ("100", "101", "150", "151") else 1
+
+
+def enviar_evento(ctx, evento, nome_arquivo):
+    cfg = ctx["cfg"]
+    xml = SerializacaoXML(_fonte_dados, homologacao=HOMOLOGACAO).serializar_evento(evento)
+    assinado = AssinaturaA1(cfg["PFX_PATH"], cfg["PFX_SENHA"]).assinar(xml)
+    salvar(f"{nome_arquivo}_envio.xml", etree.tostring(assinado, encoding="utf-8"))
+    resposta = ctx["con"].evento(modelo="nfe", evento=assinado, id_lote=int(time.time()))
+    salvar(f"{nome_arquivo}_retorno.xml", resposta.content)
+    _, cstats = imprimir_retornos(resposta.content)
+    # 135: evento registrado e vinculado a NF-e; 136: registrado sem vinculo
+    return cstats and cstats[-1] in ("135", "136")
+
+
+def cmd_cce(ctx, args):
+    nota = nota_do_registro(args.chave)
+    sequencia = nota.get("cce", 0) + 1
+    evento = EventoCartaCorrecao(
+        cnpj=ctx["cert"]["cnpj"],
+        chave=nota["chave"],
+        data_emissao=datetime.datetime.now(FUSO).replace(microsecond=0, tzinfo=None),
+        uf=ctx["uf"],
+        n_seq_evento=sequencia,
+        correcao=args.correcao,
+    )
+    print(f"Carta de correcao {sequencia} da NF-e {nota['chave']}")
+    if enviar_evento(ctx, evento, f"cce{sequencia}_{nota['chave']}"):
+        atualizar_registro(nota["chave"], cce=sequencia)
+        return 0
+    return 1
+
+
+def cmd_cancelar(ctx, args):
+    nota = nota_do_registro(args.chave)
+    evento = EventoCancelarNota(
+        cnpj=ctx["cert"]["cnpj"],
+        chave=nota["chave"],
+        data_emissao=datetime.datetime.now(FUSO).replace(microsecond=0, tzinfo=None),
+        uf=ctx["uf"],
+        protocolo=nota["protocolo"],
+        justificativa=args.justificativa,
+    )
+    print(f"Cancelamento da NF-e {nota['chave']}")
+    if enviar_evento(ctx, evento, f"cancelamento_{nota['chave']}"):
+        atualizar_registro(nota["chave"], situacao="cancelada")
+        return 0
+    return 1
+
+
+def cmd_inutilizar(ctx, args):
+    print(f"Inutilizacao: serie {args.serie}, numeros {args.inicio} a {args.fim}")
+    resposta = ctx["con"].inutilizacao(
+        modelo="nfe",
+        cnpj=ctx["cert"]["cnpj"],
+        numero_inicial=args.inicio,
+        numero_final=args.fim,
+        justificativa=args.justificativa,
+        serie=args.serie,
+    )
+    salvar(f"inutilizacao_{args.serie}_{args.inicio}_{args.fim}.xml", resposta.content)
+    _, cstats = imprimir_retornos(resposta.content)
+    if "998" in cstats:
+        print(
+            "O servico de inutilizacao foi desativado nesta UF (NT 2023.002). Havendo salto "
+            "na numeracao, segue-se a partir do numero seguinte, sem inutilizar."
+        )
+    # 102: inutilizacao de numero homologado
+    return 0 if "102" in cstats else 1
+
+
 def criar_parser():
     parser = argparse.ArgumentParser(description="Testes contra a SEFAZ em homologacao.")
     parser.add_argument("--uf", help="UF do emitente (padrao: UF do arquivo de configuracao)")
@@ -349,10 +479,49 @@ def criar_parser():
     emitir.add_argument("--serie", default="1")
     emitir.add_argument("--numero", type=int, help="numero da nota (padrao: gerado)")
     emitir.add_argument("--ncm", default="33049990", help="NCM do produto de teste")
+
+    sub.add_parser("notas", help="lista as notas emitidas registradas localmente")
+
+    consultar = sub.add_parser("consultar", help="consulta a situacao de uma NF-e")
+    consultar.add_argument("chave", nargs="?", help="chave (padrao: ultima emitida)")
+
+    cce = sub.add_parser("cce", help="envia uma carta de correcao")
+    cce.add_argument("chave", nargs="?", help="chave (padrao: ultima emitida)")
+    cce.add_argument(
+        "--correcao",
+        default="Correcao de teste em homologacao: informacao complementar ajustada.",
+        help="texto da correcao (15 a 1000 caracteres)",
+    )
+
+    cancelar = sub.add_parser("cancelar", help="cancela uma NF-e")
+    cancelar.add_argument("chave", nargs="?", help="chave (padrao: ultima emitida)")
+    cancelar.add_argument(
+        "--justificativa",
+        default="Cancelamento de teste em ambiente de homologacao.",
+        help="justificativa (15 a 255 caracteres)",
+    )
+
+    inutilizar = sub.add_parser("inutilizar", help="inutiliza uma faixa de numeracao")
+    inutilizar.add_argument("--serie", default="1")
+    inutilizar.add_argument("--inicio", type=int, required=True)
+    inutilizar.add_argument("--fim", type=int, required=True)
+    inutilizar.add_argument(
+        "--justificativa",
+        default="Inutilizacao de teste em ambiente de homologacao.",
+        help="justificativa (15 a 255 caracteres)",
+    )
     return parser
 
 
-COMANDOS = {"status": cmd_status, "emitir": cmd_emitir}
+COMANDOS = {
+    "status": cmd_status,
+    "emitir": cmd_emitir,
+    "notas": cmd_notas,
+    "consultar": cmd_consultar,
+    "cce": cmd_cce,
+    "cancelar": cmd_cancelar,
+    "inutilizar": cmd_inutilizar,
+}
 
 
 def main(argv=None):

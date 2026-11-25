@@ -19,6 +19,24 @@ Verificadas emitindo NF-e (modelo 55) na SEFAZ-SP, em homologação, com emitent
 | 1022 | Grupo gIBSCBS não informado | `gTribSN` sem `gIBSCBS` | A lib sempre emite o `gIBSCBS` para CST tributado |
 | 1026 | Alíquota do IBS da UF inválida | `gIBSCBS` com alíquotas zeradas | Informar base e alíquotas (a lib recusa o grupo sem valores) |
 
+### Eventos e consultas verificados
+
+Na mesma nota, em homologação SP:
+
+| Operação | Resultado |
+|----------|-----------|
+| Consulta da NF-e | 100 - Autorizado o uso da NF-e |
+| Carta de correção | 135 - Evento registrado e vinculado a NF-e |
+| Cancelamento | 135 - Evento registrado e vinculado a NF-e |
+| Consulta após o cancelamento | 101 - Cancelamento de NF-e homologado |
+| Inutilização de numeração | **998 - Serviço Desativado** (ver abaixo) |
+
+### Fim da inutilização e da autorização assíncrona (NT 2023.002)
+
+A NT 2023.002 v1.02 (outubro de 2026) desativa o serviço de inutilização de numeração no AC, na BA e em SP, com retorno HTTP 404 ou rejeição 998 ("Serviço Desativado"), e elimina a autorização assíncrona (`indSinc=0`) até 01/02/2027. Em SP, havendo salto na numeração, segue-se a partir do número seguinte, sem pedir inutilização. A rejeição 998 foi confirmada em homologação SP; as datas e o alcance vêm de resumos da NT por terceiros e devem ser conferidos na NT oficial.
+
+Para quem usa a lib: emita com `ind_sinc=1` (autorização síncrona, o padrão de `autorizacao()`), e não dependa de `inutilizacao()` nas UFs afetadas.
+
 ### Regras do `xPag` (NT 2020.006)
 
 As regras do `xPag` estão na Nota Técnica 2020.006 (versão 1.31, setembro de 2022), valem para NF-e e NFC-e (modelos 55 e 65) em todas as UFs, desde 01/09/2021 em produção:
