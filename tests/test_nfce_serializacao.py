@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-# *-* encoding: utf8 *-*
 import datetime
 import unittest
 from decimal import Decimal

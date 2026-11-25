@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# *-* encoding: utf8 *-*
-
 """Tests for Reforma Tributaria IBS/CBS serialization (NT 2025.002-RTC).
 
 Note: IS (Imposto Seletivo) is not yet in the SEFAZ schema (starts 2027).
