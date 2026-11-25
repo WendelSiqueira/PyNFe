@@ -22,6 +22,7 @@ classifiers = [
 ]
 dependencies = [
     "requests>=2.32.4,<3",
+    "certifi",
     "lxml>=5.4.0",
     "signxml>=4.1.0",
     "cryptography>=43.0.3",
@@ -56,7 +57,13 @@ include = ["pynotas*"]
 # .txt: municipios do IBGE e lista de servicos.
 # .xsd: schemas usados na validacao (NF-e/NFC-e e MDF-e). Os de CT-e ficam de fora
 # porque a lib so consulta a distribuicao de CT-e, sem validar contra schema.
-pynotas = ["data/**/*.txt", "data/XSDs/NF-e/*.xsd", "data/XSDs/MDF-e/*.xsd"]
+# .pem: ACs da ICP-Brasil, usadas na verificacao TLS dos servidores da SEFAZ.
+pynotas = [
+    "data/**/*.txt",
+    "data/XSDs/NF-e/*.xsd",
+    "data/XSDs/MDF-e/*.xsd",
+    "data/certificados/*.pem",
+]
 
 [tool.ruff]
 exclude = [
