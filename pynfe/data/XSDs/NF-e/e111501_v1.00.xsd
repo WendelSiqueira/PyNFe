@@ -9,7 +9,7 @@
       <xs:sequence>
         <xs:element name="descEvento">
           <xs:annotation>
-            <xs:documentation>Pedido de Prorrogação ou Pedido de Prorrogacao</xs:documentation>
+            <xs:documentation>Pedido de Prorrogação ou Pedido de Prorrogacao</xs:documentation>
           </xs:annotation>
           <xs:simpleType>
             <xs:restriction base="xs:string">
@@ -66,4 +66,4 @@
 		<xs:field xpath="@numItem"/>
 	</xs:unique>
   </xs:element>
-</xs:schema>
+</xs:schema>

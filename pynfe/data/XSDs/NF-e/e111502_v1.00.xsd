@@ -9,7 +9,7 @@
       <xs:sequence>
         <xs:element name="descEvento">
           <xs:annotation>
-            <xs:documentation>Cancelamento de Pedido de Prorrogação ou Cancelamento de Pedido de Prorrogacao</xs:documentation>
+            <xs:documentation>Cancelamento de Pedido de Prorrogação ou Cancelamento de Pedido de Prorrogacao</xs:documentation>
           </xs:annotation>
           <xs:simpleType>
             <xs:restriction base="xs:string">
@@ -20,7 +20,7 @@
         </xs:element>
         <xs:element name="idPedidoCancelado">
           <xs:annotation>
-            <xs:documentation>Identificador do evento a ser cancelado, a regra de formação do Id é: ID + tpEvento + chave da NF-e + nSeqEvento</xs:documentation>
+            <xs:documentation>Identificador do evento a ser cancelado, a regra de formação do Id é: ID + tpEvento + chave da NF-e + nSeqEvento</xs:documentation>
           </xs:annotation>
           <xs:simpleType>
             <xs:restriction base="xs:ID">
@@ -47,4 +47,4 @@
       </xs:attribute>
     </xs:complexType>
   </xs:element>
-</xs:schema>
+</xs:schema>

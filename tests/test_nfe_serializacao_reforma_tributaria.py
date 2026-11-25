@@ -17,7 +17,8 @@ from pynfe.entidades.notafiscal import NotaFiscal
 from pynfe.entidades.fonte_dados import _fonte_dados
 from pynfe.processamento.assinatura import AssinaturaA1
 from pynfe.processamento.serializacao import SerializacaoXML
-from pynfe.utils.flags import CODIGO_BRASIL, NAMESPACE_NFE
+from pynfe.processamento.validacao import Validacao
+from pynfe.utils.flags import CODIGO_BRASIL, NAMESPACE_NFE, XSD_FOLDER_NFE, XSD_NFE
 
 
 class ReformaTributariaSerializacaoTestCase(unittest.TestCase):
@@ -126,7 +127,15 @@ class ReformaTributariaSerializacaoTestCase(unittest.TestCase):
         serializador = SerializacaoXML(_fonte_dados, homologacao=self.homologacao)
         xml = serializador.exportar()
         a1 = AssinaturaA1(self.certificado, self.senha)
-        return a1.assinar(xml)
+        assinado = a1.assinar(xml)
+        # Todo XML gerado com IBS/CBS precisa validar contra o schema oficial (PL_010h)
+        validacao = Validacao()
+        validacao.validar_etree(
+            xml_doc=assinado,
+            xsd_file=validacao.get_xsd(xsd_file=XSD_NFE, xsd_folder=XSD_FOLDER_NFE),
+            use_assert=True,
+        )
+        return assinado
 
     # ------------------------------------------------------------------
     # Test 1: CST 000 — full regular taxation with IBS UF/Mun split

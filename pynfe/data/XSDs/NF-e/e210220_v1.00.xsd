@@ -8,8 +8,7 @@
 			<xs:sequence>
 				<xs:element name="descEvento">
 					<xs:annotation>
-						<xs:documentation>Descrição do Evento:
-											 "Desconhecimento da Operacao"</xs:documentation>
+						<xs:documentation>Descrição do Evento: "Desconhecimento da Operacao"</xs:documentation>
 					</xs:annotation>
 					<xs:simpleType>
 						<xs:restriction base="xs:string">
