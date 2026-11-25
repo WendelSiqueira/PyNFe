@@ -19,12 +19,17 @@ Verificadas emitindo NF-e (modelo 55) na SEFAZ-SP, em homologação, com emitent
 | 1022 | Grupo gIBSCBS não informado | `gTribSN` sem `gIBSCBS` | A lib sempre emite o `gIBSCBS` para CST tributado |
 | 1026 | Alíquota do IBS da UF inválida | `gIBSCBS` com alíquotas zeradas | Informar base e alíquotas (a lib recusa o grupo sem valores) |
 
-### Ainda não verificadas
+### Regras do `xPag` (NT 2020.006)
 
-| cStat | Motivo | Causa | Fonte |
-|-------|--------|-------|-------|
-| 441 | Descrição do pagamento obrigatória para meio de pagamento 99-outros | `tPag=99` sem `xPag` | Par da 442, citado com ela na NT 2020.006 por fontes de terceiros |
+As regras do `xPag` estão na Nota Técnica 2020.006 (versão 1.31, setembro de 2022), valem para NF-e e NFC-e (modelos 55 e 65) em todas as UFs, desde 01/09/2021 em produção:
 
-A regra do `xPag` vem da NT 2020.006, segundo fontes de terceiros; o texto oficial da nota técnica não foi conferido.
+| Regra | cStat | Texto da NT | Verificada em homologação |
+|-------|-------|-------------|---------------------------|
+| YA02a-10 | 441 | Quando o código do meio de pagamento (tag: tPag) for preenchido com o código 99-outros, obrigatório o preenchimento da descrição do meio de pagamento (tag: xPag) | não |
+| YA02a-20 | 442 | Quando o código do meio de pagamento for diferente 99-outros (tag: tPag<>99), proibido o preenchimento da descrição do meio de pagamento (tag: xPag) | sim |
+
+## Onde está a documentação oficial
+
+As regras de validação e os códigos de rejeição são publicados no Portal Nacional da NF-e (nfe.fazenda.gov.br): no Manual de Orientação do Contribuinte (MOC), anexo de leiaute e regras de validação, e nas Notas Técnicas, que alteram o MOC. Cada regra tem um código (por exemplo, YA02a-20), os modelos a que se aplica e o cStat da rejeição.
 
 Mais detalhes sobre IBS/CBS em [reforma_tributaria.md](reforma_tributaria.md).
