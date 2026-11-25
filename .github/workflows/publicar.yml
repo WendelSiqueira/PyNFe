@@ -1,18 +1,41 @@
 name: Publicar
 
-# Publica no TestPyPI ao enviar uma tag de versao (ex.: v0.8.0).
-# Usa trusted publishing: o TestPyPI confia neste workflow, sem token guardado.
-# Configuracao no TestPyPI (pending publisher): projeto pynotas-br, dono
-# WendelSiqueira, repositorio pyNotas, workflow publicar.yml, ambiente testpypi.
+# Publica uma versao no TestPyPI e, so quando pedido, no PyPI.
+#
+# Dispara:
+# - ao enviar uma tag de versao (ex.: v0.8.0): publica so no TestPyPI;
+# - manualmente (Actions > Publicar > Run workflow), informando a tag: publica
+#   no TestPyPI e, com "publicar_pypi" marcado, tambem no PyPI, depois de
+#   aprovacao no ambiente "pypi".
+#
+# Usa trusted publishing: TestPyPI e PyPI confiam neste workflow, sem token.
+# Publishers cadastrados (projeto pynotas-br, dono WendelSiqueira, repositorio
+# pyNotas, workflow publicar.yml):
+# - test.pypi.org, ambiente testpypi
+# - pypi.org, ambiente pypi (com aprovacao manual no GitHub)
 on:
   push:
     tags: ["v*"]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Tag da versao a publicar (ex.: v0.8.0)"
+        required: true
+      publicar_pypi:
+        description: "Publicar tambem no PyPI (depois do TestPyPI)"
+        type: boolean
+        default: false
+
+env:
+  TAG: ${{ inputs.tag || github.ref_name }}
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ env.TAG }}
       - name: Set up uv
         uses: astral-sh/setup-uv@v6
       - name: Testes
@@ -22,8 +45,8 @@ jobs:
       - name: Tag igual a versao do pacote
         run: |
           versao=$(uv run python -c "import pynotas; print(pynotas.__version__)")
-          if [ "v$versao" != "$GITHUB_REF_NAME" ]; then
-            echo "A tag $GITHUB_REF_NAME nao bate com a versao do pacote ($versao)"
+          if [ "v$versao" != "$TAG" ]; then
+            echo "A tag $TAG nao bate com a versao do pacote ($versao)"
             exit 1
           fi
       - name: Build
@@ -50,3 +73,24 @@ jobs:
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
           repository-url: https://test.pypi.org/legacy/
+          # Ao republicar uma versao ja enviada (disparo manual), segue em frente
+          skip-existing: true
+
+  pypi:
+    # So no disparo manual com publicar_pypi marcado. O ambiente "pypi" tambem
+    # exige aprovacao no GitHub, se configurado com revisor obrigatorio.
+    if: github.event_name == 'workflow_dispatch' && inputs.publicar_pypi
+    needs: testpypi
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/p/pynotas-br
+    permissions:
+      id-token: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist/
+      - name: Publicar no PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
