@@ -1540,13 +1540,6 @@ class SerializacaoXML(Serializacao):
             etree.SubElement(detpag, "vPag").text = "{:.2f}".format(0)
         else:
             for item in pagamentos:
-                # xPag (descricao do meio de pagamento) so e aceito com tPag=99
-                # (Outros); com outro tipo a SEFAZ rejeita com 442.
-                if item.x_pag and str(item.t_pag) != "99":
-                    raise ValueError(
-                        "Pagamento com tPag=%s nao aceita xPag (descricao); informe xPag "
-                        "apenas com tPag=99 (Outros)." % item.t_pag
-                    )
                 det = etree.Element("detPag")
                 xmlw.write_txt(det, "indPag", item.ind_pag, False)
                 xmlw.write_txt(det, "tPag", item.t_pag, True)

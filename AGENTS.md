@@ -9,7 +9,7 @@ Brazilian electronic fiscal document library (NF-e, NFC-e, MDF-e, CT-e) for SEFA
 ## Project Structure
 
 ```
-docs/                   # Documentation (reforma_tributaria.md)
+docs/                   # Documentation (reforma_tributaria.md, regras_sefaz.md)
 pynotas/
 ├── entidades/          # Domain entities (data models)
 │   ├── base.py         # Base entity class with kwargs init

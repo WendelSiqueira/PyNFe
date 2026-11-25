@@ -986,7 +986,8 @@ class ReformaTributariaSerializacaoTestCase(unittest.TestCase):
             self._serializar_e_assinar()
 
     # ------------------------------------------------------------------
-    # xPag: descricao do pagamento so com tPag=99 (rejeicao 442)
+    # xPag: a lib serializa o que for informado. A regra da SEFAZ (xPag so com
+    # tPag=99, rejeicao 442) fica com quem usa a lib; ver docs/regras_sefaz.md
     # ------------------------------------------------------------------
     def test_xpag_com_tpag_99(self):
         nf = self._nota_fiscal(self._emitente(), self._cliente())
@@ -999,13 +1000,14 @@ class ReformaTributariaSerializacaoTestCase(unittest.TestCase):
             xml.xpath("//ns:detPag/ns:xPag", namespaces=self.ns)[0].text, "Credito na loja"
         )
 
-    def test_xpag_com_outro_tpag_levanta_erro(self):
+    def test_sem_xpag_quando_nao_informado(self):
         nf = self._nota_fiscal(self._emitente(), self._cliente())
         nf.adicionar_produto_servico(**self._base_product_kwargs())
-        nf.adicionar_pagamento(t_pag="01", x_pag="Dinheiro", v_pag=1000.00, ind_pag=0)
+        nf.adicionar_pagamento(t_pag="01", v_pag=1000.00, ind_pag=0)
 
-        with self.assertRaisesRegex(ValueError, "tPag=01 nao aceita xPag"):
-            self._serializar_e_assinar()
+        xml = self._serializar_e_assinar()
+
+        self.assertEqual(len(xml.xpath("//ns:detPag/ns:xPag", namespaces=self.ns)), 0)
 
 
 if __name__ == "__main__":

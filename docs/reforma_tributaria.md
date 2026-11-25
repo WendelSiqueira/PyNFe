@@ -245,7 +245,7 @@ Regras:
 - Totais: `IBSCBSTot/gTribSN` com `vIBSSN` e `vCBSSN` somados dos itens. `vIBSSN` e sempre emitido (obrigatorio no schema), com `0.00` quando nenhum item tem IBS.
 - A lib nao calcula aliquotas efetivas nem valores. Para o calculo, ver a calculadora oficial da Receita Federal para o Simples Nacional (`ReceitaFederal/calculadora-rtc-simples-nacional`).
 
-Rejeicoes verificadas em homologacao (SEFAZ-SP):
+Rejeicoes verificadas em homologacao (SEFAZ-SP; lista completa em [regras_sefaz.md](regras_sefaz.md)):
 
 | cStat | Motivo | Causa |
 |-------|--------|-------|
