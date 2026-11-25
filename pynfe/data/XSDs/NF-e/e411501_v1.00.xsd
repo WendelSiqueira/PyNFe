@@ -9,7 +9,7 @@
         <xs:sequence>
             <xs:element name="descEvento">
                 <xs:annotation>
-                    <xs:documentation>Fisco Prorrogação ICMS remessa para industrialização</xs:documentation>
+                    <xs:documentation>Fisco Prorrogação ICMS remessa para industrialização</xs:documentation>
                 </xs:annotation>
 				<xs:simpleType>
 					<xs:restriction base="xs:string">
@@ -131,4 +131,4 @@
         </xs:element>
     </xs:sequence>
   </xs:complexType>
-</xs:schema>
+</xs:schema>
