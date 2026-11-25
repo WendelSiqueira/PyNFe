@@ -1,6 +1,8 @@
 # Changelog
 
-## Não publicado
+## 0.8.2 — 2026-11-25
+
+Impressão do DANFE, já no layout da NT 2026.010 (IBS/CBS), e duas correções que deixavam inválido o XML de vendas com cartão ou com volumes.
 
 ### Novo
 
