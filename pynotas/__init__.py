@@ -1,4 +1,4 @@
-__version__ = "0.8.0"
+__version__ = "0.8.1"
 __author__ = "Marinho Brandao, Junior Tada, Leonardo Tada"
 __maintainer__ = "Wendel Siqueira"
 __license__ = "GNU Lesser General Public License (LGPL)"
