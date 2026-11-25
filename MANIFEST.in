@@ -1,2 +1,2 @@
 recursive-exclude tests *
-include PLANEJAMENTO LICENCE *.py *.sh
+include LICENSE AUTHORS *.py *.sh
