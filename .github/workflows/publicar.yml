@@ -19,7 +19,7 @@ on:
   workflow_dispatch:
     inputs:
       tag:
-        description: "Tag da versao a publicar (ex.: v0.8.0)"
+        description: "Versao a publicar (ex.: v0.8.0 ou 0.8.0)"
         required: true
       publicar_pypi:
         description: "Publicar tambem no PyPI (depois do TestPyPI)"
@@ -27,7 +27,8 @@ on:
         default: false
 
 env:
-  TAG: ${{ inputs.tag || github.ref_name }}
+  # No disparo manual, aceita a versao com ou sem o "v" (0.8.0 -> v0.8.0)
+  TAG: ${{ inputs.tag && (startsWith(inputs.tag, 'v') && inputs.tag || format('v{0}', inputs.tag)) || github.ref_name }}
 
 jobs:
   build:
