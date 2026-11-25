@@ -1,5 +1,7 @@
 ## pyNotas
 
+[![PyPI](https://img.shields.io/pypi/v/pynotas-br)](https://pypi.org/project/pynotas-br/) [![CI](https://github.com/WendelSiqueira/pyNotas/actions/workflows/ci.yml/badge.svg)](https://github.com/WendelSiqueira/pyNotas/actions/workflows/ci.yml) [![Python](https://img.shields.io/pypi/pyversions/pynotas-br)](https://pypi.org/project/pynotas-br/)
+
 Biblioteca Python de interface com os webservices de Nota Fiscal Eletrônica (NF-e) e Nota Fiscal de Consumidor Eletrônica (NFC-e) da SEFAZ e Receita Federal do Brasil, e de Manifesto de Documentos Fiscais Eletrônicos (MDF-e).
 
 Atualizada para a **Reforma Tributária (IBS/CBS)** e para o **pacote de schemas PL_010h** da NF-e, com foco em **NF-e modelo 55 emitida por empresas do Simples Nacional**.
@@ -57,25 +59,22 @@ NFS-e (nota de serviço) não é suportada. Os provedores municipais Betha e Gin
 Instalação
 -----------
 
-O pacote se chama `pynotas-br` e o import é `pynotas`.
-
-Como dependência de outro projeto, pela tag da versão no repositório:
+O pacote se chama `pynotas-br` e o import é `pynotas`. Está no [PyPI](https://pypi.org/project/pynotas-br/):
 
 ```sh
-uv add "pynotas-br @ git+https://github.com/WendelSiqueira/pyNotas.git@v0.8.0"
-uv add "pynotas-br[impressao] @ git+https://github.com/WendelSiqueira/pyNotas.git@v0.8.0"  # DANFE (brazilfiscalreport)
+uv add pynotas-br
+uv add "pynotas-br[impressao]"   # com impressão do DANFE (brazilfiscalreport)
 ```
 
-Com pip, o mesmo endereço funciona: `pip install "pynotas-br @ git+https://github.com/WendelSiqueira/pyNotas.git@v0.8.0"`.
+Com pip: `pip install pynotas-br`.
 
-A versão 0.8.0 também está no **TestPyPI**, o índice de testes do PyPI. Como lá qualquer pessoa publica qualquer nome, instale só o `pynotas-br` de lá e as dependências do PyPI oficial:
+Para usar uma versão ainda não publicada, direto da branch principal do repositório:
 
 ```sh
-uv pip install --no-deps --index-url https://test.pypi.org/simple/ "pynotas-br==0.8.0"
-uv pip install "requests>=2.32.4,<3" certifi "lxml>=5.4.0" "signxml>=4.1.0" "cryptography>=43.0.3" "pyopenssl>=25.1.0,<26"
+uv add "pynotas-br @ git+https://github.com/WendelSiqueira/pyNotas.git@main"
 ```
 
-Evite `--extra-index-url` com o TestPyPI: as dependências podem acabar vindo de lá. O histórico de versões está no [CHANGELOG](https://github.com/WendelSiqueira/pyNotas/blob/main/CHANGELOG.md).
+O histórico de versões está no [CHANGELOG](https://github.com/WendelSiqueira/pyNotas/blob/main/CHANGELOG.md).
 
 Dependências principais: `lxml` (XML), `signxml` (assinatura), `pyopenssl` e `cryptography` (certificado A1) e `requests` (webservices da SEFAZ).
 
