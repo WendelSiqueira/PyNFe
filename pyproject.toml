@@ -53,7 +53,10 @@ version = {attr = "pynotas.__version__"}
 include = ["pynotas*"]
 
 [tool.setuptools.package-data]
-pynotas = ["data/**/*.txt"]
+# .txt: municipios do IBGE e lista de servicos.
+# .xsd: schemas usados na validacao (NF-e/NFC-e e MDF-e). Os de CT-e ficam de fora
+# porque a lib so consulta a distribuicao de CT-e, sem validar contra schema.
+pynotas = ["data/**/*.txt", "data/XSDs/NF-e/*.xsd", "data/XSDs/MDF-e/*.xsd"]
 
 [tool.ruff]
 exclude = [

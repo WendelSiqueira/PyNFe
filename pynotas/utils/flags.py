@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import os
 
 NAMESPACE_NFE = "http://www.portalfiscal.inf.br/nfe"
 NAMESPACE_SIG = "http://www.w3.org/2000/09/xmldsig#"
@@ -26,13 +27,19 @@ TIPOS_DOCUMENTO = (
     "CPF",
 )
 
-XSD_FOLDER_NFE = "pynotas/data/XSDs/NF-e"
+# Pastas dos XSDs calculadas a partir do proprio pacote (e nao do diretorio de
+# trabalho), para a validacao funcionar com a lib instalada como dependencia.
+XSD_FOLDER = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "XSDs"
+)
+
+XSD_FOLDER_NFE = os.path.join(XSD_FOLDER, "NF-e")
 XSD_NFE = "nfe_v4.00.xsd"
 XSD_NFE_PROCESSADA = "procNFe_v4.00.xsd"
 XSD_PD_CANCELAR_NFE = "procCancNFe_v1.07.xsd"
 XSD_PD_INUTILIZAR_NFE = "procInutNFe_v1.07.xsd"
 
-XSD_FOLDER_MDFE = "pynotas/data/XSDs/MDF-e"
+XSD_FOLDER_MDFE = os.path.join(XSD_FOLDER, "MDF-e")
 XSD_MDFE = "mdfe_v3.00.xsd"
 XSD_MDFE_PROCESSADA = "procMDFe_v3.00.xsd"
 
