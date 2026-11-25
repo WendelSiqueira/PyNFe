@@ -1,16 +1,14 @@
-## PyNFe (fork com Reforma Tributária)
+## PyNFe
 
-Fork do [PyNFe](https://github.com/TadaSoftware/PyNFe), biblioteca Python de emissão de documentos fiscais eletrônicos, atualizado para a **Reforma Tributária (IBS/CBS)** e para o **pacote de schemas PL_010h** da NF-e.
+Biblioteca Python de interface com os webservices de Nota Fiscal Eletrônica (NF-e) e Nota Fiscal de Consumidor Eletrônica (NFC-e) da SEFAZ e Receita Federal do Brasil, Nota Fiscal de Serviço Eletrônica (NFS-e) para Prefeituras e Manifesto de Documentos Fiscais Eletrônicos (MDF-e).
 
-O projeto original está sem novos merges desde fevereiro de 2026, enquanto as notas técnicas da Reforma continuam saindo. Este fork mantém a lib em dia para uso próprio, com foco em **NF-e modelo 55 emitida por empresas do Simples Nacional**.
-
-Biblioteca de interface com os webservices de Nota Fiscal Eletrônica (NF-e) e Nota Fiscal de Consumidor Eletrônica (NFC-e) da SEFAZ e Receita Federal do Brasil, Nota Fiscal de Serviço Eletrônica (NFS-e) para Prefeituras e Manifesto de Documentos Fiscais Eletrônicos (MDF-e).
+Atualizada para a **Reforma Tributária (IBS/CBS)** e para o **pacote de schemas PL_010h** da NF-e, com foco em **NF-e modelo 55 emitida por empresas do Simples Nacional**.
 
 
-O que muda em relação ao original
+Reforma Tributária
 ------------
 
-| Mudança | Situação |
+| Item | Situação |
 |---------|----------|
 | Schemas da NF-e atualizados para o **PL_010h** (inclui `DFeTiposBasicos_v1.00.xsd` com os tipos de IBS/CBS) | feito |
 | Testes da Reforma validam o XML gerado contra o schema oficial | feito |
@@ -46,24 +44,24 @@ Características
     * Evento de manifestação do destinatário
     * Consultar Distribuição DF-e
 
-* NFS-e (herdado do original, sem manutenção neste fork):
+* NFS-e:
     * Emissão de nota fiscal de serviço eletrônico (Abrasf: Ginfes e Betha)
     * Consultar pelo número da NFS-e
     * Consultar por RPS (recibo provisório de serviço)
     * Consultar Lote
     * Cancelar NFS-e
 
-* MDF-e (herdado do original, sem manutenção neste fork):
+* MDF-e:
     * Versão 3.00, modelo 58
     * Emissão de Manifesto, consultas e eventos (cancelamento, encerramento, inclusão de condutor e de DF-e, pagamento)
 
-* CT-e (herdado do original): apenas Consultar Distribuição DF-e
+* CT-e: Consultar Distribuição DF-e
 
 
 Instalação
 -----------
 
-Este fork não é publicado no PyPI. Para usar como dependência de outro projeto, direto do repositório:
+A lib não é publicada no PyPI. Para usar como dependência de outro projeto, direto do repositório:
 
 ```sh
 uv add "pynfe @ git+https://github.com/WendelSiqueira/PyNFe.git@main"
@@ -99,7 +97,7 @@ xml = con.status_servico('nfe')
 print(xml.text)
 ```
 
-Exemplos de emissão com IBS/CBS em [docs/reforma_tributaria.md](docs/reforma_tributaria.md). Mais exemplos gerais no [Wiki do projeto original](https://github.com/TadaSoftware/PyNFe/wiki).
+Exemplos de emissão com IBS/CBS em [docs/reforma_tributaria.md](docs/reforma_tributaria.md). Mais exemplos gerais no [Wiki](https://github.com/TadaSoftware/PyNFe/wiki).
 
 
 Desenvolvimento
@@ -140,4 +138,4 @@ Créditos e licença
 
 Baseado no [PyNFe](https://github.com/TadaSoftware/PyNFe), da TadaSoftware e colaboradores. Autoria original e créditos em [AUTHORS](AUTHORS).
 
-Licenciado sob a [LGPL-3.0](LICENSE), a mesma do projeto original.
+Licenciado sob a [LGPL-3.0](LICENSE).
