@@ -36,6 +36,7 @@ Na mesma nota, em homologação SP:
 | Emissão com CEST, com `indEscala` S e com `indEscala` N + `CNPJFab` | 100 - Autorizado o uso da NF-e |
 | Venda pela internet sem intermediador (`indPres=2`, `indIntermed=0`) | 100 - Autorizado o uso da NF-e |
 | Venda por marketplace (Shopee, CNPJ 35.635.824/0001-12) dentro da UF e interestadual (CFOP 6102) | 100 - Autorizado o uso da NF-e |
+| Pedido de marketplace com 3 itens, frete e desconto rateados, CEST em um item, volume, cartão de crédito e IBS/CBS com gTribSN (`tests/test_nfe_pedido_marketplace.py`) | 100 - Autorizado o uso da NF-e |
 
 ### Fim da inutilização e da autorização assíncrona (NT 2023.002)
 

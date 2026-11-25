@@ -1315,7 +1315,8 @@ class NotaFiscalPagamentos(Entidade):
     # CNPJ da Credenciadora de cartão de crédito e/ou débito
     cnpj = str()
     # Bandeira da operadora de cartão de crédito e/ou débito flag: BANDEIRA_CARTAO
-    t_band = int()
+    # Opcional; gravada com 2 digitos (1 -> "01"). Vazio: tBand nao e emitido.
+    t_band = str()
     # Número de autorização da operação cartão de crédito e/ou débito
     c_aut = str()
     # Indicador da Forma de Pagamento: 0=à Vista, 1=à Prazo
