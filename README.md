@@ -111,7 +111,7 @@ uv run ruff check .
 uv run ruff format .
 ```
 
-Navegação no código: arquivos grandes têm mapas em `docs/*_map.md` (ver [AGENTS.md](AGENTS.md)).
+Orientações para agentes de IA que trabalham no código estão no [AGENTS.md](AGENTS.md).
 
 
 Referências
