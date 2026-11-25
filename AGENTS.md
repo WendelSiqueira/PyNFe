@@ -2,39 +2,14 @@
 
 Brazilian electronic fiscal document library (NF-e, NFC-e, MDF-e, CT-e) for SEFAZ webservice communication.
 
-## Source Map Navigation (MANDATORY)
+## Navigating Large Files
 
-**Before reading any large file (>200 lines), you MUST first read its `{filename}_map.md` file** in the `docs/` directory. The source map contains:
-- Section-by-section breakdown with exact line ranges
-- Class/method index with purpose descriptions
-- Field group documentation
-
-This allows you to navigate directly to the specific line-window you need instead of reading the entire file.
-
-### Available Source Maps
-
-| Source Map | File | Lines | Description |
-|------------|------|-------|-------------|
-| `docs/serializacao_map.md` | `pynotas/processamento/serializacao.py` | 2747 | XML serialization (NF-e, MDF-e, QR codes) |
-| `docs/comunicacao_map.md` | `pynotas/processamento/comunicacao.py` | 1102 | SEFAZ webservice communication |
-| `docs/notafiscal_map.md` | `pynotas/entidades/notafiscal.py` | 1306 | Invoice entities and tax fields |
-| `docs/manifesto_map.md` | `pynotas/entidades/manifesto.py` | 446 | MDF-e manifest entities |
-| `docs/evento_map.md` | `pynotas/entidades/evento.py` | 235 | Event entities (cancel, correction, etc.) |
-| `docs/flags_map.md` | `pynotas/utils/flags.py` | 679 | Constants, namespaces, tax codes |
-| `docs/webservices_map.md` | `pynotas/utils/webservices.py` | 542 | SEFAZ endpoint URLs by state |
-| `docs/utils_map.md` | `pynotas/utils/__init__.py` | 251 | Utility functions (municipality lookup, signing) |
-
-### How to Use Source Maps
-
-1. **Read the `_map.md` file first** to understand the file structure
-2. **Identify the line range** you need from the map tables
-3. **Read only that section** using `offset` and `limit` parameters
-4. Example: To understand ICMS CST 60 serialization, read `docs/serializacao_map.md`, find it's at lines 747-770, then read `pynotas/processamento/serializacao.py` with `offset=747, limit=25`
+`serializacao.py` (~2,700 lines), `notafiscal.py` and `comunicacao.py` are large. Find what you need by name instead of reading them whole, for example `grep -n "def _serializar_ibscbs" pynotas/processamento/serializacao.py`, then read only that range. XML tags appear literally in the serializer (`grep -n '"gTribSN"'`).
 
 ## Project Structure
 
 ```
-docs/                   # Documentation and source maps (*_map.md, reforma_tributaria.md)
+docs/                   # Documentation (reforma_tributaria.md)
 pynotas/
 ├── entidades/          # Domain entities (data models)
 │   ├── base.py         # Base entity class with kwargs init
