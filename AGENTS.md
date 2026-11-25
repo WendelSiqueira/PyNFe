@@ -84,18 +84,23 @@ tests/                  # Test suite (37 test files)
 
 ## Commands
 
+Dependencies are managed with [uv](https://docs.astral.sh/uv/) (`pyproject.toml` + `uv.lock`).
+
 ```bash
+# Install (dev group is included by default; nfse extra is needed for NFS-e tests)
+uv sync --extra nfse
+
 # Run tests
-pytest tests/
+uv run pytest tests/
 
 # Run specific test
-pytest tests/test_nfe_serializacao_geral.py
+uv run pytest tests/test_nfe_serializacao_geral.py
 
 # Lint
-ruff check pynfe/
+uv run ruff check .
 
 # Format
-ruff format pynfe/
+uv run ruff format .
 ```
 
 ## Dependencies
