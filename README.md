@@ -119,6 +119,11 @@ Para testar contra a SEFAZ em **homologação** (notas sem valor fiscal) com o s
 uv run python scripts/homologacao.py status          # status da SEFAZ e cadastro do emitente
 uv run python scripts/homologacao.py emitir          # emite uma NF-e de teste
 uv run python scripts/homologacao.py emitir --reforma
+uv run python scripts/homologacao.py notas           # notas emitidas pela ferramenta
+uv run python scripts/homologacao.py consultar       # sem chave: ultima nota emitida
+uv run python scripts/homologacao.py cce --correcao "texto da correcao"
+uv run python scripts/homologacao.py cancelar
+uv run python scripts/homologacao.py inutilizar --inicio 10 --fim 12
 ```
 
 Para atualizar as ACs da ICP-Brasil a partir do pacote oficial do ITI: `uv run python scripts/atualizar_cadeia_icp_brasil.py`. Testes que acessam a SEFAZ só rodam com `PYNOTAS_TESTES_REDE=1`.

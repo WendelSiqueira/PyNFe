@@ -45,6 +45,48 @@ class FerramentaHomologacaoTestCase(unittest.TestCase):
         self.assertNotIn("producao", ajuda)
         self.assertNotIn("--prod", ajuda)
 
+    def test_comandos_disponiveis(self):
+        self.assertEqual(
+            set(homologacao.COMANDOS),
+            {"status", "emitir", "notas", "consultar", "cce", "cancelar", "inutilizar"},
+        )
+
+
+class RegistroNotasTestCase(unittest.TestCase):
+    """Registro local das notas emitidas, usado por consultar/cce/cancelar."""
+
+    def setUp(self):
+        self._tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self._tmp.cleanup)
+        self._saida, self._registro = homologacao.SAIDA, homologacao.REGISTRO
+        homologacao.SAIDA = self._tmp.name
+        homologacao.REGISTRO = os.path.join(self._tmp.name, "notas.json")
+
+    def tearDown(self):
+        homologacao.SAIDA, homologacao.REGISTRO = self._saida, self._registro
+
+    def test_sem_notas(self):
+        with self.assertRaisesRegex(SystemExit, "Nenhuma nota"):
+            homologacao.nota_do_registro()
+
+    def test_ultima_nota_e_busca_por_chave(self):
+        homologacao.registrar({"chave": "A", "protocolo": "1"})
+        homologacao.registrar({"chave": "B", "protocolo": "2"})
+        self.assertEqual(homologacao.nota_do_registro()["chave"], "B")
+        self.assertEqual(homologacao.nota_do_registro("A")["protocolo"], "1")
+        with self.assertRaisesRegex(SystemExit, "nao esta no registro"):
+            homologacao.nota_do_registro("C")
+
+    def test_atualizar_registro(self):
+        homologacao.registrar({"chave": "A", "protocolo": "1"})
+        homologacao.atualizar_registro("A", situacao="cancelada", cce=2)
+        nota = homologacao.nota_do_registro("A")
+        self.assertEqual((nota["situacao"], nota["cce"]), ("cancelada", 2))
+
+    def test_pasta_de_saida_privada(self):
+        homologacao.registrar({"chave": "A", "protocolo": "1"})
+        self.assertEqual(os.stat(self._tmp.name).st_mode & 0o777, 0o700)
+
 
 if __name__ == "__main__":
     unittest.main()
