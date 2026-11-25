@@ -83,6 +83,17 @@ class RegistroNotasTestCase(unittest.TestCase):
         nota = homologacao.nota_do_registro("A")
         self.assertEqual((nota["situacao"], nota["cce"]), ("cancelada", 2))
 
+    def test_proximo_numero_segue_o_registro_por_serie(self):
+        homologacao.registrar({"chave": "A", "protocolo": "1", "serie": "1", "numero": "41"})
+        homologacao.registrar({"chave": "B", "protocolo": "2", "serie": "1", "numero": "42"})
+        homologacao.registrar({"chave": "C", "protocolo": "3", "serie": "2", "numero": "7"})
+        self.assertEqual(homologacao.proximo_numero("1"), 43)
+        self.assertEqual(homologacao.proximo_numero("2"), 8)
+
+    def test_proximo_numero_sem_registro(self):
+        numero = homologacao.proximo_numero("1")
+        self.assertTrue(1 <= numero <= 900000)
+
     def test_pasta_de_saida_privada(self):
         homologacao.registrar({"chave": "A", "protocolo": "1"})
         self.assertEqual(os.stat(self._tmp.name).st_mode & 0o777, 0o700)

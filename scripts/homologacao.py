@@ -228,7 +228,26 @@ def montar_emitente(ctx):
     return emitente, str(municipio), cad
 
 
+def proximo_numero(serie):
+    """Maior numero da serie no registro local + 1. Sem registro, um numero alto
+    derivado da hora, para nao colidir com notas emitidas fora da ferramenta."""
+    numeros = [int(n["numero"]) for n in carregar_registro() if str(n.get("serie")) == str(serie)]
+    return max(numeros) + 1 if numeros else int(time.time()) % 900000 + 1
+
+
 def cmd_emitir(ctx, args):
+    """Emite a nota; em duplicidade (539) tenta o numero seguinte, ate 3 vezes."""
+    numero = args.numero or proximo_numero(args.serie)
+    for _ in range(3):
+        resultado = emitir_numero(ctx, args, numero)
+        if resultado != "duplicada" or args.numero:
+            return 0 if resultado == "autorizada" else 1
+        numero += 1
+        print(f"Numero ja usado; tentando o {numero}")
+    return 1
+
+
+def emitir_numero(ctx, args, numero):
     emitente, municipio, cad = montar_emitente(ctx)
     cliente = Cliente(
         razao_social=NOME_DESTINATARIO,
@@ -244,7 +263,7 @@ def cmd_emitir(ctx, args):
         endereco_pais=CODIGO_BRASIL,
     )
     agora = datetime.datetime.now(FUSO).replace(microsecond=0) - datetime.timedelta(minutes=1)
-    numero = str(args.numero or int(time.time()) % 900000 + 1)
+    numero = str(numero)
     nf = NotaFiscal(
         emitente=emitente,
         cliente=cliente,
@@ -291,6 +310,12 @@ def cmd_emitir(ctx, args):
         cofins_modalidade="99",
         valor_tributos_aprox="0",
     )
+    if args.cest:
+        produto.update(cest=args.cest)
+        if args.escala:
+            produto.update(ind_escala=args.escala)
+        if args.cnpj_fabricante:
+            produto.update(cnpj_fabricante=args.cnpj_fabricante)
     if args.reforma:
         # Aliquotas de teste de 2026; o teste e de estrutura, nao de calculo
         produto.update(
@@ -347,20 +372,17 @@ def cmd_emitir(ctx, args):
             }
         )
         print(f"XML autorizado: {caminho}")
-        return 0
+        return "autorizada"
 
     resposta = retorno[1]
     salvar(f"retorno_{chave}.xml", resposta.content)
     try:
-        xml_resp = etree.fromstring(resposta.content)
-        for c, m in zip(
-            xml_resp.xpath("//*[local-name()='cStat']/text()"),
-            xml_resp.xpath("//*[local-name()='xMotivo']/text()"),
-        ):
-            print(f"cStat {c} - {m}")
+        _, cstats = imprimir_retornos(resposta.content)
     except etree.XMLSyntaxError:
         print(f"HTTP {resposta.status_code}: {resposta.text[:300]}")
-    return 1
+        return "erro"
+    # 539: duplicidade de NF-e (numero ja usado nesta serie)
+    return "duplicada" if "539" in cstats else "erro"
 
 
 def imprimir_retornos(conteudo):
@@ -479,6 +501,9 @@ def criar_parser():
     emitir.add_argument("--serie", default="1")
     emitir.add_argument("--numero", type=int, help="numero da nota (padrao: gerado)")
     emitir.add_argument("--ncm", default="33049990", help="NCM do produto de teste")
+    emitir.add_argument("--cest", help="CEST do produto de teste (7 digitos)")
+    emitir.add_argument("--escala", choices=("S", "N"), help="indEscala (exige --cest)")
+    emitir.add_argument("--cnpj-fabricante", help="CNPJFab (exige --cest)")
 
     sub.add_parser("notas", help="lista as notas emitidas registradas localmente")
 

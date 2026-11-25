@@ -16,6 +16,8 @@ Verificadas emitindo NF-e (modelo 55) na SEFAZ-SP, em homologação, com emitent
 | cStat | Motivo | Causa | Como evitar |
 |-------|--------|-------|-------------|
 | 442 | Descrição do pagamento não permitida | `xPag` informado com `tPag` diferente de 99 | Informar `x_pag` apenas com `t_pag="99"` (Outros). Com `tPag=99` e `xPag`, a nota foi autorizada |
+| 539 | Duplicidade de NF-e com diferença na Chave de Acesso | Número já usado na mesma série (a resposta traz a chave da nota existente) | Controlar a numeração por série no emissor; não há serviço para consultar o último número |
+| 879 | Informado item "Produzido em Escala NÃO Relevante" e não informado CNPJ do Fabricante | `indEscala="N"` sem `CNPJFab` | Com `ind_escala="N"`, informar `cnpj_fabricante` |
 | 1022 | Grupo gIBSCBS não informado | `gTribSN` sem `gIBSCBS` | A lib sempre emite o `gIBSCBS` para CST tributado |
 | 1026 | Alíquota do IBS da UF inválida | `gIBSCBS` com alíquotas zeradas | Informar base e alíquotas (a lib recusa o grupo sem valores) |
 
@@ -30,6 +32,7 @@ Na mesma nota, em homologação SP:
 | Cancelamento | 135 - Evento registrado e vinculado a NF-e |
 | Consulta após o cancelamento | 101 - Cancelamento de NF-e homologado |
 | Inutilização de numeração | **998 - Serviço Desativado** (ver abaixo) |
+| Emissão com CEST, com `indEscala` S e com `indEscala` N + `CNPJFab` | 100 - Autorizado o uso da NF-e |
 
 ### Fim da inutilização e da autorização assíncrona (NT 2023.002)
 
