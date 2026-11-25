@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import os
 
 NAMESPACE_NFE = "http://www.portalfiscal.inf.br/nfe"
