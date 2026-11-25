@@ -108,6 +108,13 @@ class NotaFiscal(Entidade):
     """
     indicador_intermediador = int()
 
+    # - Grupo infIntermed (NT 2020.006): intermediador da transacao
+    #   (marketplace), obrigatorio pela SEFAZ quando indicador_intermediador=1.
+    # - CNPJ do intermediador (ex.: marketplace)
+    intermediador_cnpj = str()
+    # - idCadIntTran: nome ou identificador da loja no intermediador (2 a 60)
+    intermediador_id_cadastro = str()
+
     """ nfce suporta apenas operação interna
         Identificador de local de destino da operação
         1=Operação interna;2=Operação interestadual;3=Operação com exterior.

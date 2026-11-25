@@ -1,5 +1,12 @@
 # Changelog
 
+## Não publicado
+
+### Novo
+
+- **Intermediador da transação** (marketplace, NT 2020.006): grupo `infIntermed` com `intermediador_cnpj` e `intermediador_id_cadastro`. Até a 0.8.0, uma venda com `indicador_intermediador=1` saía sem o grupo e era rejeitada com 438. Verificado em homologação SP com a Shopee, dentro da UF e interestadual.
+- `indIntermed` passa a ser emitido também na venda presencial quando há intermediador, como a NT permite.
+
 ## 0.8.0 — 2026-11-25
 
 Primeira versão publicada como `pynotas-br`. O import continua `pynotas`.

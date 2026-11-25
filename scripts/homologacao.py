@@ -249,6 +249,14 @@ def cmd_emitir(ctx, args):
 
 def emitir_numero(ctx, args, numero):
     emitente, municipio, cad = montar_emitente(ctx)
+    if args.interestadual:
+        # Destinatario ficticio no Rio de Janeiro (endereco publico do centro da cidade)
+        dest_municipio, dest_uf, dest_cep = "Rio de Janeiro", "RJ", "20010000"
+    else:
+        dest_municipio, dest_uf, dest_cep = cad["xMun"], ctx["uf"], cad["CEP"]
+    if args.intermediador and not args.id_cadastro:
+        raise SystemExit("Informe --id-cadastro (identificador da loja no intermediador)")
+    nao_presencial = args.internet or bool(args.intermediador)
     cliente = Cliente(
         razao_social=NOME_DESTINATARIO,
         tipo_documento="CPF",
@@ -257,9 +265,9 @@ def emitir_numero(ctx, args, numero):
         endereco_logradouro="RUA DE TESTE",
         endereco_numero="1",
         endereco_bairro="CENTRO",
-        endereco_municipio=cad["xMun"],
-        endereco_uf=ctx["uf"],
-        endereco_cep=cad["CEP"],
+        endereco_municipio=dest_municipio,
+        endereco_uf=dest_uf,
+        endereco_cep=dest_cep,
         endereco_pais=CODIGO_BRASIL,
     )
     agora = datetime.datetime.now(FUSO).replace(microsecond=0) - datetime.timedelta(minutes=1)
@@ -280,8 +288,12 @@ def emitir_numero(ctx, args, numero):
         tipo_impressao_danfe=1,
         forma_emissao="1",
         cliente_final=1,
-        indicador_destino=1,
-        indicador_presencial=1,
+        indicador_destino=2 if args.interestadual else 1,
+        # 2 = operacao nao presencial pela internet
+        indicador_presencial=2 if nao_presencial else 1,
+        indicador_intermediador=1 if args.intermediador else 0,
+        intermediador_cnpj=args.intermediador or "",
+        intermediador_id_cadastro=args.id_cadastro or "",
         finalidade_emissao="1",
         processo_emissao="0",
         transporte_modalidade_frete=9,
@@ -293,7 +305,7 @@ def emitir_numero(ctx, args, numero):
         descricao="PRODUTO DE TESTE - HOMOLOGACAO",
         ncm=args.ncm,
         ean="SEM GTIN",
-        cfop="5102",
+        cfop="6102" if args.interestadual else "5102",
         unidade_comercial="UN",
         quantidade_comercial=Decimal("1"),
         valor_unitario_comercial=Decimal("10.00"),
@@ -504,6 +516,12 @@ def criar_parser():
     emitir.add_argument("--cest", help="CEST do produto de teste (7 digitos)")
     emitir.add_argument("--escala", choices=("S", "N"), help="indEscala (exige --cest)")
     emitir.add_argument("--cnpj-fabricante", help="CNPJFab (exige --cest)")
+    emitir.add_argument("--internet", action="store_true", help="venda nao presencial (indPres=2)")
+    emitir.add_argument("--intermediador", help="CNPJ do marketplace (indIntermed=1, venda online)")
+    emitir.add_argument("--id-cadastro", help="identificador da loja no marketplace")
+    emitir.add_argument(
+        "--interestadual", action="store_true", help="destinatario em outra UF (CFOP 6102)"
+    )
 
     sub.add_parser("notas", help="lista as notas emitidas registradas localmente")
 
