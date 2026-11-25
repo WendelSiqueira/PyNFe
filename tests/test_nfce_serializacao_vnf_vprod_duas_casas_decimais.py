@@ -5,13 +5,13 @@ import datetime
 import unittest
 from decimal import Decimal
 
-from pynfe.entidades.emitente import Emitente
-from pynfe.entidades.fonte_dados import _fonte_dados
-from pynfe.entidades.notafiscal import NotaFiscal
-from pynfe.processamento.assinatura import AssinaturaA1
-from pynfe.processamento.serializacao import SerializacaoXML
-from pynfe.processamento.validacao import Validacao
-from pynfe.utils.flags import (
+from pynotas.entidades.emitente import Emitente
+from pynotas.entidades.fonte_dados import _fonte_dados
+from pynotas.entidades.notafiscal import NotaFiscal
+from pynotas.processamento.assinatura import AssinaturaA1
+from pynotas.processamento.serializacao import SerializacaoXML
+from pynotas.processamento.validacao import Validacao
+from pynotas.utils.flags import (
     CODIGO_BRASIL,
     NAMESPACE_NFE,
     NAMESPACE_SIG,
@@ -153,7 +153,7 @@ class SerializacaoNFeTestCase(unittest.TestCase):
         quantidade = 12
         valorTotal = 116.03999999999999
         valorEsperado = "116.04"
-        # Preenche as classes do pynfe
+        # Preenche as classes do pynotas
         self.emitente = self.preenche_emitente()
         self.notafiscal = self.preenche_notafiscal_produto(valorUnitario, quantidade, valorTotal)
 

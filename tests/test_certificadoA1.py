@@ -4,7 +4,7 @@
 import tempfile
 import unittest
 
-from pynfe.entidades.certificado import CertificadoA1
+from pynotas.entidades.certificado import CertificadoA1
 
 
 class CertificadoTestCase(unittest.TestCase):

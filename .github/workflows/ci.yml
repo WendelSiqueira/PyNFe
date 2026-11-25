@@ -1,4 +1,4 @@
-name: PyNFe CI
+name: pyNotas CI
 on: [pull_request, push]
 jobs:
   build:

@@ -1,6 +1,6 @@
 # Source Map: `flags.py` (681 lines)
 
-Constants, namespaces, tax code enumerations, and state codes used throughout PyNFe.
+Constants, namespaces, tax code enumerations, and state codes used throughout pyNotas.
 
 ## Sections
 

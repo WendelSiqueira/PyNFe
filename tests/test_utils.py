@@ -3,7 +3,7 @@
 
 import unittest
 
-from pynfe.utils import (
+from pynotas.utils import (
     so_numeros,
     obter_pais_por_codigo,
     normalizar_municipio,
@@ -15,7 +15,7 @@ from pynfe.utils import (
     carregar_arquivo_municipios,
 )
 from lxml import etree
-from pynfe.utils.descompactar import DescompactaGzip
+from pynotas.utils.descompactar import DescompactaGzip
 
 
 class UtilsTestCase(unittest.TestCase):
@@ -244,7 +244,7 @@ class UtilsTestCase(unittest.TestCase):
 class DescompactaGzipUtils(unittest.TestCase):
     def test_descompacta_string_gzip(self):
         gzip_str = "H4sIAAAAAAAACrPJS0u1K0ktLklVKKgEsm30QQIABhWzIhYAAAA="
-        esperado = "<nfe>teste pynfe</nfe>"
+        esperado = "<nfe>teste pynfe</nfe>"  # conteudo do gzip acima
 
         descompacta_gzip = DescompactaGzip.descompacta(gzip_str)
         resultado_str = etree.tostring(descompacta_gzip).decode("utf-8")

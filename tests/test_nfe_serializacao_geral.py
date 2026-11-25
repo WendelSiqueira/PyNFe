@@ -3,15 +3,15 @@
 
 import unittest
 
-from pynfe import get_version
-from pynfe.entidades.cliente import Cliente
-from pynfe.entidades.emitente import Emitente
-from pynfe.entidades.notafiscal import NotaFiscal
-from pynfe.entidades.fonte_dados import _fonte_dados
-from pynfe.processamento.serializacao import SerializacaoXML
-from pynfe.processamento.assinatura import AssinaturaA1
-from pynfe.processamento.validacao import Validacao
-from pynfe.utils.flags import (
+from pynotas import get_version
+from pynotas.entidades.cliente import Cliente
+from pynotas.entidades.emitente import Emitente
+from pynotas.entidades.notafiscal import NotaFiscal
+from pynotas.entidades.fonte_dados import _fonte_dados
+from pynotas.processamento.serializacao import SerializacaoXML
+from pynotas.processamento.assinatura import AssinaturaA1
+from pynotas.processamento.validacao import Validacao
+from pynotas.utils.flags import (
     CODIGO_BRASIL,
     NAMESPACE_NFE,
     NAMESPACE_SIG,
@@ -161,8 +161,8 @@ class SerializacaoNFeTestCase(unittest.TestCase):
 
         self.notafiscal.adicionar_responsavel_tecnico(
             cnpj="99999999000199",
-            contato="Teste PyNFe",
-            email="pynfe@pynfe.io",
+            contato="Teste pyNotas",
+            email="pynotas@pynotas.io",
             fone="11912341234",
         )
 
@@ -266,7 +266,7 @@ class SerializacaoNFeTestCase(unittest.TestCase):
         self.assertEqual(cliente_final, "1")
         self.assertEqual(indicador_presencial, "1")
         self.assertEqual(processo_emissao, "0")
-        self.assertEqual(versao_processo_emissao, f"PyNFe {get_version()}")
+        self.assertEqual(versao_processo_emissao, f"pyNotas {get_version()}")
 
     def dados_emitente_test(self):
         razao_social = self.xml_assinado.xpath("//ns:emit/ns:xNome", namespaces=self.ns)[0].text
@@ -449,8 +449,8 @@ class SerializacaoNFeTestCase(unittest.TestCase):
         fone = self.xml_assinado.xpath("//ns:infRespTec/ns:fone", namespaces=self.ns)[0].text
 
         self.assertEqual(cnpj, "99999999000199")
-        self.assertEqual(contato, "Teste PyNFe")
-        self.assertEqual(email, "pynfe@pynfe.io")
+        self.assertEqual(contato, "Teste pyNotas")
+        self.assertEqual(email, "pynotas@pynotas.io")
         self.assertEqual(fone, "11912341234")
 
     def digestvalue_da_assinatura_test(self):
@@ -461,7 +461,7 @@ class SerializacaoNFeTestCase(unittest.TestCase):
         self.assertTrue(len(DigestValue) > 0)
 
     def test_notafiscal_geral(self):
-        # Preenche as classes do pynfe
+        # Preenche as classes do pynotas
         self.emitente = self.preenche_emitente()
         self.cliente = self.preenche_destinatario()
         self.notafiscal = self.preenche_notafiscal_produto_cst00()

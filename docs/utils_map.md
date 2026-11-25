@@ -1,4 +1,4 @@
-# Source Map: `pynfe/utils/__init__.py` (253 lines)
+# Source Map: `pynotas/utils/__init__.py` (253 lines)
 
 Utility functions for municipality/country lookups, XML signing, and helpers.
 
@@ -21,6 +21,6 @@ Utility functions for municipality/country lookups, XML signing, and helpers.
 
 | Constant | Lines | Purpose |
 |----------|-------|---------|
-| `CAMINHO_DATA` | 44 | Path to `pynfe/data/` directory |
-| `CAMINHO_MUNICIPIOS` | 45 | Path to `pynfe/data/MunIBGE/` |
+| `CAMINHO_DATA` | 44 | Path to `pynotas/data/` directory |
+| `CAMINHO_MUNICIPIOS` | 45 | Path to `pynotas/data/MunIBGE/` |
 | `CARACTERS_ACENTUADOS` | 46-60 | Accent character translation table |

@@ -1,5 +1,5 @@
 [project]
-name = "PyNFe"
+name = "pyNotas"
 version = "0.6.5"
 description = "Interface library with the Brazilian Electronic Invoice web services"
 authors = [
@@ -30,7 +30,7 @@ nfse = [
 impressao = ["brazilfiscalreport[damdfe]"]
 
 [project.urls]
-Repository = "https://github.com/WendelSiqueira/PyNFe"
+Repository = "https://github.com/WendelSiqueira/pyNotas"
 Upstream = "https://github.com/TadaSoftware/PyNFe"
 Wiki = "https://github.com/TadaSoftware/PyNFe/wiki"
 
@@ -45,14 +45,14 @@ requires = ["setuptools>=64"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
-include = ["pynfe*"]
+include = ["pynotas*"]
 
 [tool.setuptools.package-data]
-pynfe = ["data/**/*.txt"]
+pynotas = ["data/**/*.txt"]
 
 [tool.ruff]
 exclude = [
-    'pynfe/entidades/__init__.py'
+    'pynotas/entidades/__init__.py'
 ]
 line-length = 100
 

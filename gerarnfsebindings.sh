@@ -1,7 +1,7 @@
 #!/bin/sh
 
-xsd_path="pynfe/data/XSDs/"
-bindings_root_path="pynfe/utils/"
+xsd_path="pynotas/data/XSDs/"
+bindings_root_path="pynotas/utils/"
 
 main() {
     # NFSe
@@ -62,7 +62,7 @@ ajustes_betha() {
     for file in $bindings_root_nfse_path*.py; do
         filename="${file##*/}"     # retorna apenas o nome do arquivo, sem o caminho - Ex: schema.xsd
         if [ -f $file ] && [ $filename != "__init__.py" ]; then
-            sed -i 's/import _dsig/from pynfe.utils.nfse.betha import _dsig/g' $file
+            sed -i 's/import _dsig/from pynotas.utils.nfse.betha import _dsig/g' $file
         fi
     done
 }
@@ -76,8 +76,8 @@ ajustes_ginfes() {
     for file in $bindings_root_nfse_path*.py; do
         filename="${file##*/}"     # retorna apenas o nome do arquivo, sem o caminho - Ex: schema.xsd
         if [ -f $file ] && [ $filename != "__init__.py" ]; then
-            sed -i 's/import _dsig/from pynfe.utils.nfse.ginfes import _dsig/g' $file
-            sed -i 's/import _tipos/from pynfe.utils.nfse.ginfes import _tipos/g' $file
+            sed -i 's/import _dsig/from pynotas.utils.nfse.ginfes import _dsig/g' $file
+            sed -i 's/import _tipos/from pynotas.utils.nfse.ginfes import _tipos/g' $file
         fi
     done
 }

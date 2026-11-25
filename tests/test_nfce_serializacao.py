@@ -4,14 +4,14 @@ import datetime
 import unittest
 from decimal import Decimal
 
-from pynfe.entidades.cliente import Cliente
-from pynfe.entidades.emitente import Emitente
-from pynfe.entidades.fonte_dados import _fonte_dados
-from pynfe.entidades.notafiscal import NotaFiscal
-from pynfe.processamento.assinatura import AssinaturaA1
-from pynfe.processamento.serializacao import SerializacaoXML
-from pynfe.processamento.validacao import Validacao
-from pynfe.utils.flags import (
+from pynotas.entidades.cliente import Cliente
+from pynotas.entidades.emitente import Emitente
+from pynotas.entidades.fonte_dados import _fonte_dados
+from pynotas.entidades.notafiscal import NotaFiscal
+from pynotas.processamento.assinatura import AssinaturaA1
+from pynotas.processamento.serializacao import SerializacaoXML
+from pynotas.processamento.validacao import Validacao
+from pynotas.utils.flags import (
     CODIGO_BRASIL,
     NAMESPACE_NFE,
     NAMESPACE_SIG,
@@ -141,8 +141,8 @@ class SerializacaoNFeTestCase(unittest.TestCase):
 
         self.notafiscal.adicionar_responsavel_tecnico(
             cnpj="99999999000199",
-            contato="Teste PyNFe",
-            email="pynfe@pynfe.io",
+            contato="Teste pyNotas",
+            email="pynotas@pynotas.io",
             fone="11912341234",
         )
 
@@ -438,7 +438,7 @@ class SerializacaoNFeTestCase(unittest.TestCase):
         self.assertEqual(Decimal(vPag) - Decimal(vTroco), Decimal(vNF))
 
     def test_notafiscal_produto_cst00(self):
-        # Preenche as classes do pynfe
+        # Preenche as classes do pynotas
         self.emitente = self.preenche_emitente()
         self.cliente = self.preenche_destinatario()
         self.notafiscal = self.preenche_notafiscal_produto()
@@ -457,7 +457,7 @@ class SerializacaoNFeTestCase(unittest.TestCase):
         self.validacao_com_xsd_do_xml_gerado_sem_processar()
 
     def test_codigo_numerico_aleatorio(self):
-        # Preenche as classes do pynfe
+        # Preenche as classes do pynotas
         self.emitente = self.preenche_emitente()
         self.cliente = self.preenche_destinatario()
         self.preenche_notafiscal_produto()
