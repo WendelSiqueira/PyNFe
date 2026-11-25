@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 import warnings
 from dataclasses import dataclass
 from typing import List

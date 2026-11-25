@@ -23,8 +23,6 @@ NFCE = {
         "HOMOLOGACAO": "http://hml.",
     },
     "AM": {
-        # csc_homologacao = '0123456789'
-        # token_homologacao = '000001'
         "STATUS": "nfce.sefaz.am.gov.br/nfce-services/services/NfeStatusServico4",
         "AUTORIZACAO": "nfce.sefaz.am.gov.br/nfce-services/services/NfeAutorizacao4",
         "RECIBO": "nfce.sefaz.am.gov.br/nfce-services/services/NfeRetAutorizacao4",
@@ -103,7 +101,6 @@ NFCE = {
         "URL": "http://nfceh.sefaz.ce.gov.br/pages/consultaNota.jsf",
     },
     "RN": {
-        # 'QR': 'http://www.nfe.rn.gov.br/portal/consultarNFCe.jsp?',
         "QR": "http://nfce.set.rn.gov.br/consultarNFCe.aspx?",
         "HTTPS": "",
         "HOMOLOGACAO": "",

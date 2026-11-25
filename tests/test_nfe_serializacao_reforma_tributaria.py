@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# *-* encoding: utf8 *-*
-
 """Tests for Reforma Tributaria IBS/CBS serialization (NT 2025.002-RTC).
 
 Note: IS (Imposto Seletivo) is not yet in the SEFAZ schema (starts 2027).
@@ -739,6 +736,9 @@ class ReformaTributariaSerializacaoTestCase(unittest.TestCase):
             ("gCBS", "8.8000", "3.5200"),
         ):
             g = "%s/ns:%s" % (base, grupo)
+            # Aliquota nominal (pIBSUF, pIBSMun, pCBS) segue no grupo, antes do gRed
+            nominal = xml.xpath(g, namespaces=self.ns)[0][0].text
+            self.assertEqual(nominal, aliq, grupo)
             red = xml.xpath(g + "/ns:gRed/ns:pRedAliq", namespaces=self.ns)[0].text
             ef = xml.xpath(g + "/ns:gRed/ns:pAliqEfet", namespaces=self.ns)[0].text
             self.assertEqual(red, "60.0000", grupo)

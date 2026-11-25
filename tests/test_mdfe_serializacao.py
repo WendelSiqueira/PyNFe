@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# *-* encoding: utf8 *-*
-
 import unittest
 
 from pynotas import get_version
@@ -398,8 +395,6 @@ class SerializacaoMDFeTestCase(unittest.TestCase):
         mod = self.xml_assinado.xpath("//ns:ide/ns:mod", namespaces=self.ns)[0].text
         serie = self.xml_assinado.xpath("//ns:ide/ns:serie", namespaces=self.ns)[0].text
         nMDF = self.xml_assinado.xpath("//ns:ide/ns:nMDF", namespaces=self.ns)[0].text
-        # cMDF = self.xml_assinado.xpath('//ns:ide/ns:cMDF', namespaces=self.ns)[0].text
-        # cDV = self.xml_assinado.xpath('//ns:ide/ns:cDV', namespaces=self.ns)[0].text
         modal = self.xml_assinado.xpath("//ns:ide/ns:modal", namespaces=self.ns)[0].text
         dhEmi = self.xml_assinado.xpath("//ns:ide/ns:dhEmi", namespaces=self.ns)[0].text
         tpEmis = self.xml_assinado.xpath("//ns:ide/ns:tpEmis", namespaces=self.ns)[0].text
@@ -415,8 +410,6 @@ class SerializacaoMDFeTestCase(unittest.TestCase):
         self.assertEqual(mod, "58")
         self.assertEqual(serie, "920")
         self.assertEqual(nMDF, "1")
-        # self.assertEqual(cMDF, '39925068')
-        # self.assertEqual(cDV, '7')
         self.assertEqual(modal, "1")
         self.assertEqual(dhEmi, "2021-01-14T12:00:00+00:00")
         self.assertEqual(tpEmis, "1")
@@ -932,12 +925,6 @@ class SerializacaoMDFeTestCase(unittest.TestCase):
         )[0].text
         self.assertTrue(len(DigestValue) > 0)
 
-    def grupo_qrcode(self):
-        qrCodMDFe = self.xml_assinado.xpath("//ns:infMDFeSupl/ns:qrCodMDFe", namespaces=self.ns)[
-            0
-        ].text
-        self.assertTrue(len(qrCodMDFe) > 0)
-
     def test_manifesto(self):
         # Preenche as classes do pynotas
         self.manifesto = self.preenche_manifesto()
@@ -966,7 +953,6 @@ class SerializacaoMDFeTestCase(unittest.TestCase):
         self.grupo_lacres()
 
         self.grupo_responsavel_tecnico()
-        # self.grupo_qrcode()
         self.digestvalue_da_assinatura()
 
         # Testa a validação do XML com os schemas XSD
@@ -985,7 +971,6 @@ class SerializacaoMDFeTestCase(unittest.TestCase):
         self.grupo_municipio_carregamento_sem_rntrc()
         self.grupo_emitente()
 
-        # self.grupo_inf_antt()  # não tem o grupo infANTT
         self.grupo_contratante_sem_rntrc()
         self.grupo_veiculo_tracao()
 

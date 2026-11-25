@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# *-* encoding: utf8 *-*
-
 import datetime
 import unittest
 from decimal import Decimal
@@ -19,7 +16,6 @@ from pynotas.utils.flags import (
     XSD_NFE,
     XSD_NFE_PROCESSADA,
 )
-# from pynotas.utils import etree
 
 
 class SerializacaoNFeTestCase(unittest.TestCase):
@@ -98,7 +94,6 @@ class SerializacaoNFeTestCase(unittest.TestCase):
             codigo="000328",  # id do produto
             descricao="Produto teste",
             ncm="99999999",
-            # cest='0100100',  # NT2015/003
             ean="1234567890121",
             cfop="5102",
             unidade_comercial="UN",
@@ -159,7 +154,6 @@ class SerializacaoNFeTestCase(unittest.TestCase):
             codigo="000328",  # id do produto
             descricao="Produto teste",
             ncm="99999999",
-            # cest='0100100',  # NT2015/003
             ean="1234567890121",
             cfop="5102",
             unidade_comercial="UN",
@@ -258,7 +252,6 @@ class SerializacaoNFeTestCase(unittest.TestCase):
         # Serializa e assina o XML
         self.xml = self.serializa_nfe()
         self.xml_assinado = self.assina_xml()
-        # print(etree.tostring(self.xml_assinado))
 
         # Validação
         self.validacao_pis_cofins_nao_informado()
@@ -271,7 +264,6 @@ class SerializacaoNFeTestCase(unittest.TestCase):
         # Serializa e assina o XML
         self.xml = self.serializa_nfe()
         self.xml_assinado = self.assina_xml()
-        # print(etree.tostring(self.xml_assinado))
 
         self.validacao_pis_cofins_informado()
 

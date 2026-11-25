@@ -1,5 +1,3 @@
-# *-* encoding: utf-8 *-*
-
 import codecs
 import os
 from unicodedata import normalize

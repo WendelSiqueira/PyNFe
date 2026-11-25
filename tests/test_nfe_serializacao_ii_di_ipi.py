@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# *-* encoding: utf8 *-*
-
 import unittest
 
 from pynotas.entidades.cliente import Cliente
@@ -150,7 +147,6 @@ class SerializacaoNFeTestCase(unittest.TestCase):
             codigo="000328",  # id do produto
             descricao="Produto teste",
             ncm="99999999",
-            # cest='0100100',  # NT2015/003
             ean="1234567890121",
             cfop="3102",
             unidade_comercial="UN",
@@ -223,7 +219,6 @@ class SerializacaoNFeTestCase(unittest.TestCase):
         cEAN = self.xml_assinado.xpath("//ns:det/ns:prod/ns:cEAN", namespaces=self.ns)[0].text
         xProd = self.xml_assinado.xpath("//ns:det/ns:prod/ns:xProd", namespaces=self.ns)[0].text
         NCM = self.xml_assinado.xpath("//ns:det/ns:prod/ns:NCM", namespaces=self.ns)[0].text
-        # CEST = self.xml_assinado.xpath('//ns:det/ns:prod/ns:CEST', namespaces=self.ns)[0].text
         # indEscala = self.xml_assinado.xpath('//ns:det/ns:prod/ns:indEscala', namespaces=self.ns)[0].text  # NOQA
         CEST = None
         indEscala = None
@@ -296,8 +291,6 @@ class SerializacaoNFeTestCase(unittest.TestCase):
         self.assertEqual(vBC, "0")
         self.assertEqual(pICMS, "0.00")
         self.assertEqual(vICMS, "0.00")
-        # self.assertEqual(pFCP, '0.00')
-        # self.assertEqual(vFCP, '0.00')
         self.assertEqual(pFCP, None)
         self.assertEqual(vFCP, None)
 
@@ -410,16 +403,13 @@ class SerializacaoNFeTestCase(unittest.TestCase):
         self.assertEqual(desembaraco_aduaneiro_uf, "SP")
         self.assertEqual(desembaraco_aduaneiro_data, "2021-01-14")
         self.assertEqual(tipo_via_transporte, "1")
-        # self.assertEqual(valor_afrmm, Decimal('0'))
         self.assertEqual(tipo_intermediacao, "1")
         self.assertEqual(cnpj_adquirente, "00111711999900")
-        # self.assertEqual(uf_terceiro, '')
         self.assertEqual(codigo_exportador, "1")
 
         self.assertEqual(adicao_numero, "1")
         self.assertEqual(adicao_sequencia, "1")
         self.assertEqual(adicao_codigo_fabricante, "1")
-        # self.assertEqual(adicao_desconto, '0')
         self.assertEqual(adicao_numero_drawback, "12345678")
 
         # Informações Adicionais do produto

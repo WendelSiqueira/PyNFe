@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import base64
 import hashlib
 import re
@@ -288,12 +287,6 @@ class SerializacaoXML(Serializacao):
         etree.SubElement(prod, "cEAN").text = produto_servico.ean
         etree.SubElement(prod, "xProd").text = produto_servico.descricao
         etree.SubElement(prod, "NCM").text = produto_servico.ncm
-        # Codificação opcional que detalha alguns NCM.
-        # Formato: duas letras maiúsculas e 4 algarismos.
-        # Se a mercadoria se enquadrar em mais de uma codificação,
-        # informar até 8 codificações principais.
-        # etree.SubElement(prod, 'NVE').text = ''
-        # etree.SubElement(prod, 'CEST').text = produto_service.cest
         if produto_servico.cbenef:
             etree.SubElement(prod, "cBenef").text = produto_servico.cbenef
         etree.SubElement(prod, "CFOP").text = produto_servico.cfop
@@ -304,15 +297,9 @@ class SerializacaoXML(Serializacao):
         etree.SubElement(prod, "vUnCom").text = str("{:.10f}").format(
             produto_servico.valor_unitario_comercial or 0
         )
-        """
-        Código Especificador da Substituição Tributária – CEST,
-        que estabelece a sistemática de uniformização
-        e identificação das mercadorias e bens passíveis de
-        sujeição aos regimes de substituição tributária e de
-        antecipação de recolhimento do ICMS.
-        """
-        # if produto_servico.cest:
-        #    etree.SubElement(prod, 'CEST').text = produto_servico.cest
+        # TODO: CEST (Codigo Especificador da Substituicao Tributaria) nao e emitido
+        # e nao existe campo na entidade. E obrigatorio para mercadorias sujeitas a
+        # substituicao tributaria (ex.: CSOSN 500).
         etree.SubElement(prod, "vProd").text = str("{:.2f}").format(
             produto_servico.valor_total_bruto or 0
         )
@@ -1202,15 +1189,6 @@ class SerializacaoXML(Serializacao):
                 produto_servico.pis_valor or 0
             )
 
-            # PISST
-            # pis_item = etree.SubElement(pis, 'PISST')
-            # etree.SubElement(pis_item, 'vBC').text = produto_servico.pis_valor_base_calculo
-            # etree.SubElement(pis_item, 'pPIS').text = produto_servico.pis_aliquota_percentual
-            # etree.SubElement(pis_item, 'qBCProd').text = produto_servico.quantidade_comercial
-            # etree.SubElement(pis_item, 'vAliqProd').text = produto_servico
-            #   .pis_aliquota_percentual
-            # etree.SubElement(pis_item, 'vPIS').text = produto_servico.pis_valor_base_calculo
-
     def _serializar_imposto_cofins(
         self, produto_servico, modelo, tag_raiz="imposto", retorna_string=True
     ):
@@ -1275,18 +1253,6 @@ class SerializacaoXML(Serializacao):
             etree.SubElement(cofins_item, "vCOFINS").text = "{:.2f}".format(
                 produto_servico.cofins_valor or 0
             )
-
-            # COFINSST
-            # cofins_item = etree.SubElement(cofins, 'COFINSOutr')
-            # etree.SubElement(cofins_item, 'vBC').text = produto_servico
-            #   .cofins_valor_base_calculo
-            # etree.SubElement(cofins_item, 'pCOFINS').text = produto_servico
-            #   .cofins_aliquota_percentual
-            # etree.SubElement(cofins_item, 'qBCProd').text = produto_servico
-            #   .quantidade_comercial
-            # etree.SubElement(cofins_item, 'vAliqProd').text = produto_servico
-            #   .cofins_aliquota_percentual
-            # etree.SubElement(cofins_item, 'vCOFINS').text = produto_servico.cofins_valor
 
     def _serializar_imposto_importacao(
         self, produto_servico, modelo, tag_raiz="imposto", retorna_string=True
@@ -1552,16 +1518,6 @@ class SerializacaoXML(Serializacao):
                     2= Pagamento não integrado com o sistema de automação da empresa
                 """
                 etree.SubElement(cartao, "tpIntegra").text = "2"
-                # etree.SubElement(cartao, 'CNPJ').text = ''
-                # # Informar o CNPJ da Credenciadora de cartão de crédito / débito
-                # etree.SubElement(cartao, 'tBand').text = ''
-                # # 01=Visa 02=Mastercard 03=American Express 04=Sorocred
-                # 05=Diners Club 06=Elo 07=Hipercard 08=Aura 09=Caba 99=Outros
-                # etree.SubElement(cartao, 'cAut').text = ''
-                # # Identifica o número da autorização da transação da operação
-                # com cartão de crédito e/ou débito
-            # troco
-            # etree.SubElement(pag, 'vTroco').text = str('')
         return pag
 
     def _serializar_pagamentos(
@@ -1760,7 +1716,7 @@ class SerializacaoXML(Serializacao):
             )
 
         # Autorizados a baixar o XML
-        for num, item in enumerate(nota_fiscal.autorizados_baixar_xml):
+        for item in nota_fiscal.autorizados_baixar_xml:
             raiz.append(self._serializar_autorizados_baixar_xml(item, retorna_string=False))
 
         # Itens
@@ -2002,7 +1958,7 @@ class SerializacaoXML(Serializacao):
 
             # Duplicata 0-N
             if nota_fiscal.duplicatas and len(nota_fiscal.duplicatas) > 0:
-                for num, item in enumerate(nota_fiscal.duplicatas):
+                for item in nota_fiscal.duplicatas:
                     dup = etree.SubElement(cobr, "dup")
                     etree.SubElement(dup, "nDup").text = item.numero
                     etree.SubElement(dup, "dVenc").text = item.data_vencimento.strftime("%Y-%m-%d")
@@ -2207,18 +2163,7 @@ class SerializacaoQrcode(object):
         tpamb = nfe.xpath("ns:infNFe/ns:ide/ns:tpAmb/text()", namespaces=ns)[0]
         cuf = nfe.xpath("ns:infNFe/ns:ide/ns:cUF/text()", namespaces=ns)[0]
         uf = [key for key, value in CODIGOS_ESTADOS.items() if value == cuf][0].upper()
-
-        # tenta encontrar a tag cpf
-        try:
-            cpf = nfe.xpath("ns:infNFe/ns:dest/ns:CPF/text()", namespaces=ns)[0]
-        except IndexError:
-            # em caso de erro tenta procurar a tag cnpj
-            try:
-                cpf = nfe.xpath("ns:infNFe/ns:dest/ns:CNPJ/text()", namespaces=ns)[0]
-            except IndexError:
-                cpf = None  # noqa: F841
         total = nfe.xpath("ns:infNFe/ns:total/ns:ICMSTot/ns:vNF/text()", namespaces=ns)[0]
-        # icms = nfe.xpath('ns:infNFe/ns:total/ns:ICMSTot/ns:vICMS/text()', namespaces=ns)[0]
         digest = nfe.xpath(
             "sig:Signature/sig:SignedInfo/sig:Reference/sig:DigestValue/text()",
             namespaces=sig,
@@ -2230,7 +2175,6 @@ class SerializacaoQrcode(object):
         replacements = {"0": ""}
         token = re.sub("([0])", lambda m: replacements[m.group()], token)
 
-        # VERSAO_QRCODE =2
         if online:
             # versão online
             url = "{}|{}|{}|{}".format(chave, VERSAO_QRCODE, tpamb, token)
@@ -2453,7 +2397,7 @@ class SerializacaoMDFe(Serializacao):
 
         # CIOT
         if modal_rodoviario.ciot is not None:
-            for num, item in enumerate(modal_rodoviario.ciot):
+            for item in modal_rodoviario.ciot:
                 infCIOT = etree.SubElement(infANTT, "infCIOT")
                 etree.SubElement(infCIOT, "CIOT").text = item.numero_ciot
                 if len(item.cpfcnpj) == 11:
@@ -2464,7 +2408,7 @@ class SerializacaoMDFe(Serializacao):
         # Vale Pedágio
         if modal_rodoviario.pedagio is not None:
             valePed = etree.SubElement(infANTT, "valePed")
-            for num, item in enumerate(modal_rodoviario.pedagio):
+            for item in modal_rodoviario.pedagio:
                 disp = etree.SubElement(valePed, "disp")
                 etree.SubElement(disp, "CNPJForn").text = item.cnpj_fornecedor
                 if len(item.cpfcnpj_pagador) == 11:
@@ -2478,7 +2422,7 @@ class SerializacaoMDFe(Serializacao):
 
         # Contratantes
         if modal_rodoviario.contratante is not None:
-            for num, item in enumerate(modal_rodoviario.contratante):
+            for item in modal_rodoviario.contratante:
                 infContratante = etree.SubElement(infANTT, "infContratante")
                 etree.SubElement(infContratante, "xNome").text = item.nome
                 if len(item.cpfcnpj) == 11:
@@ -2498,7 +2442,7 @@ class SerializacaoMDFe(Serializacao):
         if len(modal_rodoviario.veiculo_tracao) != 1:
             raise "Permitido somente um único veículo Tração"
 
-        for num, item in enumerate(modal_rodoviario.veiculo_tracao):
+        for item in modal_rodoviario.veiculo_tracao:
             veicTracao = etree.SubElement(rodo, "veicTracao")
             if item.cInt:
                 etree.SubElement(veicTracao, "cInt").text = item.cInt
@@ -2529,7 +2473,7 @@ class SerializacaoMDFe(Serializacao):
 
             # condutor 1-n
             if item.condutor is not None:
-                for num, item_condutor in enumerate(item.condutor):
+                for item_condutor in item.condutor:
                     condutor = etree.SubElement(veicTracao, "condutor")
                     etree.SubElement(condutor, "xNome").text = item_condutor.nome_motorista
                     etree.SubElement(condutor, "CPF").text = item_condutor.cpf_motorista
@@ -2542,7 +2486,7 @@ class SerializacaoMDFe(Serializacao):
 
         # Veículos reboque 1-n
         if modal_rodoviario.veiculo_reboque is not None:
-            for num, item_reboque in enumerate(modal_rodoviario.veiculo_reboque):
+            for item_reboque in modal_rodoviario.veiculo_reboque:
                 veicReboque = etree.SubElement(rodo, "veicReboque")
                 if item_reboque.cInt:
                     etree.SubElement(veicReboque, "cInt").text = item_reboque.cInt
@@ -2594,18 +2538,18 @@ class SerializacaoMDFe(Serializacao):
         if len(documentos) <= 0:
             raise "MDFe deve ter uma NFe ou uma CTe vinculadas"
 
-        for num, item in enumerate(documentos):
+        for item in documentos:
             infMunDescarga = etree.SubElement(raiz, "infMunDescarga")
             etree.SubElement(infMunDescarga, "cMunDescarga").text = item.cMunDescarga
             etree.SubElement(infMunDescarga, "xMunDescarga").text = item.xMunDescarga
 
             if len(item.documentos_nfe) > 0:
-                for num, item_doc in enumerate(item.documentos_nfe):
+                for item_doc in item.documentos_nfe:
                     infNFe = etree.SubElement(infMunDescarga, "infNFe")
                     etree.SubElement(infNFe, "chNFe").text = item_doc.chave_acesso_nfe
 
             elif len(documentos.documentos_cte) > 0:
-                for num, item_doc in enumerate(item.documentos_cte):
+                for item_doc in item.documentos_cte:
                     infCTe = etree.SubElement(infMunDescarga, "infCTe")
                     etree.SubElement(infCTe, "chCTe").text = item_doc.chave_acesso_cte
 
@@ -2628,7 +2572,7 @@ class SerializacaoMDFe(Serializacao):
         etree.SubElement(raiz, "nApol").text = seguradora.numero_apolice
 
         if len(seguradora.averbacoes) > 0:
-            for num, item in enumerate(seguradora.averbacoes):
+            for item in seguradora.averbacoes:
                 etree.SubElement(raiz, "nAver").text = item.numero
 
         if retorna_string:
@@ -2733,11 +2677,11 @@ class SerializacaoMDFe(Serializacao):
         etree.SubElement(ide, "UFFim").text = manifesto.UFFim
 
         # Municipios de Carregamento
-        for num, item in enumerate(manifesto.infMunCarrega):
+        for item in manifesto.infMunCarrega:
             ide.append(self._serializar_municipio_carrega(item, retorna_string=False))
 
         # UFs Percurso
-        for num, item in enumerate(manifesto.infPercurso):
+        for item in manifesto.infPercurso:
             ide.append(self._serializar_percurso(item, retorna_string=False))
 
         if manifesto.dhIniViagem is not None:
@@ -2759,7 +2703,7 @@ class SerializacaoMDFe(Serializacao):
 
         # seg
         if len(manifesto.seguradora) > 0:
-            for num, item in enumerate(manifesto.seguradora):
+            for item in manifesto.seguradora:
                 raiz.append(self._serializar_seguradora(item, retorna_string=False))
 
         # prodPred
@@ -2771,7 +2715,7 @@ class SerializacaoMDFe(Serializacao):
 
         # lacres
         if len(manifesto.lacres) > 0:
-            for num, item in enumerate(manifesto.lacres):
+            for item in manifesto.lacres:
                 raiz.append(self._serializar_lacres(item, retorna_string=False))
 
         # Informações adicionais

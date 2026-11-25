@@ -1,4 +1,4 @@
-# Source Map: `webservices.py` (545 lines)
+# Source Map: `webservices.py` (542 lines)
 
 SEFAZ webservice endpoint URLs organized by document type, state, and environment.
 
@@ -6,10 +6,10 @@ SEFAZ webservice endpoint URLs organized by document type, state, and environmen
 
 | Section | Lines | Variable | Purpose |
 |---------|-------|----------|---------|
-| NFC-e endpoints | 8-295 | `NFCE` | NFC-e webservice URLs and QR Code URLs by state |
-| NF-e endpoints | 297-471 | `NFE` | NF-e webservice URLs by state |
-| MDF-e endpoints | 475-490 | `MDFE` | MDF-e URLs (SVRS only) |
-| CT-e endpoints | 492-546 | `CTE` | CT-e URLs by state |
+| NFC-e endpoints | 8-292 | `NFCE` | NFC-e webservice URLs and QR Code URLs by state |
+| NF-e endpoints | 294-468 | `NFE` | NF-e webservice URLs by state |
+| MDF-e endpoints | 472-487 | `MDFE` | MDF-e URLs (SVRS only) |
+| CT-e endpoints | 489-543 | `CTE` | CT-e URLs by state |
 
 ## URL Structure
 
@@ -28,29 +28,29 @@ Each state/virtual environment entry contains:
 
 ## State/Virtual Environment Groups
 
-### NFC-e (`NFCE`) — Lines 8-295
+### NFC-e (`NFCE`) — Lines 8-292
 | Key | Lines | Description |
 |-----|-------|-------------|
-| Individual states | 9-278 | RO, AC, AM, RR, PA, AP, TO, MA, PI, CE, RN, PB, PE, AL, SE, BA, MG, ES, RJ, SP, PR, SC, RS, MS, MT, GO, DF |
+| Individual states | 9-275 | RO, AC, AM, RR, PA, AP, TO, MA, PI, CE, RN, PB, PE, AL, SE, BA, MG, ES, RJ, SP, PR, SC, RS, MS, MT, GO, DF |
 | `SVRS` | 284-294 | Virtual SEFAZ RS (fallback for states without own NFC-e) |
 
-### NF-e (`NFE`) — Lines 297-471
+### NF-e (`NFE`) — Lines 294-468
 | Key | Lines | Description |
 |-----|-------|-------------|
 | `AN` | 302-309 | National environment (events, distribution) |
-| Individual states | 310-428 | AM, MA, PE, BA, MG, SP, PR, RS, MS, MT, GO |
+| Individual states | 307-425 | AM, MA, PE, BA, MG, SP, PR, RS, MS, MT, GO |
 | `SVAN` | 430-440 | Virtual SEFAZ AN (MA for NF-e) |
 | `SVRS` | 441-451 | Virtual SEFAZ RS (most states) |
-| `SVC-AN` | 452-460 | Contingency AN |
-| `SVC-RS` | 461-470 | Contingency RS |
+| `SVC-AN` | 449-457 | Contingency AN |
+| `SVC-RS` | 458-467 | Contingency RS |
 
-### MDF-e (`MDFE`) — Lines 475-490
+### MDF-e (`MDFE`) — Lines 472-487
 Only `SVRS` — single authorizer for all states.
 
-### CT-e (`CTE`) — Lines 492-546
+### CT-e (`CTE`) — Lines 489-543
 | Key | Lines | Description |
 |-----|-------|-------------|
 | `AN` | 493-497 | National environment (distribution) |
-| Individual states | 498-532 | MT, MS, MG, PR, RS, SP |
+| Individual states | 495-529 | MT, MS, MG, PR, RS, SP |
 | `SVRS` | 534-539 | Virtual SEFAZ RS |
 | `SVSP` | 540-545 | Virtual SEFAZ SP (AP, PE, RR) |

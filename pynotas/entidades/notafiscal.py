@@ -1,10 +1,8 @@
-# -*- coding: utf-8 -*-
 import random
 from decimal import Decimal
 
 from pynotas import get_version
 
-# from pynotas.utils import so_numeros, memoize
 from pynotas.utils import so_numeros
 from pynotas.utils.flags import CODIGOS_ESTADOS, NF_STATUS
 
@@ -60,10 +58,6 @@ class NotaFiscal(Entidade):
 
     # - Data de saida/entrada
     data_saida_entrada = None
-
-    # - Forma de pagamento  (obrigatorio - seleciona de lista) - NF_FORMAS_PAGAMENTO
-    # Removido na NF-e 4.00
-    # forma_pagamento = int()
 
     # - Tipo de pagamento
     """
@@ -493,8 +487,7 @@ class NotaFiscal(Entidade):
                 obj.ibscbs_v_cbs_sn or Decimal()
             )
 
-        # TODO calcular impostos aproximados
-        # self.totais_tributos_aproximado += obj.tributos
+        # TODO calcular impostos aproximados (hoje vTotTrib vem do chamador)
 
         # vNF does NOT include IBS/CBS/IS (prohibited in 2025-2026 per NT 2025.002-RTC)
         self.totais_icms_total_nota += (

@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-
-
 class Danfe(object):
     """Classe abstrata para a geração do Danfe."""
 
