@@ -309,6 +309,9 @@ class NotaFiscal(Entidade):
     totais_ibs = Decimal()
     totais_cbs = Decimal()
     totais_is = Decimal()
+    # IBSCBSTot/gTribSN - None ate o primeiro item com gTribSN
+    totais_ibs_sn = None  # vIBSSN
+    totais_cbs_sn = None  # vCBSSN
 
     # Reforma Tributaria - cMunFGIBS (Group B)
     municipio_fato_gerador_ibs = str()
@@ -482,6 +485,13 @@ class NotaFiscal(Entidade):
         self.totais_ibs += obj.ibscbs_v_ibs
         self.totais_cbs += obj.ibscbs_v_cbs
         self.totais_is += obj.is_valor
+        if obj.tem_trib_sn():
+            self.totais_ibs_sn = (self.totais_ibs_sn or Decimal()) + (
+                obj.ibscbs_v_ibs_sn or Decimal()
+            )
+            self.totais_cbs_sn = (self.totais_cbs_sn or Decimal()) + (
+                obj.ibscbs_v_cbs_sn or Decimal()
+            )
 
         # TODO calcular impostos aproximados
         # self.totais_tributos_aproximado += obj.tributos
@@ -1057,6 +1067,14 @@ class NotaFiscalProduto(Entidade):
     ibscbs_p_red_aliq_cbs = None  # gCBS/gRed/pRedAliq
     ibscbs_p_aliq_efet_cbs = None  # gCBS/gRed/pAliqEfet
 
+    # gTribSN - composicao do IBS e da CBS para o Simples Nacional (TTribSN).
+    # Padrao None: o grupo so e emitido quando algum campo e informado.
+    # gCBSSN e obrigatorio no grupo; gIBSSN e opcional (omitido para CRT=2).
+    ibscbs_p_ibs_sn = None  # gTribSN/gIBSSN/pIBSSN - aliquota efetiva
+    ibscbs_v_ibs_sn = None  # gTribSN/gIBSSN/vIBSSN
+    ibscbs_p_cbs_sn = None  # gTribSN/gCBSSN/pCBSSN - aliquota efetiva
+    ibscbs_v_cbs_sn = None  # gTribSN/gCBSSN/vCBSSN
+
     # IS (Imposto Seletivo) - Group UB-IS
     is_cst_selec = str()  # CSTSelec (2-digit)
     is_c_class_trib = str()  # cClassTribIS 6-digit
@@ -1075,6 +1093,18 @@ class NotaFiscalProduto(Entidade):
         self.declaracoes_importacao = []
 
         super(NotaFiscalProduto, self).__init__(*args, **kwargs)
+
+    def tem_trib_sn(self):
+        """Indica se o item informa o grupo gTribSN (Simples Nacional)."""
+        return any(
+            v is not None
+            for v in (
+                self.ibscbs_p_ibs_sn,
+                self.ibscbs_v_ibs_sn,
+                self.ibscbs_p_cbs_sn,
+                self.ibscbs_v_cbs_sn,
+            )
+        )
 
     def adicionar_declaracao_importacao(self, **kwargs):
         """Adiciona uma instancia de Declaracao de Importacao"""

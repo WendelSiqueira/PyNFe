@@ -1347,7 +1347,11 @@ class SerializacaoXML(Serializacao):
         if produto_servico.ibscbs_c_class_trib:
             etree.SubElement(ibscbs, "cClassTrib").text = produto_servico.ibscbs_c_class_trib
 
-        if produto_servico.ibscbs_cst in self._IBSCBS_CST_TRIBUTADOS:
+        # Item do Simples Nacional (gTribSN) sem base de calculo do regime
+        # regular: nao emite um gIBSCBS zerado, apenas o gTribSN.
+        so_simples = produto_servico.tem_trib_sn() and not produto_servico.ibscbs_vbc
+
+        if produto_servico.ibscbs_cst in self._IBSCBS_CST_TRIBUTADOS and not so_simples:
             gibscbs = etree.SubElement(ibscbs, "gIBSCBS")
 
             etree.SubElement(gibscbs, "vBC").text = "{:.2f}".format(produto_servico.ibscbs_vbc or 0)
@@ -1394,6 +1398,39 @@ class SerializacaoXML(Serializacao):
                 produto_servico.ibscbs_p_aliq_efet_cbs,
             )
             etree.SubElement(gcbs, "vCBS").text = "{:.2f}".format(produto_servico.ibscbs_v_cbs or 0)
+
+        # gTribSN vem depois de gIBSCBS e antes de gEstornoCred
+        if produto_servico.tem_trib_sn():
+            self._serializar_gtribsn(produto_servico, ibscbs)
+
+    def _serializar_gtribsn(self, produto_servico, tag_raiz):
+        """Serializa <gTribSN> (tipo TTribSN): IBS e CBS do Simples Nacional.
+
+        gIBSSN e opcional (omitido para CRT=2, sem IBS); gCBSSN e obrigatorio.
+        Cada subgrupo exige aliquota e valor. A lib nao calcula esses valores.
+        """
+        p = produto_servico
+
+        def par(nome, aliq, valor, obrigatorio):
+            if aliq is None and valor is None:
+                if obrigatorio:
+                    raise ValueError("gTribSN: %s e obrigatorio (informe aliquota e valor)" % nome)
+                return None
+            if aliq is None or valor is None:
+                raise ValueError("gTribSN/%s: informe aliquota e valor" % nome)
+            return aliq, valor
+
+        ibs = par("gIBSSN", p.ibscbs_p_ibs_sn, p.ibscbs_v_ibs_sn, obrigatorio=False)
+        cbs = par("gCBSSN", p.ibscbs_p_cbs_sn, p.ibscbs_v_cbs_sn, obrigatorio=True)
+
+        gtribsn = etree.SubElement(tag_raiz, "gTribSN")
+        if ibs:
+            g = etree.SubElement(gtribsn, "gIBSSN")
+            etree.SubElement(g, "pIBSSN").text = "{:.4f}".format(ibs[0])
+            etree.SubElement(g, "vIBSSN").text = "{:.2f}".format(ibs[1])
+        g = etree.SubElement(gtribsn, "gCBSSN")
+        etree.SubElement(g, "pCBSSN").text = "{:.4f}".format(cbs[0])
+        etree.SubElement(g, "vCBSSN").text = "{:.2f}".format(cbs[1])
 
     def _serializar_gred(self, tag_raiz, p_red_aliq, p_aliq_efet):
         """Serializa <gRed> (tipo TRed) dentro de gIBSUF, gIBSMun ou gCBS.
@@ -1832,8 +1869,12 @@ class SerializacaoXML(Serializacao):
 
         # Reforma Tributaria - Totais IVA Dual (Group W03 - IBSCBSTot)
         # Type: TIBSCBSMonoTot (PL 010b DFeTiposBasicos_v1.00.xsd)
+        tem_trib_sn = nota_fiscal.totais_cbs_sn is not None
         has_reforma = (
-            nota_fiscal.totais_vbc_ibscbs or nota_fiscal.totais_ibs or nota_fiscal.totais_cbs
+            nota_fiscal.totais_vbc_ibscbs
+            or nota_fiscal.totais_ibs
+            or nota_fiscal.totais_cbs
+            or tem_trib_sn
         )
         if has_reforma:
             ibscbs_tot = etree.SubElement(total, "IBSCBSTot")
@@ -1874,6 +1915,15 @@ class SerializacaoXML(Serializacao):
 
             # gMono: not implemented yet (monofasia totals)
             # gEstornoCred: not implemented yet (estorno de credito totals)
+
+            # gTribSN (Simples Nacional): ultimo grupo de TIBSCBSMonoTot.
+            # vIBSSN e obrigatorio aqui mesmo sem gIBSSN nos itens (CRT=2).
+            if tem_trib_sn:
+                g_sn = etree.SubElement(ibscbs_tot, "gTribSN")
+                etree.SubElement(g_sn, "vIBSSN").text = "{:.2f}".format(
+                    nota_fiscal.totais_ibs_sn or 0
+                )
+                etree.SubElement(g_sn, "vCBSSN").text = "{:.2f}".format(nota_fiscal.totais_cbs_sn)
 
         # Transporte
         transp = etree.SubElement(raiz, "transp")
