@@ -2,7 +2,7 @@
 # pynotas/utils/nfse/ginfes/cabecalho_v03.py
 # -*- coding: utf-8 -*-
 # PyXB bindings for NM:1981a932e981e99644ad0c4bcf57cfb2bf9f2e12
-# Generated 2025-04-06 00:00:40.741528 by PyXB version 1.2.6 using Python 3.12.9.final.0
+# Generated 2026-11-25 08:53:26.776425 by PyXB version 1.2.6 using Python 3.13.16.final.0
 # Namespace http://www.ginfes.com.br/cabecalho_v03.xsd
 
 from __future__ import unicode_literals
@@ -17,7 +17,7 @@ import pyxb.utils.six as _six
 
 # Unique identifier for bindings created at the same time
 _GenerationUID = pyxb.utils.utility.UniqueIdentifier(
-    "urn:uuid:0e2620f4-a7e2-497f-ac67-2bf21c9dfe3d"
+    "urn:uuid:f47a5aa7-bc18-4ad3-9cf7-1ac19a3320de"
 )
 
 # Version of PyXB used to generate the bindings
@@ -104,7 +104,7 @@ class CTD_ANON(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/cabecalho_v03.xsd", 8, 2
+        "pynotas/data/XSDs/NFS-e/Ginfes/cabecalho_v03.xsd", 8, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -116,9 +116,7 @@ class CTD_ANON(pyxb.binding.basis.complexTypeDefinition):
         "versaoDados",
         "__httpwww_ginfes_com_brcabecalho_v03_xsd_CTD_ANON_versaoDados",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/cabecalho_v03.xsd", 10, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/cabecalho_v03.xsd", 10, 4),
     )
 
     versaoDados = property(__versaoDados.value, __versaoDados.set, None, None)
@@ -132,10 +130,10 @@ class CTD_ANON(pyxb.binding.basis.complexTypeDefinition):
         required=True,
     )
     __versao._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/cabecalho_v03.xsd", 13, 3
+        "pynotas/data/XSDs/NFS-e/Ginfes/cabecalho_v03.xsd", 13, 3
     )
     __versao._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/cabecalho_v03.xsd", 13, 3
+        "pynotas/data/XSDs/NFS-e/Ginfes/cabecalho_v03.xsd", 13, 3
     )
 
     versao = property(__versao.value, __versao.set, None, None)
@@ -150,9 +148,7 @@ _module_typeBindings.CTD_ANON = CTD_ANON
 cabecalho = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "cabecalho"),
     CTD_ANON,
-    location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/cabecalho_v03.xsd", 7, 1
-    ),
+    location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/cabecalho_v03.xsd", 7, 1),
 )
 Namespace.addCategoryObject("elementBinding", cabecalho.name().localName(), cabecalho)
 
@@ -163,7 +159,7 @@ CTD_ANON._AddElement(
         _ImportedBinding__tipos.tsVersao,
         scope=CTD_ANON,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/cabecalho_v03.xsd", 10, 4
+            "pynotas/data/XSDs/NFS-e/Ginfes/cabecalho_v03.xsd", 10, 4
         ),
     )
 )
@@ -180,9 +176,7 @@ def _BuildAutomaton():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON._UseForTag(pyxb.namespace.ExpandedName(None, "versaoDados")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/cabecalho_v03.xsd", 10, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/cabecalho_v03.xsd", 10, 4),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False

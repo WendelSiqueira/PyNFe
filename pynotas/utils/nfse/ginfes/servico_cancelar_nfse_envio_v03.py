@@ -2,7 +2,7 @@
 # pynotas/utils/nfse/ginfes/servico_cancelar_nfse_envio_v03.py
 # -*- coding: utf-8 -*-
 # PyXB bindings for NM:d5c96233f4594cafbb4962e45678cf6ef022cfbe
-# Generated 2025-04-06 00:00:41.820388 by PyXB version 1.2.6 using Python 3.12.9.final.0
+# Generated 2026-11-25 08:53:26.948331 by PyXB version 1.2.6 using Python 3.13.16.final.0
 # Namespace http://www.ginfes.com.br/servico_cancelar_nfse_envio_v03.xsd
 
 from __future__ import unicode_literals
@@ -17,7 +17,7 @@ import pyxb.utils.six as _six
 
 # Unique identifier for bindings created at the same time
 _GenerationUID = pyxb.utils.utility.UniqueIdentifier(
-    "urn:uuid:0b395592-75a5-46a8-bd6b-7734be3db123"
+    "urn:uuid:6c6a6c7b-a92f-4760-b035-7031a2e3a0b7"
 )
 
 # Version of PyXB used to generate the bindings
@@ -107,9 +107,7 @@ class CTD_ANON(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_cancelar_nfse_envio_v03.xsd",
-        12,
-        2,
+        "pynotas/data/XSDs/NFS-e/Ginfes/servico_cancelar_nfse_envio_v03.xsd", 12, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -122,9 +120,7 @@ class CTD_ANON(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_ginfes_com_brservico_cancelar_nfse_envio_v03_xsd_CTD_ANON_Pedido",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_cancelar_nfse_envio_v03.xsd",
-            14,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_cancelar_nfse_envio_v03.xsd", 14, 4
         ),
     )
 
@@ -137,9 +133,7 @@ class CTD_ANON(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_ginfes_com_brservico_cancelar_nfse_envio_v03_xsd_CTD_ANON_httpwww_w3_org200009xmldsigSignature",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/xmldsig-core-schema20020212_v03.xsd",
-            41,
-            0,
+            "pynotas/data/XSDs/NFS-e/Ginfes/xmldsig-core-schema20020212_v03.xsd", 41, 0
         ),
     )
 
@@ -156,9 +150,7 @@ CancelarNfseEnvio = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "CancelarNfseEnvio"),
     CTD_ANON,
     location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_cancelar_nfse_envio_v03.xsd",
-        11,
-        1,
+        "pynotas/data/XSDs/NFS-e/Ginfes/servico_cancelar_nfse_envio_v03.xsd", 11, 1
     ),
 )
 Namespace.addCategoryObject(
@@ -172,9 +164,7 @@ CTD_ANON._AddElement(
         _ImportedBinding__tipos.tcPedidoCancelamento,
         scope=CTD_ANON,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_cancelar_nfse_envio_v03.xsd",
-            14,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_cancelar_nfse_envio_v03.xsd", 14, 4
         ),
     )
 )
@@ -185,9 +175,7 @@ CTD_ANON._AddElement(
         _ImportedBinding__dsig.SignatureType,
         scope=CTD_ANON,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/xmldsig-core-schema20020212_v03.xsd",
-            41,
-            0,
+            "pynotas/data/XSDs/NFS-e/Ginfes/xmldsig-core-schema20020212_v03.xsd", 41, 0
         ),
     )
 )
@@ -204,9 +192,7 @@ def _BuildAutomaton():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_cancelar_nfse_envio_v03.xsd",
-            15,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_cancelar_nfse_envio_v03.xsd", 15, 4
         ),
     )
     counters.add(cc_0)
@@ -215,9 +201,7 @@ def _BuildAutomaton():
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON._UseForTag(pyxb.namespace.ExpandedName(None, "Pedido")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_cancelar_nfse_envio_v03.xsd",
-            14,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_cancelar_nfse_envio_v03.xsd", 14, 4
         ),
     )
     st_0 = fac.State(
@@ -229,9 +213,7 @@ def _BuildAutomaton():
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON._UseForTag(pyxb.namespace.ExpandedName(_Namespace_dsig, "Signature")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_cancelar_nfse_envio_v03.xsd",
-            15,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_cancelar_nfse_envio_v03.xsd", 15, 4
         ),
     )
     st_1 = fac.State(

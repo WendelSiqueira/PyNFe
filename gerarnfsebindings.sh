@@ -1,10 +1,33 @@
 #!/bin/sh
+# Regenera os bindings PyXB da NFS-e (Betha e Ginfes) a partir dos XSDs.
+#
+# Uso (na raiz do projeto ou de qualquer lugar):
+#   uv sync --extra nfse
+#   uv run ./gerarnfsebindings.sh
+#
+# O pyxbgen grava o caminho de cada XSD no codigo gerado. O script troca o
+# caminho absoluto da maquina por um caminho relativo a raiz do projeto, para
+# a saida ser a mesma em qualquer maquina, e formata com o ruff no final.
+
+set -eu
+
+raiz="$(cd "$(dirname "$0")" && pwd)"
+cd "$raiz"
 
 xsd_path="pynotas/data/XSDs/"
 bindings_root_path="pynotas/utils/"
 
+exige() {
+    if ! command -v "$1" >/dev/null 2>&1; then
+        echo "erro: '$1' nao encontrado. Rode com: uv sync --extra nfse && uv run ./gerarnfsebindings.sh" >&2
+        exit 1
+    fi
+}
+
 main() {
-    # NFSe
+    exige pyxbgen
+    exige ruff
+
     main_xsd_nfse_path="${xsd_path}NFS-e/"
     main_bindings_root_nfse_path="${bindings_root_path}nfse/"
 
@@ -13,71 +36,76 @@ main() {
 
     gera_bindings_diretorio "${main_xsd_nfse_path}Ginfes/" "${main_bindings_root_nfse_path}ginfes/"
     ajustes_ginfes "${main_bindings_root_nfse_path}ginfes/"
+
+    caminhos_relativos "${main_bindings_root_nfse_path}"
+    ruff format --quiet "${main_bindings_root_nfse_path}"
+    echo "Bindings gerados em ${main_bindings_root_nfse_path}"
 }
 
 gera_binding() {
-    gb_xsd_nfse_path="$1"
-    gb_module="$2"
-    gb_bindings_root_nfse_path="$3"
-
     pyxbgen \
-        --schema-location=$gb_xsd_nfse_path \
-        --module=$gb_module \
-        --binding-root=$gb_bindings_root_nfse_path
+        --schema-location="$1" \
+        --module="$2" \
+        --binding-root="$3"
 }
 
 gera_bindings_diretorio() {
     gbd_xsd_nfse_path="$1"
     gbd_bindings_root_nfse_path="$2"
 
-    for file in $gbd_xsd_nfse_path*.xsd; do
-        if [ -f $file ]; then
-            filename="${file##*/}"     # retorna apenas o nome do arquivo, sem o caminho - Ex: schema.xsd
-            basename="${filename%.*}"  # remove a extensão - Ex: schema
+    for file in "$gbd_xsd_nfse_path"*.xsd; do
+        if [ -f "$file" ]; then
+            filename="${file##*/}"     # apenas o nome do arquivo - Ex: schema.xsd
+            basename="${filename%.*}"  # sem a extensao - Ex: schema
 
             echo "Gerando: $basename"
-            gera_binding "$gbd_xsd_nfse_path${basename}.xsd" $basename $gbd_bindings_root_nfse_path
+            gera_binding "$gbd_xsd_nfse_path${basename}.xsd" "$basename" "$gbd_bindings_root_nfse_path"
         fi
     done
 
-    ignorar_lint $gbd_bindings_root_nfse_path
+    ignorar_lint "$gbd_bindings_root_nfse_path"
 }
 
+# Codigo gerado nao passa pelo lint (o ruff respeita "# flake8: noqa")
 ignorar_lint() {
-    bindings_root_nfse_path="$1"
+    for file in "$1"*.py; do
+        filename="${file##*/}"
+        if [ -f "$file" ] && [ "$filename" != "__init__.py" ]; then
+            sed -i '1i# flake8: noqa' "$file"
+        fi
+    done
+}
 
-    for file in $bindings_root_nfse_path*.py; do
-        filename="${file##*/}"     # retorna apenas o nome do arquivo, sem o caminho - Ex: schema.xsd
-        if [ -f $file ] && [ $filename != "__init__.py" ]; then
-            sed -i '1i# flake8: noqa' $file
+# Troca "<raiz absoluta>/pynotas/..." por "pynotas/..." nos arquivos gerados
+caminhos_relativos() {
+    raiz_escapada="$(printf '%s/' "$raiz" | sed 's/[][\.*^$|]/\\&/g')"
+    for file in "$1"*/*.py; do
+        if [ -f "$file" ]; then
+            sed -i "s|${raiz_escapada}||g" "$file"
         fi
     done
 }
 
 ajustes_betha() {
-    bindings_root_nfse_path="$1"
+    rm -f "${1}xmldsig_core_schema20020212.py"
 
-    rm "${bindings_root_nfse_path}xmldsig_core_schema20020212.py"
-
-    for file in $bindings_root_nfse_path*.py; do
-        filename="${file##*/}"     # retorna apenas o nome do arquivo, sem o caminho - Ex: schema.xsd
-        if [ -f $file ] && [ $filename != "__init__.py" ]; then
-            sed -i 's/import _dsig/from pynotas.utils.nfse.betha import _dsig/g' $file
+    for file in "$1"*.py; do
+        filename="${file##*/}"
+        if [ -f "$file" ] && [ "$filename" != "__init__.py" ]; then
+            sed -i 's/import _dsig/from pynotas.utils.nfse.betha import _dsig/g' "$file"
         fi
     done
 }
 
 ajustes_ginfes() {
-    bindings_root_nfse_path="$1"
+    rm -f "${1}tipos_v03.py"
+    rm -f "${1}xmldsig_core_schema20020212_v03.py"
 
-    rm "${bindings_root_nfse_path}tipos_v03.py"
-    rm "${bindings_root_nfse_path}xmldsig_core_schema20020212_v03.py"
-
-    for file in $bindings_root_nfse_path*.py; do
-        filename="${file##*/}"     # retorna apenas o nome do arquivo, sem o caminho - Ex: schema.xsd
-        if [ -f $file ] && [ $filename != "__init__.py" ]; then
-            sed -i 's/import _dsig/from pynotas.utils.nfse.ginfes import _dsig/g' $file
-            sed -i 's/import _tipos/from pynotas.utils.nfse.ginfes import _tipos/g' $file
+    for file in "$1"*.py; do
+        filename="${file##*/}"
+        if [ -f "$file" ] && [ "$filename" != "__init__.py" ]; then
+            sed -i 's/import _dsig/from pynotas.utils.nfse.ginfes import _dsig/g' "$file"
+            sed -i 's/import _tipos/from pynotas.utils.nfse.ginfes import _tipos/g' "$file"
         fi
     done
 }

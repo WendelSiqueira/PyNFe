@@ -2,7 +2,7 @@
 # pynotas/utils/nfse/ginfes/servico_consultar_nfse_resposta_v03.py
 # -*- coding: utf-8 -*-
 # PyXB bindings for NM:b5175c71df88b0c3a415c5fe507e64e89cd44743
-# Generated 2025-04-06 00:00:47.086349 by PyXB version 1.2.6 using Python 3.12.9.final.0
+# Generated 2026-11-25 08:53:27.836547 by PyXB version 1.2.6 using Python 3.13.16.final.0
 # Namespace http://www.ginfes.com.br/servico_consultar_nfse_resposta_v03.xsd
 
 from __future__ import unicode_literals
@@ -17,7 +17,7 @@ import pyxb.utils.six as _six
 
 # Unique identifier for bindings created at the same time
 _GenerationUID = pyxb.utils.utility.UniqueIdentifier(
-    "urn:uuid:e3d45443-0779-4b8b-874d-cb68c0035c59"
+    "urn:uuid:a5156b33-821a-4984-8c8b-b0d7a18f3a67"
 )
 
 # Version of PyXB used to generate the bindings
@@ -106,9 +106,7 @@ class CTD_ANON(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_resposta_v03.xsd",
-        6,
-        2,
+        "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_resposta_v03.xsd", 6, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -121,9 +119,7 @@ class CTD_ANON(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_ginfes_com_brservico_consultar_nfse_resposta_v03_xsd_CTD_ANON_httpwww_ginfes_com_brservico_consultar_nfse_resposta_v03_xsdListaNfse",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_resposta_v03.xsd",
-            8,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_resposta_v03.xsd", 8, 4
         ),
     )
 
@@ -135,9 +131,7 @@ class CTD_ANON(pyxb.binding.basis.complexTypeDefinition):
         "ListaMensagemRetorno",
         "__httpwww_ginfes_com_brservico_consultar_nfse_resposta_v03_xsd_CTD_ANON_httpwww_ginfes_com_brtipos_v03_xsdListaMensagemRetorno",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 508, 1
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 508, 1),
     )
 
     ListaMensagemRetorno = property(
@@ -162,9 +156,7 @@ class CTD_ANON_(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_resposta_v03.xsd",
-        9,
-        5,
+        "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_resposta_v03.xsd", 9, 5
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -177,9 +169,7 @@ class CTD_ANON_(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_ginfes_com_brservico_consultar_nfse_resposta_v03_xsd_CTD_ANON__httpwww_ginfes_com_brservico_consultar_nfse_resposta_v03_xsdCompNfse",
         True,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_resposta_v03.xsd",
-            11,
-            7,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_resposta_v03.xsd", 11, 7
         ),
     )
 
@@ -196,9 +186,7 @@ ConsultarNfseResposta = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "ConsultarNfseResposta"),
     CTD_ANON,
     location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_resposta_v03.xsd",
-        5,
-        1,
+        "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_resposta_v03.xsd", 5, 1
     ),
 )
 Namespace.addCategoryObject(
@@ -212,9 +200,7 @@ CTD_ANON._AddElement(
         CTD_ANON_,
         scope=CTD_ANON,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_resposta_v03.xsd",
-            8,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_resposta_v03.xsd", 8, 4
         ),
     )
 )
@@ -225,7 +211,7 @@ CTD_ANON._AddElement(
         _ImportedBinding__tipos.CTD_ANON,
         scope=CTD_ANON,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 508, 1
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 508, 1
         ),
     )
 )
@@ -243,9 +229,7 @@ def _BuildAutomaton():
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ListaNfse")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_resposta_v03.xsd",
-            8,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_resposta_v03.xsd", 8, 4
         ),
     )
     st_0 = fac.State(
@@ -256,9 +240,7 @@ def _BuildAutomaton():
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON._UseForTag(pyxb.namespace.ExpandedName(_Namespace_tipos, "ListaMensagemRetorno")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_resposta_v03.xsd",
-            15,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_resposta_v03.xsd", 15, 4
         ),
     )
     st_1 = fac.State(
@@ -281,9 +263,7 @@ CTD_ANON_._AddElement(
         _ImportedBinding__tipos.tcCompNfse,
         scope=CTD_ANON_,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_resposta_v03.xsd",
-            11,
-            7,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_resposta_v03.xsd", 11, 7
         ),
     )
 )
@@ -300,9 +280,7 @@ def _BuildAutomaton_():
         min=0,
         max=None,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_resposta_v03.xsd",
-            11,
-            7,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_resposta_v03.xsd", 11, 7
         ),
     )
     counters.add(cc_0)
@@ -312,9 +290,7 @@ def _BuildAutomaton_():
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_._UseForTag(pyxb.namespace.ExpandedName(Namespace, "CompNfse")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_resposta_v03.xsd",
-            11,
-            7,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_resposta_v03.xsd", 11, 7
         ),
     )
     st_0 = fac.State(

@@ -2,7 +2,7 @@
 # pynotas/utils/nfse/ginfes/_tipos.py
 # -*- coding: utf-8 -*-
 # PyXB bindings for NM:13a1074f1cd8519d51c94b3829c0b2dd82c01391
-# Generated 2025-04-06 00:00:53.122662 by PyXB version 1.2.6 using Python 3.12.9.final.0
+# Generated 2026-11-25 08:53:28.889418 by PyXB version 1.2.6 using Python 3.13.16.final.0
 # Namespace http://www.ginfes.com.br/tipos_v03.xsd [xmlns:tipos]
 
 from __future__ import unicode_literals
@@ -17,7 +17,7 @@ import pyxb.utils.six as _six
 
 # Unique identifier for bindings created at the same time
 _GenerationUID = pyxb.utils.utility.UniqueIdentifier(
-    "urn:uuid:9559ba2f-ca50-4313-910d-fe9d437f0e44"
+    "urn:uuid:40ee89b1-e41e-48d8-8e24-aa1150ecb213"
 )
 
 # Version of PyXB used to generate the bindings
@@ -102,9 +102,7 @@ class tsNumeroNfse(pyxb.binding.datatypes.nonNegativeInteger):
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsNumeroNfse")
-    _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 4, 1
-    )
+    _XSDLocation = pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 4, 1)
     _Documentation = None
 
 
@@ -125,7 +123,7 @@ class tsCodigoVerificacao(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsCodigoVerificacao")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 10, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 10, 1
     )
     _Documentation = None
 
@@ -154,7 +152,7 @@ class tsStatusRps(pyxb.binding.datatypes.byte):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsStatusRps")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 17, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 17, 1
     )
     _Documentation = None
 
@@ -175,7 +173,7 @@ class tsStatusNfse(pyxb.binding.datatypes.byte):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsStatusNfse")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 23, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 23, 1
     )
     _Documentation = None
 
@@ -196,7 +194,7 @@ class tsNaturezaOperacao(pyxb.binding.datatypes.byte):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsNaturezaOperacao")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 29, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 29, 1
     )
     _Documentation = None
 
@@ -219,7 +217,7 @@ class tsRegimeEspecialTributacao(pyxb.binding.datatypes.byte):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsRegimeEspecialTributacao")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 35, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 35, 1
     )
     _Documentation = None
 
@@ -242,7 +240,7 @@ class tsSimNao(pyxb.binding.datatypes.byte):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsSimNao")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 41, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 41, 1
     )
     _Documentation = None
 
@@ -263,7 +261,7 @@ class tsNumeroRps(pyxb.binding.datatypes.nonNegativeInteger):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsNumeroRps")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 47, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 47, 1
     )
     _Documentation = None
 
@@ -285,7 +283,7 @@ class tsSerieRps(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsSerieRps")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 53, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 53, 1
     )
     _Documentation = None
 
@@ -312,7 +310,7 @@ class tsTipoRps(pyxb.binding.datatypes.byte):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsTipoRps")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 60, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 60, 1
     )
     _Documentation = None
 
@@ -333,7 +331,7 @@ class tsOutrasInformacoes(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsOutrasInformacoes")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 66, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 66, 1
     )
     _Documentation = None
 
@@ -362,7 +360,7 @@ class tsValor(pyxb.binding.datatypes.decimal):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsValor")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 73, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 73, 1
     )
     _Documentation = None
 
@@ -395,7 +393,7 @@ class tsItemListaServico(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsItemListaServico")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 81, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 81, 1
     )
     _Documentation = None
 
@@ -424,7 +422,7 @@ class tsCodigoCnae(pyxb.binding.datatypes.int):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsCodigoCnae")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 88, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 88, 1
     )
     _Documentation = None
 
@@ -446,7 +444,7 @@ class tsCodigoTributacao(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsCodigoTributacao")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 94, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 94, 1
     )
     _Documentation = None
 
@@ -475,7 +473,7 @@ class tsAliquota(pyxb.binding.datatypes.decimal):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsAliquota")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 101, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 101, 1
     )
     _Documentation = None
 
@@ -508,7 +506,7 @@ class tsDiscriminacao(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsDiscriminacao")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 109, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 109, 1
     )
     _Documentation = None
 
@@ -535,7 +533,7 @@ class tsCodigoMunicipioIbge(pyxb.binding.datatypes.int):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsCodigoMunicipioIbge")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 116, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 116, 1
     )
     _Documentation = None
 
@@ -559,7 +557,7 @@ class tsInscricaoMunicipal(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsInscricaoMunicipal")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 122, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 122, 1
     )
     _Documentation = None
 
@@ -588,7 +586,7 @@ class tsRazaoSocial(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsRazaoSocial")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 129, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 129, 1
     )
     _Documentation = None
 
@@ -615,7 +613,7 @@ class tsNomeFantasia(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsNomeFantasia")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 136, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 136, 1
     )
     _Documentation = None
 
@@ -642,7 +640,7 @@ class tsCnpj(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsCnpj")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 143, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 143, 1
     )
     _Documentation = None
 
@@ -664,7 +662,7 @@ class tsEndereco(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsEndereco")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 149, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 149, 1
     )
     _Documentation = None
 
@@ -691,7 +689,7 @@ class tsNumeroEndereco(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsNumeroEndereco")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 156, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 156, 1
     )
     _Documentation = None
 
@@ -718,7 +716,7 @@ class tsComplementoEndereco(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsComplementoEndereco")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 163, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 163, 1
     )
     _Documentation = None
 
@@ -747,7 +745,7 @@ class tsBairro(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsBairro")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 170, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 170, 1
     )
     _Documentation = None
 
@@ -774,7 +772,7 @@ class tsUf(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsUf")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 177, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 177, 1
     )
     _Documentation = None
 
@@ -794,7 +792,7 @@ class tsCep(pyxb.binding.datatypes.int):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsCep")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 183, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 183, 1
     )
     _Documentation = None
 
@@ -816,7 +814,7 @@ class tsEmail(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsEmail")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 189, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 189, 1
     )
     _Documentation = None
 
@@ -841,7 +839,7 @@ class tsTelefone(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsTelefone")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 196, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 196, 1
     )
     _Documentation = None
 
@@ -868,7 +866,7 @@ class tsCpf(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsCpf")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 203, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 203, 1
     )
     _Documentation = None
 
@@ -890,7 +888,7 @@ class tsIndicacaoCpfCnpj(pyxb.binding.datatypes.byte):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsIndicacaoCpfCnpj")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 209, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 209, 1
     )
     _Documentation = None
 
@@ -913,7 +911,7 @@ class tsCodigoObra(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsCodigoObra")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 215, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 215, 1
     )
     _Documentation = None
 
@@ -940,7 +938,7 @@ class tsArt(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsArt")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 222, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 222, 1
     )
     _Documentation = None
 
@@ -965,7 +963,7 @@ class tsNumeroLote(pyxb.binding.datatypes.nonNegativeInteger):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsNumeroLote")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 229, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 229, 1
     )
     _Documentation = None
 
@@ -987,7 +985,7 @@ class tsNumeroProtocolo(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsNumeroProtocolo")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 235, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 235, 1
     )
     _Documentation = None
 
@@ -1011,7 +1009,7 @@ class tsSituacaoLoteRps(pyxb.binding.datatypes.byte):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsSituacaoLoteRps")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 241, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 241, 1
     )
     _Documentation = None
 
@@ -1034,7 +1032,7 @@ class tsQuantidadeRps(pyxb.binding.datatypes.int):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsQuantidadeRps")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 247, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 247, 1
     )
     _Documentation = None
 
@@ -1056,7 +1054,7 @@ class tsCodigoMensagemAlerta(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsCodigoMensagemAlerta")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 253, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 253, 1
     )
     _Documentation = None
 
@@ -1085,7 +1083,7 @@ class tsDescricaoMensagemAlerta(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsDescricaoMensagemAlerta")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 260, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 260, 1
     )
     _Documentation = None
 
@@ -1114,7 +1112,7 @@ class tsCodigoCancelamentoNfse(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsCodigoCancelamentoNfse")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 267, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 267, 1
     )
     _Documentation = None
 
@@ -1143,7 +1141,7 @@ class tsIdTag(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsIdTag")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 274, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 274, 1
     )
     _Documentation = None
 
@@ -1165,7 +1163,7 @@ class tsVersao(pyxb.binding.datatypes.token):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsVersao")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 280, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 280, 1
     )
     _Documentation = None
 
@@ -1189,7 +1187,7 @@ class tcCpfCnpj(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcCpfCnpj")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 287, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 287, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -1201,9 +1199,7 @@ class tcCpfCnpj(pyxb.binding.basis.complexTypeDefinition):
         "Cpf",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcCpfCnpj_httpwww_ginfes_com_brtipos_v03_xsdCpf",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 289, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 289, 3),
     )
 
     Cpf = property(__Cpf.value, __Cpf.set, None, None)
@@ -1214,9 +1210,7 @@ class tcCpfCnpj(pyxb.binding.basis.complexTypeDefinition):
         "Cnpj",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcCpfCnpj_httpwww_ginfes_com_brtipos_v03_xsdCnpj",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 290, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 290, 3),
     )
 
     Cnpj = property(__Cnpj.value, __Cnpj.set, None, None)
@@ -1238,7 +1232,7 @@ class tcEndereco(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcEndereco")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 293, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 293, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -1250,9 +1244,7 @@ class tcEndereco(pyxb.binding.basis.complexTypeDefinition):
         "Endereco",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcEndereco_httpwww_ginfes_com_brtipos_v03_xsdEndereco",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 295, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 295, 3),
     )
 
     Endereco = property(__Endereco.value, __Endereco.set, None, None)
@@ -1263,9 +1255,7 @@ class tcEndereco(pyxb.binding.basis.complexTypeDefinition):
         "Numero",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcEndereco_httpwww_ginfes_com_brtipos_v03_xsdNumero",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 296, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 296, 3),
     )
 
     Numero = property(__Numero.value, __Numero.set, None, None)
@@ -1276,9 +1266,7 @@ class tcEndereco(pyxb.binding.basis.complexTypeDefinition):
         "Complemento",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcEndereco_httpwww_ginfes_com_brtipos_v03_xsdComplemento",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 297, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 297, 3),
     )
 
     Complemento = property(__Complemento.value, __Complemento.set, None, None)
@@ -1289,9 +1277,7 @@ class tcEndereco(pyxb.binding.basis.complexTypeDefinition):
         "Bairro",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcEndereco_httpwww_ginfes_com_brtipos_v03_xsdBairro",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 298, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 298, 3),
     )
 
     Bairro = property(__Bairro.value, __Bairro.set, None, None)
@@ -1302,9 +1288,7 @@ class tcEndereco(pyxb.binding.basis.complexTypeDefinition):
         "CodigoMunicipio",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcEndereco_httpwww_ginfes_com_brtipos_v03_xsdCodigoMunicipio",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 299, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 299, 3),
     )
 
     CodigoMunicipio = property(__CodigoMunicipio.value, __CodigoMunicipio.set, None, None)
@@ -1315,9 +1299,7 @@ class tcEndereco(pyxb.binding.basis.complexTypeDefinition):
         "Uf",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcEndereco_httpwww_ginfes_com_brtipos_v03_xsdUf",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 300, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 300, 3),
     )
 
     Uf = property(__Uf.value, __Uf.set, None, None)
@@ -1328,9 +1310,7 @@ class tcEndereco(pyxb.binding.basis.complexTypeDefinition):
         "Cep",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcEndereco_httpwww_ginfes_com_brtipos_v03_xsdCep",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 301, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 301, 3),
     )
 
     Cep = property(__Cep.value, __Cep.set, None, None)
@@ -1362,7 +1342,7 @@ class tcContato(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcContato")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 304, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 304, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -1374,9 +1354,7 @@ class tcContato(pyxb.binding.basis.complexTypeDefinition):
         "Telefone",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcContato_httpwww_ginfes_com_brtipos_v03_xsdTelefone",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 306, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 306, 3),
     )
 
     Telefone = property(__Telefone.value, __Telefone.set, None, None)
@@ -1387,9 +1365,7 @@ class tcContato(pyxb.binding.basis.complexTypeDefinition):
         "Email",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcContato_httpwww_ginfes_com_brtipos_v03_xsdEmail",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 307, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 307, 3),
     )
 
     Email = property(__Email.value, __Email.set, None, None)
@@ -1411,7 +1387,7 @@ class tcIdentificacaoOrgaoGerador(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcIdentificacaoOrgaoGerador")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 310, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 310, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -1423,9 +1399,7 @@ class tcIdentificacaoOrgaoGerador(pyxb.binding.basis.complexTypeDefinition):
         "CodigoMunicipio",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcIdentificacaoOrgaoGerador_httpwww_ginfes_com_brtipos_v03_xsdCodigoMunicipio",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 312, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 312, 3),
     )
 
     CodigoMunicipio = property(__CodigoMunicipio.value, __CodigoMunicipio.set, None, None)
@@ -1436,9 +1410,7 @@ class tcIdentificacaoOrgaoGerador(pyxb.binding.basis.complexTypeDefinition):
         "Uf",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcIdentificacaoOrgaoGerador_httpwww_ginfes_com_brtipos_v03_xsdUf",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 313, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 313, 3),
     )
 
     Uf = property(__Uf.value, __Uf.set, None, None)
@@ -1462,7 +1434,7 @@ class tcIdentificacaoRps(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcIdentificacaoRps")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 316, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 316, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -1474,9 +1446,7 @@ class tcIdentificacaoRps(pyxb.binding.basis.complexTypeDefinition):
         "Numero",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcIdentificacaoRps_httpwww_ginfes_com_brtipos_v03_xsdNumero",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 318, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 318, 3),
     )
 
     Numero = property(__Numero.value, __Numero.set, None, None)
@@ -1487,9 +1457,7 @@ class tcIdentificacaoRps(pyxb.binding.basis.complexTypeDefinition):
         "Serie",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcIdentificacaoRps_httpwww_ginfes_com_brtipos_v03_xsdSerie",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 319, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 319, 3),
     )
 
     Serie = property(__Serie.value, __Serie.set, None, None)
@@ -1500,9 +1468,7 @@ class tcIdentificacaoRps(pyxb.binding.basis.complexTypeDefinition):
         "Tipo",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcIdentificacaoRps_httpwww_ginfes_com_brtipos_v03_xsdTipo",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 320, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 320, 3),
     )
 
     Tipo = property(__Tipo.value, __Tipo.set, None, None)
@@ -1524,7 +1490,7 @@ class tcIdentificacaoPrestador(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcIdentificacaoPrestador")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 323, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 323, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -1536,9 +1502,7 @@ class tcIdentificacaoPrestador(pyxb.binding.basis.complexTypeDefinition):
         "Cnpj",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcIdentificacaoPrestador_httpwww_ginfes_com_brtipos_v03_xsdCnpj",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 325, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 325, 3),
     )
 
     Cnpj = property(__Cnpj.value, __Cnpj.set, None, None)
@@ -1549,9 +1513,7 @@ class tcIdentificacaoPrestador(pyxb.binding.basis.complexTypeDefinition):
         "InscricaoMunicipal",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcIdentificacaoPrestador_httpwww_ginfes_com_brtipos_v03_xsdInscricaoMunicipal",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 326, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 326, 3),
     )
 
     InscricaoMunicipal = property(__InscricaoMunicipal.value, __InscricaoMunicipal.set, None, None)
@@ -1573,7 +1535,7 @@ class tcIdentificacaoTomador(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcIdentificacaoTomador")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 329, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 329, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -1585,9 +1547,7 @@ class tcIdentificacaoTomador(pyxb.binding.basis.complexTypeDefinition):
         "CpfCnpj",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcIdentificacaoTomador_httpwww_ginfes_com_brtipos_v03_xsdCpfCnpj",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 331, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 331, 3),
     )
 
     CpfCnpj = property(__CpfCnpj.value, __CpfCnpj.set, None, None)
@@ -1598,9 +1558,7 @@ class tcIdentificacaoTomador(pyxb.binding.basis.complexTypeDefinition):
         "InscricaoMunicipal",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcIdentificacaoTomador_httpwww_ginfes_com_brtipos_v03_xsdInscricaoMunicipal",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 332, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 332, 3),
     )
 
     InscricaoMunicipal = property(__InscricaoMunicipal.value, __InscricaoMunicipal.set, None, None)
@@ -1624,7 +1582,7 @@ class tcDadosTomador(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcDadosTomador")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 335, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 335, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -1636,9 +1594,7 @@ class tcDadosTomador(pyxb.binding.basis.complexTypeDefinition):
         "IdentificacaoTomador",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcDadosTomador_httpwww_ginfes_com_brtipos_v03_xsdIdentificacaoTomador",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 337, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 337, 3),
     )
 
     IdentificacaoTomador = property(
@@ -1651,9 +1607,7 @@ class tcDadosTomador(pyxb.binding.basis.complexTypeDefinition):
         "RazaoSocial",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcDadosTomador_httpwww_ginfes_com_brtipos_v03_xsdRazaoSocial",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 338, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 338, 3),
     )
 
     RazaoSocial = property(__RazaoSocial.value, __RazaoSocial.set, None, None)
@@ -1664,9 +1618,7 @@ class tcDadosTomador(pyxb.binding.basis.complexTypeDefinition):
         "Endereco",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcDadosTomador_httpwww_ginfes_com_brtipos_v03_xsdEndereco",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 339, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 339, 3),
     )
 
     Endereco = property(__Endereco.value, __Endereco.set, None, None)
@@ -1677,9 +1629,7 @@ class tcDadosTomador(pyxb.binding.basis.complexTypeDefinition):
         "Contato",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcDadosTomador_httpwww_ginfes_com_brtipos_v03_xsdContato",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 340, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 340, 3),
     )
 
     Contato = property(__Contato.value, __Contato.set, None, None)
@@ -1708,7 +1658,7 @@ class tcIdentificacaoIntermediarioServico(pyxb.binding.basis.complexTypeDefiniti
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcIdentificacaoIntermediarioServico")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 343, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 343, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -1720,9 +1670,7 @@ class tcIdentificacaoIntermediarioServico(pyxb.binding.basis.complexTypeDefiniti
         "RazaoSocial",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcIdentificacaoIntermediarioServico_httpwww_ginfes_com_brtipos_v03_xsdRazaoSocial",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 345, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 345, 3),
     )
 
     RazaoSocial = property(__RazaoSocial.value, __RazaoSocial.set, None, None)
@@ -1733,9 +1681,7 @@ class tcIdentificacaoIntermediarioServico(pyxb.binding.basis.complexTypeDefiniti
         "CpfCnpj",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcIdentificacaoIntermediarioServico_httpwww_ginfes_com_brtipos_v03_xsdCpfCnpj",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 346, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 346, 3),
     )
 
     CpfCnpj = property(__CpfCnpj.value, __CpfCnpj.set, None, None)
@@ -1746,9 +1692,7 @@ class tcIdentificacaoIntermediarioServico(pyxb.binding.basis.complexTypeDefiniti
         "InscricaoMunicipal",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcIdentificacaoIntermediarioServico_httpwww_ginfes_com_brtipos_v03_xsdInscricaoMunicipal",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 347, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 347, 3),
     )
 
     InscricaoMunicipal = property(__InscricaoMunicipal.value, __InscricaoMunicipal.set, None, None)
@@ -1778,7 +1722,7 @@ class tcValores(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcValores")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 350, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 350, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -1790,9 +1734,7 @@ class tcValores(pyxb.binding.basis.complexTypeDefinition):
         "ValorServicos",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcValores_httpwww_ginfes_com_brtipos_v03_xsdValorServicos",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 352, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 352, 3),
     )
 
     ValorServicos = property(__ValorServicos.value, __ValorServicos.set, None, None)
@@ -1803,9 +1745,7 @@ class tcValores(pyxb.binding.basis.complexTypeDefinition):
         "ValorDeducoes",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcValores_httpwww_ginfes_com_brtipos_v03_xsdValorDeducoes",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 353, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 353, 3),
     )
 
     ValorDeducoes = property(__ValorDeducoes.value, __ValorDeducoes.set, None, None)
@@ -1816,9 +1756,7 @@ class tcValores(pyxb.binding.basis.complexTypeDefinition):
         "ValorPis",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcValores_httpwww_ginfes_com_brtipos_v03_xsdValorPis",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 354, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 354, 3),
     )
 
     ValorPis = property(__ValorPis.value, __ValorPis.set, None, None)
@@ -1829,9 +1767,7 @@ class tcValores(pyxb.binding.basis.complexTypeDefinition):
         "ValorCofins",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcValores_httpwww_ginfes_com_brtipos_v03_xsdValorCofins",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 355, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 355, 3),
     )
 
     ValorCofins = property(__ValorCofins.value, __ValorCofins.set, None, None)
@@ -1842,9 +1778,7 @@ class tcValores(pyxb.binding.basis.complexTypeDefinition):
         "ValorInss",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcValores_httpwww_ginfes_com_brtipos_v03_xsdValorInss",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 356, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 356, 3),
     )
 
     ValorInss = property(__ValorInss.value, __ValorInss.set, None, None)
@@ -1855,9 +1789,7 @@ class tcValores(pyxb.binding.basis.complexTypeDefinition):
         "ValorIr",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcValores_httpwww_ginfes_com_brtipos_v03_xsdValorIr",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 357, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 357, 3),
     )
 
     ValorIr = property(__ValorIr.value, __ValorIr.set, None, None)
@@ -1868,9 +1800,7 @@ class tcValores(pyxb.binding.basis.complexTypeDefinition):
         "ValorCsll",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcValores_httpwww_ginfes_com_brtipos_v03_xsdValorCsll",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 358, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 358, 3),
     )
 
     ValorCsll = property(__ValorCsll.value, __ValorCsll.set, None, None)
@@ -1881,9 +1811,7 @@ class tcValores(pyxb.binding.basis.complexTypeDefinition):
         "IssRetido",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcValores_httpwww_ginfes_com_brtipos_v03_xsdIssRetido",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 359, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 359, 3),
     )
 
     IssRetido = property(__IssRetido.value, __IssRetido.set, None, None)
@@ -1894,9 +1822,7 @@ class tcValores(pyxb.binding.basis.complexTypeDefinition):
         "ValorIss",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcValores_httpwww_ginfes_com_brtipos_v03_xsdValorIss",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 360, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 360, 3),
     )
 
     ValorIss = property(__ValorIss.value, __ValorIss.set, None, None)
@@ -1907,9 +1833,7 @@ class tcValores(pyxb.binding.basis.complexTypeDefinition):
         "ValorIssRetido",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcValores_httpwww_ginfes_com_brtipos_v03_xsdValorIssRetido",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 361, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 361, 3),
     )
 
     ValorIssRetido = property(__ValorIssRetido.value, __ValorIssRetido.set, None, None)
@@ -1920,9 +1844,7 @@ class tcValores(pyxb.binding.basis.complexTypeDefinition):
         "OutrasRetencoes",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcValores_httpwww_ginfes_com_brtipos_v03_xsdOutrasRetencoes",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 362, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 362, 3),
     )
 
     OutrasRetencoes = property(__OutrasRetencoes.value, __OutrasRetencoes.set, None, None)
@@ -1933,9 +1855,7 @@ class tcValores(pyxb.binding.basis.complexTypeDefinition):
         "BaseCalculo",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcValores_httpwww_ginfes_com_brtipos_v03_xsdBaseCalculo",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 363, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 363, 3),
     )
 
     BaseCalculo = property(__BaseCalculo.value, __BaseCalculo.set, None, None)
@@ -1946,9 +1866,7 @@ class tcValores(pyxb.binding.basis.complexTypeDefinition):
         "Aliquota",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcValores_httpwww_ginfes_com_brtipos_v03_xsdAliquota",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 364, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 364, 3),
     )
 
     Aliquota = property(__Aliquota.value, __Aliquota.set, None, None)
@@ -1959,9 +1877,7 @@ class tcValores(pyxb.binding.basis.complexTypeDefinition):
         "ValorLiquidoNfse",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcValores_httpwww_ginfes_com_brtipos_v03_xsdValorLiquidoNfse",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 365, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 365, 3),
     )
 
     ValorLiquidoNfse = property(__ValorLiquidoNfse.value, __ValorLiquidoNfse.set, None, None)
@@ -1972,9 +1888,7 @@ class tcValores(pyxb.binding.basis.complexTypeDefinition):
         "DescontoIncondicionado",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcValores_httpwww_ginfes_com_brtipos_v03_xsdDescontoIncondicionado",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 366, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 366, 3),
     )
 
     DescontoIncondicionado = property(
@@ -1987,9 +1901,7 @@ class tcValores(pyxb.binding.basis.complexTypeDefinition):
         "DescontoCondicionado",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcValores_httpwww_ginfes_com_brtipos_v03_xsdDescontoCondicionado",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 367, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 367, 3),
     )
 
     DescontoCondicionado = property(
@@ -2032,7 +1944,7 @@ class tcDadosServico(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcDadosServico")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 370, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 370, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -2044,9 +1956,7 @@ class tcDadosServico(pyxb.binding.basis.complexTypeDefinition):
         "Valores",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcDadosServico_httpwww_ginfes_com_brtipos_v03_xsdValores",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 372, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 372, 3),
     )
 
     Valores = property(__Valores.value, __Valores.set, None, None)
@@ -2057,9 +1967,7 @@ class tcDadosServico(pyxb.binding.basis.complexTypeDefinition):
         "ItemListaServico",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcDadosServico_httpwww_ginfes_com_brtipos_v03_xsdItemListaServico",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 373, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 373, 3),
     )
 
     ItemListaServico = property(__ItemListaServico.value, __ItemListaServico.set, None, None)
@@ -2070,9 +1978,7 @@ class tcDadosServico(pyxb.binding.basis.complexTypeDefinition):
         "CodigoCnae",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcDadosServico_httpwww_ginfes_com_brtipos_v03_xsdCodigoCnae",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 374, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 374, 3),
     )
 
     CodigoCnae = property(__CodigoCnae.value, __CodigoCnae.set, None, None)
@@ -2083,9 +1989,7 @@ class tcDadosServico(pyxb.binding.basis.complexTypeDefinition):
         "CodigoTributacaoMunicipio",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcDadosServico_httpwww_ginfes_com_brtipos_v03_xsdCodigoTributacaoMunicipio",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 375, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 375, 3),
     )
 
     CodigoTributacaoMunicipio = property(
@@ -2098,9 +2002,7 @@ class tcDadosServico(pyxb.binding.basis.complexTypeDefinition):
         "Discriminacao",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcDadosServico_httpwww_ginfes_com_brtipos_v03_xsdDiscriminacao",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 376, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 376, 3),
     )
 
     Discriminacao = property(__Discriminacao.value, __Discriminacao.set, None, None)
@@ -2111,9 +2013,7 @@ class tcDadosServico(pyxb.binding.basis.complexTypeDefinition):
         "CodigoMunicipio",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcDadosServico_httpwww_ginfes_com_brtipos_v03_xsdCodigoMunicipio",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 377, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 377, 3),
     )
 
     CodigoMunicipio = property(__CodigoMunicipio.value, __CodigoMunicipio.set, None, None)
@@ -2144,7 +2044,7 @@ class tcDadosConstrucaoCivil(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcDadosConstrucaoCivil")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 380, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 380, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -2156,9 +2056,7 @@ class tcDadosConstrucaoCivil(pyxb.binding.basis.complexTypeDefinition):
         "CodigoObra",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcDadosConstrucaoCivil_httpwww_ginfes_com_brtipos_v03_xsdCodigoObra",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 382, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 382, 3),
     )
 
     CodigoObra = property(__CodigoObra.value, __CodigoObra.set, None, None)
@@ -2169,9 +2067,7 @@ class tcDadosConstrucaoCivil(pyxb.binding.basis.complexTypeDefinition):
         "Art",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcDadosConstrucaoCivil_httpwww_ginfes_com_brtipos_v03_xsdArt",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 383, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 383, 3),
     )
 
     Art = property(__Art.value, __Art.set, None, None)
@@ -2193,7 +2089,7 @@ class tcDadosPrestador(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcDadosPrestador")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 386, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 386, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -2205,9 +2101,7 @@ class tcDadosPrestador(pyxb.binding.basis.complexTypeDefinition):
         "IdentificacaoPrestador",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcDadosPrestador_httpwww_ginfes_com_brtipos_v03_xsdIdentificacaoPrestador",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 388, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 388, 3),
     )
 
     IdentificacaoPrestador = property(
@@ -2220,9 +2114,7 @@ class tcDadosPrestador(pyxb.binding.basis.complexTypeDefinition):
         "RazaoSocial",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcDadosPrestador_httpwww_ginfes_com_brtipos_v03_xsdRazaoSocial",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 389, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 389, 3),
     )
 
     RazaoSocial = property(__RazaoSocial.value, __RazaoSocial.set, None, None)
@@ -2233,9 +2125,7 @@ class tcDadosPrestador(pyxb.binding.basis.complexTypeDefinition):
         "NomeFantasia",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcDadosPrestador_httpwww_ginfes_com_brtipos_v03_xsdNomeFantasia",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 390, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 390, 3),
     )
 
     NomeFantasia = property(__NomeFantasia.value, __NomeFantasia.set, None, None)
@@ -2246,9 +2136,7 @@ class tcDadosPrestador(pyxb.binding.basis.complexTypeDefinition):
         "Endereco",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcDadosPrestador_httpwww_ginfes_com_brtipos_v03_xsdEndereco",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 391, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 391, 3),
     )
 
     Endereco = property(__Endereco.value, __Endereco.set, None, None)
@@ -2259,9 +2147,7 @@ class tcDadosPrestador(pyxb.binding.basis.complexTypeDefinition):
         "Contato",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcDadosPrestador_httpwww_ginfes_com_brtipos_v03_xsdContato",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 392, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 392, 3),
     )
 
     Contato = property(__Contato.value, __Contato.set, None, None)
@@ -2291,7 +2177,7 @@ class tcRps(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcRps")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 413, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 413, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -2303,9 +2189,7 @@ class tcRps(pyxb.binding.basis.complexTypeDefinition):
         "InfRps",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcRps_httpwww_ginfes_com_brtipos_v03_xsdInfRps",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 415, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 415, 3),
     )
 
     InfRps = property(__InfRps.value, __InfRps.set, None, None)
@@ -2317,9 +2201,7 @@ class tcRps(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcRps_httpwww_w3_org200009xmldsigSignature",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/xmldsig-core-schema20020212_v03.xsd",
-            41,
-            0,
+            "pynotas/data/XSDs/NFS-e/Ginfes/xmldsig-core-schema20020212_v03.xsd", 41, 0
         ),
     )
 
@@ -2342,7 +2224,7 @@ class tcIdentificacaoNfse(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcIdentificacaoNfse")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 419, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 419, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -2354,9 +2236,7 @@ class tcIdentificacaoNfse(pyxb.binding.basis.complexTypeDefinition):
         "Numero",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcIdentificacaoNfse_httpwww_ginfes_com_brtipos_v03_xsdNumero",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 421, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 421, 3),
     )
 
     Numero = property(__Numero.value, __Numero.set, None, None)
@@ -2367,9 +2247,7 @@ class tcIdentificacaoNfse(pyxb.binding.basis.complexTypeDefinition):
         "Cnpj",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcIdentificacaoNfse_httpwww_ginfes_com_brtipos_v03_xsdCnpj",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 422, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 422, 3),
     )
 
     Cnpj = property(__Cnpj.value, __Cnpj.set, None, None)
@@ -2380,9 +2258,7 @@ class tcIdentificacaoNfse(pyxb.binding.basis.complexTypeDefinition):
         "InscricaoMunicipal",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcIdentificacaoNfse_httpwww_ginfes_com_brtipos_v03_xsdInscricaoMunicipal",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 423, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 423, 3),
     )
 
     InscricaoMunicipal = property(__InscricaoMunicipal.value, __InscricaoMunicipal.set, None, None)
@@ -2393,9 +2269,7 @@ class tcIdentificacaoNfse(pyxb.binding.basis.complexTypeDefinition):
         "CodigoMunicipio",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcIdentificacaoNfse_httpwww_ginfes_com_brtipos_v03_xsdCodigoMunicipio",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 424, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 424, 3),
     )
 
     CodigoMunicipio = property(__CodigoMunicipio.value, __CodigoMunicipio.set, None, None)
@@ -2424,7 +2298,7 @@ class tcNfse(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcNfse")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 451, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 451, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -2436,9 +2310,7 @@ class tcNfse(pyxb.binding.basis.complexTypeDefinition):
         "InfNfse",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcNfse_httpwww_ginfes_com_brtipos_v03_xsdInfNfse",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 453, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 453, 3),
     )
 
     InfNfse = property(__InfNfse.value, __InfNfse.set, None, None)
@@ -2450,9 +2322,7 @@ class tcNfse(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcNfse_httpwww_w3_org200009xmldsigSignature",
         True,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/xmldsig-core-schema20020212_v03.xsd",
-            41,
-            0,
+            "pynotas/data/XSDs/NFS-e/Ginfes/xmldsig-core-schema20020212_v03.xsd", 41, 0
         ),
     )
 
@@ -2475,7 +2345,7 @@ class tcPedidoCancelamento(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcPedidoCancelamento")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 464, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 464, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -2487,9 +2357,7 @@ class tcPedidoCancelamento(pyxb.binding.basis.complexTypeDefinition):
         "InfPedidoCancelamento",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcPedidoCancelamento_httpwww_ginfes_com_brtipos_v03_xsdInfPedidoCancelamento",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 466, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 466, 3),
     )
 
     InfPedidoCancelamento = property(
@@ -2503,9 +2371,7 @@ class tcPedidoCancelamento(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcPedidoCancelamento_httpwww_w3_org200009xmldsigSignature",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/xmldsig-core-schema20020212_v03.xsd",
-            41,
-            0,
+            "pynotas/data/XSDs/NFS-e/Ginfes/xmldsig-core-schema20020212_v03.xsd", 41, 0
         ),
     )
 
@@ -2530,7 +2396,7 @@ class tcInfConfirmacaoCancelamento(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcInfConfirmacaoCancelamento")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 470, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 470, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -2542,9 +2408,7 @@ class tcInfConfirmacaoCancelamento(pyxb.binding.basis.complexTypeDefinition):
         "Sucesso",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfConfirmacaoCancelamento_httpwww_ginfes_com_brtipos_v03_xsdSucesso",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 472, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 472, 3),
     )
 
     Sucesso = property(__Sucesso.value, __Sucesso.set, None, None)
@@ -2555,9 +2419,7 @@ class tcInfConfirmacaoCancelamento(pyxb.binding.basis.complexTypeDefinition):
         "DataHora",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfConfirmacaoCancelamento_httpwww_ginfes_com_brtipos_v03_xsdDataHora",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 473, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 473, 3),
     )
 
     DataHora = property(__DataHora.value, __DataHora.set, None, None)
@@ -2581,7 +2443,7 @@ class tcCancelamentoNfse(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcCancelamentoNfse")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 483, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 483, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -2593,9 +2455,7 @@ class tcCancelamentoNfse(pyxb.binding.basis.complexTypeDefinition):
         "Confirmacao",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcCancelamentoNfse_httpwww_ginfes_com_brtipos_v03_xsdConfirmacao",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 485, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 485, 3),
     )
 
     Confirmacao = property(__Confirmacao.value, __Confirmacao.set, None, None)
@@ -2607,9 +2467,7 @@ class tcCancelamentoNfse(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcCancelamentoNfse_httpwww_w3_org200009xmldsigSignature",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/xmldsig-core-schema20020212_v03.xsd",
-            41,
-            0,
+            "pynotas/data/XSDs/NFS-e/Ginfes/xmldsig-core-schema20020212_v03.xsd", 41, 0
         ),
     )
 
@@ -2632,7 +2490,7 @@ class tcSubstituicaoNfse(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcSubstituicaoNfse")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 495, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 495, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -2644,9 +2502,7 @@ class tcSubstituicaoNfse(pyxb.binding.basis.complexTypeDefinition):
         "SubstituicaoNfse",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcSubstituicaoNfse_httpwww_ginfes_com_brtipos_v03_xsdSubstituicaoNfse",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 497, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 497, 3),
     )
 
     SubstituicaoNfse = property(__SubstituicaoNfse.value, __SubstituicaoNfse.set, None, None)
@@ -2658,9 +2514,7 @@ class tcSubstituicaoNfse(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcSubstituicaoNfse_httpwww_w3_org200009xmldsigSignature",
         True,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/xmldsig-core-schema20020212_v03.xsd",
-            41,
-            0,
+            "pynotas/data/XSDs/NFS-e/Ginfes/xmldsig-core-schema20020212_v03.xsd", 41, 0
         ),
     )
 
@@ -2685,7 +2539,7 @@ class tcCompNfse(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcCompNfse")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 501, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 501, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -2697,9 +2551,7 @@ class tcCompNfse(pyxb.binding.basis.complexTypeDefinition):
         "Nfse",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcCompNfse_httpwww_ginfes_com_brtipos_v03_xsdNfse",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 503, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 503, 3),
     )
 
     Nfse = property(__Nfse.value, __Nfse.set, None, None)
@@ -2710,9 +2562,7 @@ class tcCompNfse(pyxb.binding.basis.complexTypeDefinition):
         "NfseCancelamento",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcCompNfse_httpwww_ginfes_com_brtipos_v03_xsdNfseCancelamento",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 504, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 504, 3),
     )
 
     NfseCancelamento = property(__NfseCancelamento.value, __NfseCancelamento.set, None, None)
@@ -2723,9 +2573,7 @@ class tcCompNfse(pyxb.binding.basis.complexTypeDefinition):
         "NfseSubstituicao",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcCompNfse_httpwww_ginfes_com_brtipos_v03_xsdNfseSubstituicao",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 505, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 505, 3),
     )
 
     NfseSubstituicao = property(__NfseSubstituicao.value, __NfseSubstituicao.set, None, None)
@@ -2753,7 +2601,7 @@ class CTD_ANON(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 509, 2
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 509, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -2765,9 +2613,7 @@ class CTD_ANON(pyxb.binding.basis.complexTypeDefinition):
         "MensagemRetorno",
         "__httpwww_ginfes_com_brtipos_v03_xsd_CTD_ANON_httpwww_ginfes_com_brtipos_v03_xsdMensagemRetorno",
         True,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 511, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 511, 4),
     )
 
     MensagemRetorno = property(__MensagemRetorno.value, __MensagemRetorno.set, None, None)
@@ -2788,7 +2634,7 @@ class tcMensagemRetorno(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcMensagemRetorno")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 515, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 515, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -2800,9 +2646,7 @@ class tcMensagemRetorno(pyxb.binding.basis.complexTypeDefinition):
         "Codigo",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcMensagemRetorno_httpwww_ginfes_com_brtipos_v03_xsdCodigo",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 517, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 517, 3),
     )
 
     Codigo = property(__Codigo.value, __Codigo.set, None, None)
@@ -2813,9 +2657,7 @@ class tcMensagemRetorno(pyxb.binding.basis.complexTypeDefinition):
         "Mensagem",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcMensagemRetorno_httpwww_ginfes_com_brtipos_v03_xsdMensagem",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 518, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 518, 3),
     )
 
     Mensagem = property(__Mensagem.value, __Mensagem.set, None, None)
@@ -2826,9 +2668,7 @@ class tcMensagemRetorno(pyxb.binding.basis.complexTypeDefinition):
         "Correcao",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcMensagemRetorno_httpwww_ginfes_com_brtipos_v03_xsdCorrecao",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 519, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 519, 3),
     )
 
     Correcao = property(__Correcao.value, __Correcao.set, None, None)
@@ -2852,7 +2692,7 @@ class tcMensagemRetornoLote(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcMensagemRetornoLote")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 522, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 522, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -2864,9 +2704,7 @@ class tcMensagemRetornoLote(pyxb.binding.basis.complexTypeDefinition):
         "IdentificacaoRps",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcMensagemRetornoLote_httpwww_ginfes_com_brtipos_v03_xsdIdentificacaoRps",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 524, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 524, 3),
     )
 
     IdentificacaoRps = property(__IdentificacaoRps.value, __IdentificacaoRps.set, None, None)
@@ -2877,9 +2715,7 @@ class tcMensagemRetornoLote(pyxb.binding.basis.complexTypeDefinition):
         "Codigo",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcMensagemRetornoLote_httpwww_ginfes_com_brtipos_v03_xsdCodigo",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 525, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 525, 3),
     )
 
     Codigo = property(__Codigo.value, __Codigo.set, None, None)
@@ -2890,9 +2726,7 @@ class tcMensagemRetornoLote(pyxb.binding.basis.complexTypeDefinition):
         "Mensagem",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcMensagemRetornoLote_httpwww_ginfes_com_brtipos_v03_xsdMensagem",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 526, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 526, 3),
     )
 
     Mensagem = property(__Mensagem.value, __Mensagem.set, None, None)
@@ -2920,7 +2754,7 @@ class CTD_ANON_(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 536, 4
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 536, 4
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -2932,9 +2766,7 @@ class CTD_ANON_(pyxb.binding.basis.complexTypeDefinition):
         "Rps",
         "__httpwww_ginfes_com_brtipos_v03_xsd_CTD_ANON__httpwww_ginfes_com_brtipos_v03_xsdRps",
         True,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 538, 6
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 538, 6),
     )
 
     Rps = property(__Rps.value, __Rps.set, None, None)
@@ -2955,7 +2787,7 @@ class tcInfRps(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcInfRps")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 395, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 395, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -2967,9 +2799,7 @@ class tcInfRps(pyxb.binding.basis.complexTypeDefinition):
         "IdentificacaoRps",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfRps_httpwww_ginfes_com_brtipos_v03_xsdIdentificacaoRps",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 397, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 397, 3),
     )
 
     IdentificacaoRps = property(__IdentificacaoRps.value, __IdentificacaoRps.set, None, None)
@@ -2980,9 +2810,7 @@ class tcInfRps(pyxb.binding.basis.complexTypeDefinition):
         "DataEmissao",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfRps_httpwww_ginfes_com_brtipos_v03_xsdDataEmissao",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 398, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 398, 3),
     )
 
     DataEmissao = property(__DataEmissao.value, __DataEmissao.set, None, None)
@@ -2993,9 +2821,7 @@ class tcInfRps(pyxb.binding.basis.complexTypeDefinition):
         "NaturezaOperacao",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfRps_httpwww_ginfes_com_brtipos_v03_xsdNaturezaOperacao",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 399, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 399, 3),
     )
 
     NaturezaOperacao = property(__NaturezaOperacao.value, __NaturezaOperacao.set, None, None)
@@ -3006,9 +2832,7 @@ class tcInfRps(pyxb.binding.basis.complexTypeDefinition):
         "RegimeEspecialTributacao",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfRps_httpwww_ginfes_com_brtipos_v03_xsdRegimeEspecialTributacao",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 400, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 400, 3),
     )
 
     RegimeEspecialTributacao = property(
@@ -3021,9 +2845,7 @@ class tcInfRps(pyxb.binding.basis.complexTypeDefinition):
         "OptanteSimplesNacional",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfRps_httpwww_ginfes_com_brtipos_v03_xsdOptanteSimplesNacional",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 401, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 401, 3),
     )
 
     OptanteSimplesNacional = property(
@@ -3036,9 +2858,7 @@ class tcInfRps(pyxb.binding.basis.complexTypeDefinition):
         "IncentivadorCultural",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfRps_httpwww_ginfes_com_brtipos_v03_xsdIncentivadorCultural",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 402, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 402, 3),
     )
 
     IncentivadorCultural = property(
@@ -3051,9 +2871,7 @@ class tcInfRps(pyxb.binding.basis.complexTypeDefinition):
         "Status",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfRps_httpwww_ginfes_com_brtipos_v03_xsdStatus",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 403, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 403, 3),
     )
 
     Status = property(__Status.value, __Status.set, None, None)
@@ -3064,9 +2882,7 @@ class tcInfRps(pyxb.binding.basis.complexTypeDefinition):
         "RpsSubstituido",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfRps_httpwww_ginfes_com_brtipos_v03_xsdRpsSubstituido",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 404, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 404, 3),
     )
 
     RpsSubstituido = property(__RpsSubstituido.value, __RpsSubstituido.set, None, None)
@@ -3077,9 +2893,7 @@ class tcInfRps(pyxb.binding.basis.complexTypeDefinition):
         "Servico",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfRps_httpwww_ginfes_com_brtipos_v03_xsdServico",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 405, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 405, 3),
     )
 
     Servico = property(__Servico.value, __Servico.set, None, None)
@@ -3090,9 +2904,7 @@ class tcInfRps(pyxb.binding.basis.complexTypeDefinition):
         "Prestador",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfRps_httpwww_ginfes_com_brtipos_v03_xsdPrestador",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 406, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 406, 3),
     )
 
     Prestador = property(__Prestador.value, __Prestador.set, None, None)
@@ -3103,9 +2915,7 @@ class tcInfRps(pyxb.binding.basis.complexTypeDefinition):
         "Tomador",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfRps_httpwww_ginfes_com_brtipos_v03_xsdTomador",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 407, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 407, 3),
     )
 
     Tomador = property(__Tomador.value, __Tomador.set, None, None)
@@ -3116,9 +2926,7 @@ class tcInfRps(pyxb.binding.basis.complexTypeDefinition):
         "IntermediarioServico",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfRps_httpwww_ginfes_com_brtipos_v03_xsdIntermediarioServico",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 408, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 408, 3),
     )
 
     IntermediarioServico = property(
@@ -3131,9 +2939,7 @@ class tcInfRps(pyxb.binding.basis.complexTypeDefinition):
         "ConstrucaoCivil",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfRps_httpwww_ginfes_com_brtipos_v03_xsdConstrucaoCivil",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 409, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 409, 3),
     )
 
     ConstrucaoCivil = property(__ConstrucaoCivil.value, __ConstrucaoCivil.set, None, None)
@@ -3146,10 +2952,10 @@ class tcInfRps(pyxb.binding.basis.complexTypeDefinition):
         _module_typeBindings.tsIdTag,
     )
     __Id._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 411, 2
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 411, 2
     )
     __Id._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 411, 2
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 411, 2
     )
 
     Id = property(__Id.value, __Id.set, None, None)
@@ -3187,7 +2993,7 @@ class tcInfNfse(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcInfNfse")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 427, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 427, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -3199,9 +3005,7 @@ class tcInfNfse(pyxb.binding.basis.complexTypeDefinition):
         "Numero",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfNfse_httpwww_ginfes_com_brtipos_v03_xsdNumero",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 429, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 429, 3),
     )
 
     Numero = property(__Numero.value, __Numero.set, None, None)
@@ -3212,9 +3016,7 @@ class tcInfNfse(pyxb.binding.basis.complexTypeDefinition):
         "CodigoVerificacao",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfNfse_httpwww_ginfes_com_brtipos_v03_xsdCodigoVerificacao",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 430, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 430, 3),
     )
 
     CodigoVerificacao = property(__CodigoVerificacao.value, __CodigoVerificacao.set, None, None)
@@ -3225,9 +3027,7 @@ class tcInfNfse(pyxb.binding.basis.complexTypeDefinition):
         "DataEmissao",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfNfse_httpwww_ginfes_com_brtipos_v03_xsdDataEmissao",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 431, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 431, 3),
     )
 
     DataEmissao = property(__DataEmissao.value, __DataEmissao.set, None, None)
@@ -3238,9 +3038,7 @@ class tcInfNfse(pyxb.binding.basis.complexTypeDefinition):
         "IdentificacaoRps",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfNfse_httpwww_ginfes_com_brtipos_v03_xsdIdentificacaoRps",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 432, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 432, 3),
     )
 
     IdentificacaoRps = property(__IdentificacaoRps.value, __IdentificacaoRps.set, None, None)
@@ -3251,9 +3049,7 @@ class tcInfNfse(pyxb.binding.basis.complexTypeDefinition):
         "DataEmissaoRps",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfNfse_httpwww_ginfes_com_brtipos_v03_xsdDataEmissaoRps",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 433, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 433, 3),
     )
 
     DataEmissaoRps = property(__DataEmissaoRps.value, __DataEmissaoRps.set, None, None)
@@ -3264,9 +3060,7 @@ class tcInfNfse(pyxb.binding.basis.complexTypeDefinition):
         "NaturezaOperacao",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfNfse_httpwww_ginfes_com_brtipos_v03_xsdNaturezaOperacao",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 434, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 434, 3),
     )
 
     NaturezaOperacao = property(__NaturezaOperacao.value, __NaturezaOperacao.set, None, None)
@@ -3277,9 +3071,7 @@ class tcInfNfse(pyxb.binding.basis.complexTypeDefinition):
         "RegimeEspecialTributacao",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfNfse_httpwww_ginfes_com_brtipos_v03_xsdRegimeEspecialTributacao",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 435, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 435, 3),
     )
 
     RegimeEspecialTributacao = property(
@@ -3292,9 +3084,7 @@ class tcInfNfse(pyxb.binding.basis.complexTypeDefinition):
         "OptanteSimplesNacional",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfNfse_httpwww_ginfes_com_brtipos_v03_xsdOptanteSimplesNacional",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 436, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 436, 3),
     )
 
     OptanteSimplesNacional = property(
@@ -3307,9 +3097,7 @@ class tcInfNfse(pyxb.binding.basis.complexTypeDefinition):
         "IncentivadorCultural",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfNfse_httpwww_ginfes_com_brtipos_v03_xsdIncentivadorCultural",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 437, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 437, 3),
     )
 
     IncentivadorCultural = property(
@@ -3322,9 +3110,7 @@ class tcInfNfse(pyxb.binding.basis.complexTypeDefinition):
         "Competencia",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfNfse_httpwww_ginfes_com_brtipos_v03_xsdCompetencia",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 438, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 438, 3),
     )
 
     Competencia = property(__Competencia.value, __Competencia.set, None, None)
@@ -3335,9 +3121,7 @@ class tcInfNfse(pyxb.binding.basis.complexTypeDefinition):
         "NfseSubstituida",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfNfse_httpwww_ginfes_com_brtipos_v03_xsdNfseSubstituida",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 439, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 439, 3),
     )
 
     NfseSubstituida = property(__NfseSubstituida.value, __NfseSubstituida.set, None, None)
@@ -3348,9 +3132,7 @@ class tcInfNfse(pyxb.binding.basis.complexTypeDefinition):
         "OutrasInformacoes",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfNfse_httpwww_ginfes_com_brtipos_v03_xsdOutrasInformacoes",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 440, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 440, 3),
     )
 
     OutrasInformacoes = property(__OutrasInformacoes.value, __OutrasInformacoes.set, None, None)
@@ -3361,9 +3143,7 @@ class tcInfNfse(pyxb.binding.basis.complexTypeDefinition):
         "Servico",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfNfse_httpwww_ginfes_com_brtipos_v03_xsdServico",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 441, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 441, 3),
     )
 
     Servico = property(__Servico.value, __Servico.set, None, None)
@@ -3374,9 +3154,7 @@ class tcInfNfse(pyxb.binding.basis.complexTypeDefinition):
         "ValorCredito",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfNfse_httpwww_ginfes_com_brtipos_v03_xsdValorCredito",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 442, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 442, 3),
     )
 
     ValorCredito = property(__ValorCredito.value, __ValorCredito.set, None, None)
@@ -3387,9 +3165,7 @@ class tcInfNfse(pyxb.binding.basis.complexTypeDefinition):
         "PrestadorServico",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfNfse_httpwww_ginfes_com_brtipos_v03_xsdPrestadorServico",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 443, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 443, 3),
     )
 
     PrestadorServico = property(__PrestadorServico.value, __PrestadorServico.set, None, None)
@@ -3400,9 +3176,7 @@ class tcInfNfse(pyxb.binding.basis.complexTypeDefinition):
         "TomadorServico",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfNfse_httpwww_ginfes_com_brtipos_v03_xsdTomadorServico",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 444, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 444, 3),
     )
 
     TomadorServico = property(__TomadorServico.value, __TomadorServico.set, None, None)
@@ -3413,9 +3187,7 @@ class tcInfNfse(pyxb.binding.basis.complexTypeDefinition):
         "IntermediarioServico",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfNfse_httpwww_ginfes_com_brtipos_v03_xsdIntermediarioServico",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 445, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 445, 3),
     )
 
     IntermediarioServico = property(
@@ -3428,9 +3200,7 @@ class tcInfNfse(pyxb.binding.basis.complexTypeDefinition):
         "OrgaoGerador",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfNfse_httpwww_ginfes_com_brtipos_v03_xsdOrgaoGerador",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 446, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 446, 3),
     )
 
     OrgaoGerador = property(__OrgaoGerador.value, __OrgaoGerador.set, None, None)
@@ -3441,9 +3211,7 @@ class tcInfNfse(pyxb.binding.basis.complexTypeDefinition):
         "ConstrucaoCivil",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfNfse_httpwww_ginfes_com_brtipos_v03_xsdConstrucaoCivil",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 447, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 447, 3),
     )
 
     ConstrucaoCivil = property(__ConstrucaoCivil.value, __ConstrucaoCivil.set, None, None)
@@ -3456,10 +3224,10 @@ class tcInfNfse(pyxb.binding.basis.complexTypeDefinition):
         _module_typeBindings.tsIdTag,
     )
     __Id._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 449, 2
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 449, 2
     )
     __Id._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 449, 2
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 449, 2
     )
 
     Id = property(__Id.value, __Id.set, None, None)
@@ -3503,7 +3271,7 @@ class tcInfPedidoCancelamento(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcInfPedidoCancelamento")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 457, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 457, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -3515,9 +3283,7 @@ class tcInfPedidoCancelamento(pyxb.binding.basis.complexTypeDefinition):
         "IdentificacaoNfse",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfPedidoCancelamento_httpwww_ginfes_com_brtipos_v03_xsdIdentificacaoNfse",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 459, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 459, 3),
     )
 
     IdentificacaoNfse = property(__IdentificacaoNfse.value, __IdentificacaoNfse.set, None, None)
@@ -3528,9 +3294,7 @@ class tcInfPedidoCancelamento(pyxb.binding.basis.complexTypeDefinition):
         "CodigoCancelamento",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfPedidoCancelamento_httpwww_ginfes_com_brtipos_v03_xsdCodigoCancelamento",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 460, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 460, 3),
     )
 
     CodigoCancelamento = property(__CodigoCancelamento.value, __CodigoCancelamento.set, None, None)
@@ -3543,10 +3307,10 @@ class tcInfPedidoCancelamento(pyxb.binding.basis.complexTypeDefinition):
         _module_typeBindings.tsIdTag,
     )
     __Id._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 462, 2
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 462, 2
     )
     __Id._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 462, 2
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 462, 2
     )
 
     Id = property(__Id.value, __Id.set, None, None)
@@ -3573,7 +3337,7 @@ class tcConfirmacaoCancelamento(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcConfirmacaoCancelamento")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 476, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 476, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -3585,9 +3349,7 @@ class tcConfirmacaoCancelamento(pyxb.binding.basis.complexTypeDefinition):
         "Pedido",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcConfirmacaoCancelamento_httpwww_ginfes_com_brtipos_v03_xsdPedido",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 478, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 478, 3),
     )
 
     Pedido = property(__Pedido.value, __Pedido.set, None, None)
@@ -3598,9 +3360,7 @@ class tcConfirmacaoCancelamento(pyxb.binding.basis.complexTypeDefinition):
         "InfConfirmacaoCancelamento",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcConfirmacaoCancelamento_httpwww_ginfes_com_brtipos_v03_xsdInfConfirmacaoCancelamento",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 479, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 479, 3),
     )
 
     InfConfirmacaoCancelamento = property(
@@ -3615,10 +3375,10 @@ class tcConfirmacaoCancelamento(pyxb.binding.basis.complexTypeDefinition):
         _module_typeBindings.tsIdTag,
     )
     __Id._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 481, 2
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 481, 2
     )
     __Id._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 481, 2
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 481, 2
     )
 
     Id = property(__Id.value, __Id.set, None, None)
@@ -3645,7 +3405,7 @@ class tcInfSubstituicaoNfse(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcInfSubstituicaoNfse")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 489, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 489, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -3657,9 +3417,7 @@ class tcInfSubstituicaoNfse(pyxb.binding.basis.complexTypeDefinition):
         "NfseSubstituidora",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcInfSubstituicaoNfse_httpwww_ginfes_com_brtipos_v03_xsdNfseSubstituidora",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 491, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 491, 3),
     )
 
     NfseSubstituidora = property(__NfseSubstituidora.value, __NfseSubstituidora.set, None, None)
@@ -3672,10 +3430,10 @@ class tcInfSubstituicaoNfse(pyxb.binding.basis.complexTypeDefinition):
         _module_typeBindings.tsIdTag,
     )
     __Id._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 493, 2
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 493, 2
     )
     __Id._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 493, 2
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 493, 2
     )
 
     Id = property(__Id.value, __Id.set, None, None)
@@ -3697,7 +3455,7 @@ class tcLoteRps(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcLoteRps")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 529, 1
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 529, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -3709,9 +3467,7 @@ class tcLoteRps(pyxb.binding.basis.complexTypeDefinition):
         "NumeroLote",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcLoteRps_httpwww_ginfes_com_brtipos_v03_xsdNumeroLote",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 531, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 531, 3),
     )
 
     NumeroLote = property(__NumeroLote.value, __NumeroLote.set, None, None)
@@ -3722,9 +3478,7 @@ class tcLoteRps(pyxb.binding.basis.complexTypeDefinition):
         "Cnpj",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcLoteRps_httpwww_ginfes_com_brtipos_v03_xsdCnpj",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 532, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 532, 3),
     )
 
     Cnpj = property(__Cnpj.value, __Cnpj.set, None, None)
@@ -3735,9 +3489,7 @@ class tcLoteRps(pyxb.binding.basis.complexTypeDefinition):
         "InscricaoMunicipal",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcLoteRps_httpwww_ginfes_com_brtipos_v03_xsdInscricaoMunicipal",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 533, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 533, 3),
     )
 
     InscricaoMunicipal = property(__InscricaoMunicipal.value, __InscricaoMunicipal.set, None, None)
@@ -3748,9 +3500,7 @@ class tcLoteRps(pyxb.binding.basis.complexTypeDefinition):
         "QuantidadeRps",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcLoteRps_httpwww_ginfes_com_brtipos_v03_xsdQuantidadeRps",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 534, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 534, 3),
     )
 
     QuantidadeRps = property(__QuantidadeRps.value, __QuantidadeRps.set, None, None)
@@ -3761,9 +3511,7 @@ class tcLoteRps(pyxb.binding.basis.complexTypeDefinition):
         "ListaRps",
         "__httpwww_ginfes_com_brtipos_v03_xsd_tcLoteRps_httpwww_ginfes_com_brtipos_v03_xsdListaRps",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 535, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 535, 3),
     )
 
     ListaRps = property(__ListaRps.value, __ListaRps.set, None, None)
@@ -3776,10 +3524,10 @@ class tcLoteRps(pyxb.binding.basis.complexTypeDefinition):
         _module_typeBindings.tsIdTag,
     )
     __Id._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 543, 2
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 543, 2
     )
     __Id._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 543, 2
+        "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 543, 2
     )
 
     Id = property(__Id.value, __Id.set, None, None)
@@ -3803,9 +3551,7 @@ Namespace.addCategoryObject("typeBinding", "tcLoteRps", tcLoteRps)
 ListaMensagemRetorno = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "ListaMensagemRetorno"),
     CTD_ANON,
-    location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 508, 1
-    ),
+    location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 508, 1),
 )
 Namespace.addCategoryObject(
     "elementBinding", ListaMensagemRetorno.name().localName(), ListaMensagemRetorno
@@ -3818,7 +3564,7 @@ tcCpfCnpj._AddElement(
         tsCpf,
         scope=tcCpfCnpj,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 289, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 289, 3
         ),
     )
 )
@@ -3829,7 +3575,7 @@ tcCpfCnpj._AddElement(
         tsCnpj,
         scope=tcCpfCnpj,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 290, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 290, 3
         ),
     )
 )
@@ -3846,9 +3592,7 @@ def _BuildAutomaton():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcCpfCnpj._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Cpf")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 289, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 289, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -3857,9 +3601,7 @@ def _BuildAutomaton():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcCpfCnpj._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Cnpj")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 290, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 290, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -3881,7 +3623,7 @@ tcEndereco._AddElement(
         tsEndereco,
         scope=tcEndereco,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 295, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 295, 3
         ),
     )
 )
@@ -3892,7 +3634,7 @@ tcEndereco._AddElement(
         tsNumeroEndereco,
         scope=tcEndereco,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 296, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 296, 3
         ),
     )
 )
@@ -3903,7 +3645,7 @@ tcEndereco._AddElement(
         tsComplementoEndereco,
         scope=tcEndereco,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 297, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 297, 3
         ),
     )
 )
@@ -3914,7 +3656,7 @@ tcEndereco._AddElement(
         tsBairro,
         scope=tcEndereco,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 298, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 298, 3
         ),
     )
 )
@@ -3925,7 +3667,7 @@ tcEndereco._AddElement(
         tsCodigoMunicipioIbge,
         scope=tcEndereco,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 299, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 299, 3
         ),
     )
 )
@@ -3936,7 +3678,7 @@ tcEndereco._AddElement(
         tsUf,
         scope=tcEndereco,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 300, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 300, 3
         ),
     )
 )
@@ -3947,7 +3689,7 @@ tcEndereco._AddElement(
         tsCep,
         scope=tcEndereco,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 301, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 301, 3
         ),
     )
 )
@@ -3964,7 +3706,7 @@ def _BuildAutomaton_():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 295, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 295, 3
         ),
     )
     counters.add(cc_0)
@@ -3972,7 +3714,7 @@ def _BuildAutomaton_():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 296, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 296, 3
         ),
     )
     counters.add(cc_1)
@@ -3980,7 +3722,7 @@ def _BuildAutomaton_():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 297, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 297, 3
         ),
     )
     counters.add(cc_2)
@@ -3988,7 +3730,7 @@ def _BuildAutomaton_():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 298, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 298, 3
         ),
     )
     counters.add(cc_3)
@@ -3996,7 +3738,7 @@ def _BuildAutomaton_():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 299, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 299, 3
         ),
     )
     counters.add(cc_4)
@@ -4004,7 +3746,7 @@ def _BuildAutomaton_():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 300, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 300, 3
         ),
     )
     counters.add(cc_5)
@@ -4012,7 +3754,7 @@ def _BuildAutomaton_():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 301, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 301, 3
         ),
     )
     counters.add(cc_6)
@@ -4021,9 +3763,7 @@ def _BuildAutomaton_():
     final_update.add(fac.UpdateInstruction(cc_0, False))
     symbol = pyxb.binding.content.ElementUse(
         tcEndereco._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Endereco")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 295, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 295, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -4033,9 +3773,7 @@ def _BuildAutomaton_():
     final_update.add(fac.UpdateInstruction(cc_1, False))
     symbol = pyxb.binding.content.ElementUse(
         tcEndereco._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Numero")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 296, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 296, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -4045,9 +3783,7 @@ def _BuildAutomaton_():
     final_update.add(fac.UpdateInstruction(cc_2, False))
     symbol = pyxb.binding.content.ElementUse(
         tcEndereco._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Complemento")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 297, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 297, 3),
     )
     st_2 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -4057,9 +3793,7 @@ def _BuildAutomaton_():
     final_update.add(fac.UpdateInstruction(cc_3, False))
     symbol = pyxb.binding.content.ElementUse(
         tcEndereco._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Bairro")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 298, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 298, 3),
     )
     st_3 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -4069,9 +3803,7 @@ def _BuildAutomaton_():
     final_update.add(fac.UpdateInstruction(cc_4, False))
     symbol = pyxb.binding.content.ElementUse(
         tcEndereco._UseForTag(pyxb.namespace.ExpandedName(Namespace, "CodigoMunicipio")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 299, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 299, 3),
     )
     st_4 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -4081,9 +3813,7 @@ def _BuildAutomaton_():
     final_update.add(fac.UpdateInstruction(cc_5, False))
     symbol = pyxb.binding.content.ElementUse(
         tcEndereco._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Uf")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 300, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 300, 3),
     )
     st_5 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -4093,9 +3823,7 @@ def _BuildAutomaton_():
     final_update.add(fac.UpdateInstruction(cc_6, False))
     symbol = pyxb.binding.content.ElementUse(
         tcEndereco._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Cep")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 301, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 301, 3),
     )
     st_6 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -4155,7 +3883,7 @@ tcContato._AddElement(
         tsTelefone,
         scope=tcContato,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 306, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 306, 3
         ),
     )
 )
@@ -4166,7 +3894,7 @@ tcContato._AddElement(
         tsEmail,
         scope=tcContato,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 307, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 307, 3
         ),
     )
 )
@@ -4183,7 +3911,7 @@ def _BuildAutomaton_2():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 306, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 306, 3
         ),
     )
     counters.add(cc_0)
@@ -4191,7 +3919,7 @@ def _BuildAutomaton_2():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 307, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 307, 3
         ),
     )
     counters.add(cc_1)
@@ -4200,9 +3928,7 @@ def _BuildAutomaton_2():
     final_update.add(fac.UpdateInstruction(cc_0, False))
     symbol = pyxb.binding.content.ElementUse(
         tcContato._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Telefone")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 306, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 306, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -4212,9 +3938,7 @@ def _BuildAutomaton_2():
     final_update.add(fac.UpdateInstruction(cc_1, False))
     symbol = pyxb.binding.content.ElementUse(
         tcContato._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Email")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 307, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 307, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -4239,7 +3963,7 @@ tcIdentificacaoOrgaoGerador._AddElement(
         tsCodigoMunicipioIbge,
         scope=tcIdentificacaoOrgaoGerador,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 312, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 312, 3
         ),
     )
 )
@@ -4250,7 +3974,7 @@ tcIdentificacaoOrgaoGerador._AddElement(
         tsUf,
         scope=tcIdentificacaoOrgaoGerador,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 313, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 313, 3
         ),
     )
 )
@@ -4269,9 +3993,7 @@ def _BuildAutomaton_3():
         tcIdentificacaoOrgaoGerador._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "CodigoMunicipio")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 312, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 312, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -4280,9 +4002,7 @@ def _BuildAutomaton_3():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcIdentificacaoOrgaoGerador._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Uf")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 313, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 313, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -4305,7 +4025,7 @@ tcIdentificacaoRps._AddElement(
         tsNumeroRps,
         scope=tcIdentificacaoRps,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 318, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 318, 3
         ),
     )
 )
@@ -4316,7 +4036,7 @@ tcIdentificacaoRps._AddElement(
         tsSerieRps,
         scope=tcIdentificacaoRps,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 319, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 319, 3
         ),
     )
 )
@@ -4327,7 +4047,7 @@ tcIdentificacaoRps._AddElement(
         tsTipoRps,
         scope=tcIdentificacaoRps,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 320, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 320, 3
         ),
     )
 )
@@ -4344,9 +4064,7 @@ def _BuildAutomaton_4():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcIdentificacaoRps._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Numero")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 318, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 318, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -4355,9 +4073,7 @@ def _BuildAutomaton_4():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcIdentificacaoRps._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Serie")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 319, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 319, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -4366,9 +4082,7 @@ def _BuildAutomaton_4():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcIdentificacaoRps._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Tipo")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 320, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 320, 3),
     )
     st_2 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -4394,7 +4108,7 @@ tcIdentificacaoPrestador._AddElement(
         tsCnpj,
         scope=tcIdentificacaoPrestador,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 325, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 325, 3
         ),
     )
 )
@@ -4405,7 +4119,7 @@ tcIdentificacaoPrestador._AddElement(
         tsInscricaoMunicipal,
         scope=tcIdentificacaoPrestador,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 326, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 326, 3
         ),
     )
 )
@@ -4422,7 +4136,7 @@ def _BuildAutomaton_5():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 326, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 326, 3
         ),
     )
     counters.add(cc_0)
@@ -4430,9 +4144,7 @@ def _BuildAutomaton_5():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcIdentificacaoPrestador._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Cnpj")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 325, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 325, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -4444,9 +4156,7 @@ def _BuildAutomaton_5():
         tcIdentificacaoPrestador._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "InscricaoMunicipal")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 326, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 326, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -4470,7 +4180,7 @@ tcIdentificacaoTomador._AddElement(
         tcCpfCnpj,
         scope=tcIdentificacaoTomador,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 331, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 331, 3
         ),
     )
 )
@@ -4481,7 +4191,7 @@ tcIdentificacaoTomador._AddElement(
         tsInscricaoMunicipal,
         scope=tcIdentificacaoTomador,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 332, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 332, 3
         ),
     )
 )
@@ -4498,7 +4208,7 @@ def _BuildAutomaton_6():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 331, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 331, 3
         ),
     )
     counters.add(cc_0)
@@ -4506,7 +4216,7 @@ def _BuildAutomaton_6():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 332, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 332, 3
         ),
     )
     counters.add(cc_1)
@@ -4515,9 +4225,7 @@ def _BuildAutomaton_6():
     final_update.add(fac.UpdateInstruction(cc_0, False))
     symbol = pyxb.binding.content.ElementUse(
         tcIdentificacaoTomador._UseForTag(pyxb.namespace.ExpandedName(Namespace, "CpfCnpj")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 331, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 331, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -4529,9 +4237,7 @@ def _BuildAutomaton_6():
         tcIdentificacaoTomador._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "InscricaoMunicipal")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 332, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 332, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -4556,7 +4262,7 @@ tcDadosTomador._AddElement(
         tcIdentificacaoTomador,
         scope=tcDadosTomador,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 337, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 337, 3
         ),
     )
 )
@@ -4567,7 +4273,7 @@ tcDadosTomador._AddElement(
         tsRazaoSocial,
         scope=tcDadosTomador,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 338, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 338, 3
         ),
     )
 )
@@ -4578,7 +4284,7 @@ tcDadosTomador._AddElement(
         tcEndereco,
         scope=tcDadosTomador,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 339, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 339, 3
         ),
     )
 )
@@ -4589,7 +4295,7 @@ tcDadosTomador._AddElement(
         tcContato,
         scope=tcDadosTomador,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 340, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 340, 3
         ),
     )
 )
@@ -4606,7 +4312,7 @@ def _BuildAutomaton_7():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 337, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 337, 3
         ),
     )
     counters.add(cc_0)
@@ -4614,7 +4320,7 @@ def _BuildAutomaton_7():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 338, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 338, 3
         ),
     )
     counters.add(cc_1)
@@ -4622,7 +4328,7 @@ def _BuildAutomaton_7():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 339, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 339, 3
         ),
     )
     counters.add(cc_2)
@@ -4630,7 +4336,7 @@ def _BuildAutomaton_7():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 340, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 340, 3
         ),
     )
     counters.add(cc_3)
@@ -4639,9 +4345,7 @@ def _BuildAutomaton_7():
     final_update.add(fac.UpdateInstruction(cc_0, False))
     symbol = pyxb.binding.content.ElementUse(
         tcDadosTomador._UseForTag(pyxb.namespace.ExpandedName(Namespace, "IdentificacaoTomador")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 337, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 337, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -4651,9 +4355,7 @@ def _BuildAutomaton_7():
     final_update.add(fac.UpdateInstruction(cc_1, False))
     symbol = pyxb.binding.content.ElementUse(
         tcDadosTomador._UseForTag(pyxb.namespace.ExpandedName(Namespace, "RazaoSocial")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 338, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 338, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -4663,9 +4365,7 @@ def _BuildAutomaton_7():
     final_update.add(fac.UpdateInstruction(cc_2, False))
     symbol = pyxb.binding.content.ElementUse(
         tcDadosTomador._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Endereco")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 339, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 339, 3),
     )
     st_2 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -4675,9 +4375,7 @@ def _BuildAutomaton_7():
     final_update.add(fac.UpdateInstruction(cc_3, False))
     symbol = pyxb.binding.content.ElementUse(
         tcDadosTomador._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Contato")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 340, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 340, 3),
     )
     st_3 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -4713,7 +4411,7 @@ tcIdentificacaoIntermediarioServico._AddElement(
         tsRazaoSocial,
         scope=tcIdentificacaoIntermediarioServico,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 345, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 345, 3
         ),
     )
 )
@@ -4724,7 +4422,7 @@ tcIdentificacaoIntermediarioServico._AddElement(
         tcCpfCnpj,
         scope=tcIdentificacaoIntermediarioServico,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 346, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 346, 3
         ),
     )
 )
@@ -4735,7 +4433,7 @@ tcIdentificacaoIntermediarioServico._AddElement(
         tsInscricaoMunicipal,
         scope=tcIdentificacaoIntermediarioServico,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 347, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 347, 3
         ),
     )
 )
@@ -4752,7 +4450,7 @@ def _BuildAutomaton_8():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 347, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 347, 3
         ),
     )
     counters.add(cc_0)
@@ -4762,9 +4460,7 @@ def _BuildAutomaton_8():
         tcIdentificacaoIntermediarioServico._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "RazaoSocial")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 345, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 345, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -4775,9 +4471,7 @@ def _BuildAutomaton_8():
         tcIdentificacaoIntermediarioServico._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "CpfCnpj")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 346, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 346, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -4789,9 +4483,7 @@ def _BuildAutomaton_8():
         tcIdentificacaoIntermediarioServico._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "InscricaoMunicipal")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 347, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 347, 3),
     )
     st_2 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -4818,7 +4510,7 @@ tcValores._AddElement(
         tsValor,
         scope=tcValores,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 352, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 352, 3
         ),
     )
 )
@@ -4829,7 +4521,7 @@ tcValores._AddElement(
         tsValor,
         scope=tcValores,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 353, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 353, 3
         ),
     )
 )
@@ -4840,7 +4532,7 @@ tcValores._AddElement(
         tsValor,
         scope=tcValores,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 354, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 354, 3
         ),
     )
 )
@@ -4851,7 +4543,7 @@ tcValores._AddElement(
         tsValor,
         scope=tcValores,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 355, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 355, 3
         ),
     )
 )
@@ -4862,7 +4554,7 @@ tcValores._AddElement(
         tsValor,
         scope=tcValores,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 356, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 356, 3
         ),
     )
 )
@@ -4873,7 +4565,7 @@ tcValores._AddElement(
         tsValor,
         scope=tcValores,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 357, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 357, 3
         ),
     )
 )
@@ -4884,7 +4576,7 @@ tcValores._AddElement(
         tsValor,
         scope=tcValores,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 358, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 358, 3
         ),
     )
 )
@@ -4895,7 +4587,7 @@ tcValores._AddElement(
         tsSimNao,
         scope=tcValores,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 359, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 359, 3
         ),
     )
 )
@@ -4906,7 +4598,7 @@ tcValores._AddElement(
         tsValor,
         scope=tcValores,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 360, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 360, 3
         ),
     )
 )
@@ -4917,7 +4609,7 @@ tcValores._AddElement(
         tsValor,
         scope=tcValores,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 361, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 361, 3
         ),
     )
 )
@@ -4928,7 +4620,7 @@ tcValores._AddElement(
         tsValor,
         scope=tcValores,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 362, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 362, 3
         ),
     )
 )
@@ -4939,7 +4631,7 @@ tcValores._AddElement(
         tsValor,
         scope=tcValores,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 363, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 363, 3
         ),
     )
 )
@@ -4950,7 +4642,7 @@ tcValores._AddElement(
         tsAliquota,
         scope=tcValores,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 364, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 364, 3
         ),
     )
 )
@@ -4961,7 +4653,7 @@ tcValores._AddElement(
         tsValor,
         scope=tcValores,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 365, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 365, 3
         ),
     )
 )
@@ -4972,7 +4664,7 @@ tcValores._AddElement(
         tsValor,
         scope=tcValores,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 366, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 366, 3
         ),
     )
 )
@@ -4983,7 +4675,7 @@ tcValores._AddElement(
         tsValor,
         scope=tcValores,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 367, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 367, 3
         ),
     )
 )
@@ -5000,7 +4692,7 @@ def _BuildAutomaton_9():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 353, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 353, 3
         ),
     )
     counters.add(cc_0)
@@ -5008,7 +4700,7 @@ def _BuildAutomaton_9():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 354, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 354, 3
         ),
     )
     counters.add(cc_1)
@@ -5016,7 +4708,7 @@ def _BuildAutomaton_9():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 355, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 355, 3
         ),
     )
     counters.add(cc_2)
@@ -5024,7 +4716,7 @@ def _BuildAutomaton_9():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 356, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 356, 3
         ),
     )
     counters.add(cc_3)
@@ -5032,7 +4724,7 @@ def _BuildAutomaton_9():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 357, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 357, 3
         ),
     )
     counters.add(cc_4)
@@ -5040,7 +4732,7 @@ def _BuildAutomaton_9():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 358, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 358, 3
         ),
     )
     counters.add(cc_5)
@@ -5048,7 +4740,7 @@ def _BuildAutomaton_9():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 360, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 360, 3
         ),
     )
     counters.add(cc_6)
@@ -5056,7 +4748,7 @@ def _BuildAutomaton_9():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 361, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 361, 3
         ),
     )
     counters.add(cc_7)
@@ -5064,7 +4756,7 @@ def _BuildAutomaton_9():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 362, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 362, 3
         ),
     )
     counters.add(cc_8)
@@ -5072,7 +4764,7 @@ def _BuildAutomaton_9():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 363, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 363, 3
         ),
     )
     counters.add(cc_9)
@@ -5080,7 +4772,7 @@ def _BuildAutomaton_9():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 364, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 364, 3
         ),
     )
     counters.add(cc_10)
@@ -5088,7 +4780,7 @@ def _BuildAutomaton_9():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 365, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 365, 3
         ),
     )
     counters.add(cc_11)
@@ -5096,7 +4788,7 @@ def _BuildAutomaton_9():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 366, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 366, 3
         ),
     )
     counters.add(cc_12)
@@ -5104,7 +4796,7 @@ def _BuildAutomaton_9():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 367, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 367, 3
         ),
     )
     counters.add(cc_13)
@@ -5112,9 +4804,7 @@ def _BuildAutomaton_9():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcValores._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ValorServicos")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 352, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 352, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -5123,9 +4813,7 @@ def _BuildAutomaton_9():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcValores._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ValorDeducoes")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 353, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 353, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -5134,9 +4822,7 @@ def _BuildAutomaton_9():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcValores._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ValorPis")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 354, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 354, 3),
     )
     st_2 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -5145,9 +4831,7 @@ def _BuildAutomaton_9():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcValores._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ValorCofins")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 355, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 355, 3),
     )
     st_3 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -5156,9 +4840,7 @@ def _BuildAutomaton_9():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcValores._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ValorInss")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 356, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 356, 3),
     )
     st_4 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -5167,9 +4849,7 @@ def _BuildAutomaton_9():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcValores._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ValorIr")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 357, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 357, 3),
     )
     st_5 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -5178,9 +4858,7 @@ def _BuildAutomaton_9():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcValores._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ValorCsll")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 358, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 358, 3),
     )
     st_6 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -5189,9 +4867,7 @@ def _BuildAutomaton_9():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcValores._UseForTag(pyxb.namespace.ExpandedName(Namespace, "IssRetido")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 359, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 359, 3),
     )
     st_7 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -5201,9 +4877,7 @@ def _BuildAutomaton_9():
     final_update.add(fac.UpdateInstruction(cc_6, False))
     symbol = pyxb.binding.content.ElementUse(
         tcValores._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ValorIss")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 360, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 360, 3),
     )
     st_8 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -5213,9 +4887,7 @@ def _BuildAutomaton_9():
     final_update.add(fac.UpdateInstruction(cc_7, False))
     symbol = pyxb.binding.content.ElementUse(
         tcValores._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ValorIssRetido")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 361, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 361, 3),
     )
     st_9 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -5225,9 +4897,7 @@ def _BuildAutomaton_9():
     final_update.add(fac.UpdateInstruction(cc_8, False))
     symbol = pyxb.binding.content.ElementUse(
         tcValores._UseForTag(pyxb.namespace.ExpandedName(Namespace, "OutrasRetencoes")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 362, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 362, 3),
     )
     st_10 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -5237,9 +4907,7 @@ def _BuildAutomaton_9():
     final_update.add(fac.UpdateInstruction(cc_9, False))
     symbol = pyxb.binding.content.ElementUse(
         tcValores._UseForTag(pyxb.namespace.ExpandedName(Namespace, "BaseCalculo")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 363, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 363, 3),
     )
     st_11 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -5249,9 +4917,7 @@ def _BuildAutomaton_9():
     final_update.add(fac.UpdateInstruction(cc_10, False))
     symbol = pyxb.binding.content.ElementUse(
         tcValores._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Aliquota")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 364, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 364, 3),
     )
     st_12 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -5261,9 +4927,7 @@ def _BuildAutomaton_9():
     final_update.add(fac.UpdateInstruction(cc_11, False))
     symbol = pyxb.binding.content.ElementUse(
         tcValores._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ValorLiquidoNfse")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 365, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 365, 3),
     )
     st_13 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -5273,9 +4937,7 @@ def _BuildAutomaton_9():
     final_update.add(fac.UpdateInstruction(cc_12, False))
     symbol = pyxb.binding.content.ElementUse(
         tcValores._UseForTag(pyxb.namespace.ExpandedName(Namespace, "DescontoIncondicionado")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 366, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 366, 3),
     )
     st_14 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -5285,9 +4947,7 @@ def _BuildAutomaton_9():
     final_update.add(fac.UpdateInstruction(cc_13, False))
     symbol = pyxb.binding.content.ElementUse(
         tcValores._UseForTag(pyxb.namespace.ExpandedName(Namespace, "DescontoCondicionado")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 367, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 367, 3),
     )
     st_15 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -5415,7 +5075,7 @@ tcDadosServico._AddElement(
         tcValores,
         scope=tcDadosServico,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 372, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 372, 3
         ),
     )
 )
@@ -5426,7 +5086,7 @@ tcDadosServico._AddElement(
         tsItemListaServico,
         scope=tcDadosServico,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 373, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 373, 3
         ),
     )
 )
@@ -5437,7 +5097,7 @@ tcDadosServico._AddElement(
         tsCodigoCnae,
         scope=tcDadosServico,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 374, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 374, 3
         ),
     )
 )
@@ -5448,7 +5108,7 @@ tcDadosServico._AddElement(
         tsCodigoTributacao,
         scope=tcDadosServico,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 375, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 375, 3
         ),
     )
 )
@@ -5459,7 +5119,7 @@ tcDadosServico._AddElement(
         tsDiscriminacao,
         scope=tcDadosServico,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 376, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 376, 3
         ),
     )
 )
@@ -5470,7 +5130,7 @@ tcDadosServico._AddElement(
         tsCodigoMunicipioIbge,
         scope=tcDadosServico,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 377, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 377, 3
         ),
     )
 )
@@ -5487,7 +5147,7 @@ def _BuildAutomaton_10():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 374, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 374, 3
         ),
     )
     counters.add(cc_0)
@@ -5495,7 +5155,7 @@ def _BuildAutomaton_10():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 375, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 375, 3
         ),
     )
     counters.add(cc_1)
@@ -5503,9 +5163,7 @@ def _BuildAutomaton_10():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcDadosServico._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Valores")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 372, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 372, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -5514,9 +5172,7 @@ def _BuildAutomaton_10():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcDadosServico._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ItemListaServico")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 373, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 373, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -5525,9 +5181,7 @@ def _BuildAutomaton_10():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcDadosServico._UseForTag(pyxb.namespace.ExpandedName(Namespace, "CodigoCnae")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 374, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 374, 3),
     )
     st_2 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -5538,9 +5192,7 @@ def _BuildAutomaton_10():
         tcDadosServico._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "CodigoTributacaoMunicipio")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 375, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 375, 3),
     )
     st_3 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -5549,9 +5201,7 @@ def _BuildAutomaton_10():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcDadosServico._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Discriminacao")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 376, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 376, 3),
     )
     st_4 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -5560,9 +5210,7 @@ def _BuildAutomaton_10():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcDadosServico._UseForTag(pyxb.namespace.ExpandedName(Namespace, "CodigoMunicipio")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 377, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 377, 3),
     )
     st_5 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -5602,7 +5250,7 @@ tcDadosConstrucaoCivil._AddElement(
         tsCodigoObra,
         scope=tcDadosConstrucaoCivil,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 382, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 382, 3
         ),
     )
 )
@@ -5613,7 +5261,7 @@ tcDadosConstrucaoCivil._AddElement(
         tsArt,
         scope=tcDadosConstrucaoCivil,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 383, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 383, 3
         ),
     )
 )
@@ -5630,9 +5278,7 @@ def _BuildAutomaton_11():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcDadosConstrucaoCivil._UseForTag(pyxb.namespace.ExpandedName(Namespace, "CodigoObra")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 382, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 382, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -5641,9 +5287,7 @@ def _BuildAutomaton_11():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcDadosConstrucaoCivil._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Art")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 383, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 383, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -5666,7 +5310,7 @@ tcDadosPrestador._AddElement(
         tcIdentificacaoPrestador,
         scope=tcDadosPrestador,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 388, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 388, 3
         ),
     )
 )
@@ -5677,7 +5321,7 @@ tcDadosPrestador._AddElement(
         tsRazaoSocial,
         scope=tcDadosPrestador,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 389, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 389, 3
         ),
     )
 )
@@ -5688,7 +5332,7 @@ tcDadosPrestador._AddElement(
         tsNomeFantasia,
         scope=tcDadosPrestador,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 390, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 390, 3
         ),
     )
 )
@@ -5699,7 +5343,7 @@ tcDadosPrestador._AddElement(
         tcEndereco,
         scope=tcDadosPrestador,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 391, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 391, 3
         ),
     )
 )
@@ -5710,7 +5354,7 @@ tcDadosPrestador._AddElement(
         tcContato,
         scope=tcDadosPrestador,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 392, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 392, 3
         ),
     )
 )
@@ -5727,7 +5371,7 @@ def _BuildAutomaton_12():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 390, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 390, 3
         ),
     )
     counters.add(cc_0)
@@ -5735,7 +5379,7 @@ def _BuildAutomaton_12():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 392, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 392, 3
         ),
     )
     counters.add(cc_1)
@@ -5745,9 +5389,7 @@ def _BuildAutomaton_12():
         tcDadosPrestador._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "IdentificacaoPrestador")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 388, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 388, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -5756,9 +5398,7 @@ def _BuildAutomaton_12():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcDadosPrestador._UseForTag(pyxb.namespace.ExpandedName(Namespace, "RazaoSocial")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 389, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 389, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -5767,9 +5407,7 @@ def _BuildAutomaton_12():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcDadosPrestador._UseForTag(pyxb.namespace.ExpandedName(Namespace, "NomeFantasia")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 390, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 390, 3),
     )
     st_2 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -5778,9 +5416,7 @@ def _BuildAutomaton_12():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcDadosPrestador._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Endereco")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 391, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 391, 3),
     )
     st_3 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -5790,9 +5426,7 @@ def _BuildAutomaton_12():
     final_update.add(fac.UpdateInstruction(cc_1, False))
     symbol = pyxb.binding.content.ElementUse(
         tcDadosPrestador._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Contato")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 392, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 392, 3),
     )
     st_4 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -5827,7 +5461,7 @@ tcRps._AddElement(
         tcInfRps,
         scope=tcRps,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 415, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 415, 3
         ),
     )
 )
@@ -5838,9 +5472,7 @@ tcRps._AddElement(
         _ImportedBinding__dsig.SignatureType,
         scope=tcRps,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/xmldsig-core-schema20020212_v03.xsd",
-            41,
-            0,
+            "pynotas/data/XSDs/NFS-e/Ginfes/xmldsig-core-schema20020212_v03.xsd", 41, 0
         ),
     )
 )
@@ -5857,7 +5489,7 @@ def _BuildAutomaton_13():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 416, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 416, 3
         ),
     )
     counters.add(cc_0)
@@ -5865,9 +5497,7 @@ def _BuildAutomaton_13():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcRps._UseForTag(pyxb.namespace.ExpandedName(Namespace, "InfRps")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 415, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 415, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -5877,9 +5507,7 @@ def _BuildAutomaton_13():
     final_update.add(fac.UpdateInstruction(cc_0, False))
     symbol = pyxb.binding.content.ElementUse(
         tcRps._UseForTag(pyxb.namespace.ExpandedName(_Namespace_dsig, "Signature")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 416, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 416, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -5903,7 +5531,7 @@ tcIdentificacaoNfse._AddElement(
         tsNumeroNfse,
         scope=tcIdentificacaoNfse,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 421, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 421, 3
         ),
     )
 )
@@ -5914,7 +5542,7 @@ tcIdentificacaoNfse._AddElement(
         tsCnpj,
         scope=tcIdentificacaoNfse,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 422, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 422, 3
         ),
     )
 )
@@ -5925,7 +5553,7 @@ tcIdentificacaoNfse._AddElement(
         tsInscricaoMunicipal,
         scope=tcIdentificacaoNfse,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 423, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 423, 3
         ),
     )
 )
@@ -5936,7 +5564,7 @@ tcIdentificacaoNfse._AddElement(
         tsCodigoMunicipioIbge,
         scope=tcIdentificacaoNfse,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 424, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 424, 3
         ),
     )
 )
@@ -5953,7 +5581,7 @@ def _BuildAutomaton_14():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 423, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 423, 3
         ),
     )
     counters.add(cc_0)
@@ -5961,9 +5589,7 @@ def _BuildAutomaton_14():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcIdentificacaoNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Numero")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 421, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 421, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -5972,9 +5598,7 @@ def _BuildAutomaton_14():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcIdentificacaoNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Cnpj")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 422, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 422, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -5985,9 +5609,7 @@ def _BuildAutomaton_14():
         tcIdentificacaoNfse._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "InscricaoMunicipal")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 423, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 423, 3),
     )
     st_2 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -5996,9 +5618,7 @@ def _BuildAutomaton_14():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcIdentificacaoNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "CodigoMunicipio")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 424, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 424, 3),
     )
     st_3 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -6029,7 +5649,7 @@ tcNfse._AddElement(
         tcInfNfse,
         scope=tcNfse,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 453, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 453, 3
         ),
     )
 )
@@ -6040,9 +5660,7 @@ tcNfse._AddElement(
         _ImportedBinding__dsig.SignatureType,
         scope=tcNfse,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/xmldsig-core-schema20020212_v03.xsd",
-            41,
-            0,
+            "pynotas/data/XSDs/NFS-e/Ginfes/xmldsig-core-schema20020212_v03.xsd", 41, 0
         ),
     )
 )
@@ -6059,7 +5677,7 @@ def _BuildAutomaton_15():
         min=1,
         max=2,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 454, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 454, 3
         ),
     )
     counters.add(cc_0)
@@ -6067,9 +5685,7 @@ def _BuildAutomaton_15():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "InfNfse")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 453, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 453, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -6079,9 +5695,7 @@ def _BuildAutomaton_15():
     final_update.add(fac.UpdateInstruction(cc_0, False))
     symbol = pyxb.binding.content.ElementUse(
         tcNfse._UseForTag(pyxb.namespace.ExpandedName(_Namespace_dsig, "Signature")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 454, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 454, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -6105,7 +5719,7 @@ tcPedidoCancelamento._AddElement(
         tcInfPedidoCancelamento,
         scope=tcPedidoCancelamento,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 466, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 466, 3
         ),
     )
 )
@@ -6116,9 +5730,7 @@ tcPedidoCancelamento._AddElement(
         _ImportedBinding__dsig.SignatureType,
         scope=tcPedidoCancelamento,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/xmldsig-core-schema20020212_v03.xsd",
-            41,
-            0,
+            "pynotas/data/XSDs/NFS-e/Ginfes/xmldsig-core-schema20020212_v03.xsd", 41, 0
         ),
     )
 )
@@ -6135,7 +5747,7 @@ def _BuildAutomaton_16():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 467, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 467, 3
         ),
     )
     counters.add(cc_0)
@@ -6145,9 +5757,7 @@ def _BuildAutomaton_16():
         tcPedidoCancelamento._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "InfPedidoCancelamento")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 466, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 466, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -6157,9 +5767,7 @@ def _BuildAutomaton_16():
     final_update.add(fac.UpdateInstruction(cc_0, False))
     symbol = pyxb.binding.content.ElementUse(
         tcPedidoCancelamento._UseForTag(pyxb.namespace.ExpandedName(_Namespace_dsig, "Signature")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 467, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 467, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -6183,7 +5791,7 @@ tcInfConfirmacaoCancelamento._AddElement(
         pyxb.binding.datatypes.boolean,
         scope=tcInfConfirmacaoCancelamento,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 472, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 472, 3
         ),
     )
 )
@@ -6194,7 +5802,7 @@ tcInfConfirmacaoCancelamento._AddElement(
         pyxb.binding.datatypes.dateTime,
         scope=tcInfConfirmacaoCancelamento,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 473, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 473, 3
         ),
     )
 )
@@ -6211,9 +5819,7 @@ def _BuildAutomaton_17():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfConfirmacaoCancelamento._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Sucesso")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 472, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 472, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -6222,9 +5828,7 @@ def _BuildAutomaton_17():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcInfConfirmacaoCancelamento._UseForTag(pyxb.namespace.ExpandedName(Namespace, "DataHora")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 473, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 473, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -6247,7 +5851,7 @@ tcCancelamentoNfse._AddElement(
         tcConfirmacaoCancelamento,
         scope=tcCancelamentoNfse,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 485, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 485, 3
         ),
     )
 )
@@ -6258,9 +5862,7 @@ tcCancelamentoNfse._AddElement(
         _ImportedBinding__dsig.SignatureType,
         scope=tcCancelamentoNfse,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/xmldsig-core-schema20020212_v03.xsd",
-            41,
-            0,
+            "pynotas/data/XSDs/NFS-e/Ginfes/xmldsig-core-schema20020212_v03.xsd", 41, 0
         ),
     )
 )
@@ -6277,9 +5879,7 @@ def _BuildAutomaton_18():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcCancelamentoNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Confirmacao")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 485, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 485, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -6288,9 +5888,7 @@ def _BuildAutomaton_18():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcCancelamentoNfse._UseForTag(pyxb.namespace.ExpandedName(_Namespace_dsig, "Signature")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 486, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 486, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -6313,7 +5911,7 @@ tcSubstituicaoNfse._AddElement(
         tcInfSubstituicaoNfse,
         scope=tcSubstituicaoNfse,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 497, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 497, 3
         ),
     )
 )
@@ -6324,9 +5922,7 @@ tcSubstituicaoNfse._AddElement(
         _ImportedBinding__dsig.SignatureType,
         scope=tcSubstituicaoNfse,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/xmldsig-core-schema20020212_v03.xsd",
-            41,
-            0,
+            "pynotas/data/XSDs/NFS-e/Ginfes/xmldsig-core-schema20020212_v03.xsd", 41, 0
         ),
     )
 )
@@ -6343,7 +5939,7 @@ def _BuildAutomaton_19():
         min=1,
         max=2,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 498, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 498, 3
         ),
     )
     counters.add(cc_0)
@@ -6351,9 +5947,7 @@ def _BuildAutomaton_19():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcSubstituicaoNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "SubstituicaoNfse")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 497, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 497, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -6363,9 +5957,7 @@ def _BuildAutomaton_19():
     final_update.add(fac.UpdateInstruction(cc_0, False))
     symbol = pyxb.binding.content.ElementUse(
         tcSubstituicaoNfse._UseForTag(pyxb.namespace.ExpandedName(_Namespace_dsig, "Signature")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 498, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 498, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -6389,7 +5981,7 @@ tcCompNfse._AddElement(
         tcNfse,
         scope=tcCompNfse,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 503, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 503, 3
         ),
     )
 )
@@ -6400,7 +5992,7 @@ tcCompNfse._AddElement(
         tcCancelamentoNfse,
         scope=tcCompNfse,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 504, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 504, 3
         ),
     )
 )
@@ -6411,7 +6003,7 @@ tcCompNfse._AddElement(
         tcSubstituicaoNfse,
         scope=tcCompNfse,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 505, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 505, 3
         ),
     )
 )
@@ -6428,7 +6020,7 @@ def _BuildAutomaton_20():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 504, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 504, 3
         ),
     )
     counters.add(cc_0)
@@ -6436,7 +6028,7 @@ def _BuildAutomaton_20():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 505, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 505, 3
         ),
     )
     counters.add(cc_1)
@@ -6444,9 +6036,7 @@ def _BuildAutomaton_20():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcCompNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Nfse")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 503, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 503, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -6456,9 +6046,7 @@ def _BuildAutomaton_20():
     final_update.add(fac.UpdateInstruction(cc_0, False))
     symbol = pyxb.binding.content.ElementUse(
         tcCompNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "NfseCancelamento")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 504, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 504, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -6468,9 +6056,7 @@ def _BuildAutomaton_20():
     final_update.add(fac.UpdateInstruction(cc_1, False))
     symbol = pyxb.binding.content.ElementUse(
         tcCompNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "NfseSubstituicao")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 505, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 505, 3),
     )
     st_2 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -6499,7 +6085,7 @@ CTD_ANON._AddElement(
         tcMensagemRetorno,
         scope=CTD_ANON,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 511, 4
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 511, 4
         ),
     )
 )
@@ -6516,9 +6102,7 @@ def _BuildAutomaton_21():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON._UseForTag(pyxb.namespace.ExpandedName(Namespace, "MensagemRetorno")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 511, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 511, 4),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -6539,7 +6123,7 @@ tcMensagemRetorno._AddElement(
         tsCodigoMensagemAlerta,
         scope=tcMensagemRetorno,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 517, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 517, 3
         ),
     )
 )
@@ -6550,7 +6134,7 @@ tcMensagemRetorno._AddElement(
         tsDescricaoMensagemAlerta,
         scope=tcMensagemRetorno,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 518, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 518, 3
         ),
     )
 )
@@ -6561,7 +6145,7 @@ tcMensagemRetorno._AddElement(
         tsDescricaoMensagemAlerta,
         scope=tcMensagemRetorno,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 519, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 519, 3
         ),
     )
 )
@@ -6578,7 +6162,7 @@ def _BuildAutomaton_22():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 519, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 519, 3
         ),
     )
     counters.add(cc_0)
@@ -6586,9 +6170,7 @@ def _BuildAutomaton_22():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcMensagemRetorno._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Codigo")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 517, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 517, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -6597,9 +6179,7 @@ def _BuildAutomaton_22():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcMensagemRetorno._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Mensagem")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 518, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 518, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -6609,9 +6189,7 @@ def _BuildAutomaton_22():
     final_update.add(fac.UpdateInstruction(cc_0, False))
     symbol = pyxb.binding.content.ElementUse(
         tcMensagemRetorno._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Correcao")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 519, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 519, 3),
     )
     st_2 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -6638,7 +6216,7 @@ tcMensagemRetornoLote._AddElement(
         tcIdentificacaoRps,
         scope=tcMensagemRetornoLote,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 524, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 524, 3
         ),
     )
 )
@@ -6649,7 +6227,7 @@ tcMensagemRetornoLote._AddElement(
         tsCodigoMensagemAlerta,
         scope=tcMensagemRetornoLote,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 525, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 525, 3
         ),
     )
 )
@@ -6660,7 +6238,7 @@ tcMensagemRetornoLote._AddElement(
         tsDescricaoMensagemAlerta,
         scope=tcMensagemRetornoLote,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 526, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 526, 3
         ),
     )
 )
@@ -6679,9 +6257,7 @@ def _BuildAutomaton_23():
         tcMensagemRetornoLote._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "IdentificacaoRps")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 524, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 524, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -6690,9 +6266,7 @@ def _BuildAutomaton_23():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcMensagemRetornoLote._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Codigo")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 525, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 525, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -6701,9 +6275,7 @@ def _BuildAutomaton_23():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcMensagemRetornoLote._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Mensagem")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 526, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 526, 3),
     )
     st_2 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -6729,7 +6301,7 @@ CTD_ANON_._AddElement(
         tcRps,
         scope=CTD_ANON_,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 538, 6
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 538, 6
         ),
     )
 )
@@ -6746,9 +6318,7 @@ def _BuildAutomaton_24():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Rps")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 538, 6
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 538, 6),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -6769,7 +6339,7 @@ tcInfRps._AddElement(
         tcIdentificacaoRps,
         scope=tcInfRps,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 397, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 397, 3
         ),
     )
 )
@@ -6780,7 +6350,7 @@ tcInfRps._AddElement(
         pyxb.binding.datatypes.dateTime,
         scope=tcInfRps,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 398, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 398, 3
         ),
     )
 )
@@ -6791,7 +6361,7 @@ tcInfRps._AddElement(
         tsNaturezaOperacao,
         scope=tcInfRps,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 399, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 399, 3
         ),
     )
 )
@@ -6802,7 +6372,7 @@ tcInfRps._AddElement(
         tsRegimeEspecialTributacao,
         scope=tcInfRps,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 400, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 400, 3
         ),
     )
 )
@@ -6813,7 +6383,7 @@ tcInfRps._AddElement(
         tsSimNao,
         scope=tcInfRps,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 401, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 401, 3
         ),
     )
 )
@@ -6824,7 +6394,7 @@ tcInfRps._AddElement(
         tsSimNao,
         scope=tcInfRps,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 402, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 402, 3
         ),
     )
 )
@@ -6835,7 +6405,7 @@ tcInfRps._AddElement(
         tsStatusRps,
         scope=tcInfRps,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 403, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 403, 3
         ),
     )
 )
@@ -6846,7 +6416,7 @@ tcInfRps._AddElement(
         tcIdentificacaoRps,
         scope=tcInfRps,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 404, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 404, 3
         ),
     )
 )
@@ -6857,7 +6427,7 @@ tcInfRps._AddElement(
         tcDadosServico,
         scope=tcInfRps,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 405, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 405, 3
         ),
     )
 )
@@ -6868,7 +6438,7 @@ tcInfRps._AddElement(
         tcIdentificacaoPrestador,
         scope=tcInfRps,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 406, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 406, 3
         ),
     )
 )
@@ -6879,7 +6449,7 @@ tcInfRps._AddElement(
         tcDadosTomador,
         scope=tcInfRps,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 407, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 407, 3
         ),
     )
 )
@@ -6890,7 +6460,7 @@ tcInfRps._AddElement(
         tcIdentificacaoIntermediarioServico,
         scope=tcInfRps,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 408, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 408, 3
         ),
     )
 )
@@ -6901,7 +6471,7 @@ tcInfRps._AddElement(
         tcDadosConstrucaoCivil,
         scope=tcInfRps,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 409, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 409, 3
         ),
     )
 )
@@ -6918,7 +6488,7 @@ def _BuildAutomaton_25():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 400, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 400, 3
         ),
     )
     counters.add(cc_0)
@@ -6926,7 +6496,7 @@ def _BuildAutomaton_25():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 404, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 404, 3
         ),
     )
     counters.add(cc_1)
@@ -6934,7 +6504,7 @@ def _BuildAutomaton_25():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 408, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 408, 3
         ),
     )
     counters.add(cc_2)
@@ -6942,7 +6512,7 @@ def _BuildAutomaton_25():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 409, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 409, 3
         ),
     )
     counters.add(cc_3)
@@ -6950,9 +6520,7 @@ def _BuildAutomaton_25():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfRps._UseForTag(pyxb.namespace.ExpandedName(Namespace, "IdentificacaoRps")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 397, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 397, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -6961,9 +6529,7 @@ def _BuildAutomaton_25():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfRps._UseForTag(pyxb.namespace.ExpandedName(Namespace, "DataEmissao")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 398, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 398, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -6972,9 +6538,7 @@ def _BuildAutomaton_25():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfRps._UseForTag(pyxb.namespace.ExpandedName(Namespace, "NaturezaOperacao")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 399, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 399, 3),
     )
     st_2 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -6983,9 +6547,7 @@ def _BuildAutomaton_25():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfRps._UseForTag(pyxb.namespace.ExpandedName(Namespace, "RegimeEspecialTributacao")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 400, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 400, 3),
     )
     st_3 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -6994,9 +6556,7 @@ def _BuildAutomaton_25():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfRps._UseForTag(pyxb.namespace.ExpandedName(Namespace, "OptanteSimplesNacional")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 401, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 401, 3),
     )
     st_4 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7005,9 +6565,7 @@ def _BuildAutomaton_25():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfRps._UseForTag(pyxb.namespace.ExpandedName(Namespace, "IncentivadorCultural")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 402, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 402, 3),
     )
     st_5 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7016,9 +6574,7 @@ def _BuildAutomaton_25():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfRps._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Status")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 403, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 403, 3),
     )
     st_6 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7027,9 +6583,7 @@ def _BuildAutomaton_25():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfRps._UseForTag(pyxb.namespace.ExpandedName(Namespace, "RpsSubstituido")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 404, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 404, 3),
     )
     st_7 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7038,9 +6592,7 @@ def _BuildAutomaton_25():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfRps._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Servico")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 405, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 405, 3),
     )
     st_8 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7049,9 +6601,7 @@ def _BuildAutomaton_25():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfRps._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Prestador")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 406, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 406, 3),
     )
     st_9 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7060,9 +6610,7 @@ def _BuildAutomaton_25():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcInfRps._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Tomador")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 407, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 407, 3),
     )
     st_10 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7072,9 +6620,7 @@ def _BuildAutomaton_25():
     final_update.add(fac.UpdateInstruction(cc_2, False))
     symbol = pyxb.binding.content.ElementUse(
         tcInfRps._UseForTag(pyxb.namespace.ExpandedName(Namespace, "IntermediarioServico")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 408, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 408, 3),
     )
     st_11 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7084,9 +6630,7 @@ def _BuildAutomaton_25():
     final_update.add(fac.UpdateInstruction(cc_3, False))
     symbol = pyxb.binding.content.ElementUse(
         tcInfRps._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ConstrucaoCivil")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 409, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 409, 3),
     )
     st_12 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7149,7 +6693,7 @@ tcInfNfse._AddElement(
         tsNumeroNfse,
         scope=tcInfNfse,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 429, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 429, 3
         ),
     )
 )
@@ -7160,7 +6704,7 @@ tcInfNfse._AddElement(
         tsCodigoVerificacao,
         scope=tcInfNfse,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 430, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 430, 3
         ),
     )
 )
@@ -7171,7 +6715,7 @@ tcInfNfse._AddElement(
         pyxb.binding.datatypes.dateTime,
         scope=tcInfNfse,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 431, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 431, 3
         ),
     )
 )
@@ -7182,7 +6726,7 @@ tcInfNfse._AddElement(
         tcIdentificacaoRps,
         scope=tcInfNfse,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 432, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 432, 3
         ),
     )
 )
@@ -7193,7 +6737,7 @@ tcInfNfse._AddElement(
         pyxb.binding.datatypes.date,
         scope=tcInfNfse,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 433, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 433, 3
         ),
     )
 )
@@ -7204,7 +6748,7 @@ tcInfNfse._AddElement(
         tsNaturezaOperacao,
         scope=tcInfNfse,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 434, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 434, 3
         ),
     )
 )
@@ -7215,7 +6759,7 @@ tcInfNfse._AddElement(
         tsRegimeEspecialTributacao,
         scope=tcInfNfse,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 435, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 435, 3
         ),
     )
 )
@@ -7226,7 +6770,7 @@ tcInfNfse._AddElement(
         tsSimNao,
         scope=tcInfNfse,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 436, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 436, 3
         ),
     )
 )
@@ -7237,7 +6781,7 @@ tcInfNfse._AddElement(
         tsSimNao,
         scope=tcInfNfse,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 437, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 437, 3
         ),
     )
 )
@@ -7248,7 +6792,7 @@ tcInfNfse._AddElement(
         pyxb.binding.datatypes.date,
         scope=tcInfNfse,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 438, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 438, 3
         ),
     )
 )
@@ -7259,7 +6803,7 @@ tcInfNfse._AddElement(
         tsNumeroNfse,
         scope=tcInfNfse,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 439, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 439, 3
         ),
     )
 )
@@ -7270,7 +6814,7 @@ tcInfNfse._AddElement(
         tsOutrasInformacoes,
         scope=tcInfNfse,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 440, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 440, 3
         ),
     )
 )
@@ -7281,7 +6825,7 @@ tcInfNfse._AddElement(
         tcDadosServico,
         scope=tcInfNfse,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 441, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 441, 3
         ),
     )
 )
@@ -7292,7 +6836,7 @@ tcInfNfse._AddElement(
         tsValor,
         scope=tcInfNfse,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 442, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 442, 3
         ),
     )
 )
@@ -7303,7 +6847,7 @@ tcInfNfse._AddElement(
         tcDadosPrestador,
         scope=tcInfNfse,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 443, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 443, 3
         ),
     )
 )
@@ -7314,7 +6858,7 @@ tcInfNfse._AddElement(
         tcDadosTomador,
         scope=tcInfNfse,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 444, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 444, 3
         ),
     )
 )
@@ -7325,7 +6869,7 @@ tcInfNfse._AddElement(
         tcIdentificacaoIntermediarioServico,
         scope=tcInfNfse,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 445, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 445, 3
         ),
     )
 )
@@ -7336,7 +6880,7 @@ tcInfNfse._AddElement(
         tcIdentificacaoOrgaoGerador,
         scope=tcInfNfse,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 446, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 446, 3
         ),
     )
 )
@@ -7347,7 +6891,7 @@ tcInfNfse._AddElement(
         tcDadosConstrucaoCivil,
         scope=tcInfNfse,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 447, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 447, 3
         ),
     )
 )
@@ -7364,7 +6908,7 @@ def _BuildAutomaton_26():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 432, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 432, 3
         ),
     )
     counters.add(cc_0)
@@ -7372,7 +6916,7 @@ def _BuildAutomaton_26():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 433, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 433, 3
         ),
     )
     counters.add(cc_1)
@@ -7380,7 +6924,7 @@ def _BuildAutomaton_26():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 435, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 435, 3
         ),
     )
     counters.add(cc_2)
@@ -7388,7 +6932,7 @@ def _BuildAutomaton_26():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 439, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 439, 3
         ),
     )
     counters.add(cc_3)
@@ -7396,7 +6940,7 @@ def _BuildAutomaton_26():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 440, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 440, 3
         ),
     )
     counters.add(cc_4)
@@ -7404,7 +6948,7 @@ def _BuildAutomaton_26():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 442, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 442, 3
         ),
     )
     counters.add(cc_5)
@@ -7412,7 +6956,7 @@ def _BuildAutomaton_26():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 445, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 445, 3
         ),
     )
     counters.add(cc_6)
@@ -7420,7 +6964,7 @@ def _BuildAutomaton_26():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 447, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 447, 3
         ),
     )
     counters.add(cc_7)
@@ -7428,9 +6972,7 @@ def _BuildAutomaton_26():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Numero")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 429, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 429, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -7439,9 +6981,7 @@ def _BuildAutomaton_26():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "CodigoVerificacao")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 430, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 430, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7450,9 +6990,7 @@ def _BuildAutomaton_26():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "DataEmissao")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 431, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 431, 3),
     )
     st_2 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7461,9 +6999,7 @@ def _BuildAutomaton_26():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "IdentificacaoRps")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 432, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 432, 3),
     )
     st_3 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7472,9 +7008,7 @@ def _BuildAutomaton_26():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "DataEmissaoRps")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 433, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 433, 3),
     )
     st_4 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7483,9 +7017,7 @@ def _BuildAutomaton_26():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "NaturezaOperacao")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 434, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 434, 3),
     )
     st_5 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7494,9 +7026,7 @@ def _BuildAutomaton_26():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "RegimeEspecialTributacao")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 435, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 435, 3),
     )
     st_6 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7505,9 +7035,7 @@ def _BuildAutomaton_26():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "OptanteSimplesNacional")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 436, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 436, 3),
     )
     st_7 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7516,9 +7044,7 @@ def _BuildAutomaton_26():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "IncentivadorCultural")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 437, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 437, 3),
     )
     st_8 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7527,9 +7053,7 @@ def _BuildAutomaton_26():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Competencia")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 438, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 438, 3),
     )
     st_9 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7538,9 +7062,7 @@ def _BuildAutomaton_26():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "NfseSubstituida")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 439, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 439, 3),
     )
     st_10 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7549,9 +7071,7 @@ def _BuildAutomaton_26():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "OutrasInformacoes")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 440, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 440, 3),
     )
     st_11 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7560,9 +7080,7 @@ def _BuildAutomaton_26():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Servico")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 441, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 441, 3),
     )
     st_12 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7571,9 +7089,7 @@ def _BuildAutomaton_26():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ValorCredito")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 442, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 442, 3),
     )
     st_13 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7582,9 +7098,7 @@ def _BuildAutomaton_26():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "PrestadorServico")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 443, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 443, 3),
     )
     st_14 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7593,9 +7107,7 @@ def _BuildAutomaton_26():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "TomadorServico")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 444, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 444, 3),
     )
     st_15 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7604,9 +7116,7 @@ def _BuildAutomaton_26():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "IntermediarioServico")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 445, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 445, 3),
     )
     st_16 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7615,9 +7125,7 @@ def _BuildAutomaton_26():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcInfNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "OrgaoGerador")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 446, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 446, 3),
     )
     st_17 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7627,9 +7135,7 @@ def _BuildAutomaton_26():
     final_update.add(fac.UpdateInstruction(cc_7, False))
     symbol = pyxb.binding.content.ElementUse(
         tcInfNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ConstrucaoCivil")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 447, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 447, 3),
     )
     st_18 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7720,7 +7226,7 @@ tcInfPedidoCancelamento._AddElement(
         tcIdentificacaoNfse,
         scope=tcInfPedidoCancelamento,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 459, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 459, 3
         ),
     )
 )
@@ -7731,7 +7237,7 @@ tcInfPedidoCancelamento._AddElement(
         tsCodigoCancelamentoNfse,
         scope=tcInfPedidoCancelamento,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 460, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 460, 3
         ),
     )
 )
@@ -7750,9 +7256,7 @@ def _BuildAutomaton_27():
         tcInfPedidoCancelamento._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "IdentificacaoNfse")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 459, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 459, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -7763,9 +7267,7 @@ def _BuildAutomaton_27():
         tcInfPedidoCancelamento._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "CodigoCancelamento")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 460, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 460, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7788,7 +7290,7 @@ tcConfirmacaoCancelamento._AddElement(
         tcPedidoCancelamento,
         scope=tcConfirmacaoCancelamento,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 478, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 478, 3
         ),
     )
 )
@@ -7799,7 +7301,7 @@ tcConfirmacaoCancelamento._AddElement(
         tcInfConfirmacaoCancelamento,
         scope=tcConfirmacaoCancelamento,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 479, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 479, 3
         ),
     )
 )
@@ -7816,9 +7318,7 @@ def _BuildAutomaton_28():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcConfirmacaoCancelamento._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Pedido")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 478, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 478, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -7829,9 +7329,7 @@ def _BuildAutomaton_28():
         tcConfirmacaoCancelamento._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "InfConfirmacaoCancelamento")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 479, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 479, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7854,7 +7352,7 @@ tcInfSubstituicaoNfse._AddElement(
         tsNumeroNfse,
         scope=tcInfSubstituicaoNfse,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 491, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 491, 3
         ),
     )
 )
@@ -7873,9 +7371,7 @@ def _BuildAutomaton_29():
         tcInfSubstituicaoNfse._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "NfseSubstituidora")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 491, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 491, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -7895,7 +7391,7 @@ tcLoteRps._AddElement(
         tsNumeroLote,
         scope=tcLoteRps,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 531, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 531, 3
         ),
     )
 )
@@ -7906,7 +7402,7 @@ tcLoteRps._AddElement(
         tsCnpj,
         scope=tcLoteRps,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 532, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 532, 3
         ),
     )
 )
@@ -7917,7 +7413,7 @@ tcLoteRps._AddElement(
         tsInscricaoMunicipal,
         scope=tcLoteRps,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 533, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 533, 3
         ),
     )
 )
@@ -7928,7 +7424,7 @@ tcLoteRps._AddElement(
         tsQuantidadeRps,
         scope=tcLoteRps,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 534, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 534, 3
         ),
     )
 )
@@ -7939,7 +7435,7 @@ tcLoteRps._AddElement(
         CTD_ANON_,
         scope=tcLoteRps,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 535, 3
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 535, 3
         ),
     )
 )
@@ -7956,9 +7452,7 @@ def _BuildAutomaton_30():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcLoteRps._UseForTag(pyxb.namespace.ExpandedName(Namespace, "NumeroLote")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 531, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 531, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -7967,9 +7461,7 @@ def _BuildAutomaton_30():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcLoteRps._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Cnpj")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 532, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 532, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7978,9 +7470,7 @@ def _BuildAutomaton_30():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcLoteRps._UseForTag(pyxb.namespace.ExpandedName(Namespace, "InscricaoMunicipal")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 533, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 533, 3),
     )
     st_2 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7989,9 +7479,7 @@ def _BuildAutomaton_30():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcLoteRps._UseForTag(pyxb.namespace.ExpandedName(Namespace, "QuantidadeRps")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 534, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 534, 3),
     )
     st_3 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -8000,9 +7488,7 @@ def _BuildAutomaton_30():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcLoteRps._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ListaRps")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 535, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 535, 3),
     )
     st_4 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False

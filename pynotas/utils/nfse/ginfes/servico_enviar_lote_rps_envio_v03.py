@@ -2,7 +2,7 @@
 # pynotas/utils/nfse/ginfes/servico_enviar_lote_rps_envio_v03.py
 # -*- coding: utf-8 -*-
 # PyXB bindings for NM:712dac5bd3f3f6cf5f89daa94c22f15b489de55b
-# Generated 2025-04-06 00:00:52.138071 by PyXB version 1.2.6 using Python 3.12.9.final.0
+# Generated 2026-11-25 08:53:28.710655 by PyXB version 1.2.6 using Python 3.13.16.final.0
 # Namespace http://www.ginfes.com.br/servico_enviar_lote_rps_envio_v03.xsd
 
 from __future__ import unicode_literals
@@ -17,7 +17,7 @@ import pyxb.utils.six as _six
 
 # Unique identifier for bindings created at the same time
 _GenerationUID = pyxb.utils.utility.UniqueIdentifier(
-    "urn:uuid:39de2bfc-9ae4-40e1-bb37-494b66bc6a8d"
+    "urn:uuid:aa3e160e-db03-479b-a9d3-852a2e706bff"
 )
 
 # Version of PyXB used to generate the bindings
@@ -107,9 +107,7 @@ class CTD_ANON(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_enviar_lote_rps_envio_v03.xsd",
-        7,
-        2,
+        "pynotas/data/XSDs/NFS-e/Ginfes/servico_enviar_lote_rps_envio_v03.xsd", 7, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -122,9 +120,7 @@ class CTD_ANON(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_ginfes_com_brservico_enviar_lote_rps_envio_v03_xsd_CTD_ANON_httpwww_ginfes_com_brservico_enviar_lote_rps_envio_v03_xsdLoteRps",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_enviar_lote_rps_envio_v03.xsd",
-            9,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_enviar_lote_rps_envio_v03.xsd", 9, 4
         ),
     )
 
@@ -137,9 +133,7 @@ class CTD_ANON(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_ginfes_com_brservico_enviar_lote_rps_envio_v03_xsd_CTD_ANON_httpwww_w3_org200009xmldsigSignature",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/xmldsig-core-schema20020212_v03.xsd",
-            41,
-            0,
+            "pynotas/data/XSDs/NFS-e/Ginfes/xmldsig-core-schema20020212_v03.xsd", 41, 0
         ),
     )
 
@@ -156,9 +150,7 @@ EnviarLoteRpsEnvio = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "EnviarLoteRpsEnvio"),
     CTD_ANON,
     location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_enviar_lote_rps_envio_v03.xsd",
-        6,
-        1,
+        "pynotas/data/XSDs/NFS-e/Ginfes/servico_enviar_lote_rps_envio_v03.xsd", 6, 1
     ),
 )
 Namespace.addCategoryObject(
@@ -172,9 +164,7 @@ CTD_ANON._AddElement(
         _ImportedBinding__tipos.tcLoteRps,
         scope=CTD_ANON,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_enviar_lote_rps_envio_v03.xsd",
-            9,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_enviar_lote_rps_envio_v03.xsd", 9, 4
         ),
     )
 )
@@ -185,9 +175,7 @@ CTD_ANON._AddElement(
         _ImportedBinding__dsig.SignatureType,
         scope=CTD_ANON,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/xmldsig-core-schema20020212_v03.xsd",
-            41,
-            0,
+            "pynotas/data/XSDs/NFS-e/Ginfes/xmldsig-core-schema20020212_v03.xsd", 41, 0
         ),
     )
 )
@@ -204,9 +192,7 @@ def _BuildAutomaton():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_enviar_lote_rps_envio_v03.xsd",
-            10,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_enviar_lote_rps_envio_v03.xsd", 10, 4
         ),
     )
     counters.add(cc_0)
@@ -215,9 +201,7 @@ def _BuildAutomaton():
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON._UseForTag(pyxb.namespace.ExpandedName(Namespace, "LoteRps")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_enviar_lote_rps_envio_v03.xsd",
-            9,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_enviar_lote_rps_envio_v03.xsd", 9, 4
         ),
     )
     st_0 = fac.State(
@@ -229,9 +213,7 @@ def _BuildAutomaton():
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON._UseForTag(pyxb.namespace.ExpandedName(_Namespace_dsig, "Signature")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_enviar_lote_rps_envio_v03.xsd",
-            10,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_enviar_lote_rps_envio_v03.xsd", 10, 4
         ),
     )
     st_1 = fac.State(

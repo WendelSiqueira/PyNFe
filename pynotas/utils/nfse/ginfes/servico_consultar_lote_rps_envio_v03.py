@@ -2,7 +2,7 @@
 # pynotas/utils/nfse/ginfes/servico_consultar_lote_rps_envio_v03.py
 # -*- coding: utf-8 -*-
 # PyXB bindings for NM:697b9fe8e41f8c16b673d568c46b36fb541837e6
-# Generated 2025-04-06 00:00:44.171189 by PyXB version 1.2.6 using Python 3.12.9.final.0
+# Generated 2026-11-25 08:53:27.299811 by PyXB version 1.2.6 using Python 3.13.16.final.0
 # Namespace http://www.ginfes.com.br/servico_consultar_lote_rps_envio_v03.xsd
 
 from __future__ import unicode_literals
@@ -17,7 +17,7 @@ import pyxb.utils.six as _six
 
 # Unique identifier for bindings created at the same time
 _GenerationUID = pyxb.utils.utility.UniqueIdentifier(
-    "urn:uuid:8faa8e87-188a-474a-adad-a45cc65aa6c8"
+    "urn:uuid:c5435919-4e83-40c8-9074-ffa893aa9f26"
 )
 
 # Version of PyXB used to generate the bindings
@@ -107,9 +107,7 @@ class CTD_ANON(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_lote_rps_envio_v03.xsd",
-        12,
-        2,
+        "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_lote_rps_envio_v03.xsd", 12, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -122,9 +120,7 @@ class CTD_ANON(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_ginfes_com_brservico_consultar_lote_rps_envio_v03_xsd_CTD_ANON_httpwww_ginfes_com_brservico_consultar_lote_rps_envio_v03_xsdPrestador",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_lote_rps_envio_v03.xsd",
-            14,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_lote_rps_envio_v03.xsd", 14, 4
         ),
     )
 
@@ -137,9 +133,7 @@ class CTD_ANON(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_ginfes_com_brservico_consultar_lote_rps_envio_v03_xsd_CTD_ANON_httpwww_ginfes_com_brservico_consultar_lote_rps_envio_v03_xsdProtocolo",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_lote_rps_envio_v03.xsd",
-            16,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_lote_rps_envio_v03.xsd", 16, 4
         ),
     )
 
@@ -152,9 +146,7 @@ class CTD_ANON(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_ginfes_com_brservico_consultar_lote_rps_envio_v03_xsd_CTD_ANON_httpwww_w3_org200009xmldsigSignature",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/xmldsig-core-schema20020212_v03.xsd",
-            41,
-            0,
+            "pynotas/data/XSDs/NFS-e/Ginfes/xmldsig-core-schema20020212_v03.xsd", 41, 0
         ),
     )
 
@@ -177,9 +169,7 @@ ConsultarLoteRpsEnvio = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "ConsultarLoteRpsEnvio"),
     CTD_ANON,
     location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_lote_rps_envio_v03.xsd",
-        11,
-        1,
+        "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_lote_rps_envio_v03.xsd", 11, 1
     ),
 )
 Namespace.addCategoryObject(
@@ -193,9 +183,7 @@ CTD_ANON._AddElement(
         _ImportedBinding__tipos.tcIdentificacaoPrestador,
         scope=CTD_ANON,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_lote_rps_envio_v03.xsd",
-            14,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_lote_rps_envio_v03.xsd", 14, 4
         ),
     )
 )
@@ -206,9 +194,7 @@ CTD_ANON._AddElement(
         _ImportedBinding__tipos.tsNumeroProtocolo,
         scope=CTD_ANON,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_lote_rps_envio_v03.xsd",
-            16,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_lote_rps_envio_v03.xsd", 16, 4
         ),
     )
 )
@@ -219,9 +205,7 @@ CTD_ANON._AddElement(
         _ImportedBinding__dsig.SignatureType,
         scope=CTD_ANON,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/xmldsig-core-schema20020212_v03.xsd",
-            41,
-            0,
+            "pynotas/data/XSDs/NFS-e/Ginfes/xmldsig-core-schema20020212_v03.xsd", 41, 0
         ),
     )
 )
@@ -238,9 +222,7 @@ def _BuildAutomaton():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_lote_rps_envio_v03.xsd",
-            18,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_lote_rps_envio_v03.xsd", 18, 4
         ),
     )
     counters.add(cc_0)
@@ -249,9 +231,7 @@ def _BuildAutomaton():
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Prestador")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_lote_rps_envio_v03.xsd",
-            14,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_lote_rps_envio_v03.xsd", 14, 4
         ),
     )
     st_0 = fac.State(
@@ -262,9 +242,7 @@ def _BuildAutomaton():
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Protocolo")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_lote_rps_envio_v03.xsd",
-            16,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_lote_rps_envio_v03.xsd", 16, 4
         ),
     )
     st_1 = fac.State(
@@ -276,9 +254,7 @@ def _BuildAutomaton():
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON._UseForTag(pyxb.namespace.ExpandedName(_Namespace_dsig, "Signature")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_lote_rps_envio_v03.xsd",
-            18,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_lote_rps_envio_v03.xsd", 18, 4
         ),
     )
     st_2 = fac.State(

@@ -2,7 +2,7 @@
 # pynotas/utils/nfse/betha/_dsig.py
 # -*- coding: utf-8 -*-
 # PyXB bindings for NM:f1c343a882e7a65fb879f4ee813309f8231f28c8
-# Generated 2025-04-06 00:00:39.105083 by PyXB version 1.2.6 using Python 3.12.9.final.0
+# Generated 2026-11-25 08:53:26.452861 by PyXB version 1.2.6 using Python 3.13.16.final.0
 # Namespace http://www.w3.org/2000/09/xmldsig# [xmlns:dsig]
 
 from __future__ import unicode_literals
@@ -17,7 +17,7 @@ import pyxb.utils.six as _six
 
 # Unique identifier for bindings created at the same time
 _GenerationUID = pyxb.utils.utility.UniqueIdentifier(
-    "urn:uuid:770a0200-e52e-48b5-9080-7379d189705e"
+    "urn:uuid:3b383f6d-324d-48fc-8b58-281b42b31643"
 )
 
 # Version of PyXB used to generate the bindings
@@ -100,7 +100,7 @@ class CryptoBinary(pyxb.binding.datatypes.base64Binary):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "CryptoBinary")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 34, 0
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 34, 0
     )
     _Documentation = None
 
@@ -116,7 +116,7 @@ class DigestValueType(pyxb.binding.datatypes.base64Binary):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "DigestValueType")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 134, 0
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 134, 0
     )
     _Documentation = None
 
@@ -132,7 +132,7 @@ class HMACOutputLengthType(pyxb.binding.datatypes.integer):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "HMACOutputLengthType")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 281, 0
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 281, 0
     )
     _Documentation = None
 
@@ -151,7 +151,7 @@ class SignatureType(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "SignatureType")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 42, 0
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 42, 0
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -164,9 +164,7 @@ class SignatureType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_SignatureType_httpwww_w3_org200009xmldsigSignatureValue",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            52,
-            2,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 52, 2
         ),
     )
 
@@ -179,9 +177,7 @@ class SignatureType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_SignatureType_httpwww_w3_org200009xmldsigSignedInfo",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            63,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 63, 0
         ),
     )
 
@@ -194,9 +190,7 @@ class SignatureType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_SignatureType_httpwww_w3_org200009xmldsigKeyInfo",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            142,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 142, 0
         ),
     )
 
@@ -209,9 +203,7 @@ class SignatureType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_SignatureType_httpwww_w3_org200009xmldsigObject",
         True,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            241,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 241, 0
         ),
     )
 
@@ -225,10 +217,10 @@ class SignatureType(pyxb.binding.basis.complexTypeDefinition):
         pyxb.binding.datatypes.ID,
     )
     __Id._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 49, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 49, 2
     )
     __Id._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 49, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 49, 2
     )
 
     Id = property(__Id.value, __Id.set, None, None)
@@ -257,7 +249,7 @@ class SignatureValueType(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "SignatureValueType")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 53, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 53, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -271,10 +263,10 @@ class SignatureValueType(pyxb.binding.basis.complexTypeDefinition):
         pyxb.binding.datatypes.ID,
     )
     __Id._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 56, 8
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 56, 8
     )
     __Id._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 56, 8
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 56, 8
     )
 
     Id = property(__Id.value, __Id.set, None, None)
@@ -296,7 +288,7 @@ class SignedInfoType(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "SignedInfoType")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 64, 0
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 64, 0
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -309,9 +301,7 @@ class SignedInfoType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_SignedInfoType_httpwww_w3_org200009xmldsigCanonicalizationMethod",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            73,
-            2,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 73, 2
         ),
     )
 
@@ -326,9 +316,7 @@ class SignedInfoType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_SignedInfoType_httpwww_w3_org200009xmldsigSignatureMethod",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            82,
-            2,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 82, 2
         ),
     )
 
@@ -341,9 +329,7 @@ class SignedInfoType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_SignedInfoType_httpwww_w3_org200009xmldsigReference",
         True,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            94,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 94, 0
         ),
     )
 
@@ -357,10 +343,10 @@ class SignedInfoType(pyxb.binding.basis.complexTypeDefinition):
         pyxb.binding.datatypes.ID,
     )
     __Id._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 70, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 70, 2
     )
     __Id._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 70, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 70, 2
     )
 
     Id = property(__Id.value, __Id.set, None, None)
@@ -388,7 +374,7 @@ class CanonicalizationMethodType(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "CanonicalizationMethodType")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 74, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 74, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -403,10 +389,10 @@ class CanonicalizationMethodType(pyxb.binding.basis.complexTypeDefinition):
         required=True,
     )
     __Algorithm._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 79, 4
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 79, 4
     )
     __Algorithm._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 79, 4
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 79, 4
     )
 
     Algorithm = property(__Algorithm.value, __Algorithm.set, None, None)
@@ -429,7 +415,7 @@ class SignatureMethodType(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "SignatureMethodType")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 83, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 83, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -442,9 +428,7 @@ class SignatureMethodType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_SignatureMethodType_httpwww_w3_org200009xmldsigHMACOutputLength",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            85,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 85, 6
         ),
     )
 
@@ -459,10 +443,10 @@ class SignatureMethodType(pyxb.binding.basis.complexTypeDefinition):
         required=True,
     )
     __Algorithm._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 89, 4
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 89, 4
     )
     __Algorithm._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 89, 4
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 89, 4
     )
 
     Algorithm = property(__Algorithm.value, __Algorithm.set, None, None)
@@ -485,7 +469,7 @@ class ReferenceType(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "ReferenceType")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 95, 0
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 95, 0
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -498,9 +482,7 @@ class ReferenceType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_ReferenceType_httpwww_w3_org200009xmldsigTransforms",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            106,
-            2,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 106, 2
         ),
     )
 
@@ -513,9 +495,7 @@ class ReferenceType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_ReferenceType_httpwww_w3_org200009xmldsigDigestMethod",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            125,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 125, 0
         ),
     )
 
@@ -528,9 +508,7 @@ class ReferenceType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_ReferenceType_httpwww_w3_org200009xmldsigDigestValue",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            133,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 133, 0
         ),
     )
 
@@ -544,10 +522,10 @@ class ReferenceType(pyxb.binding.basis.complexTypeDefinition):
         pyxb.binding.datatypes.ID,
     )
     __Id._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 101, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 101, 2
     )
     __Id._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 101, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 101, 2
     )
 
     Id = property(__Id.value, __Id.set, None, None)
@@ -560,10 +538,10 @@ class ReferenceType(pyxb.binding.basis.complexTypeDefinition):
         pyxb.binding.datatypes.anyURI,
     )
     __URI._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 102, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 102, 2
     )
     __URI._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 102, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 102, 2
     )
 
     URI = property(__URI.value, __URI.set, None, None)
@@ -576,10 +554,10 @@ class ReferenceType(pyxb.binding.basis.complexTypeDefinition):
         pyxb.binding.datatypes.anyURI,
     )
     __Type._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 103, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 103, 2
     )
     __Type._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 103, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 103, 2
     )
 
     Type = property(__Type.value, __Type.set, None, None)
@@ -607,7 +585,7 @@ class TransformsType(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "TransformsType")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 107, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 107, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -620,9 +598,7 @@ class TransformsType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_TransformsType_httpwww_w3_org200009xmldsigTransform",
         True,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            113,
-            2,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 113, 2
         ),
     )
 
@@ -645,7 +621,7 @@ class TransformType(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "TransformType")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 114, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 114, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -658,9 +634,7 @@ class TransformType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_TransformType_httpwww_w3_org200009xmldsigXPath",
         True,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            118,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 118, 6
         ),
     )
 
@@ -675,10 +649,10 @@ class TransformType(pyxb.binding.basis.complexTypeDefinition):
         required=True,
     )
     __Algorithm._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 120, 4
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 120, 4
     )
     __Algorithm._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 120, 4
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 120, 4
     )
 
     Algorithm = property(__Algorithm.value, __Algorithm.set, None, None)
@@ -701,7 +675,7 @@ class DigestMethodType(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "DigestMethodType")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 126, 0
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 126, 0
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -716,10 +690,10 @@ class DigestMethodType(pyxb.binding.basis.complexTypeDefinition):
         required=True,
     )
     __Algorithm._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 130, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 130, 2
     )
     __Algorithm._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 130, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 130, 2
     )
 
     Algorithm = property(__Algorithm.value, __Algorithm.set, None, None)
@@ -742,7 +716,7 @@ class KeyInfoType(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "KeyInfoType")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 143, 0
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 143, 0
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -755,9 +729,7 @@ class KeyInfoType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_KeyInfoType_httpwww_w3_org200009xmldsigKeyName",
         True,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            158,
-            2,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 158, 2
         ),
     )
 
@@ -770,9 +742,7 @@ class KeyInfoType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_KeyInfoType_httpwww_w3_org200009xmldsigMgmtData",
         True,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            159,
-            2,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 159, 2
         ),
     )
 
@@ -785,9 +755,7 @@ class KeyInfoType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_KeyInfoType_httpwww_w3_org200009xmldsigKeyValue",
         True,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            161,
-            2,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 161, 2
         ),
     )
 
@@ -800,9 +768,7 @@ class KeyInfoType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_KeyInfoType_httpwww_w3_org200009xmldsigRetrievalMethod",
         True,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            170,
-            2,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 170, 2
         ),
     )
 
@@ -815,9 +781,7 @@ class KeyInfoType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_KeyInfoType_httpwww_w3_org200009xmldsigX509Data",
         True,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            181,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 181, 0
         ),
     )
 
@@ -830,9 +794,7 @@ class KeyInfoType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_KeyInfoType_httpwww_w3_org200009xmldsigPGPData",
         True,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            206,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 206, 0
         ),
     )
 
@@ -845,9 +807,7 @@ class KeyInfoType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_KeyInfoType_httpwww_w3_org200009xmldsigSPKIData",
         True,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            227,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 227, 0
         ),
     )
 
@@ -861,10 +821,10 @@ class KeyInfoType(pyxb.binding.basis.complexTypeDefinition):
         pyxb.binding.datatypes.ID,
     )
     __Id._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 155, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 155, 2
     )
     __Id._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 155, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 155, 2
     )
 
     Id = property(__Id.value, __Id.set, None, None)
@@ -897,7 +857,7 @@ class KeyValueType(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "KeyValueType")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 162, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 162, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -910,9 +870,7 @@ class KeyValueType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_KeyValueType_httpwww_w3_org200009xmldsigDSAKeyValue",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            287,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 287, 0
         ),
     )
 
@@ -925,9 +883,7 @@ class KeyValueType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_KeyValueType_httpwww_w3_org200009xmldsigRSAKeyValue",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            304,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 304, 0
         ),
     )
 
@@ -951,7 +907,7 @@ class RetrievalMethodType(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "RetrievalMethodType")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 171, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 171, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -964,9 +920,7 @@ class RetrievalMethodType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_RetrievalMethodType_httpwww_w3_org200009xmldsigTransforms",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            106,
-            2,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 106, 2
         ),
     )
 
@@ -980,10 +934,10 @@ class RetrievalMethodType(pyxb.binding.basis.complexTypeDefinition):
         pyxb.binding.datatypes.anyURI,
     )
     __URI._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 175, 4
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 175, 4
     )
     __URI._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 175, 4
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 175, 4
     )
 
     URI = property(__URI.value, __URI.set, None, None)
@@ -996,10 +950,10 @@ class RetrievalMethodType(pyxb.binding.basis.complexTypeDefinition):
         pyxb.binding.datatypes.anyURI,
     )
     __Type._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 176, 4
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 176, 4
     )
     __Type._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 176, 4
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 176, 4
     )
 
     Type = property(__Type.value, __Type.set, None, None)
@@ -1021,7 +975,7 @@ class X509DataType(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "X509DataType")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 182, 0
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 182, 0
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -1034,9 +988,7 @@ class X509DataType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_X509DataType_httpwww_w3_org200009xmldsigX509IssuerSerial",
         True,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            185,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 185, 6
         ),
     )
 
@@ -1049,9 +1001,7 @@ class X509DataType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_X509DataType_httpwww_w3_org200009xmldsigX509SKI",
         True,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            186,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 186, 6
         ),
     )
 
@@ -1064,9 +1014,7 @@ class X509DataType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_X509DataType_httpwww_w3_org200009xmldsigX509SubjectName",
         True,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            187,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 187, 6
         ),
     )
 
@@ -1079,9 +1027,7 @@ class X509DataType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_X509DataType_httpwww_w3_org200009xmldsigX509Certificate",
         True,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            188,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 188, 6
         ),
     )
 
@@ -1094,9 +1040,7 @@ class X509DataType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_X509DataType_httpwww_w3_org200009xmldsigX509CRL",
         True,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            189,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 189, 6
         ),
     )
 
@@ -1128,7 +1072,7 @@ class X509IssuerSerialType(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "X509IssuerSerialType")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 195, 0
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 195, 0
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -1141,9 +1085,7 @@ class X509IssuerSerialType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_X509IssuerSerialType_httpwww_w3_org200009xmldsigX509IssuerName",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            197,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 197, 4
         ),
     )
 
@@ -1156,9 +1098,7 @@ class X509IssuerSerialType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_X509IssuerSerialType_httpwww_w3_org200009xmldsigX509SerialNumber",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            198,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 198, 4
         ),
     )
 
@@ -1183,7 +1123,7 @@ class PGPDataType(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "PGPDataType")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 207, 0
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 207, 0
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -1196,9 +1136,7 @@ class PGPDataType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_PGPDataType_httpwww_w3_org200009xmldsigPGPKeyID",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            210,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 210, 6
         ),
     )
 
@@ -1211,9 +1149,7 @@ class PGPDataType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_PGPDataType_httpwww_w3_org200009xmldsigPGPKeyPacket",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            211,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 211, 6
         ),
     )
 
@@ -1237,7 +1173,7 @@ class SPKIDataType(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "SPKIDataType")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 228, 0
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 228, 0
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -1250,9 +1186,7 @@ class SPKIDataType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_SPKIDataType_httpwww_w3_org200009xmldsigSPKISexp",
         True,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            230,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 230, 4
         ),
     )
 
@@ -1276,7 +1210,7 @@ class ObjectType(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "ObjectType")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 242, 0
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 242, 0
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -1290,10 +1224,10 @@ class ObjectType(pyxb.binding.basis.complexTypeDefinition):
         pyxb.binding.datatypes.ID,
     )
     __Id._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 246, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 246, 2
     )
     __Id._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 246, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 246, 2
     )
 
     Id = property(__Id.value, __Id.set, None, None)
@@ -1306,10 +1240,10 @@ class ObjectType(pyxb.binding.basis.complexTypeDefinition):
         pyxb.binding.datatypes.string,
     )
     __MimeType._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 247, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 247, 2
     )
     __MimeType._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 247, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 247, 2
     )
 
     MimeType = property(__MimeType.value, __MimeType.set, None, None)
@@ -1322,10 +1256,10 @@ class ObjectType(pyxb.binding.basis.complexTypeDefinition):
         pyxb.binding.datatypes.anyURI,
     )
     __Encoding._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 248, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 248, 2
     )
     __Encoding._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 248, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 248, 2
     )
 
     Encoding = property(__Encoding.value, __Encoding.set, None, None)
@@ -1350,7 +1284,7 @@ class ManifestType(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "ManifestType")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 252, 0
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 252, 0
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -1363,9 +1297,7 @@ class ManifestType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_ManifestType_httpwww_w3_org200009xmldsigReference",
         True,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            94,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 94, 0
         ),
     )
 
@@ -1379,10 +1311,10 @@ class ManifestType(pyxb.binding.basis.complexTypeDefinition):
         pyxb.binding.datatypes.ID,
     )
     __Id._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 256, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 256, 2
     )
     __Id._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 256, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 256, 2
     )
 
     Id = property(__Id.value, __Id.set, None, None)
@@ -1404,7 +1336,7 @@ class SignaturePropertiesType(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "SignaturePropertiesType")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 260, 0
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 260, 0
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -1417,9 +1349,7 @@ class SignaturePropertiesType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_SignaturePropertiesType_httpwww_w3_org200009xmldsigSignatureProperty",
         True,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            267,
-            3,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 267, 3
         ),
     )
 
@@ -1433,10 +1363,10 @@ class SignaturePropertiesType(pyxb.binding.basis.complexTypeDefinition):
         pyxb.binding.datatypes.ID,
     )
     __Id._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 264, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 264, 2
     )
     __Id._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 264, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 264, 2
     )
 
     Id = property(__Id.value, __Id.set, None, None)
@@ -1458,7 +1388,7 @@ class SignaturePropertyType(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "SignaturePropertyType")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 268, 3
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 268, 3
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -1473,10 +1403,10 @@ class SignaturePropertyType(pyxb.binding.basis.complexTypeDefinition):
         required=True,
     )
     __Target._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 273, 5
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 273, 5
     )
     __Target._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 273, 5
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 273, 5
     )
 
     Target = property(__Target.value, __Target.set, None, None)
@@ -1489,10 +1419,10 @@ class SignaturePropertyType(pyxb.binding.basis.complexTypeDefinition):
         pyxb.binding.datatypes.ID,
     )
     __Id._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 274, 5
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 274, 5
     )
     __Id._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 274, 5
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 274, 5
     )
 
     Id = property(__Id.value, __Id.set, None, None)
@@ -1515,7 +1445,7 @@ class DSAKeyValueType(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "DSAKeyValueType")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 288, 0
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 288, 0
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -1528,9 +1458,7 @@ class DSAKeyValueType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_DSAKeyValueType_httpwww_w3_org200009xmldsigP",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            291,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 291, 6
         ),
     )
 
@@ -1543,9 +1471,7 @@ class DSAKeyValueType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_DSAKeyValueType_httpwww_w3_org200009xmldsigQ",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            292,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 292, 6
         ),
     )
 
@@ -1558,9 +1484,7 @@ class DSAKeyValueType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_DSAKeyValueType_httpwww_w3_org200009xmldsigG",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            294,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 294, 4
         ),
     )
 
@@ -1573,9 +1497,7 @@ class DSAKeyValueType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_DSAKeyValueType_httpwww_w3_org200009xmldsigY",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            295,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 295, 4
         ),
     )
 
@@ -1588,9 +1510,7 @@ class DSAKeyValueType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_DSAKeyValueType_httpwww_w3_org200009xmldsigJ",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            296,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 296, 4
         ),
     )
 
@@ -1603,9 +1523,7 @@ class DSAKeyValueType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_DSAKeyValueType_httpwww_w3_org200009xmldsigSeed",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            298,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 298, 6
         ),
     )
 
@@ -1618,9 +1536,7 @@ class DSAKeyValueType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_DSAKeyValueType_httpwww_w3_org200009xmldsigPgenCounter",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            299,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 299, 6
         ),
     )
 
@@ -1653,7 +1569,7 @@ class RSAKeyValueType(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "RSAKeyValueType")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 305, 0
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 305, 0
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -1666,9 +1582,7 @@ class RSAKeyValueType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_RSAKeyValueType_httpwww_w3_org200009xmldsigModulus",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            307,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 307, 4
         ),
     )
 
@@ -1681,9 +1595,7 @@ class RSAKeyValueType(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_w3_org200009xmldsig_RSAKeyValueType_httpwww_w3_org200009xmldsigExponent",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            308,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 308, 4
         ),
     )
 
@@ -1701,7 +1613,7 @@ KeyName = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "KeyName"),
     pyxb.binding.datatypes.string,
     location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 158, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 158, 2
     ),
 )
 Namespace.addCategoryObject("elementBinding", KeyName.name().localName(), KeyName)
@@ -1710,7 +1622,7 @@ MgmtData = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "MgmtData"),
     pyxb.binding.datatypes.string,
     location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 159, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 159, 2
     ),
 )
 Namespace.addCategoryObject("elementBinding", MgmtData.name().localName(), MgmtData)
@@ -1719,7 +1631,7 @@ Signature = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "Signature"),
     SignatureType,
     location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 41, 0
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 41, 0
     ),
 )
 Namespace.addCategoryObject("elementBinding", Signature.name().localName(), Signature)
@@ -1728,7 +1640,7 @@ SignatureValue = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "SignatureValue"),
     SignatureValueType,
     location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 52, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 52, 2
     ),
 )
 Namespace.addCategoryObject("elementBinding", SignatureValue.name().localName(), SignatureValue)
@@ -1737,7 +1649,7 @@ SignedInfo = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "SignedInfo"),
     SignedInfoType,
     location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 63, 0
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 63, 0
     ),
 )
 Namespace.addCategoryObject("elementBinding", SignedInfo.name().localName(), SignedInfo)
@@ -1746,7 +1658,7 @@ CanonicalizationMethod = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "CanonicalizationMethod"),
     CanonicalizationMethodType,
     location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 73, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 73, 2
     ),
 )
 Namespace.addCategoryObject(
@@ -1757,7 +1669,7 @@ SignatureMethod = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "SignatureMethod"),
     SignatureMethodType,
     location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 82, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 82, 2
     ),
 )
 Namespace.addCategoryObject("elementBinding", SignatureMethod.name().localName(), SignatureMethod)
@@ -1766,7 +1678,7 @@ Reference = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "Reference"),
     ReferenceType,
     location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 94, 0
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 94, 0
     ),
 )
 Namespace.addCategoryObject("elementBinding", Reference.name().localName(), Reference)
@@ -1775,7 +1687,7 @@ Transforms = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "Transforms"),
     TransformsType,
     location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 106, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 106, 2
     ),
 )
 Namespace.addCategoryObject("elementBinding", Transforms.name().localName(), Transforms)
@@ -1784,7 +1696,7 @@ Transform = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "Transform"),
     TransformType,
     location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 113, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 113, 2
     ),
 )
 Namespace.addCategoryObject("elementBinding", Transform.name().localName(), Transform)
@@ -1793,7 +1705,7 @@ DigestMethod = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "DigestMethod"),
     DigestMethodType,
     location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 125, 0
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 125, 0
     ),
 )
 Namespace.addCategoryObject("elementBinding", DigestMethod.name().localName(), DigestMethod)
@@ -1802,7 +1714,7 @@ DigestValue = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "DigestValue"),
     DigestValueType,
     location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 133, 0
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 133, 0
     ),
 )
 Namespace.addCategoryObject("elementBinding", DigestValue.name().localName(), DigestValue)
@@ -1811,7 +1723,7 @@ KeyInfo = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "KeyInfo"),
     KeyInfoType,
     location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 142, 0
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 142, 0
     ),
 )
 Namespace.addCategoryObject("elementBinding", KeyInfo.name().localName(), KeyInfo)
@@ -1820,7 +1732,7 @@ KeyValue = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "KeyValue"),
     KeyValueType,
     location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 161, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 161, 2
     ),
 )
 Namespace.addCategoryObject("elementBinding", KeyValue.name().localName(), KeyValue)
@@ -1829,7 +1741,7 @@ RetrievalMethod = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "RetrievalMethod"),
     RetrievalMethodType,
     location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 170, 2
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 170, 2
     ),
 )
 Namespace.addCategoryObject("elementBinding", RetrievalMethod.name().localName(), RetrievalMethod)
@@ -1838,7 +1750,7 @@ X509Data = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "X509Data"),
     X509DataType,
     location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 181, 0
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 181, 0
     ),
 )
 Namespace.addCategoryObject("elementBinding", X509Data.name().localName(), X509Data)
@@ -1847,7 +1759,7 @@ PGPData = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "PGPData"),
     PGPDataType,
     location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 206, 0
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 206, 0
     ),
 )
 Namespace.addCategoryObject("elementBinding", PGPData.name().localName(), PGPData)
@@ -1856,7 +1768,7 @@ SPKIData = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "SPKIData"),
     SPKIDataType,
     location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 227, 0
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 227, 0
     ),
 )
 Namespace.addCategoryObject("elementBinding", SPKIData.name().localName(), SPKIData)
@@ -1865,7 +1777,7 @@ Object = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "Object"),
     ObjectType,
     location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 241, 0
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 241, 0
     ),
 )
 Namespace.addCategoryObject("elementBinding", Object.name().localName(), Object)
@@ -1874,7 +1786,7 @@ Manifest = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "Manifest"),
     ManifestType,
     location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 251, 0
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 251, 0
     ),
 )
 Namespace.addCategoryObject("elementBinding", Manifest.name().localName(), Manifest)
@@ -1883,7 +1795,7 @@ SignatureProperties = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "SignatureProperties"),
     SignaturePropertiesType,
     location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 259, 0
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 259, 0
     ),
 )
 Namespace.addCategoryObject(
@@ -1894,7 +1806,7 @@ SignatureProperty = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "SignatureProperty"),
     SignaturePropertyType,
     location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 267, 3
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 267, 3
     ),
 )
 Namespace.addCategoryObject(
@@ -1905,7 +1817,7 @@ DSAKeyValue = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "DSAKeyValue"),
     DSAKeyValueType,
     location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 287, 0
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 287, 0
     ),
 )
 Namespace.addCategoryObject("elementBinding", DSAKeyValue.name().localName(), DSAKeyValue)
@@ -1914,7 +1826,7 @@ RSAKeyValue = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "RSAKeyValue"),
     RSAKeyValueType,
     location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 304, 0
+        "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 304, 0
     ),
 )
 Namespace.addCategoryObject("elementBinding", RSAKeyValue.name().localName(), RSAKeyValue)
@@ -1926,9 +1838,7 @@ SignatureType._AddElement(
         SignatureValueType,
         scope=SignatureType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            52,
-            2,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 52, 2
         ),
     )
 )
@@ -1939,9 +1849,7 @@ SignatureType._AddElement(
         SignedInfoType,
         scope=SignatureType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            63,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 63, 0
         ),
     )
 )
@@ -1952,9 +1860,7 @@ SignatureType._AddElement(
         KeyInfoType,
         scope=SignatureType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            142,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 142, 0
         ),
     )
 )
@@ -1965,9 +1871,7 @@ SignatureType._AddElement(
         ObjectType,
         scope=SignatureType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            241,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 241, 0
         ),
     )
 )
@@ -1984,9 +1888,7 @@ def _BuildAutomaton():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            46,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 46, 4
         ),
     )
     counters.add(cc_0)
@@ -1994,9 +1896,7 @@ def _BuildAutomaton():
         min=0,
         max=None,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            47,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 47, 4
         ),
     )
     counters.add(cc_1)
@@ -2005,9 +1905,7 @@ def _BuildAutomaton():
     symbol = pyxb.binding.content.ElementUse(
         SignatureType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "SignedInfo")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            44,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 44, 4
         ),
     )
     st_0 = fac.State(
@@ -2018,9 +1916,7 @@ def _BuildAutomaton():
     symbol = pyxb.binding.content.ElementUse(
         SignatureType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "SignatureValue")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            45,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 45, 4
         ),
     )
     st_1 = fac.State(
@@ -2032,9 +1928,7 @@ def _BuildAutomaton():
     symbol = pyxb.binding.content.ElementUse(
         SignatureType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "KeyInfo")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            46,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 46, 4
         ),
     )
     st_2 = fac.State(
@@ -2046,9 +1940,7 @@ def _BuildAutomaton():
     symbol = pyxb.binding.content.ElementUse(
         SignatureType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Object")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            47,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 47, 4
         ),
     )
     st_3 = fac.State(
@@ -2081,9 +1973,7 @@ SignedInfoType._AddElement(
         CanonicalizationMethodType,
         scope=SignedInfoType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            73,
-            2,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 73, 2
         ),
     )
 )
@@ -2094,9 +1984,7 @@ SignedInfoType._AddElement(
         SignatureMethodType,
         scope=SignedInfoType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            82,
-            2,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 82, 2
         ),
     )
 )
@@ -2107,9 +1995,7 @@ SignedInfoType._AddElement(
         ReferenceType,
         scope=SignedInfoType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            94,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 94, 0
         ),
     )
 )
@@ -2127,9 +2013,7 @@ def _BuildAutomaton_():
     symbol = pyxb.binding.content.ElementUse(
         SignedInfoType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "CanonicalizationMethod")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            66,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 66, 4
         ),
     )
     st_0 = fac.State(
@@ -2140,9 +2024,7 @@ def _BuildAutomaton_():
     symbol = pyxb.binding.content.ElementUse(
         SignedInfoType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "SignatureMethod")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            67,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 67, 4
         ),
     )
     st_1 = fac.State(
@@ -2153,9 +2035,7 @@ def _BuildAutomaton_():
     symbol = pyxb.binding.content.ElementUse(
         SignedInfoType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Reference")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            68,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 68, 4
         ),
     )
     st_2 = fac.State(
@@ -2188,9 +2068,7 @@ def _BuildAutomaton_2():
         min=0,
         max=None,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            76,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 76, 6
         ),
     )
     counters.add(cc_0)
@@ -2203,9 +2081,7 @@ def _BuildAutomaton_2():
             namespace_constraint=pyxb.binding.content.Wildcard.NC_any,
         ),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            76,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 76, 6
         ),
     )
     st_0 = fac.State(
@@ -2227,9 +2103,7 @@ SignatureMethodType._AddElement(
         HMACOutputLengthType,
         scope=SignatureMethodType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            85,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 85, 6
         ),
     )
 )
@@ -2246,9 +2120,7 @@ def _BuildAutomaton_3():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            85,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 85, 6
         ),
     )
     counters.add(cc_0)
@@ -2256,9 +2128,7 @@ def _BuildAutomaton_3():
         min=0,
         max=None,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            86,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 86, 6
         ),
     )
     counters.add(cc_1)
@@ -2268,9 +2138,7 @@ def _BuildAutomaton_3():
     symbol = pyxb.binding.content.ElementUse(
         SignatureMethodType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "HMACOutputLength")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            85,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 85, 6
         ),
     )
     st_0 = fac.State(
@@ -2288,9 +2156,7 @@ def _BuildAutomaton_3():
             ),
         ),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            86,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 86, 6
         ),
     )
     st_1 = fac.State(
@@ -2316,9 +2182,7 @@ ReferenceType._AddElement(
         TransformsType,
         scope=ReferenceType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            106,
-            2,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 106, 2
         ),
     )
 )
@@ -2329,9 +2193,7 @@ ReferenceType._AddElement(
         DigestMethodType,
         scope=ReferenceType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            125,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 125, 0
         ),
     )
 )
@@ -2342,9 +2204,7 @@ ReferenceType._AddElement(
         DigestValueType,
         scope=ReferenceType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            133,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 133, 0
         ),
     )
 )
@@ -2361,9 +2221,7 @@ def _BuildAutomaton_4():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            97,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 97, 4
         ),
     )
     counters.add(cc_0)
@@ -2372,9 +2230,7 @@ def _BuildAutomaton_4():
     symbol = pyxb.binding.content.ElementUse(
         ReferenceType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Transforms")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            97,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 97, 4
         ),
     )
     st_0 = fac.State(
@@ -2385,9 +2241,7 @@ def _BuildAutomaton_4():
     symbol = pyxb.binding.content.ElementUse(
         ReferenceType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "DigestMethod")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            98,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 98, 4
         ),
     )
     st_1 = fac.State(
@@ -2398,9 +2252,7 @@ def _BuildAutomaton_4():
     symbol = pyxb.binding.content.ElementUse(
         ReferenceType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "DigestValue")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            99,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 99, 4
         ),
     )
     st_2 = fac.State(
@@ -2428,9 +2280,7 @@ TransformsType._AddElement(
         TransformType,
         scope=TransformsType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            113,
-            2,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 113, 2
         ),
     )
 )
@@ -2448,9 +2298,7 @@ def _BuildAutomaton_5():
     symbol = pyxb.binding.content.ElementUse(
         TransformsType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Transform")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            109,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 109, 6
         ),
     )
     st_0 = fac.State(
@@ -2472,9 +2320,7 @@ TransformType._AddElement(
         pyxb.binding.datatypes.string,
         scope=TransformType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            118,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 118, 6
         ),
     )
 )
@@ -2491,9 +2337,7 @@ def _BuildAutomaton_6():
         min=0,
         max=None,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            115,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 115, 4
         ),
     )
     counters.add(cc_0)
@@ -2509,9 +2353,7 @@ def _BuildAutomaton_6():
             ),
         ),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            116,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 116, 6
         ),
     )
     st_0 = fac.State(
@@ -2523,9 +2365,7 @@ def _BuildAutomaton_6():
     symbol = pyxb.binding.content.ElementUse(
         TransformType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "XPath")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            118,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 118, 6
         ),
     )
     st_1 = fac.State(
@@ -2557,9 +2397,7 @@ def _BuildAutomaton_7():
         min=0,
         max=None,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            128,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 128, 4
         ),
     )
     counters.add(cc_0)
@@ -2575,9 +2413,7 @@ def _BuildAutomaton_7():
             ),
         ),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            128,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 128, 4
         ),
     )
     st_0 = fac.State(
@@ -2599,9 +2435,7 @@ KeyInfoType._AddElement(
         pyxb.binding.datatypes.string,
         scope=KeyInfoType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            158,
-            2,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 158, 2
         ),
     )
 )
@@ -2612,9 +2446,7 @@ KeyInfoType._AddElement(
         pyxb.binding.datatypes.string,
         scope=KeyInfoType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            159,
-            2,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 159, 2
         ),
     )
 )
@@ -2625,9 +2457,7 @@ KeyInfoType._AddElement(
         KeyValueType,
         scope=KeyInfoType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            161,
-            2,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 161, 2
         ),
     )
 )
@@ -2638,9 +2468,7 @@ KeyInfoType._AddElement(
         RetrievalMethodType,
         scope=KeyInfoType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            170,
-            2,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 170, 2
         ),
     )
 )
@@ -2651,9 +2479,7 @@ KeyInfoType._AddElement(
         X509DataType,
         scope=KeyInfoType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            181,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 181, 0
         ),
     )
 )
@@ -2664,9 +2490,7 @@ KeyInfoType._AddElement(
         PGPDataType,
         scope=KeyInfoType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            206,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 206, 0
         ),
     )
 )
@@ -2677,9 +2501,7 @@ KeyInfoType._AddElement(
         SPKIDataType,
         scope=KeyInfoType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            227,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 227, 0
         ),
     )
 )
@@ -2697,9 +2519,7 @@ def _BuildAutomaton_8():
     symbol = pyxb.binding.content.ElementUse(
         KeyInfoType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "KeyName")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            145,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 145, 4
         ),
     )
     st_0 = fac.State(
@@ -2710,9 +2530,7 @@ def _BuildAutomaton_8():
     symbol = pyxb.binding.content.ElementUse(
         KeyInfoType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "KeyValue")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            146,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 146, 4
         ),
     )
     st_1 = fac.State(
@@ -2723,9 +2541,7 @@ def _BuildAutomaton_8():
     symbol = pyxb.binding.content.ElementUse(
         KeyInfoType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "RetrievalMethod")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            147,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 147, 4
         ),
     )
     st_2 = fac.State(
@@ -2736,9 +2552,7 @@ def _BuildAutomaton_8():
     symbol = pyxb.binding.content.ElementUse(
         KeyInfoType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "X509Data")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            148,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 148, 4
         ),
     )
     st_3 = fac.State(
@@ -2749,9 +2563,7 @@ def _BuildAutomaton_8():
     symbol = pyxb.binding.content.ElementUse(
         KeyInfoType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "PGPData")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            149,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 149, 4
         ),
     )
     st_4 = fac.State(
@@ -2762,9 +2574,7 @@ def _BuildAutomaton_8():
     symbol = pyxb.binding.content.ElementUse(
         KeyInfoType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "SPKIData")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            150,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 150, 4
         ),
     )
     st_5 = fac.State(
@@ -2775,9 +2585,7 @@ def _BuildAutomaton_8():
     symbol = pyxb.binding.content.ElementUse(
         KeyInfoType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "MgmtData")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            151,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 151, 4
         ),
     )
     st_6 = fac.State(
@@ -2794,9 +2602,7 @@ def _BuildAutomaton_8():
             ),
         ),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            152,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 152, 4
         ),
     )
     st_7 = fac.State(
@@ -2895,9 +2701,7 @@ KeyValueType._AddElement(
         DSAKeyValueType,
         scope=KeyValueType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            287,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 287, 0
         ),
     )
 )
@@ -2908,9 +2712,7 @@ KeyValueType._AddElement(
         RSAKeyValueType,
         scope=KeyValueType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            304,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 304, 0
         ),
     )
 )
@@ -2928,9 +2730,7 @@ def _BuildAutomaton_9():
     symbol = pyxb.binding.content.ElementUse(
         KeyValueType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "DSAKeyValue")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            164,
-            5,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 164, 5
         ),
     )
     st_0 = fac.State(
@@ -2941,9 +2741,7 @@ def _BuildAutomaton_9():
     symbol = pyxb.binding.content.ElementUse(
         KeyValueType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "RSAKeyValue")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            165,
-            5,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 165, 5
         ),
     )
     st_1 = fac.State(
@@ -2960,9 +2758,7 @@ def _BuildAutomaton_9():
             ),
         ),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            166,
-            5,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 166, 5
         ),
     )
     st_2 = fac.State(
@@ -2987,9 +2783,7 @@ RetrievalMethodType._AddElement(
         TransformsType,
         scope=RetrievalMethodType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            106,
-            2,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 106, 2
         ),
     )
 )
@@ -3006,9 +2800,7 @@ def _BuildAutomaton_10():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            173,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 173, 6
         ),
     )
     counters.add(cc_0)
@@ -3018,9 +2810,7 @@ def _BuildAutomaton_10():
     symbol = pyxb.binding.content.ElementUse(
         RetrievalMethodType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Transforms")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            173,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 173, 6
         ),
     )
     st_0 = fac.State(
@@ -3042,9 +2832,7 @@ X509DataType._AddElement(
         X509IssuerSerialType,
         scope=X509DataType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            185,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 185, 6
         ),
     )
 )
@@ -3055,9 +2843,7 @@ X509DataType._AddElement(
         pyxb.binding.datatypes.base64Binary,
         scope=X509DataType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            186,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 186, 6
         ),
     )
 )
@@ -3068,9 +2854,7 @@ X509DataType._AddElement(
         pyxb.binding.datatypes.string,
         scope=X509DataType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            187,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 187, 6
         ),
     )
 )
@@ -3081,9 +2865,7 @@ X509DataType._AddElement(
         pyxb.binding.datatypes.base64Binary,
         scope=X509DataType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            188,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 188, 6
         ),
     )
 )
@@ -3094,9 +2876,7 @@ X509DataType._AddElement(
         pyxb.binding.datatypes.base64Binary,
         scope=X509DataType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            189,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 189, 6
         ),
     )
 )
@@ -3114,9 +2894,7 @@ def _BuildAutomaton_11():
     symbol = pyxb.binding.content.ElementUse(
         X509DataType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "X509IssuerSerial")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            185,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 185, 6
         ),
     )
     st_0 = fac.State(
@@ -3127,9 +2905,7 @@ def _BuildAutomaton_11():
     symbol = pyxb.binding.content.ElementUse(
         X509DataType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "X509SKI")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            186,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 186, 6
         ),
     )
     st_1 = fac.State(
@@ -3140,9 +2916,7 @@ def _BuildAutomaton_11():
     symbol = pyxb.binding.content.ElementUse(
         X509DataType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "X509SubjectName")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            187,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 187, 6
         ),
     )
     st_2 = fac.State(
@@ -3153,9 +2927,7 @@ def _BuildAutomaton_11():
     symbol = pyxb.binding.content.ElementUse(
         X509DataType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "X509Certificate")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            188,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 188, 6
         ),
     )
     st_3 = fac.State(
@@ -3166,9 +2938,7 @@ def _BuildAutomaton_11():
     symbol = pyxb.binding.content.ElementUse(
         X509DataType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "X509CRL")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            189,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 189, 6
         ),
     )
     st_4 = fac.State(
@@ -3185,9 +2955,7 @@ def _BuildAutomaton_11():
             ),
         ),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            190,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 190, 6
         ),
     )
     st_5 = fac.State(
@@ -3254,9 +3022,7 @@ X509IssuerSerialType._AddElement(
         pyxb.binding.datatypes.string,
         scope=X509IssuerSerialType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            197,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 197, 4
         ),
     )
 )
@@ -3267,9 +3033,7 @@ X509IssuerSerialType._AddElement(
         pyxb.binding.datatypes.integer,
         scope=X509IssuerSerialType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            198,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 198, 4
         ),
     )
 )
@@ -3287,9 +3051,7 @@ def _BuildAutomaton_12():
     symbol = pyxb.binding.content.ElementUse(
         X509IssuerSerialType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "X509IssuerName")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            197,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 197, 4
         ),
     )
     st_0 = fac.State(
@@ -3300,9 +3062,7 @@ def _BuildAutomaton_12():
     symbol = pyxb.binding.content.ElementUse(
         X509IssuerSerialType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "X509SerialNumber")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            198,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 198, 4
         ),
     )
     st_1 = fac.State(
@@ -3326,9 +3086,7 @@ PGPDataType._AddElement(
         pyxb.binding.datatypes.base64Binary,
         scope=PGPDataType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            210,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 210, 6
         ),
     )
 )
@@ -3339,9 +3097,7 @@ PGPDataType._AddElement(
         pyxb.binding.datatypes.base64Binary,
         scope=PGPDataType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            211,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 211, 6
         ),
     )
 )
@@ -3358,9 +3114,7 @@ def _BuildAutomaton_13():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            211,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 211, 6
         ),
     )
     counters.add(cc_0)
@@ -3368,9 +3122,7 @@ def _BuildAutomaton_13():
         min=0,
         max=None,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            212,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 212, 6
         ),
     )
     counters.add(cc_1)
@@ -3378,9 +3130,7 @@ def _BuildAutomaton_13():
         min=0,
         max=None,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            217,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 217, 6
         ),
     )
     counters.add(cc_2)
@@ -3389,9 +3139,7 @@ def _BuildAutomaton_13():
     symbol = pyxb.binding.content.ElementUse(
         PGPDataType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "PGPKeyID")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            210,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 210, 6
         ),
     )
     st_0 = fac.State(
@@ -3403,9 +3151,7 @@ def _BuildAutomaton_13():
     symbol = pyxb.binding.content.ElementUse(
         PGPDataType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "PGPKeyPacket")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            211,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 211, 6
         ),
     )
     st_1 = fac.State(
@@ -3423,9 +3169,7 @@ def _BuildAutomaton_13():
             ),
         ),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            212,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 212, 6
         ),
     )
     st_2 = fac.State(
@@ -3436,9 +3180,7 @@ def _BuildAutomaton_13():
     symbol = pyxb.binding.content.ElementUse(
         PGPDataType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "PGPKeyPacket")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            216,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 216, 6
         ),
     )
     st_3 = fac.State(
@@ -3456,9 +3198,7 @@ def _BuildAutomaton_13():
             ),
         ),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            217,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 217, 6
         ),
     )
     st_4 = fac.State(
@@ -3494,9 +3234,7 @@ SPKIDataType._AddElement(
         pyxb.binding.datatypes.base64Binary,
         scope=SPKIDataType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            230,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 230, 4
         ),
     )
 )
@@ -3513,9 +3251,7 @@ def _BuildAutomaton_14():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            231,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 231, 4
         ),
     )
     counters.add(cc_0)
@@ -3524,9 +3260,7 @@ def _BuildAutomaton_14():
     symbol = pyxb.binding.content.ElementUse(
         SPKIDataType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "SPKISexp")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            230,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 230, 4
         ),
     )
     st_0 = fac.State(
@@ -3544,9 +3278,7 @@ def _BuildAutomaton_14():
             ),
         ),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            231,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 231, 4
         ),
     )
     st_1 = fac.State(
@@ -3578,9 +3310,7 @@ def _BuildAutomaton_15():
         min=0,
         max=None,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            243,
-            2,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 243, 2
         ),
     )
     counters.add(cc_0)
@@ -3593,9 +3323,7 @@ def _BuildAutomaton_15():
             namespace_constraint=pyxb.binding.content.Wildcard.NC_any,
         ),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            244,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 244, 4
         ),
     )
     st_0 = fac.State(
@@ -3617,9 +3345,7 @@ ManifestType._AddElement(
         ReferenceType,
         scope=ManifestType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            94,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 94, 0
         ),
     )
 )
@@ -3637,9 +3363,7 @@ def _BuildAutomaton_16():
     symbol = pyxb.binding.content.ElementUse(
         ManifestType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Reference")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            254,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 254, 4
         ),
     )
     st_0 = fac.State(
@@ -3661,9 +3385,7 @@ SignaturePropertiesType._AddElement(
         SignaturePropertyType,
         scope=SignaturePropertiesType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            267,
-            3,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 267, 3
         ),
     )
 )
@@ -3683,9 +3405,7 @@ def _BuildAutomaton_17():
             pyxb.namespace.ExpandedName(Namespace, "SignatureProperty")
         ),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            262,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 262, 4
         ),
     )
     st_0 = fac.State(
@@ -3719,9 +3439,7 @@ def _BuildAutomaton_18():
             ),
         ),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            270,
-            7,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 270, 7
         ),
     )
     st_0 = fac.State(
@@ -3743,9 +3461,7 @@ DSAKeyValueType._AddElement(
         CryptoBinary,
         scope=DSAKeyValueType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            291,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 291, 6
         ),
     )
 )
@@ -3756,9 +3472,7 @@ DSAKeyValueType._AddElement(
         CryptoBinary,
         scope=DSAKeyValueType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            292,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 292, 6
         ),
     )
 )
@@ -3769,9 +3483,7 @@ DSAKeyValueType._AddElement(
         CryptoBinary,
         scope=DSAKeyValueType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            294,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 294, 4
         ),
     )
 )
@@ -3782,9 +3494,7 @@ DSAKeyValueType._AddElement(
         CryptoBinary,
         scope=DSAKeyValueType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            295,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 295, 4
         ),
     )
 )
@@ -3795,9 +3505,7 @@ DSAKeyValueType._AddElement(
         CryptoBinary,
         scope=DSAKeyValueType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            296,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 296, 4
         ),
     )
 )
@@ -3808,9 +3516,7 @@ DSAKeyValueType._AddElement(
         CryptoBinary,
         scope=DSAKeyValueType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            298,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 298, 6
         ),
     )
 )
@@ -3821,9 +3527,7 @@ DSAKeyValueType._AddElement(
         CryptoBinary,
         scope=DSAKeyValueType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            299,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 299, 6
         ),
     )
 )
@@ -3840,9 +3544,7 @@ def _BuildAutomaton_19():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            290,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 290, 4
         ),
     )
     counters.add(cc_0)
@@ -3850,9 +3552,7 @@ def _BuildAutomaton_19():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            294,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 294, 4
         ),
     )
     counters.add(cc_1)
@@ -3860,9 +3560,7 @@ def _BuildAutomaton_19():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            296,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 296, 4
         ),
     )
     counters.add(cc_2)
@@ -3870,9 +3568,7 @@ def _BuildAutomaton_19():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            297,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 297, 4
         ),
     )
     counters.add(cc_3)
@@ -3881,9 +3577,7 @@ def _BuildAutomaton_19():
     symbol = pyxb.binding.content.ElementUse(
         DSAKeyValueType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "P")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            291,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 291, 6
         ),
     )
     st_0 = fac.State(
@@ -3894,9 +3588,7 @@ def _BuildAutomaton_19():
     symbol = pyxb.binding.content.ElementUse(
         DSAKeyValueType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Q")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            292,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 292, 6
         ),
     )
     st_1 = fac.State(
@@ -3907,9 +3599,7 @@ def _BuildAutomaton_19():
     symbol = pyxb.binding.content.ElementUse(
         DSAKeyValueType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "G")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            294,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 294, 4
         ),
     )
     st_2 = fac.State(
@@ -3920,9 +3610,7 @@ def _BuildAutomaton_19():
     symbol = pyxb.binding.content.ElementUse(
         DSAKeyValueType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Y")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            295,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 295, 4
         ),
     )
     st_3 = fac.State(
@@ -3934,9 +3622,7 @@ def _BuildAutomaton_19():
     symbol = pyxb.binding.content.ElementUse(
         DSAKeyValueType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "J")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            296,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 296, 4
         ),
     )
     st_4 = fac.State(
@@ -3947,9 +3633,7 @@ def _BuildAutomaton_19():
     symbol = pyxb.binding.content.ElementUse(
         DSAKeyValueType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Seed")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            298,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 298, 6
         ),
     )
     st_5 = fac.State(
@@ -3961,9 +3645,7 @@ def _BuildAutomaton_19():
     symbol = pyxb.binding.content.ElementUse(
         DSAKeyValueType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "PgenCounter")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            299,
-            6,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 299, 6
         ),
     )
     st_6 = fac.State(
@@ -4008,9 +3690,7 @@ RSAKeyValueType._AddElement(
         CryptoBinary,
         scope=RSAKeyValueType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            307,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 307, 4
         ),
     )
 )
@@ -4021,9 +3701,7 @@ RSAKeyValueType._AddElement(
         CryptoBinary,
         scope=RSAKeyValueType,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            308,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 308, 4
         ),
     )
 )
@@ -4041,9 +3719,7 @@ def _BuildAutomaton_20():
     symbol = pyxb.binding.content.ElementUse(
         RSAKeyValueType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Modulus")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            307,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 307, 4
         ),
     )
     st_0 = fac.State(
@@ -4054,9 +3730,7 @@ def _BuildAutomaton_20():
     symbol = pyxb.binding.content.ElementUse(
         RSAKeyValueType._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Exponent")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            308,
-            4,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 308, 4
         ),
     )
     st_1 = fac.State(

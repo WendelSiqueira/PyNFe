@@ -117,7 +117,7 @@ uv run ruff check .
 uv run ruff format .
 ```
 
-Para atualizar os bindings XSD da NFS-e, execute `gerarnfsebindings.sh`.
+Para regenerar os bindings XSD da NFS-e: `uv sync --extra nfse && uv run ./gerarnfsebindings.sh`. O script grava caminhos relativos e formata a saída com o ruff, então o resultado é o mesmo em qualquer máquina (mudam só a data da geração e um identificador interno).
 
 Navegação no código: arquivos grandes têm mapas em `docs/*_map.md` (ver [AGENTS.md](AGENTS.md)).
 

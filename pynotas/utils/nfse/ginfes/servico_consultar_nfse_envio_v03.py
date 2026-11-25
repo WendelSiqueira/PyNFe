@@ -2,7 +2,7 @@
 # pynotas/utils/nfse/ginfes/servico_consultar_nfse_envio_v03.py
 # -*- coding: utf-8 -*-
 # PyXB bindings for NM:bcd004ef2977ad06e43903899e512fb1d0814ea6
-# Generated 2025-04-06 00:00:46.115081 by PyXB version 1.2.6 using Python 3.12.9.final.0
+# Generated 2026-11-25 08:53:27.660138 by PyXB version 1.2.6 using Python 3.13.16.final.0
 # Namespace http://www.ginfes.com.br/servico_consultar_nfse_envio_v03.xsd
 
 from __future__ import unicode_literals
@@ -17,7 +17,7 @@ import pyxb.utils.six as _six
 
 # Unique identifier for bindings created at the same time
 _GenerationUID = pyxb.utils.utility.UniqueIdentifier(
-    "urn:uuid:1d569424-9c64-46db-9660-da8ad559cf6e"
+    "urn:uuid:01317704-ab98-4dec-b4f2-ed3dea1edd65"
 )
 
 # Version of PyXB used to generate the bindings
@@ -107,9 +107,7 @@ class CTD_ANON(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd",
-        7,
-        2,
+        "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd", 7, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -122,9 +120,7 @@ class CTD_ANON(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_ginfes_com_brservico_consultar_nfse_envio_v03_xsd_CTD_ANON_httpwww_ginfes_com_brservico_consultar_nfse_envio_v03_xsdPrestador",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd",
-            9,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd", 9, 4
         ),
     )
 
@@ -137,9 +133,7 @@ class CTD_ANON(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_ginfes_com_brservico_consultar_nfse_envio_v03_xsd_CTD_ANON_httpwww_ginfes_com_brservico_consultar_nfse_envio_v03_xsdNumeroNfse",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd",
-            10,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd", 10, 4
         ),
     )
 
@@ -152,9 +146,7 @@ class CTD_ANON(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_ginfes_com_brservico_consultar_nfse_envio_v03_xsd_CTD_ANON_httpwww_ginfes_com_brservico_consultar_nfse_envio_v03_xsdPeriodoEmissao",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd",
-            11,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd", 11, 4
         ),
     )
 
@@ -167,9 +159,7 @@ class CTD_ANON(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_ginfes_com_brservico_consultar_nfse_envio_v03_xsd_CTD_ANON_httpwww_ginfes_com_brservico_consultar_nfse_envio_v03_xsdTomador",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd",
-            19,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd", 19, 4
         ),
     )
 
@@ -182,9 +172,7 @@ class CTD_ANON(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_ginfes_com_brservico_consultar_nfse_envio_v03_xsd_CTD_ANON_httpwww_ginfes_com_brservico_consultar_nfse_envio_v03_xsdIntermediarioServico",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd",
-            20,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd", 20, 4
         ),
     )
 
@@ -199,9 +187,7 @@ class CTD_ANON(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_ginfes_com_brservico_consultar_nfse_envio_v03_xsd_CTD_ANON_httpwww_w3_org200009xmldsigSignature",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/xmldsig-core-schema20020212_v03.xsd",
-            41,
-            0,
+            "pynotas/data/XSDs/NFS-e/Ginfes/xmldsig-core-schema20020212_v03.xsd", 41, 0
         ),
     )
 
@@ -232,9 +218,7 @@ class CTD_ANON_(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd",
-        12,
-        5,
+        "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd", 12, 5
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -247,9 +231,7 @@ class CTD_ANON_(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_ginfes_com_brservico_consultar_nfse_envio_v03_xsd_CTD_ANON__httpwww_ginfes_com_brservico_consultar_nfse_envio_v03_xsdDataInicial",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd",
-            14,
-            7,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd", 14, 7
         ),
     )
 
@@ -262,9 +244,7 @@ class CTD_ANON_(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_ginfes_com_brservico_consultar_nfse_envio_v03_xsd_CTD_ANON__httpwww_ginfes_com_brservico_consultar_nfse_envio_v03_xsdDataFinal",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd",
-            15,
-            7,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd", 15, 7
         ),
     )
 
@@ -281,9 +261,7 @@ ConsultarNfseEnvio = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "ConsultarNfseEnvio"),
     CTD_ANON,
     location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd",
-        6,
-        1,
+        "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd", 6, 1
     ),
 )
 Namespace.addCategoryObject(
@@ -297,9 +275,7 @@ CTD_ANON._AddElement(
         _ImportedBinding__tipos.tcIdentificacaoPrestador,
         scope=CTD_ANON,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd",
-            9,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd", 9, 4
         ),
     )
 )
@@ -310,9 +286,7 @@ CTD_ANON._AddElement(
         _ImportedBinding__tipos.tsNumeroNfse,
         scope=CTD_ANON,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd",
-            10,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd", 10, 4
         ),
     )
 )
@@ -323,9 +297,7 @@ CTD_ANON._AddElement(
         CTD_ANON_,
         scope=CTD_ANON,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd",
-            11,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd", 11, 4
         ),
     )
 )
@@ -336,9 +308,7 @@ CTD_ANON._AddElement(
         _ImportedBinding__tipos.tcIdentificacaoTomador,
         scope=CTD_ANON,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd",
-            19,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd", 19, 4
         ),
     )
 )
@@ -349,9 +319,7 @@ CTD_ANON._AddElement(
         _ImportedBinding__tipos.tcIdentificacaoIntermediarioServico,
         scope=CTD_ANON,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd",
-            20,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd", 20, 4
         ),
     )
 )
@@ -362,9 +330,7 @@ CTD_ANON._AddElement(
         _ImportedBinding__dsig.SignatureType,
         scope=CTD_ANON,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/xmldsig-core-schema20020212_v03.xsd",
-            41,
-            0,
+            "pynotas/data/XSDs/NFS-e/Ginfes/xmldsig-core-schema20020212_v03.xsd", 41, 0
         ),
     )
 )
@@ -381,9 +347,7 @@ def _BuildAutomaton():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd",
-            10,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd", 10, 4
         ),
     )
     counters.add(cc_0)
@@ -391,9 +355,7 @@ def _BuildAutomaton():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd",
-            11,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd", 11, 4
         ),
     )
     counters.add(cc_1)
@@ -401,9 +363,7 @@ def _BuildAutomaton():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd",
-            19,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd", 19, 4
         ),
     )
     counters.add(cc_2)
@@ -411,9 +371,7 @@ def _BuildAutomaton():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd",
-            20,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd", 20, 4
         ),
     )
     counters.add(cc_3)
@@ -421,9 +379,7 @@ def _BuildAutomaton():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd",
-            21,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd", 21, 4
         ),
     )
     counters.add(cc_4)
@@ -432,9 +388,7 @@ def _BuildAutomaton():
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Prestador")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd",
-            9,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd", 9, 4
         ),
     )
     st_0 = fac.State(
@@ -446,9 +400,7 @@ def _BuildAutomaton():
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON._UseForTag(pyxb.namespace.ExpandedName(Namespace, "NumeroNfse")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd",
-            10,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd", 10, 4
         ),
     )
     st_1 = fac.State(
@@ -460,9 +412,7 @@ def _BuildAutomaton():
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON._UseForTag(pyxb.namespace.ExpandedName(Namespace, "PeriodoEmissao")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd",
-            11,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd", 11, 4
         ),
     )
     st_2 = fac.State(
@@ -474,9 +424,7 @@ def _BuildAutomaton():
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Tomador")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd",
-            19,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd", 19, 4
         ),
     )
     st_3 = fac.State(
@@ -488,9 +436,7 @@ def _BuildAutomaton():
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON._UseForTag(pyxb.namespace.ExpandedName(Namespace, "IntermediarioServico")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd",
-            20,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd", 20, 4
         ),
     )
     st_4 = fac.State(
@@ -502,9 +448,7 @@ def _BuildAutomaton():
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON._UseForTag(pyxb.namespace.ExpandedName(_Namespace_dsig, "Signature")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd",
-            21,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd", 21, 4
         ),
     )
     st_5 = fac.State(
@@ -555,9 +499,7 @@ CTD_ANON_._AddElement(
         pyxb.binding.datatypes.date,
         scope=CTD_ANON_,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd",
-            14,
-            7,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd", 14, 7
         ),
     )
 )
@@ -568,9 +510,7 @@ CTD_ANON_._AddElement(
         pyxb.binding.datatypes.date,
         scope=CTD_ANON_,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd",
-            15,
-            7,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd", 15, 7
         ),
     )
 )
@@ -588,9 +528,7 @@ def _BuildAutomaton_():
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_._UseForTag(pyxb.namespace.ExpandedName(Namespace, "DataInicial")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd",
-            14,
-            7,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd", 14, 7
         ),
     )
     st_0 = fac.State(
@@ -601,9 +539,7 @@ def _BuildAutomaton_():
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_._UseForTag(pyxb.namespace.ExpandedName(Namespace, "DataFinal")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd",
-            15,
-            7,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_nfse_envio_v03.xsd", 15, 7
         ),
     )
     st_1 = fac.State(

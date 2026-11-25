@@ -2,7 +2,7 @@
 # pynotas/utils/nfse/ginfes/servico_cancelar_nfse_resposta_v03.py
 # -*- coding: utf-8 -*-
 # PyXB bindings for NM:aecca1e58a0180461a7c12de7921a1a74e1e0bec
-# Generated 2025-04-06 00:00:43.152037 by PyXB version 1.2.6 using Python 3.12.9.final.0
+# Generated 2026-11-25 08:53:27.121977 by PyXB version 1.2.6 using Python 3.13.16.final.0
 # Namespace http://www.ginfes.com.br/servico_cancelar_nfse_resposta_v03.xsd
 
 from __future__ import unicode_literals
@@ -17,7 +17,7 @@ import pyxb.utils.six as _six
 
 # Unique identifier for bindings created at the same time
 _GenerationUID = pyxb.utils.utility.UniqueIdentifier(
-    "urn:uuid:50cd1234-0b69-4102-a0d6-2a59b44785d5"
+    "urn:uuid:b66d905e-dcd4-445a-82e4-1d8cde8028d4"
 )
 
 # Version of PyXB used to generate the bindings
@@ -106,9 +106,7 @@ class CTD_ANON(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_cancelar_nfse_resposta_v03.xsd",
-        6,
-        2,
+        "pynotas/data/XSDs/NFS-e/Ginfes/servico_cancelar_nfse_resposta_v03.xsd", 6, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -121,9 +119,7 @@ class CTD_ANON(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_ginfes_com_brservico_cancelar_nfse_resposta_v03_xsd_CTD_ANON_httpwww_ginfes_com_brservico_cancelar_nfse_resposta_v03_xsdCancelamento",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_cancelar_nfse_resposta_v03.xsd",
-            8,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_cancelar_nfse_resposta_v03.xsd", 8, 4
         ),
     )
 
@@ -135,9 +131,7 @@ class CTD_ANON(pyxb.binding.basis.complexTypeDefinition):
         "ListaMensagemRetorno",
         "__httpwww_ginfes_com_brservico_cancelar_nfse_resposta_v03_xsd_CTD_ANON_httpwww_ginfes_com_brtipos_v03_xsdListaMensagemRetorno",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 508, 1
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 508, 1),
     )
 
     ListaMensagemRetorno = property(
@@ -160,9 +154,7 @@ CancelarNfseResposta = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "CancelarNfseResposta"),
     CTD_ANON,
     location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_cancelar_nfse_resposta_v03.xsd",
-        5,
-        1,
+        "pynotas/data/XSDs/NFS-e/Ginfes/servico_cancelar_nfse_resposta_v03.xsd", 5, 1
     ),
 )
 Namespace.addCategoryObject(
@@ -176,9 +168,7 @@ CTD_ANON._AddElement(
         _ImportedBinding__tipos.tcCancelamentoNfse,
         scope=CTD_ANON,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_cancelar_nfse_resposta_v03.xsd",
-            8,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_cancelar_nfse_resposta_v03.xsd", 8, 4
         ),
     )
 )
@@ -189,7 +179,7 @@ CTD_ANON._AddElement(
         _ImportedBinding__tipos.CTD_ANON,
         scope=CTD_ANON,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 508, 1
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 508, 1
         ),
     )
 )
@@ -207,9 +197,7 @@ def _BuildAutomaton():
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Cancelamento")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_cancelar_nfse_resposta_v03.xsd",
-            8,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_cancelar_nfse_resposta_v03.xsd", 8, 4
         ),
     )
     st_0 = fac.State(
@@ -220,9 +208,7 @@ def _BuildAutomaton():
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON._UseForTag(pyxb.namespace.ExpandedName(_Namespace_tipos, "ListaMensagemRetorno")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_cancelar_nfse_resposta_v03.xsd",
-            9,
-            4,
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_cancelar_nfse_resposta_v03.xsd", 9, 4
         ),
     )
     st_1 = fac.State(

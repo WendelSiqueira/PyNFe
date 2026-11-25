@@ -2,7 +2,7 @@
 # pynotas/utils/nfse/betha/nfse_v202.py
 # -*- coding: utf-8 -*-
 # PyXB bindings for NM:6ff0610f3dc7942f55c7a7b98d5ad53ba974a7b2
-# Generated 2025-04-06 00:00:39.105723 by PyXB version 1.2.6 using Python 3.12.9.final.0
+# Generated 2026-11-25 08:53:26.453040 by PyXB version 1.2.6 using Python 3.13.16.final.0
 # Namespace http://www.betha.com.br/e-nota-contribuinte-ws
 
 from __future__ import unicode_literals
@@ -17,7 +17,7 @@ import pyxb.utils.six as _six
 
 # Unique identifier for bindings created at the same time
 _GenerationUID = pyxb.utils.utility.UniqueIdentifier(
-    "urn:uuid:770a0200-e52e-48b5-9080-7379d189705e"
+    "urn:uuid:3b383f6d-324d-48fc-8b58-281b42b31643"
 )
 
 # Version of PyXB used to generate the bindings
@@ -102,9 +102,7 @@ class tsNumeroNfse(pyxb.binding.datatypes.nonNegativeInteger):
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsNumeroNfse")
-    _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 10, 1
-    )
+    _XSDLocation = pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 10, 1)
     _Documentation = None
 
 
@@ -121,9 +119,7 @@ class tsCodigoVerificacao(pyxb.binding.datatypes.string):
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsCodigoVerificacao")
-    _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 15, 1
-    )
+    _XSDLocation = pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 15, 1)
     _Documentation = None
 
 
@@ -150,9 +146,7 @@ class tsStatusRps(pyxb.binding.datatypes.byte):
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsStatusRps")
-    _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 22, 1
-    )
+    _XSDLocation = pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 22, 1)
     _Documentation = None
 
 
@@ -168,9 +162,7 @@ class tsStatusNfse(pyxb.binding.datatypes.byte):
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsStatusNfse")
-    _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 27, 1
-    )
+    _XSDLocation = pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 27, 1)
     _Documentation = None
 
 
@@ -186,9 +178,7 @@ class tsExigibilidadeISS(pyxb.binding.datatypes.byte):
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsExigibilidadeISS")
-    _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 32, 1
-    )
+    _XSDLocation = pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 32, 1)
     _Documentation = None
 
 
@@ -204,9 +194,7 @@ class tsNumeroProcesso(pyxb.binding.datatypes.string):
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsNumeroProcesso")
-    _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 37, 1
-    )
+    _XSDLocation = pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 37, 1)
     _Documentation = None
 
 
@@ -231,9 +219,7 @@ class tsRegimeEspecialTributacao(pyxb.binding.datatypes.byte):
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsRegimeEspecialTributacao")
-    _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 44, 1
-    )
+    _XSDLocation = pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 44, 1)
     _Documentation = None
 
 
@@ -249,9 +235,7 @@ class tsSimNao(pyxb.binding.datatypes.byte):
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsSimNao")
-    _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 49, 1
-    )
+    _XSDLocation = pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 49, 1)
     _Documentation = None
 
 
@@ -267,9 +251,7 @@ class tsResponsavelRetencao(pyxb.binding.datatypes.byte):
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsResponsavelRetencao")
-    _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 54, 1
-    )
+    _XSDLocation = pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 54, 1)
     _Documentation = None
 
 
@@ -285,9 +267,7 @@ class tsPagina(pyxb.binding.datatypes.nonNegativeInteger):
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsPagina")
-    _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 59, 1
-    )
+    _XSDLocation = pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 59, 1)
     _Documentation = None
 
 
@@ -307,9 +287,7 @@ class tsNumeroRps(pyxb.binding.datatypes.nonNegativeInteger):
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsNumeroRps")
-    _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 65, 1
-    )
+    _XSDLocation = pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 65, 1)
     _Documentation = None
 
 
@@ -326,9 +304,7 @@ class tsSerieRps(pyxb.binding.datatypes.string):
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsSerieRps")
-    _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 70, 1
-    )
+    _XSDLocation = pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 70, 1)
     _Documentation = None
 
 
@@ -353,9 +329,7 @@ class tsTipoRps(pyxb.binding.datatypes.byte):
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsTipoRps")
-    _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 77, 1
-    )
+    _XSDLocation = pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 77, 1)
     _Documentation = None
 
 
@@ -371,9 +345,7 @@ class tsOutrasInformacoes(pyxb.binding.datatypes.string):
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsOutrasInformacoes")
-    _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 82, 1
-    )
+    _XSDLocation = pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 82, 1)
     _Documentation = None
 
 
@@ -400,9 +372,7 @@ class tsValor(pyxb.binding.datatypes.decimal):
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsValor")
-    _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 89, 1
-    )
+    _XSDLocation = pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 89, 1)
     _Documentation = None
 
 
@@ -427,9 +397,7 @@ class tsItemListaServico(pyxb.binding.datatypes.string):
     """An atomic simple type."""
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsItemListaServico")
-    _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 96, 1
-    )
+    _XSDLocation = pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 96, 1)
     _Documentation = None
 
 
@@ -457,7 +425,7 @@ class tsCodigoCnae(pyxb.binding.datatypes.int):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsCodigoCnae")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 103, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 103, 1
     )
     _Documentation = None
 
@@ -476,7 +444,7 @@ class tsCodigoTributacao(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsCodigoTributacao")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 108, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 108, 1
     )
     _Documentation = None
 
@@ -505,7 +473,7 @@ class tsAliquota(pyxb.binding.datatypes.decimal):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsAliquota")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 115, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 115, 1
     )
     _Documentation = None
 
@@ -532,7 +500,7 @@ class tsDiscriminacao(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsDiscriminacao")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 122, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 122, 1
     )
     _Documentation = None
 
@@ -559,7 +527,7 @@ class tsCodigoMunicipioIbge(pyxb.binding.datatypes.int):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsCodigoMunicipioIbge")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 129, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 129, 1
     )
     _Documentation = None
 
@@ -578,7 +546,7 @@ class tsInscricaoMunicipal(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsInscricaoMunicipal")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 134, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 134, 1
     )
     _Documentation = None
 
@@ -607,7 +575,7 @@ class tsRazaoSocial(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsRazaoSocial")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 141, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 141, 1
     )
     _Documentation = None
 
@@ -634,7 +602,7 @@ class tsNomeFantasia(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsNomeFantasia")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 148, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 148, 1
     )
     _Documentation = None
 
@@ -661,7 +629,7 @@ class tsCnpj(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsCnpj")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 155, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 155, 1
     )
     _Documentation = None
 
@@ -683,7 +651,7 @@ class tsEndereco(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsEndereco")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 161, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 161, 1
     )
     _Documentation = None
 
@@ -710,7 +678,7 @@ class tsNumeroEndereco(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsNumeroEndereco")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 168, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 168, 1
     )
     _Documentation = None
 
@@ -737,7 +705,7 @@ class tsComplementoEndereco(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsComplementoEndereco")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 175, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 175, 1
     )
     _Documentation = None
 
@@ -766,7 +734,7 @@ class tsBairro(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsBairro")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 182, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 182, 1
     )
     _Documentation = None
 
@@ -793,7 +761,7 @@ class tsUf(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsUf")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 189, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 189, 1
     )
     _Documentation = None
 
@@ -810,7 +778,7 @@ class tsCodigoPaisBacen(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsCodigoPaisBacen")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 194, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 194, 1
     )
     _Documentation = None
 
@@ -834,7 +802,7 @@ class tsCep(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsCep")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 200, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 200, 1
     )
     _Documentation = None
 
@@ -851,7 +819,7 @@ class tsEmail(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsEmail")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 205, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 205, 1
     )
     _Documentation = None
 
@@ -876,7 +844,7 @@ class tsTelefone(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsTelefone")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 212, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 212, 1
     )
     _Documentation = None
 
@@ -903,7 +871,7 @@ class tsCpf(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsCpf")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 219, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 219, 1
     )
     _Documentation = None
 
@@ -922,7 +890,7 @@ class tsCodigoObra(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsCodigoObra")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 224, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 224, 1
     )
     _Documentation = None
 
@@ -949,7 +917,7 @@ class tsArt(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsArt")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 231, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 231, 1
     )
     _Documentation = None
 
@@ -974,7 +942,7 @@ class tsNumeroLote(pyxb.binding.datatypes.nonNegativeInteger):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsNumeroLote")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 238, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 238, 1
     )
     _Documentation = None
 
@@ -993,7 +961,7 @@ class tsNumeroProtocolo(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsNumeroProtocolo")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 243, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 243, 1
     )
     _Documentation = None
 
@@ -1012,7 +980,7 @@ class tsSituacaoLoteRps(pyxb.binding.datatypes.byte):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsSituacaoLoteRps")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 248, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 248, 1
     )
     _Documentation = None
 
@@ -1030,7 +998,7 @@ class tsQuantidadeRps(pyxb.binding.datatypes.int):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsQuantidadeRps")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 253, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 253, 1
     )
     _Documentation = None
 
@@ -1046,7 +1014,7 @@ class tsCodigoMensagemAlerta(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsCodigoMensagemAlerta")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 257, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 257, 1
     )
     _Documentation = None
 
@@ -1075,7 +1043,7 @@ class tsDescricaoMensagemAlerta(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsDescricaoMensagemAlerta")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 264, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 264, 1
     )
     _Documentation = None
 
@@ -1104,7 +1072,7 @@ class tsCodigoCancelamentoNfse(pyxb.binding.datatypes.byte):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsCodigoCancelamentoNfse")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 271, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 271, 1
     )
     _Documentation = None
 
@@ -1122,7 +1090,7 @@ class tsIdTag(pyxb.binding.datatypes.string):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsIdTag")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 276, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 276, 1
     )
     _Documentation = None
 
@@ -1141,7 +1109,7 @@ class tsVersao(pyxb.binding.datatypes.token):
 
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tsVersao")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 282, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 282, 1
     )
     _Documentation = None
 
@@ -1162,7 +1130,7 @@ class tcCpfCnpj(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcCpfCnpj")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 289, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 289, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -1174,9 +1142,7 @@ class tcCpfCnpj(pyxb.binding.basis.complexTypeDefinition):
         "Cpf",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcCpfCnpj_httpwww_betha_com_bre_nota_contribuinte_wsCpf",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 291, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 291, 3),
     )
 
     Cpf = property(__Cpf.value, __Cpf.set, None, None)
@@ -1187,9 +1153,7 @@ class tcCpfCnpj(pyxb.binding.basis.complexTypeDefinition):
         "Cnpj",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcCpfCnpj_httpwww_betha_com_bre_nota_contribuinte_wsCnpj",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 293, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 293, 3),
     )
 
     Cnpj = property(__Cnpj.value, __Cnpj.set, None, None)
@@ -1211,7 +1175,7 @@ class tcEndereco(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcEndereco")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 298, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 298, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -1223,9 +1187,7 @@ class tcEndereco(pyxb.binding.basis.complexTypeDefinition):
         "Endereco",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcEndereco_httpwww_betha_com_bre_nota_contribuinte_wsEndereco",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 300, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 300, 3),
     )
 
     Endereco = property(__Endereco.value, __Endereco.set, None, None)
@@ -1236,9 +1198,7 @@ class tcEndereco(pyxb.binding.basis.complexTypeDefinition):
         "Numero",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcEndereco_httpwww_betha_com_bre_nota_contribuinte_wsNumero",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 302, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 302, 3),
     )
 
     Numero = property(__Numero.value, __Numero.set, None, None)
@@ -1249,9 +1209,7 @@ class tcEndereco(pyxb.binding.basis.complexTypeDefinition):
         "Complemento",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcEndereco_httpwww_betha_com_bre_nota_contribuinte_wsComplemento",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 304, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 304, 3),
     )
 
     Complemento = property(__Complemento.value, __Complemento.set, None, None)
@@ -1262,9 +1220,7 @@ class tcEndereco(pyxb.binding.basis.complexTypeDefinition):
         "Bairro",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcEndereco_httpwww_betha_com_bre_nota_contribuinte_wsBairro",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 306, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 306, 3),
     )
 
     Bairro = property(__Bairro.value, __Bairro.set, None, None)
@@ -1275,9 +1231,7 @@ class tcEndereco(pyxb.binding.basis.complexTypeDefinition):
         "CodigoMunicipio",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcEndereco_httpwww_betha_com_bre_nota_contribuinte_wsCodigoMunicipio",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 308, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 308, 3),
     )
 
     CodigoMunicipio = property(__CodigoMunicipio.value, __CodigoMunicipio.set, None, None)
@@ -1288,9 +1242,7 @@ class tcEndereco(pyxb.binding.basis.complexTypeDefinition):
         "Uf",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcEndereco_httpwww_betha_com_bre_nota_contribuinte_wsUf",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 310, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 310, 3),
     )
 
     Uf = property(__Uf.value, __Uf.set, None, None)
@@ -1301,9 +1253,7 @@ class tcEndereco(pyxb.binding.basis.complexTypeDefinition):
         "CodigoPais",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcEndereco_httpwww_betha_com_bre_nota_contribuinte_wsCodigoPais",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 312, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 312, 3),
     )
 
     CodigoPais = property(__CodigoPais.value, __CodigoPais.set, None, None)
@@ -1314,9 +1264,7 @@ class tcEndereco(pyxb.binding.basis.complexTypeDefinition):
         "Cep",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcEndereco_httpwww_betha_com_bre_nota_contribuinte_wsCep",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 314, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 314, 3),
     )
 
     Cep = property(__Cep.value, __Cep.set, None, None)
@@ -1349,7 +1297,7 @@ class tcContato(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcContato")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 319, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 319, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -1361,9 +1309,7 @@ class tcContato(pyxb.binding.basis.complexTypeDefinition):
         "Telefone",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcContato_httpwww_betha_com_bre_nota_contribuinte_wsTelefone",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 321, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 321, 3),
     )
 
     Telefone = property(__Telefone.value, __Telefone.set, None, None)
@@ -1374,9 +1320,7 @@ class tcContato(pyxb.binding.basis.complexTypeDefinition):
         "Email",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcContato_httpwww_betha_com_bre_nota_contribuinte_wsEmail",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 323, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 323, 3),
     )
 
     Email = property(__Email.value, __Email.set, None, None)
@@ -1398,7 +1342,7 @@ class tcIdentificacaoOrgaoGerador(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcIdentificacaoOrgaoGerador")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 328, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 328, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -1410,9 +1354,7 @@ class tcIdentificacaoOrgaoGerador(pyxb.binding.basis.complexTypeDefinition):
         "CodigoMunicipio",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcIdentificacaoOrgaoGerador_httpwww_betha_com_bre_nota_contribuinte_wsCodigoMunicipio",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 330, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 330, 3),
     )
 
     CodigoMunicipio = property(__CodigoMunicipio.value, __CodigoMunicipio.set, None, None)
@@ -1423,9 +1365,7 @@ class tcIdentificacaoOrgaoGerador(pyxb.binding.basis.complexTypeDefinition):
         "Uf",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcIdentificacaoOrgaoGerador_httpwww_betha_com_bre_nota_contribuinte_wsUf",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 332, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 332, 3),
     )
 
     Uf = property(__Uf.value, __Uf.set, None, None)
@@ -1449,7 +1389,7 @@ class tcIdentificacaoRps(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcIdentificacaoRps")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 337, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 337, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -1461,9 +1401,7 @@ class tcIdentificacaoRps(pyxb.binding.basis.complexTypeDefinition):
         "Numero",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcIdentificacaoRps_httpwww_betha_com_bre_nota_contribuinte_wsNumero",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 339, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 339, 3),
     )
 
     Numero = property(__Numero.value, __Numero.set, None, None)
@@ -1474,9 +1412,7 @@ class tcIdentificacaoRps(pyxb.binding.basis.complexTypeDefinition):
         "Serie",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcIdentificacaoRps_httpwww_betha_com_bre_nota_contribuinte_wsSerie",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 341, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 341, 3),
     )
 
     Serie = property(__Serie.value, __Serie.set, None, None)
@@ -1487,9 +1423,7 @@ class tcIdentificacaoRps(pyxb.binding.basis.complexTypeDefinition):
         "Tipo",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcIdentificacaoRps_httpwww_betha_com_bre_nota_contribuinte_wsTipo",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 343, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 343, 3),
     )
 
     Tipo = property(__Tipo.value, __Tipo.set, None, None)
@@ -1511,7 +1445,7 @@ class tcIdentificacaoPrestador(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcIdentificacaoPrestador")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 348, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 348, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -1523,9 +1457,7 @@ class tcIdentificacaoPrestador(pyxb.binding.basis.complexTypeDefinition):
         "CpfCnpj",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcIdentificacaoPrestador_httpwww_betha_com_bre_nota_contribuinte_wsCpfCnpj",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 350, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 350, 3),
     )
 
     CpfCnpj = property(__CpfCnpj.value, __CpfCnpj.set, None, None)
@@ -1536,9 +1468,7 @@ class tcIdentificacaoPrestador(pyxb.binding.basis.complexTypeDefinition):
         "InscricaoMunicipal",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcIdentificacaoPrestador_httpwww_betha_com_bre_nota_contribuinte_wsInscricaoMunicipal",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 352, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 352, 3),
     )
 
     InscricaoMunicipal = property(__InscricaoMunicipal.value, __InscricaoMunicipal.set, None, None)
@@ -1562,7 +1492,7 @@ class tcIdentificacaoTomador(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcIdentificacaoTomador")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 357, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 357, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -1574,9 +1504,7 @@ class tcIdentificacaoTomador(pyxb.binding.basis.complexTypeDefinition):
         "CpfCnpj",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcIdentificacaoTomador_httpwww_betha_com_bre_nota_contribuinte_wsCpfCnpj",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 359, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 359, 3),
     )
 
     CpfCnpj = property(__CpfCnpj.value, __CpfCnpj.set, None, None)
@@ -1587,9 +1515,7 @@ class tcIdentificacaoTomador(pyxb.binding.basis.complexTypeDefinition):
         "InscricaoMunicipal",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcIdentificacaoTomador_httpwww_betha_com_bre_nota_contribuinte_wsInscricaoMunicipal",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 361, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 361, 3),
     )
 
     InscricaoMunicipal = property(__InscricaoMunicipal.value, __InscricaoMunicipal.set, None, None)
@@ -1613,7 +1539,7 @@ class tcIdentificacaoConsulente(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcIdentificacaoConsulente")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 366, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 366, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -1625,9 +1551,7 @@ class tcIdentificacaoConsulente(pyxb.binding.basis.complexTypeDefinition):
         "CpfCnpj",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcIdentificacaoConsulente_httpwww_betha_com_bre_nota_contribuinte_wsCpfCnpj",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 368, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 368, 3),
     )
 
     CpfCnpj = property(__CpfCnpj.value, __CpfCnpj.set, None, None)
@@ -1638,9 +1562,7 @@ class tcIdentificacaoConsulente(pyxb.binding.basis.complexTypeDefinition):
         "InscricaoMunicipal",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcIdentificacaoConsulente_httpwww_betha_com_bre_nota_contribuinte_wsInscricaoMunicipal",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 370, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 370, 3),
     )
 
     InscricaoMunicipal = property(__InscricaoMunicipal.value, __InscricaoMunicipal.set, None, None)
@@ -1664,7 +1586,7 @@ class tcIdentificacaoIntermediario(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcIdentificacaoIntermediario")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 375, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 375, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -1676,9 +1598,7 @@ class tcIdentificacaoIntermediario(pyxb.binding.basis.complexTypeDefinition):
         "CpfCnpj",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcIdentificacaoIntermediario_httpwww_betha_com_bre_nota_contribuinte_wsCpfCnpj",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 377, 15
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 377, 15),
     )
 
     CpfCnpj = property(__CpfCnpj.value, __CpfCnpj.set, None, None)
@@ -1689,9 +1609,7 @@ class tcIdentificacaoIntermediario(pyxb.binding.basis.complexTypeDefinition):
         "InscricaoMunicipal",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcIdentificacaoIntermediario_httpwww_betha_com_bre_nota_contribuinte_wsInscricaoMunicipal",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 378, 14
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 378, 14),
     )
 
     InscricaoMunicipal = property(__InscricaoMunicipal.value, __InscricaoMunicipal.set, None, None)
@@ -1717,7 +1635,7 @@ class tcDadosTomador(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcDadosTomador")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 382, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 382, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -1729,9 +1647,7 @@ class tcDadosTomador(pyxb.binding.basis.complexTypeDefinition):
         "IdentificacaoTomador",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcDadosTomador_httpwww_betha_com_bre_nota_contribuinte_wsIdentificacaoTomador",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 384, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 384, 3),
     )
 
     IdentificacaoTomador = property(
@@ -1744,9 +1660,7 @@ class tcDadosTomador(pyxb.binding.basis.complexTypeDefinition):
         "RazaoSocial",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcDadosTomador_httpwww_betha_com_bre_nota_contribuinte_wsRazaoSocial",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 386, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 386, 3),
     )
 
     RazaoSocial = property(__RazaoSocial.value, __RazaoSocial.set, None, None)
@@ -1757,9 +1671,7 @@ class tcDadosTomador(pyxb.binding.basis.complexTypeDefinition):
         "Endereco",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcDadosTomador_httpwww_betha_com_bre_nota_contribuinte_wsEndereco",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 388, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 388, 3),
     )
 
     Endereco = property(__Endereco.value, __Endereco.set, None, None)
@@ -1770,9 +1682,7 @@ class tcDadosTomador(pyxb.binding.basis.complexTypeDefinition):
         "Contato",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcDadosTomador_httpwww_betha_com_bre_nota_contribuinte_wsContato",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 390, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 390, 3),
     )
 
     Contato = property(__Contato.value, __Contato.set, None, None)
@@ -1801,7 +1711,7 @@ class tcDadosIntermediario(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcDadosIntermediario")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 395, 4
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 395, 4
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -1813,9 +1723,7 @@ class tcDadosIntermediario(pyxb.binding.basis.complexTypeDefinition):
         "IdentificacaoIntermediario",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcDadosIntermediario_httpwww_betha_com_bre_nota_contribuinte_wsIdentificacaoIntermediario",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 397, 12
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 397, 12),
     )
 
     IdentificacaoIntermediario = property(
@@ -1828,9 +1736,7 @@ class tcDadosIntermediario(pyxb.binding.basis.complexTypeDefinition):
         "RazaoSocial",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcDadosIntermediario_httpwww_betha_com_bre_nota_contribuinte_wsRazaoSocial",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 398, 12
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 398, 12),
     )
 
     RazaoSocial = property(__RazaoSocial.value, __RazaoSocial.set, None, None)
@@ -1857,7 +1763,7 @@ class tcValoresDeclaracaoServico(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcValoresDeclaracaoServico")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 402, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 402, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -1869,9 +1775,7 @@ class tcValoresDeclaracaoServico(pyxb.binding.basis.complexTypeDefinition):
         "ValorServicos",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcValoresDeclaracaoServico_httpwww_betha_com_bre_nota_contribuinte_wsValorServicos",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 404, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 404, 3),
     )
 
     ValorServicos = property(__ValorServicos.value, __ValorServicos.set, None, None)
@@ -1882,9 +1786,7 @@ class tcValoresDeclaracaoServico(pyxb.binding.basis.complexTypeDefinition):
         "ValorDeducoes",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcValoresDeclaracaoServico_httpwww_betha_com_bre_nota_contribuinte_wsValorDeducoes",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 406, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 406, 3),
     )
 
     ValorDeducoes = property(__ValorDeducoes.value, __ValorDeducoes.set, None, None)
@@ -1895,9 +1797,7 @@ class tcValoresDeclaracaoServico(pyxb.binding.basis.complexTypeDefinition):
         "ValorPis",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcValoresDeclaracaoServico_httpwww_betha_com_bre_nota_contribuinte_wsValorPis",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 408, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 408, 3),
     )
 
     ValorPis = property(__ValorPis.value, __ValorPis.set, None, None)
@@ -1908,9 +1808,7 @@ class tcValoresDeclaracaoServico(pyxb.binding.basis.complexTypeDefinition):
         "ValorCofins",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcValoresDeclaracaoServico_httpwww_betha_com_bre_nota_contribuinte_wsValorCofins",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 410, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 410, 3),
     )
 
     ValorCofins = property(__ValorCofins.value, __ValorCofins.set, None, None)
@@ -1921,9 +1819,7 @@ class tcValoresDeclaracaoServico(pyxb.binding.basis.complexTypeDefinition):
         "ValorInss",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcValoresDeclaracaoServico_httpwww_betha_com_bre_nota_contribuinte_wsValorInss",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 412, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 412, 3),
     )
 
     ValorInss = property(__ValorInss.value, __ValorInss.set, None, None)
@@ -1934,9 +1830,7 @@ class tcValoresDeclaracaoServico(pyxb.binding.basis.complexTypeDefinition):
         "ValorIr",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcValoresDeclaracaoServico_httpwww_betha_com_bre_nota_contribuinte_wsValorIr",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 414, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 414, 3),
     )
 
     ValorIr = property(__ValorIr.value, __ValorIr.set, None, None)
@@ -1947,9 +1841,7 @@ class tcValoresDeclaracaoServico(pyxb.binding.basis.complexTypeDefinition):
         "ValorCsll",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcValoresDeclaracaoServico_httpwww_betha_com_bre_nota_contribuinte_wsValorCsll",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 416, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 416, 3),
     )
 
     ValorCsll = property(__ValorCsll.value, __ValorCsll.set, None, None)
@@ -1960,9 +1852,7 @@ class tcValoresDeclaracaoServico(pyxb.binding.basis.complexTypeDefinition):
         "OutrasRetencoes",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcValoresDeclaracaoServico_httpwww_betha_com_bre_nota_contribuinte_wsOutrasRetencoes",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 418, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 418, 3),
     )
 
     OutrasRetencoes = property(__OutrasRetencoes.value, __OutrasRetencoes.set, None, None)
@@ -1973,9 +1863,7 @@ class tcValoresDeclaracaoServico(pyxb.binding.basis.complexTypeDefinition):
         "ValorIss",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcValoresDeclaracaoServico_httpwww_betha_com_bre_nota_contribuinte_wsValorIss",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 420, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 420, 3),
     )
 
     ValorIss = property(__ValorIss.value, __ValorIss.set, None, None)
@@ -1986,9 +1874,7 @@ class tcValoresDeclaracaoServico(pyxb.binding.basis.complexTypeDefinition):
         "Aliquota",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcValoresDeclaracaoServico_httpwww_betha_com_bre_nota_contribuinte_wsAliquota",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 422, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 422, 3),
     )
 
     Aliquota = property(__Aliquota.value, __Aliquota.set, None, None)
@@ -1999,9 +1885,7 @@ class tcValoresDeclaracaoServico(pyxb.binding.basis.complexTypeDefinition):
         "DescontoIncondicionado",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcValoresDeclaracaoServico_httpwww_betha_com_bre_nota_contribuinte_wsDescontoIncondicionado",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 424, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 424, 3),
     )
 
     DescontoIncondicionado = property(
@@ -2014,9 +1898,7 @@ class tcValoresDeclaracaoServico(pyxb.binding.basis.complexTypeDefinition):
         "DescontoCondicionado",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcValoresDeclaracaoServico_httpwww_betha_com_bre_nota_contribuinte_wsDescontoCondicionado",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 426, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 426, 3),
     )
 
     DescontoCondicionado = property(
@@ -2055,7 +1937,7 @@ class tcValoresNfse(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcValoresNfse")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 431, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 431, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -2067,9 +1949,7 @@ class tcValoresNfse(pyxb.binding.basis.complexTypeDefinition):
         "BaseCalculo",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcValoresNfse_httpwww_betha_com_bre_nota_contribuinte_wsBaseCalculo",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 433, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 433, 3),
     )
 
     BaseCalculo = property(__BaseCalculo.value, __BaseCalculo.set, None, None)
@@ -2080,9 +1960,7 @@ class tcValoresNfse(pyxb.binding.basis.complexTypeDefinition):
         "Aliquota",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcValoresNfse_httpwww_betha_com_bre_nota_contribuinte_wsAliquota",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 435, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 435, 3),
     )
 
     Aliquota = property(__Aliquota.value, __Aliquota.set, None, None)
@@ -2093,9 +1971,7 @@ class tcValoresNfse(pyxb.binding.basis.complexTypeDefinition):
         "ValorIss",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcValoresNfse_httpwww_betha_com_bre_nota_contribuinte_wsValorIss",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 437, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 437, 3),
     )
 
     ValorIss = property(__ValorIss.value, __ValorIss.set, None, None)
@@ -2106,9 +1982,7 @@ class tcValoresNfse(pyxb.binding.basis.complexTypeDefinition):
         "ValorLiquidoNfse",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcValoresNfse_httpwww_betha_com_bre_nota_contribuinte_wsValorLiquidoNfse",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 439, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 439, 3),
     )
 
     ValorLiquidoNfse = property(__ValorLiquidoNfse.value, __ValorLiquidoNfse.set, None, None)
@@ -2137,7 +2011,7 @@ class tcDadosServico(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcDadosServico")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 444, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 444, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -2149,9 +2023,7 @@ class tcDadosServico(pyxb.binding.basis.complexTypeDefinition):
         "Valores",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcDadosServico_httpwww_betha_com_bre_nota_contribuinte_wsValores",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 446, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 446, 3),
     )
 
     Valores = property(__Valores.value, __Valores.set, None, None)
@@ -2162,9 +2034,7 @@ class tcDadosServico(pyxb.binding.basis.complexTypeDefinition):
         "IssRetido",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcDadosServico_httpwww_betha_com_bre_nota_contribuinte_wsIssRetido",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 448, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 448, 3),
     )
 
     IssRetido = property(__IssRetido.value, __IssRetido.set, None, None)
@@ -2175,9 +2045,7 @@ class tcDadosServico(pyxb.binding.basis.complexTypeDefinition):
         "ResponsavelRetencao",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcDadosServico_httpwww_betha_com_bre_nota_contribuinte_wsResponsavelRetencao",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 450, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 450, 3),
     )
 
     ResponsavelRetencao = property(
@@ -2190,9 +2058,7 @@ class tcDadosServico(pyxb.binding.basis.complexTypeDefinition):
         "ItemListaServico",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcDadosServico_httpwww_betha_com_bre_nota_contribuinte_wsItemListaServico",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 452, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 452, 3),
     )
 
     ItemListaServico = property(__ItemListaServico.value, __ItemListaServico.set, None, None)
@@ -2203,9 +2069,7 @@ class tcDadosServico(pyxb.binding.basis.complexTypeDefinition):
         "CodigoCnae",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcDadosServico_httpwww_betha_com_bre_nota_contribuinte_wsCodigoCnae",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 454, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 454, 3),
     )
 
     CodigoCnae = property(__CodigoCnae.value, __CodigoCnae.set, None, None)
@@ -2216,9 +2080,7 @@ class tcDadosServico(pyxb.binding.basis.complexTypeDefinition):
         "CodigoTributacaoMunicipio",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcDadosServico_httpwww_betha_com_bre_nota_contribuinte_wsCodigoTributacaoMunicipio",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 456, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 456, 3),
     )
 
     CodigoTributacaoMunicipio = property(
@@ -2231,9 +2093,7 @@ class tcDadosServico(pyxb.binding.basis.complexTypeDefinition):
         "Discriminacao",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcDadosServico_httpwww_betha_com_bre_nota_contribuinte_wsDiscriminacao",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 458, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 458, 3),
     )
 
     Discriminacao = property(__Discriminacao.value, __Discriminacao.set, None, None)
@@ -2244,9 +2104,7 @@ class tcDadosServico(pyxb.binding.basis.complexTypeDefinition):
         "CodigoMunicipio",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcDadosServico_httpwww_betha_com_bre_nota_contribuinte_wsCodigoMunicipio",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 460, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 460, 3),
     )
 
     CodigoMunicipio = property(__CodigoMunicipio.value, __CodigoMunicipio.set, None, None)
@@ -2257,9 +2115,7 @@ class tcDadosServico(pyxb.binding.basis.complexTypeDefinition):
         "CodigoPais",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcDadosServico_httpwww_betha_com_bre_nota_contribuinte_wsCodigoPais",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 462, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 462, 3),
     )
 
     CodigoPais = property(__CodigoPais.value, __CodigoPais.set, None, None)
@@ -2270,9 +2126,7 @@ class tcDadosServico(pyxb.binding.basis.complexTypeDefinition):
         "ExigibilidadeISS",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcDadosServico_httpwww_betha_com_bre_nota_contribuinte_wsExigibilidadeISS",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 464, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 464, 3),
     )
 
     ExigibilidadeISS = property(__ExigibilidadeISS.value, __ExigibilidadeISS.set, None, None)
@@ -2283,9 +2137,7 @@ class tcDadosServico(pyxb.binding.basis.complexTypeDefinition):
         "MunicipioIncidencia",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcDadosServico_httpwww_betha_com_bre_nota_contribuinte_wsMunicipioIncidencia",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 466, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 466, 3),
     )
 
     MunicipioIncidencia = property(
@@ -2298,9 +2150,7 @@ class tcDadosServico(pyxb.binding.basis.complexTypeDefinition):
         "NumeroProcesso",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcDadosServico_httpwww_betha_com_bre_nota_contribuinte_wsNumeroProcesso",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 468, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 468, 3),
     )
 
     NumeroProcesso = property(__NumeroProcesso.value, __NumeroProcesso.set, None, None)
@@ -2337,7 +2187,7 @@ class tcDadosConstrucaoCivil(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcDadosConstrucaoCivil")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 474, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 474, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -2349,9 +2199,7 @@ class tcDadosConstrucaoCivil(pyxb.binding.basis.complexTypeDefinition):
         "CodigoObra",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcDadosConstrucaoCivil_httpwww_betha_com_bre_nota_contribuinte_wsCodigoObra",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 476, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 476, 3),
     )
 
     CodigoObra = property(__CodigoObra.value, __CodigoObra.set, None, None)
@@ -2362,9 +2210,7 @@ class tcDadosConstrucaoCivil(pyxb.binding.basis.complexTypeDefinition):
         "Art",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcDadosConstrucaoCivil_httpwww_betha_com_bre_nota_contribuinte_wsArt",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 478, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 478, 3),
     )
 
     Art = property(__Art.value, __Art.set, None, None)
@@ -2386,7 +2232,7 @@ class tcDadosPrestador(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcDadosPrestador")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 483, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 483, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -2398,9 +2244,7 @@ class tcDadosPrestador(pyxb.binding.basis.complexTypeDefinition):
         "IdentificacaoPrestador",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcDadosPrestador_httpwww_betha_com_bre_nota_contribuinte_wsIdentificacaoPrestador",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 485, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 485, 3),
     )
 
     IdentificacaoPrestador = property(
@@ -2413,9 +2257,7 @@ class tcDadosPrestador(pyxb.binding.basis.complexTypeDefinition):
         "RazaoSocial",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcDadosPrestador_httpwww_betha_com_bre_nota_contribuinte_wsRazaoSocial",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 487, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 487, 3),
     )
 
     RazaoSocial = property(__RazaoSocial.value, __RazaoSocial.set, None, None)
@@ -2426,9 +2268,7 @@ class tcDadosPrestador(pyxb.binding.basis.complexTypeDefinition):
         "NomeFantasia",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcDadosPrestador_httpwww_betha_com_bre_nota_contribuinte_wsNomeFantasia",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 489, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 489, 3),
     )
 
     NomeFantasia = property(__NomeFantasia.value, __NomeFantasia.set, None, None)
@@ -2439,9 +2279,7 @@ class tcDadosPrestador(pyxb.binding.basis.complexTypeDefinition):
         "Endereco",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcDadosPrestador_httpwww_betha_com_bre_nota_contribuinte_wsEndereco",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 491, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 491, 3),
     )
 
     Endereco = property(__Endereco.value, __Endereco.set, None, None)
@@ -2452,9 +2290,7 @@ class tcDadosPrestador(pyxb.binding.basis.complexTypeDefinition):
         "Contato",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcDadosPrestador_httpwww_betha_com_bre_nota_contribuinte_wsContato",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 493, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 493, 3),
     )
 
     Contato = property(__Contato.value, __Contato.set, None, None)
@@ -2484,7 +2320,7 @@ class tcDeclaracaoPrestacaoServico(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcDeclaracaoPrestacaoServico")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 538, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 538, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -2496,9 +2332,7 @@ class tcDeclaracaoPrestacaoServico(pyxb.binding.basis.complexTypeDefinition):
         "InfDeclaracaoPrestacaoServico",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcDeclaracaoPrestacaoServico_httpwww_betha_com_bre_nota_contribuinte_wsInfDeclaracaoPrestacaoServico",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 540, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 540, 3),
     )
 
     InfDeclaracaoPrestacaoServico = property(
@@ -2512,9 +2346,7 @@ class tcDeclaracaoPrestacaoServico(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcDeclaracaoPrestacaoServico_httpwww_w3_org200009xmldsigSignature",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            41,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 41, 0
         ),
     )
 
@@ -2544,7 +2376,7 @@ class tcIdentificacaoNfse(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcIdentificacaoNfse")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 547, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 547, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -2556,9 +2388,7 @@ class tcIdentificacaoNfse(pyxb.binding.basis.complexTypeDefinition):
         "Numero",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcIdentificacaoNfse_httpwww_betha_com_bre_nota_contribuinte_wsNumero",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 549, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 549, 3),
     )
 
     Numero = property(__Numero.value, __Numero.set, None, None)
@@ -2569,9 +2399,7 @@ class tcIdentificacaoNfse(pyxb.binding.basis.complexTypeDefinition):
         "CpfCnpj",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcIdentificacaoNfse_httpwww_betha_com_bre_nota_contribuinte_wsCpfCnpj",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 551, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 551, 3),
     )
 
     CpfCnpj = property(__CpfCnpj.value, __CpfCnpj.set, None, None)
@@ -2582,9 +2410,7 @@ class tcIdentificacaoNfse(pyxb.binding.basis.complexTypeDefinition):
         "InscricaoMunicipal",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcIdentificacaoNfse_httpwww_betha_com_bre_nota_contribuinte_wsInscricaoMunicipal",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 553, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 553, 3),
     )
 
     InscricaoMunicipal = property(__InscricaoMunicipal.value, __InscricaoMunicipal.set, None, None)
@@ -2595,9 +2421,7 @@ class tcIdentificacaoNfse(pyxb.binding.basis.complexTypeDefinition):
         "CodigoMunicipio",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcIdentificacaoNfse_httpwww_betha_com_bre_nota_contribuinte_wsCodigoMunicipio",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 555, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 555, 3),
     )
 
     CodigoMunicipio = property(__CodigoMunicipio.value, __CodigoMunicipio.set, None, None)
@@ -2626,7 +2450,7 @@ class tcPedidoCancelamento(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcPedidoCancelamento")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 605, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 605, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -2638,9 +2462,7 @@ class tcPedidoCancelamento(pyxb.binding.basis.complexTypeDefinition):
         "InfPedidoCancelamento",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcPedidoCancelamento_httpwww_betha_com_bre_nota_contribuinte_wsInfPedidoCancelamento",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 607, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 607, 3),
     )
 
     InfPedidoCancelamento = property(
@@ -2654,9 +2476,7 @@ class tcPedidoCancelamento(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcPedidoCancelamento_httpwww_w3_org200009xmldsigSignature",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            41,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 41, 0
         ),
     )
 
@@ -2681,7 +2501,7 @@ class tcRetCancelamento(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcRetCancelamento")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 634, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 634, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -2693,9 +2513,7 @@ class tcRetCancelamento(pyxb.binding.basis.complexTypeDefinition):
         "NfseCancelamento",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcRetCancelamento_httpwww_betha_com_bre_nota_contribuinte_wsNfseCancelamento",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 636, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 636, 3),
     )
 
     NfseCancelamento = property(__NfseCancelamento.value, __NfseCancelamento.set, None, None)
@@ -2717,7 +2535,7 @@ class tcCompNfse(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcCompNfse")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 660, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 660, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -2729,9 +2547,7 @@ class tcCompNfse(pyxb.binding.basis.complexTypeDefinition):
         "Nfse",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcCompNfse_httpwww_betha_com_bre_nota_contribuinte_wsNfse",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 662, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 662, 3),
     )
 
     Nfse = property(__Nfse.value, __Nfse.set, None, None)
@@ -2742,9 +2558,7 @@ class tcCompNfse(pyxb.binding.basis.complexTypeDefinition):
         "NfseCancelamento",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcCompNfse_httpwww_betha_com_bre_nota_contribuinte_wsNfseCancelamento",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 664, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 664, 3),
     )
 
     NfseCancelamento = property(__NfseCancelamento.value, __NfseCancelamento.set, None, None)
@@ -2755,9 +2569,7 @@ class tcCompNfse(pyxb.binding.basis.complexTypeDefinition):
         "NfseSubstituicao",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcCompNfse_httpwww_betha_com_bre_nota_contribuinte_wsNfseSubstituicao",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 666, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 666, 3),
     )
 
     NfseSubstituicao = property(__NfseSubstituicao.value, __NfseSubstituicao.set, None, None)
@@ -2785,7 +2597,7 @@ class tcMensagemRetorno(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcMensagemRetorno")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 671, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 671, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -2797,9 +2609,7 @@ class tcMensagemRetorno(pyxb.binding.basis.complexTypeDefinition):
         "Codigo",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcMensagemRetorno_httpwww_betha_com_bre_nota_contribuinte_wsCodigo",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 673, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 673, 3),
     )
 
     Codigo = property(__Codigo.value, __Codigo.set, None, None)
@@ -2810,9 +2620,7 @@ class tcMensagemRetorno(pyxb.binding.basis.complexTypeDefinition):
         "Mensagem",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcMensagemRetorno_httpwww_betha_com_bre_nota_contribuinte_wsMensagem",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 675, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 675, 3),
     )
 
     Mensagem = property(__Mensagem.value, __Mensagem.set, None, None)
@@ -2823,9 +2631,7 @@ class tcMensagemRetorno(pyxb.binding.basis.complexTypeDefinition):
         "Correcao",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcMensagemRetorno_httpwww_betha_com_bre_nota_contribuinte_wsCorrecao",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 677, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 677, 3),
     )
 
     Correcao = property(__Correcao.value, __Correcao.set, None, None)
@@ -2849,7 +2655,7 @@ class tcMensagemRetornoLote(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcMensagemRetornoLote")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 682, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 682, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -2861,9 +2667,7 @@ class tcMensagemRetornoLote(pyxb.binding.basis.complexTypeDefinition):
         "IdentificacaoRps",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcMensagemRetornoLote_httpwww_betha_com_bre_nota_contribuinte_wsIdentificacaoRps",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 684, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 684, 3),
     )
 
     IdentificacaoRps = property(__IdentificacaoRps.value, __IdentificacaoRps.set, None, None)
@@ -2874,9 +2678,7 @@ class tcMensagemRetornoLote(pyxb.binding.basis.complexTypeDefinition):
         "Codigo",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcMensagemRetornoLote_httpwww_betha_com_bre_nota_contribuinte_wsCodigo",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 686, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 686, 3),
     )
 
     Codigo = property(__Codigo.value, __Codigo.set, None, None)
@@ -2887,9 +2689,7 @@ class tcMensagemRetornoLote(pyxb.binding.basis.complexTypeDefinition):
         "Mensagem",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcMensagemRetornoLote_httpwww_betha_com_bre_nota_contribuinte_wsMensagem",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 688, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 688, 3),
     )
 
     Mensagem = property(__Mensagem.value, __Mensagem.set, None, None)
@@ -2917,7 +2717,7 @@ class CTD_ANON(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 704, 4
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 704, 4
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -2929,9 +2729,7 @@ class CTD_ANON(pyxb.binding.basis.complexTypeDefinition):
         "Rps",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_httpwww_betha_com_bre_nota_contribuinte_wsRps",
         True,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 706, 6
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 706, 6),
     )
 
     Rps = property(__Rps.value, __Rps.set, None, None)
@@ -2952,7 +2750,7 @@ class CTD_ANON_(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 718, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 718, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -2964,9 +2762,7 @@ class CTD_ANON_(pyxb.binding.basis.complexTypeDefinition):
         "MensagemRetorno",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON__httpwww_betha_com_bre_nota_contribuinte_wsMensagemRetorno",
         True,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 720, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 720, 4),
     )
 
     MensagemRetorno = property(__MensagemRetorno.value, __MensagemRetorno.set, None, None)
@@ -2987,7 +2783,7 @@ class CTD_ANON_2(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 727, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 727, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -2999,9 +2795,7 @@ class CTD_ANON_2(pyxb.binding.basis.complexTypeDefinition):
         "MensagemRetorno",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_2_httpwww_betha_com_bre_nota_contribuinte_wsMensagemRetorno",
         True,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 729, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 729, 4),
     )
 
     MensagemRetorno = property(__MensagemRetorno.value, __MensagemRetorno.set, None, None)
@@ -3022,7 +2816,7 @@ class CTD_ANON_3(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 736, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 736, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -3034,9 +2828,7 @@ class CTD_ANON_3(pyxb.binding.basis.complexTypeDefinition):
         "MensagemRetorno",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_3_httpwww_betha_com_bre_nota_contribuinte_wsMensagemRetorno",
         True,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 738, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 738, 4),
     )
 
     MensagemRetorno = property(__MensagemRetorno.value, __MensagemRetorno.set, None, None)
@@ -3057,7 +2849,7 @@ class CTD_ANON_4(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 757, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 757, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -3069,9 +2861,7 @@ class CTD_ANON_4(pyxb.binding.basis.complexTypeDefinition):
         "LoteRps",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_4_httpwww_betha_com_bre_nota_contribuinte_wsLoteRps",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 759, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 759, 4),
     )
 
     LoteRps = property(__LoteRps.value, __LoteRps.set, None, None)
@@ -3083,9 +2873,7 @@ class CTD_ANON_4(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_4_httpwww_w3_org200009xmldsigSignature",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            41,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 41, 0
         ),
     )
 
@@ -3107,7 +2895,7 @@ class CTD_ANON_5(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 767, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 767, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -3119,9 +2907,7 @@ class CTD_ANON_5(pyxb.binding.basis.complexTypeDefinition):
         "ListaMensagemRetorno",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_5_httpwww_betha_com_bre_nota_contribuinte_wsListaMensagemRetorno",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1),
     )
 
     ListaMensagemRetorno = property(
@@ -3134,9 +2920,7 @@ class CTD_ANON_5(pyxb.binding.basis.complexTypeDefinition):
         "NumeroLote",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_5_httpwww_betha_com_bre_nota_contribuinte_wsNumeroLote",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 770, 5
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 770, 5),
     )
 
     NumeroLote = property(__NumeroLote.value, __NumeroLote.set, None, None)
@@ -3147,9 +2931,7 @@ class CTD_ANON_5(pyxb.binding.basis.complexTypeDefinition):
         "DataRecebimento",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_5_httpwww_betha_com_bre_nota_contribuinte_wsDataRecebimento",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 772, 5
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 772, 5),
     )
 
     DataRecebimento = property(__DataRecebimento.value, __DataRecebimento.set, None, None)
@@ -3160,9 +2942,7 @@ class CTD_ANON_5(pyxb.binding.basis.complexTypeDefinition):
         "Protocolo",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_5_httpwww_betha_com_bre_nota_contribuinte_wsProtocolo",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 774, 5
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 774, 5),
     )
 
     Protocolo = property(__Protocolo.value, __Protocolo.set, None, None)
@@ -3190,7 +2970,7 @@ class CTD_ANON_6(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 784, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 784, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -3202,9 +2982,7 @@ class CTD_ANON_6(pyxb.binding.basis.complexTypeDefinition):
         "LoteRps",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_6_httpwww_betha_com_bre_nota_contribuinte_wsLoteRps",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 786, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 786, 4),
     )
 
     LoteRps = property(__LoteRps.value, __LoteRps.set, None, None)
@@ -3216,9 +2994,7 @@ class CTD_ANON_6(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_6_httpwww_w3_org200009xmldsigSignature",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            41,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 41, 0
         ),
     )
 
@@ -3240,7 +3016,7 @@ class CTD_ANON_7(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 795, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 795, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -3252,9 +3028,7 @@ class CTD_ANON_7(pyxb.binding.basis.complexTypeDefinition):
         "ListaMensagemRetornoLote",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_7_httpwww_betha_com_bre_nota_contribuinte_wsListaMensagemRetornoLote",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 717, 2
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 717, 2),
     )
 
     ListaMensagemRetornoLote = property(
@@ -3267,9 +3041,7 @@ class CTD_ANON_7(pyxb.binding.basis.complexTypeDefinition):
         "ListaMensagemRetorno",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_7_httpwww_betha_com_bre_nota_contribuinte_wsListaMensagemRetorno",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1),
     )
 
     ListaMensagemRetorno = property(
@@ -3282,9 +3054,7 @@ class CTD_ANON_7(pyxb.binding.basis.complexTypeDefinition):
         "NumeroLote",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_7_httpwww_betha_com_bre_nota_contribuinte_wsNumeroLote",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 797, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 797, 4),
     )
 
     NumeroLote = property(__NumeroLote.value, __NumeroLote.set, None, None)
@@ -3295,9 +3065,7 @@ class CTD_ANON_7(pyxb.binding.basis.complexTypeDefinition):
         "DataRecebimento",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_7_httpwww_betha_com_bre_nota_contribuinte_wsDataRecebimento",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 799, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 799, 4),
     )
 
     DataRecebimento = property(__DataRecebimento.value, __DataRecebimento.set, None, None)
@@ -3308,9 +3076,7 @@ class CTD_ANON_7(pyxb.binding.basis.complexTypeDefinition):
         "Protocolo",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_7_httpwww_betha_com_bre_nota_contribuinte_wsProtocolo",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 801, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 801, 4),
     )
 
     Protocolo = property(__Protocolo.value, __Protocolo.set, None, None)
@@ -3321,9 +3087,7 @@ class CTD_ANON_7(pyxb.binding.basis.complexTypeDefinition):
         "ListaNfse",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_7_httpwww_betha_com_bre_nota_contribuinte_wsListaNfse",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 804, 5
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 804, 5),
     )
 
     ListaNfse = property(__ListaNfse.value, __ListaNfse.set, None, None)
@@ -3353,7 +3117,7 @@ class CTD_ANON_8(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 805, 6
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 805, 6
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -3365,9 +3129,7 @@ class CTD_ANON_8(pyxb.binding.basis.complexTypeDefinition):
         "ListaMensagemAlertaRetorno",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_8_httpwww_betha_com_bre_nota_contribuinte_wsListaMensagemAlertaRetorno",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 735, 1
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 735, 1),
     )
 
     ListaMensagemAlertaRetorno = property(
@@ -3380,9 +3142,7 @@ class CTD_ANON_8(pyxb.binding.basis.complexTypeDefinition):
         "CompNfse",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_8_httpwww_betha_com_bre_nota_contribuinte_wsCompNfse",
         True,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1),
     )
 
     CompNfse = property(__CompNfse.value, __CompNfse.set, None, None)
@@ -3408,7 +3168,7 @@ class CTD_ANON_9(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 823, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 823, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -3420,9 +3180,7 @@ class CTD_ANON_9(pyxb.binding.basis.complexTypeDefinition):
         "Rps",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_9_httpwww_betha_com_bre_nota_contribuinte_wsRps",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 825, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 825, 4),
     )
 
     Rps = property(__Rps.value, __Rps.set, None, None)
@@ -3443,7 +3201,7 @@ class CTD_ANON_10(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 831, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 831, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -3455,9 +3213,7 @@ class CTD_ANON_10(pyxb.binding.basis.complexTypeDefinition):
         "ListaMensagemRetorno",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_10_httpwww_betha_com_bre_nota_contribuinte_wsListaMensagemRetorno",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1),
     )
 
     ListaMensagemRetorno = property(
@@ -3470,9 +3226,7 @@ class CTD_ANON_10(pyxb.binding.basis.complexTypeDefinition):
         "ListaNfse",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_10_httpwww_betha_com_bre_nota_contribuinte_wsListaNfse",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 834, 5
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 834, 5),
     )
 
     ListaNfse = property(__ListaNfse.value, __ListaNfse.set, None, None)
@@ -3495,7 +3249,7 @@ class CTD_ANON_11(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 835, 6
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 835, 6
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -3507,9 +3261,7 @@ class CTD_ANON_11(pyxb.binding.basis.complexTypeDefinition):
         "ListaMensagemAlertaRetorno",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_11_httpwww_betha_com_bre_nota_contribuinte_wsListaMensagemAlertaRetorno",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 735, 1
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 735, 1),
     )
 
     ListaMensagemAlertaRetorno = property(
@@ -3522,9 +3274,7 @@ class CTD_ANON_11(pyxb.binding.basis.complexTypeDefinition):
         "CompNfse",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_11_httpwww_betha_com_bre_nota_contribuinte_wsCompNfse",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1),
     )
 
     CompNfse = property(__CompNfse.value, __CompNfse.set, None, None)
@@ -3550,7 +3300,7 @@ class CTD_ANON_12(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 851, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 851, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -3562,9 +3312,7 @@ class CTD_ANON_12(pyxb.binding.basis.complexTypeDefinition):
         "Pedido",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_12_httpwww_betha_com_bre_nota_contribuinte_wsPedido",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 853, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 853, 4),
     )
 
     Pedido = property(__Pedido.value, __Pedido.set, None, None)
@@ -3585,7 +3333,7 @@ class CTD_ANON_13(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 859, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 859, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -3597,9 +3345,7 @@ class CTD_ANON_13(pyxb.binding.basis.complexTypeDefinition):
         "ListaMensagemRetorno",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_13_httpwww_betha_com_bre_nota_contribuinte_wsListaMensagemRetorno",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1),
     )
 
     ListaMensagemRetorno = property(
@@ -3612,9 +3358,7 @@ class CTD_ANON_13(pyxb.binding.basis.complexTypeDefinition):
         "RetCancelamento",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_13_httpwww_betha_com_bre_nota_contribuinte_wsRetCancelamento",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 861, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 861, 4),
     )
 
     RetCancelamento = property(__RetCancelamento.value, __RetCancelamento.set, None, None)
@@ -3640,7 +3384,7 @@ class CTD_ANON_14(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 868, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 868, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -3652,9 +3396,7 @@ class CTD_ANON_14(pyxb.binding.basis.complexTypeDefinition):
         "SubstituicaoNfse",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_14_httpwww_betha_com_bre_nota_contribuinte_wsSubstituicaoNfse",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 870, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 870, 4),
     )
 
     SubstituicaoNfse = property(__SubstituicaoNfse.value, __SubstituicaoNfse.set, None, None)
@@ -3666,9 +3408,7 @@ class CTD_ANON_14(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_14_httpwww_w3_org200009xmldsigSignature",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            41,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 41, 0
         ),
     )
 
@@ -3692,7 +3432,7 @@ class CTD_ANON_15(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 887, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 887, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -3704,9 +3444,7 @@ class CTD_ANON_15(pyxb.binding.basis.complexTypeDefinition):
         "ListaMensagemRetorno",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_15_httpwww_betha_com_bre_nota_contribuinte_wsListaMensagemRetorno",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1),
     )
 
     ListaMensagemRetorno = property(
@@ -3719,9 +3457,7 @@ class CTD_ANON_15(pyxb.binding.basis.complexTypeDefinition):
         "RetSubstituicao",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_15_httpwww_betha_com_bre_nota_contribuinte_wsRetSubstituicao",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 889, 5
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 889, 5),
     )
 
     RetSubstituicao = property(__RetSubstituicao.value, __RetSubstituicao.set, None, None)
@@ -3747,7 +3483,7 @@ class CTD_ANON_16(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 890, 6
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 890, 6
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -3759,9 +3495,7 @@ class CTD_ANON_16(pyxb.binding.basis.complexTypeDefinition):
         "NfseSubstituida",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_16_httpwww_betha_com_bre_nota_contribuinte_wsNfseSubstituida",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 892, 8
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 892, 8),
     )
 
     NfseSubstituida = property(__NfseSubstituida.value, __NfseSubstituida.set, None, None)
@@ -3772,9 +3506,7 @@ class CTD_ANON_16(pyxb.binding.basis.complexTypeDefinition):
         "NfseSubstituidora",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_16_httpwww_betha_com_bre_nota_contribuinte_wsNfseSubstituidora",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 901, 8
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 901, 8),
     )
 
     NfseSubstituidora = property(__NfseSubstituidora.value, __NfseSubstituidora.set, None, None)
@@ -3800,7 +3532,7 @@ class CTD_ANON_17(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 893, 9
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 893, 9
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -3812,9 +3544,7 @@ class CTD_ANON_17(pyxb.binding.basis.complexTypeDefinition):
         "ListaMensagemAlertaRetorno",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_17_httpwww_betha_com_bre_nota_contribuinte_wsListaMensagemAlertaRetorno",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 735, 1
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 735, 1),
     )
 
     ListaMensagemAlertaRetorno = property(
@@ -3827,9 +3557,7 @@ class CTD_ANON_17(pyxb.binding.basis.complexTypeDefinition):
         "CompNfse",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_17_httpwww_betha_com_bre_nota_contribuinte_wsCompNfse",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1),
     )
 
     CompNfse = property(__CompNfse.value, __CompNfse.set, None, None)
@@ -3855,7 +3583,7 @@ class CTD_ANON_18(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 902, 9
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 902, 9
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -3867,9 +3595,7 @@ class CTD_ANON_18(pyxb.binding.basis.complexTypeDefinition):
         "CompNfse",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_18_httpwww_betha_com_bre_nota_contribuinte_wsCompNfse",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1),
     )
 
     CompNfse = property(__CompNfse.value, __CompNfse.set, None, None)
@@ -3890,7 +3616,7 @@ class CTD_ANON_19(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 918, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 918, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -3902,9 +3628,7 @@ class CTD_ANON_19(pyxb.binding.basis.complexTypeDefinition):
         "Prestador",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_19_httpwww_betha_com_bre_nota_contribuinte_wsPrestador",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 920, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 920, 4),
     )
 
     Prestador = property(__Prestador.value, __Prestador.set, None, None)
@@ -3915,9 +3639,7 @@ class CTD_ANON_19(pyxb.binding.basis.complexTypeDefinition):
         "Protocolo",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_19_httpwww_betha_com_bre_nota_contribuinte_wsProtocolo",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 922, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 922, 4),
     )
 
     Protocolo = property(__Protocolo.value, __Protocolo.set, None, None)
@@ -3938,7 +3660,7 @@ class CTD_ANON_20(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 929, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 929, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -3950,9 +3672,7 @@ class CTD_ANON_20(pyxb.binding.basis.complexTypeDefinition):
         "ListaMensagemRetornoLote",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_20_httpwww_betha_com_bre_nota_contribuinte_wsListaMensagemRetornoLote",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 717, 2
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 717, 2),
     )
 
     ListaMensagemRetornoLote = property(
@@ -3965,9 +3685,7 @@ class CTD_ANON_20(pyxb.binding.basis.complexTypeDefinition):
         "ListaMensagemRetorno",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_20_httpwww_betha_com_bre_nota_contribuinte_wsListaMensagemRetorno",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1),
     )
 
     ListaMensagemRetorno = property(
@@ -3980,9 +3698,7 @@ class CTD_ANON_20(pyxb.binding.basis.complexTypeDefinition):
         "Situacao",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_20_httpwww_betha_com_bre_nota_contribuinte_wsSituacao",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 931, 11
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 931, 11),
     )
 
     Situacao = property(__Situacao.value, __Situacao.set, None, None)
@@ -3993,9 +3709,7 @@ class CTD_ANON_20(pyxb.binding.basis.complexTypeDefinition):
         "ListaNfse",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_20_httpwww_betha_com_bre_nota_contribuinte_wsListaNfse",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 933, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 933, 4),
     )
 
     ListaNfse = property(__ListaNfse.value, __ListaNfse.set, None, None)
@@ -4023,7 +3737,7 @@ class CTD_ANON_21(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 934, 5
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 934, 5
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -4035,9 +3749,7 @@ class CTD_ANON_21(pyxb.binding.basis.complexTypeDefinition):
         "ListaMensagemAlertaRetorno",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_21_httpwww_betha_com_bre_nota_contribuinte_wsListaMensagemAlertaRetorno",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 735, 1
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 735, 1),
     )
 
     ListaMensagemAlertaRetorno = property(
@@ -4050,9 +3762,7 @@ class CTD_ANON_21(pyxb.binding.basis.complexTypeDefinition):
         "CompNfse",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_21_httpwww_betha_com_bre_nota_contribuinte_wsCompNfse",
         True,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1),
     )
 
     CompNfse = property(__CompNfse.value, __CompNfse.set, None, None)
@@ -4078,7 +3788,7 @@ class CTD_ANON_22(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 952, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 952, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -4090,9 +3800,7 @@ class CTD_ANON_22(pyxb.binding.basis.complexTypeDefinition):
         "IdentificacaoRps",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_22_httpwww_betha_com_bre_nota_contribuinte_wsIdentificacaoRps",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 954, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 954, 4),
     )
 
     IdentificacaoRps = property(__IdentificacaoRps.value, __IdentificacaoRps.set, None, None)
@@ -4103,9 +3811,7 @@ class CTD_ANON_22(pyxb.binding.basis.complexTypeDefinition):
         "Prestador",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_22_httpwww_betha_com_bre_nota_contribuinte_wsPrestador",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 956, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 956, 4),
     )
 
     Prestador = property(__Prestador.value, __Prestador.set, None, None)
@@ -4128,7 +3834,7 @@ class CTD_ANON_23(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 963, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 963, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -4140,9 +3846,7 @@ class CTD_ANON_23(pyxb.binding.basis.complexTypeDefinition):
         "ListaMensagemRetorno",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_23_httpwww_betha_com_bre_nota_contribuinte_wsListaMensagemRetorno",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1),
     )
 
     ListaMensagemRetorno = property(
@@ -4155,9 +3859,7 @@ class CTD_ANON_23(pyxb.binding.basis.complexTypeDefinition):
         "CompNfse",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_23_httpwww_betha_com_bre_nota_contribuinte_wsCompNfse",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1),
     )
 
     CompNfse = property(__CompNfse.value, __CompNfse.set, None, None)
@@ -4180,7 +3882,7 @@ class CTD_ANON_24(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 973, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 973, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -4192,9 +3894,7 @@ class CTD_ANON_24(pyxb.binding.basis.complexTypeDefinition):
         "Prestador",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_24_httpwww_betha_com_bre_nota_contribuinte_wsPrestador",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 975, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 975, 4),
     )
 
     Prestador = property(__Prestador.value, __Prestador.set, None, None)
@@ -4205,9 +3905,7 @@ class CTD_ANON_24(pyxb.binding.basis.complexTypeDefinition):
         "NumeroNfse",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_24_httpwww_betha_com_bre_nota_contribuinte_wsNumeroNfse",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 977, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 977, 4),
     )
 
     NumeroNfse = property(__NumeroNfse.value, __NumeroNfse.set, None, None)
@@ -4218,9 +3916,7 @@ class CTD_ANON_24(pyxb.binding.basis.complexTypeDefinition):
         "PeriodoEmissao",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_24_httpwww_betha_com_bre_nota_contribuinte_wsPeriodoEmissao",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 980, 5
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 980, 5),
     )
 
     PeriodoEmissao = property(__PeriodoEmissao.value, __PeriodoEmissao.set, None, None)
@@ -4231,9 +3927,7 @@ class CTD_ANON_24(pyxb.binding.basis.complexTypeDefinition):
         "PeriodoCompetencia",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_24_httpwww_betha_com_bre_nota_contribuinte_wsPeriodoCompetencia",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 991, 5
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 991, 5),
     )
 
     PeriodoCompetencia = property(__PeriodoCompetencia.value, __PeriodoCompetencia.set, None, None)
@@ -4244,9 +3938,7 @@ class CTD_ANON_24(pyxb.binding.basis.complexTypeDefinition):
         "Tomador",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_24_httpwww_betha_com_bre_nota_contribuinte_wsTomador",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1003, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1003, 4),
     )
 
     Tomador = property(__Tomador.value, __Tomador.set, None, None)
@@ -4257,9 +3949,7 @@ class CTD_ANON_24(pyxb.binding.basis.complexTypeDefinition):
         "Intermediario",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_24_httpwww_betha_com_bre_nota_contribuinte_wsIntermediario",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1005, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1005, 4),
     )
 
     Intermediario = property(__Intermediario.value, __Intermediario.set, None, None)
@@ -4270,9 +3960,7 @@ class CTD_ANON_24(pyxb.binding.basis.complexTypeDefinition):
         "Pagina",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_24_httpwww_betha_com_bre_nota_contribuinte_wsPagina",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1007, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1007, 4),
     )
 
     Pagina = property(__Pagina.value, __Pagina.set, None, None)
@@ -4303,7 +3991,7 @@ class CTD_ANON_25(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 982, 6
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 982, 6
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -4315,9 +4003,7 @@ class CTD_ANON_25(pyxb.binding.basis.complexTypeDefinition):
         "DataInicial",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_25_httpwww_betha_com_bre_nota_contribuinte_wsDataInicial",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 984, 8
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 984, 8),
     )
 
     DataInicial = property(__DataInicial.value, __DataInicial.set, None, None)
@@ -4328,9 +4014,7 @@ class CTD_ANON_25(pyxb.binding.basis.complexTypeDefinition):
         "DataFinal",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_25_httpwww_betha_com_bre_nota_contribuinte_wsDataFinal",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 986, 8
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 986, 8),
     )
 
     DataFinal = property(__DataFinal.value, __DataFinal.set, None, None)
@@ -4351,7 +4035,7 @@ class CTD_ANON_26(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 993, 6
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 993, 6
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -4363,9 +4047,7 @@ class CTD_ANON_26(pyxb.binding.basis.complexTypeDefinition):
         "DataInicial",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_26_httpwww_betha_com_bre_nota_contribuinte_wsDataInicial",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 995, 8
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 995, 8),
     )
 
     DataInicial = property(__DataInicial.value, __DataInicial.set, None, None)
@@ -4376,9 +4058,7 @@ class CTD_ANON_26(pyxb.binding.basis.complexTypeDefinition):
         "DataFinal",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_26_httpwww_betha_com_bre_nota_contribuinte_wsDataFinal",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 997, 8
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 997, 8),
     )
 
     DataFinal = property(__DataFinal.value, __DataFinal.set, None, None)
@@ -4399,7 +4079,7 @@ class CTD_ANON_27(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1013, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1013, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -4411,9 +4091,7 @@ class CTD_ANON_27(pyxb.binding.basis.complexTypeDefinition):
         "ListaMensagemRetorno",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_27_httpwww_betha_com_bre_nota_contribuinte_wsListaMensagemRetorno",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1),
     )
 
     ListaMensagemRetorno = property(
@@ -4426,9 +4104,7 @@ class CTD_ANON_27(pyxb.binding.basis.complexTypeDefinition):
         "ListaNfse",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_27_httpwww_betha_com_bre_nota_contribuinte_wsListaNfse",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1015, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1015, 4),
     )
 
     ListaNfse = property(__ListaNfse.value, __ListaNfse.set, None, None)
@@ -4451,7 +4127,7 @@ class CTD_ANON_28(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1016, 5
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1016, 5
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -4463,9 +4139,7 @@ class CTD_ANON_28(pyxb.binding.basis.complexTypeDefinition):
         "CompNfse",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_28_httpwww_betha_com_bre_nota_contribuinte_wsCompNfse",
         True,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1),
     )
 
     CompNfse = property(__CompNfse.value, __CompNfse.set, None, None)
@@ -4476,9 +4150,7 @@ class CTD_ANON_28(pyxb.binding.basis.complexTypeDefinition):
         "ProximaPagina",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_28_httpwww_betha_com_bre_nota_contribuinte_wsProximaPagina",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1019, 7
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1019, 7),
     )
 
     ProximaPagina = property(__ProximaPagina.value, __ProximaPagina.set, None, None)
@@ -4499,7 +4171,7 @@ class CTD_ANON_29(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1030, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1030, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -4511,9 +4183,7 @@ class CTD_ANON_29(pyxb.binding.basis.complexTypeDefinition):
         "Consulente",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_29_httpwww_betha_com_bre_nota_contribuinte_wsConsulente",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1032, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1032, 4),
     )
 
     Consulente = property(__Consulente.value, __Consulente.set, None, None)
@@ -4524,9 +4194,7 @@ class CTD_ANON_29(pyxb.binding.basis.complexTypeDefinition):
         "NumeroNfse",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_29_httpwww_betha_com_bre_nota_contribuinte_wsNumeroNfse",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1034, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1034, 4),
     )
 
     NumeroNfse = property(__NumeroNfse.value, __NumeroNfse.set, None, None)
@@ -4537,9 +4205,7 @@ class CTD_ANON_29(pyxb.binding.basis.complexTypeDefinition):
         "PeriodoEmissao",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_29_httpwww_betha_com_bre_nota_contribuinte_wsPeriodoEmissao",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1037, 5
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1037, 5),
     )
 
     PeriodoEmissao = property(__PeriodoEmissao.value, __PeriodoEmissao.set, None, None)
@@ -4550,9 +4216,7 @@ class CTD_ANON_29(pyxb.binding.basis.complexTypeDefinition):
         "PeriodoCompetencia",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_29_httpwww_betha_com_bre_nota_contribuinte_wsPeriodoCompetencia",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1048, 5
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1048, 5),
     )
 
     PeriodoCompetencia = property(__PeriodoCompetencia.value, __PeriodoCompetencia.set, None, None)
@@ -4563,9 +4227,7 @@ class CTD_ANON_29(pyxb.binding.basis.complexTypeDefinition):
         "Prestador",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_29_httpwww_betha_com_bre_nota_contribuinte_wsPrestador",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1060, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1060, 4),
     )
 
     Prestador = property(__Prestador.value, __Prestador.set, None, None)
@@ -4576,9 +4238,7 @@ class CTD_ANON_29(pyxb.binding.basis.complexTypeDefinition):
         "Tomador",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_29_httpwww_betha_com_bre_nota_contribuinte_wsTomador",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1062, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1062, 4),
     )
 
     Tomador = property(__Tomador.value, __Tomador.set, None, None)
@@ -4589,9 +4249,7 @@ class CTD_ANON_29(pyxb.binding.basis.complexTypeDefinition):
         "Intermediario",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_29_httpwww_betha_com_bre_nota_contribuinte_wsIntermediario",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1064, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1064, 4),
     )
 
     Intermediario = property(__Intermediario.value, __Intermediario.set, None, None)
@@ -4602,9 +4260,7 @@ class CTD_ANON_29(pyxb.binding.basis.complexTypeDefinition):
         "Pagina",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_29_httpwww_betha_com_bre_nota_contribuinte_wsPagina",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1066, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1066, 4),
     )
 
     Pagina = property(__Pagina.value, __Pagina.set, None, None)
@@ -4636,7 +4292,7 @@ class CTD_ANON_30(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1039, 6
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1039, 6
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -4648,9 +4304,7 @@ class CTD_ANON_30(pyxb.binding.basis.complexTypeDefinition):
         "DataInicial",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_30_httpwww_betha_com_bre_nota_contribuinte_wsDataInicial",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1041, 8
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1041, 8),
     )
 
     DataInicial = property(__DataInicial.value, __DataInicial.set, None, None)
@@ -4661,9 +4315,7 @@ class CTD_ANON_30(pyxb.binding.basis.complexTypeDefinition):
         "DataFinal",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_30_httpwww_betha_com_bre_nota_contribuinte_wsDataFinal",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1043, 8
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1043, 8),
     )
 
     DataFinal = property(__DataFinal.value, __DataFinal.set, None, None)
@@ -4684,7 +4336,7 @@ class CTD_ANON_31(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1050, 6
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1050, 6
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -4696,9 +4348,7 @@ class CTD_ANON_31(pyxb.binding.basis.complexTypeDefinition):
         "DataInicial",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_31_httpwww_betha_com_bre_nota_contribuinte_wsDataInicial",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1052, 8
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1052, 8),
     )
 
     DataInicial = property(__DataInicial.value, __DataInicial.set, None, None)
@@ -4709,9 +4359,7 @@ class CTD_ANON_31(pyxb.binding.basis.complexTypeDefinition):
         "DataFinal",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_31_httpwww_betha_com_bre_nota_contribuinte_wsDataFinal",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1054, 8
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1054, 8),
     )
 
     DataFinal = property(__DataFinal.value, __DataFinal.set, None, None)
@@ -4732,7 +4380,7 @@ class CTD_ANON_32(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1072, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1072, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -4744,9 +4392,7 @@ class CTD_ANON_32(pyxb.binding.basis.complexTypeDefinition):
         "ListaMensagemRetorno",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_32_httpwww_betha_com_bre_nota_contribuinte_wsListaMensagemRetorno",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1),
     )
 
     ListaMensagemRetorno = property(
@@ -4759,9 +4405,7 @@ class CTD_ANON_32(pyxb.binding.basis.complexTypeDefinition):
         "ListaNfse",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_32_httpwww_betha_com_bre_nota_contribuinte_wsListaNfse",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1074, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1074, 4),
     )
 
     ListaNfse = property(__ListaNfse.value, __ListaNfse.set, None, None)
@@ -4784,7 +4428,7 @@ class CTD_ANON_33(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1075, 5
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1075, 5
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -4796,9 +4440,7 @@ class CTD_ANON_33(pyxb.binding.basis.complexTypeDefinition):
         "CompNfse",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_33_httpwww_betha_com_bre_nota_contribuinte_wsCompNfse",
         True,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1),
     )
 
     CompNfse = property(__CompNfse.value, __CompNfse.set, None, None)
@@ -4809,9 +4451,7 @@ class CTD_ANON_33(pyxb.binding.basis.complexTypeDefinition):
         "ProximaPagina",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_33_httpwww_betha_com_bre_nota_contribuinte_wsProximaPagina",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1078, 7
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1078, 7),
     )
 
     ProximaPagina = property(__ProximaPagina.value, __ProximaPagina.set, None, None)
@@ -4832,7 +4472,7 @@ class CTD_ANON_34(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1089, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1089, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -4844,9 +4484,7 @@ class CTD_ANON_34(pyxb.binding.basis.complexTypeDefinition):
         "Prestador",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_34_httpwww_betha_com_bre_nota_contribuinte_wsPrestador",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1091, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1091, 4),
     )
 
     Prestador = property(__Prestador.value, __Prestador.set, None, None)
@@ -4857,9 +4495,7 @@ class CTD_ANON_34(pyxb.binding.basis.complexTypeDefinition):
         "Faixa",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_34_httpwww_betha_com_bre_nota_contribuinte_wsFaixa",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1093, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1093, 4),
     )
 
     Faixa = property(__Faixa.value, __Faixa.set, None, None)
@@ -4870,9 +4506,7 @@ class CTD_ANON_34(pyxb.binding.basis.complexTypeDefinition):
         "Pagina",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_34_httpwww_betha_com_bre_nota_contribuinte_wsPagina",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1103, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1103, 4),
     )
 
     Pagina = property(__Pagina.value, __Pagina.set, None, None)
@@ -4895,7 +4529,7 @@ class CTD_ANON_35(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1094, 5
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1094, 5
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -4907,9 +4541,7 @@ class CTD_ANON_35(pyxb.binding.basis.complexTypeDefinition):
         "NumeroNfseInicial",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_35_httpwww_betha_com_bre_nota_contribuinte_wsNumeroNfseInicial",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1096, 7
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1096, 7),
     )
 
     NumeroNfseInicial = property(__NumeroNfseInicial.value, __NumeroNfseInicial.set, None, None)
@@ -4920,9 +4552,7 @@ class CTD_ANON_35(pyxb.binding.basis.complexTypeDefinition):
         "NumeroNfseFinal",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_35_httpwww_betha_com_bre_nota_contribuinte_wsNumeroNfseFinal",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1098, 7
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1098, 7),
     )
 
     NumeroNfseFinal = property(__NumeroNfseFinal.value, __NumeroNfseFinal.set, None, None)
@@ -4948,7 +4578,7 @@ class CTD_ANON_36(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1109, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1109, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -4960,9 +4590,7 @@ class CTD_ANON_36(pyxb.binding.basis.complexTypeDefinition):
         "ListaMensagemRetorno",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_36_httpwww_betha_com_bre_nota_contribuinte_wsListaMensagemRetorno",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1),
     )
 
     ListaMensagemRetorno = property(
@@ -4975,9 +4603,7 @@ class CTD_ANON_36(pyxb.binding.basis.complexTypeDefinition):
         "ListaNfse",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_36_httpwww_betha_com_bre_nota_contribuinte_wsListaNfse",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1111, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1111, 4),
     )
 
     ListaNfse = property(__ListaNfse.value, __ListaNfse.set, None, None)
@@ -5000,7 +4626,7 @@ class CTD_ANON_37(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1112, 5
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1112, 5
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -5012,9 +4638,7 @@ class CTD_ANON_37(pyxb.binding.basis.complexTypeDefinition):
         "CompNfse",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_37_httpwww_betha_com_bre_nota_contribuinte_wsCompNfse",
         True,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1),
     )
 
     CompNfse = property(__CompNfse.value, __CompNfse.set, None, None)
@@ -5025,9 +4649,7 @@ class CTD_ANON_37(pyxb.binding.basis.complexTypeDefinition):
         "ProximaPagina",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_37_httpwww_betha_com_bre_nota_contribuinte_wsProximaPagina",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1115, 7
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1115, 7),
     )
 
     ProximaPagina = property(__ProximaPagina.value, __ProximaPagina.set, None, None)
@@ -5048,7 +4670,7 @@ class tcInfRps(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcInfRps")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 498, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 498, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -5060,9 +4682,7 @@ class tcInfRps(pyxb.binding.basis.complexTypeDefinition):
         "IdentificacaoRps",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcInfRps_httpwww_betha_com_bre_nota_contribuinte_wsIdentificacaoRps",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 500, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 500, 3),
     )
 
     IdentificacaoRps = property(__IdentificacaoRps.value, __IdentificacaoRps.set, None, None)
@@ -5073,9 +4693,7 @@ class tcInfRps(pyxb.binding.basis.complexTypeDefinition):
         "DataEmissao",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcInfRps_httpwww_betha_com_bre_nota_contribuinte_wsDataEmissao",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 502, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 502, 3),
     )
 
     DataEmissao = property(__DataEmissao.value, __DataEmissao.set, None, None)
@@ -5086,9 +4704,7 @@ class tcInfRps(pyxb.binding.basis.complexTypeDefinition):
         "Status",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcInfRps_httpwww_betha_com_bre_nota_contribuinte_wsStatus",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 504, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 504, 3),
     )
 
     Status = property(__Status.value, __Status.set, None, None)
@@ -5099,9 +4715,7 @@ class tcInfRps(pyxb.binding.basis.complexTypeDefinition):
         "RpsSubstituido",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcInfRps_httpwww_betha_com_bre_nota_contribuinte_wsRpsSubstituido",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 506, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 506, 3),
     )
 
     RpsSubstituido = property(__RpsSubstituido.value, __RpsSubstituido.set, None, None)
@@ -5114,10 +4728,10 @@ class tcInfRps(pyxb.binding.basis.complexTypeDefinition):
         _module_typeBindings.tsIdTag,
     )
     __Id._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 509, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 509, 2
     )
     __Id._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 509, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 509, 2
     )
 
     Id = property(__Id.value, __Id.set, None, None)
@@ -5146,7 +4760,7 @@ class tcInfDeclaracaoPrestacaoServico(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcInfDeclaracaoPrestacaoServico")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 512, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 512, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -5158,9 +4772,7 @@ class tcInfDeclaracaoPrestacaoServico(pyxb.binding.basis.complexTypeDefinition):
         "Rps",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcInfDeclaracaoPrestacaoServico_httpwww_betha_com_bre_nota_contribuinte_wsRps",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 514, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 514, 3),
     )
 
     Rps = property(__Rps.value, __Rps.set, None, None)
@@ -5171,9 +4783,7 @@ class tcInfDeclaracaoPrestacaoServico(pyxb.binding.basis.complexTypeDefinition):
         "Competencia",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcInfDeclaracaoPrestacaoServico_httpwww_betha_com_bre_nota_contribuinte_wsCompetencia",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 516, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 516, 3),
     )
 
     Competencia = property(__Competencia.value, __Competencia.set, None, None)
@@ -5184,9 +4794,7 @@ class tcInfDeclaracaoPrestacaoServico(pyxb.binding.basis.complexTypeDefinition):
         "Servico",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcInfDeclaracaoPrestacaoServico_httpwww_betha_com_bre_nota_contribuinte_wsServico",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 518, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 518, 3),
     )
 
     Servico = property(__Servico.value, __Servico.set, None, None)
@@ -5197,9 +4805,7 @@ class tcInfDeclaracaoPrestacaoServico(pyxb.binding.basis.complexTypeDefinition):
         "Prestador",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcInfDeclaracaoPrestacaoServico_httpwww_betha_com_bre_nota_contribuinte_wsPrestador",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 520, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 520, 3),
     )
 
     Prestador = property(__Prestador.value, __Prestador.set, None, None)
@@ -5210,9 +4816,7 @@ class tcInfDeclaracaoPrestacaoServico(pyxb.binding.basis.complexTypeDefinition):
         "Tomador",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcInfDeclaracaoPrestacaoServico_httpwww_betha_com_bre_nota_contribuinte_wsTomador",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 522, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 522, 3),
     )
 
     Tomador = property(__Tomador.value, __Tomador.set, None, None)
@@ -5223,9 +4827,7 @@ class tcInfDeclaracaoPrestacaoServico(pyxb.binding.basis.complexTypeDefinition):
         "Intermediario",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcInfDeclaracaoPrestacaoServico_httpwww_betha_com_bre_nota_contribuinte_wsIntermediario",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 524, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 524, 3),
     )
 
     Intermediario = property(__Intermediario.value, __Intermediario.set, None, None)
@@ -5236,9 +4838,7 @@ class tcInfDeclaracaoPrestacaoServico(pyxb.binding.basis.complexTypeDefinition):
         "ConstrucaoCivil",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcInfDeclaracaoPrestacaoServico_httpwww_betha_com_bre_nota_contribuinte_wsConstrucaoCivil",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 526, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 526, 3),
     )
 
     ConstrucaoCivil = property(__ConstrucaoCivil.value, __ConstrucaoCivil.set, None, None)
@@ -5249,9 +4849,7 @@ class tcInfDeclaracaoPrestacaoServico(pyxb.binding.basis.complexTypeDefinition):
         "RegimeEspecialTributacao",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcInfDeclaracaoPrestacaoServico_httpwww_betha_com_bre_nota_contribuinte_wsRegimeEspecialTributacao",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 528, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 528, 3),
     )
 
     RegimeEspecialTributacao = property(
@@ -5264,9 +4862,7 @@ class tcInfDeclaracaoPrestacaoServico(pyxb.binding.basis.complexTypeDefinition):
         "OptanteSimplesNacional",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcInfDeclaracaoPrestacaoServico_httpwww_betha_com_bre_nota_contribuinte_wsOptanteSimplesNacional",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 530, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 530, 3),
     )
 
     OptanteSimplesNacional = property(
@@ -5279,9 +4875,7 @@ class tcInfDeclaracaoPrestacaoServico(pyxb.binding.basis.complexTypeDefinition):
         "IncentivoFiscal",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcInfDeclaracaoPrestacaoServico_httpwww_betha_com_bre_nota_contribuinte_wsIncentivoFiscal",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 532, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 532, 3),
     )
 
     IncentivoFiscal = property(__IncentivoFiscal.value, __IncentivoFiscal.set, None, None)
@@ -5294,10 +4888,10 @@ class tcInfDeclaracaoPrestacaoServico(pyxb.binding.basis.complexTypeDefinition):
         _module_typeBindings.tsIdTag,
     )
     __Id._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 535, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 535, 2
     )
     __Id._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 535, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 535, 2
     )
 
     Id = property(__Id.value, __Id.set, None, None)
@@ -5334,7 +4928,7 @@ class tcInfNfse(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcInfNfse")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 560, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 560, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -5346,9 +4940,7 @@ class tcInfNfse(pyxb.binding.basis.complexTypeDefinition):
         "Numero",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcInfNfse_httpwww_betha_com_bre_nota_contribuinte_wsNumero",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 562, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 562, 3),
     )
 
     Numero = property(__Numero.value, __Numero.set, None, None)
@@ -5359,9 +4951,7 @@ class tcInfNfse(pyxb.binding.basis.complexTypeDefinition):
         "CodigoVerificacao",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcInfNfse_httpwww_betha_com_bre_nota_contribuinte_wsCodigoVerificacao",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 564, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 564, 3),
     )
 
     CodigoVerificacao = property(__CodigoVerificacao.value, __CodigoVerificacao.set, None, None)
@@ -5372,9 +4962,7 @@ class tcInfNfse(pyxb.binding.basis.complexTypeDefinition):
         "DataEmissao",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcInfNfse_httpwww_betha_com_bre_nota_contribuinte_wsDataEmissao",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 566, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 566, 3),
     )
 
     DataEmissao = property(__DataEmissao.value, __DataEmissao.set, None, None)
@@ -5385,9 +4973,7 @@ class tcInfNfse(pyxb.binding.basis.complexTypeDefinition):
         "NfseSubstituida",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcInfNfse_httpwww_betha_com_bre_nota_contribuinte_wsNfseSubstituida",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 568, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 568, 3),
     )
 
     NfseSubstituida = property(__NfseSubstituida.value, __NfseSubstituida.set, None, None)
@@ -5398,9 +4984,7 @@ class tcInfNfse(pyxb.binding.basis.complexTypeDefinition):
         "OutrasInformacoes",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcInfNfse_httpwww_betha_com_bre_nota_contribuinte_wsOutrasInformacoes",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 570, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 570, 3),
     )
 
     OutrasInformacoes = property(__OutrasInformacoes.value, __OutrasInformacoes.set, None, None)
@@ -5411,9 +4995,7 @@ class tcInfNfse(pyxb.binding.basis.complexTypeDefinition):
         "ValoresNfse",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcInfNfse_httpwww_betha_com_bre_nota_contribuinte_wsValoresNfse",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 572, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 572, 3),
     )
 
     ValoresNfse = property(__ValoresNfse.value, __ValoresNfse.set, None, None)
@@ -5424,9 +5006,7 @@ class tcInfNfse(pyxb.binding.basis.complexTypeDefinition):
         "ValorCredito",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcInfNfse_httpwww_betha_com_bre_nota_contribuinte_wsValorCredito",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 574, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 574, 3),
     )
 
     ValorCredito = property(__ValorCredito.value, __ValorCredito.set, None, None)
@@ -5437,9 +5017,7 @@ class tcInfNfse(pyxb.binding.basis.complexTypeDefinition):
         "PrestadorServico",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcInfNfse_httpwww_betha_com_bre_nota_contribuinte_wsPrestadorServico",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 576, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 576, 3),
     )
 
     PrestadorServico = property(__PrestadorServico.value, __PrestadorServico.set, None, None)
@@ -5450,9 +5028,7 @@ class tcInfNfse(pyxb.binding.basis.complexTypeDefinition):
         "OrgaoGerador",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcInfNfse_httpwww_betha_com_bre_nota_contribuinte_wsOrgaoGerador",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 578, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 578, 3),
     )
 
     OrgaoGerador = property(__OrgaoGerador.value, __OrgaoGerador.set, None, None)
@@ -5463,9 +5039,7 @@ class tcInfNfse(pyxb.binding.basis.complexTypeDefinition):
         "DeclaracaoPrestacaoServico",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcInfNfse_httpwww_betha_com_bre_nota_contribuinte_wsDeclaracaoPrestacaoServico",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 580, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 580, 3),
     )
 
     DeclaracaoPrestacaoServico = property(
@@ -5480,10 +5054,10 @@ class tcInfNfse(pyxb.binding.basis.complexTypeDefinition):
         _module_typeBindings.tsIdTag,
     )
     __Id._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 582, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 582, 2
     )
     __Id._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 582, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 582, 2
     )
 
     Id = property(__Id.value, __Id.set, None, None)
@@ -5518,7 +5092,7 @@ class tcNfse(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcNfse")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 585, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 585, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -5530,9 +5104,7 @@ class tcNfse(pyxb.binding.basis.complexTypeDefinition):
         "InfNfse",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcNfse_httpwww_betha_com_bre_nota_contribuinte_wsInfNfse",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 587, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 587, 3),
     )
 
     InfNfse = property(__InfNfse.value, __InfNfse.set, None, None)
@@ -5544,9 +5116,7 @@ class tcNfse(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcNfse_httpwww_w3_org200009xmldsigSignature",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            41,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 41, 0
         ),
     )
 
@@ -5561,10 +5131,10 @@ class tcNfse(pyxb.binding.basis.complexTypeDefinition):
         required=True,
     )
     __versao._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 592, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 592, 2
     )
     __versao._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 592, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 592, 2
     )
 
     versao = property(__versao.value, __versao.set, None, None)
@@ -5586,7 +5156,7 @@ class tcInfPedidoCancelamento(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcInfPedidoCancelamento")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 595, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 595, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -5598,9 +5168,7 @@ class tcInfPedidoCancelamento(pyxb.binding.basis.complexTypeDefinition):
         "IdentificacaoNfse",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcInfPedidoCancelamento_httpwww_betha_com_bre_nota_contribuinte_wsIdentificacaoNfse",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 597, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 597, 3),
     )
 
     IdentificacaoNfse = property(__IdentificacaoNfse.value, __IdentificacaoNfse.set, None, None)
@@ -5611,9 +5179,7 @@ class tcInfPedidoCancelamento(pyxb.binding.basis.complexTypeDefinition):
         "CodigoCancelamento",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcInfPedidoCancelamento_httpwww_betha_com_bre_nota_contribuinte_wsCodigoCancelamento",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 599, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 599, 3),
     )
 
     CodigoCancelamento = property(__CodigoCancelamento.value, __CodigoCancelamento.set, None, None)
@@ -5626,10 +5192,10 @@ class tcInfPedidoCancelamento(pyxb.binding.basis.complexTypeDefinition):
         _module_typeBindings.tsIdTag,
     )
     __Id._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 602, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 602, 2
     )
     __Id._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 602, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 602, 2
     )
 
     Id = property(__Id.value, __Id.set, None, None)
@@ -5656,7 +5222,7 @@ class tcConfirmacaoCancelamento(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcConfirmacaoCancelamento")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 614, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 614, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -5668,9 +5234,7 @@ class tcConfirmacaoCancelamento(pyxb.binding.basis.complexTypeDefinition):
         "Pedido",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcConfirmacaoCancelamento_httpwww_betha_com_bre_nota_contribuinte_wsPedido",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 616, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 616, 3),
     )
 
     Pedido = property(__Pedido.value, __Pedido.set, None, None)
@@ -5681,9 +5245,7 @@ class tcConfirmacaoCancelamento(pyxb.binding.basis.complexTypeDefinition):
         "DataHora",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcConfirmacaoCancelamento_httpwww_betha_com_bre_nota_contribuinte_wsDataHora",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 618, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 618, 3),
     )
 
     DataHora = property(__DataHora.value, __DataHora.set, None, None)
@@ -5696,10 +5258,10 @@ class tcConfirmacaoCancelamento(pyxb.binding.basis.complexTypeDefinition):
         _module_typeBindings.tsIdTag,
     )
     __Id._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 621, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 621, 2
     )
     __Id._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 621, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 621, 2
     )
 
     Id = property(__Id.value, __Id.set, None, None)
@@ -5721,7 +5283,7 @@ class tcCancelamentoNfse(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcCancelamentoNfse")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 624, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 624, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -5733,9 +5295,7 @@ class tcCancelamentoNfse(pyxb.binding.basis.complexTypeDefinition):
         "Confirmacao",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcCancelamentoNfse_httpwww_betha_com_bre_nota_contribuinte_wsConfirmacao",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 626, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 626, 3),
     )
 
     Confirmacao = property(__Confirmacao.value, __Confirmacao.set, None, None)
@@ -5747,9 +5307,7 @@ class tcCancelamentoNfse(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcCancelamentoNfse_httpwww_w3_org200009xmldsigSignature",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            41,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 41, 0
         ),
     )
 
@@ -5764,10 +5322,10 @@ class tcCancelamentoNfse(pyxb.binding.basis.complexTypeDefinition):
         required=True,
     )
     __versao._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 631, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 631, 2
     )
     __versao._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 631, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 631, 2
     )
 
     versao = property(__versao.value, __versao.set, None, None)
@@ -5789,7 +5347,7 @@ class tcInfSubstituicaoNfse(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcInfSubstituicaoNfse")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 642, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 642, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -5801,9 +5359,7 @@ class tcInfSubstituicaoNfse(pyxb.binding.basis.complexTypeDefinition):
         "NfseSubstituidora",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcInfSubstituicaoNfse_httpwww_betha_com_bre_nota_contribuinte_wsNfseSubstituidora",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 644, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 644, 3),
     )
 
     NfseSubstituidora = property(__NfseSubstituidora.value, __NfseSubstituidora.set, None, None)
@@ -5816,10 +5372,10 @@ class tcInfSubstituicaoNfse(pyxb.binding.basis.complexTypeDefinition):
         _module_typeBindings.tsIdTag,
     )
     __Id._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 647, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 647, 2
     )
     __Id._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 647, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 647, 2
     )
 
     Id = property(__Id.value, __Id.set, None, None)
@@ -5841,7 +5397,7 @@ class tcSubstituicaoNfse(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcSubstituicaoNfse")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 650, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 650, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -5853,9 +5409,7 @@ class tcSubstituicaoNfse(pyxb.binding.basis.complexTypeDefinition):
         "SubstituicaoNfse",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcSubstituicaoNfse_httpwww_betha_com_bre_nota_contribuinte_wsSubstituicaoNfse",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 652, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 652, 3),
     )
 
     SubstituicaoNfse = property(__SubstituicaoNfse.value, __SubstituicaoNfse.set, None, None)
@@ -5867,9 +5421,7 @@ class tcSubstituicaoNfse(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcSubstituicaoNfse_httpwww_w3_org200009xmldsigSignature",
         True,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            41,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 41, 0
         ),
     )
 
@@ -5884,10 +5436,10 @@ class tcSubstituicaoNfse(pyxb.binding.basis.complexTypeDefinition):
         required=True,
     )
     __versao._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 657, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 657, 2
     )
     __versao._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 657, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 657, 2
     )
 
     versao = property(__versao.value, __versao.set, None, None)
@@ -5911,7 +5463,7 @@ class tcLoteRps(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = pyxb.namespace.ExpandedName(Namespace, "tcLoteRps")
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 693, 1
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 693, 1
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -5923,9 +5475,7 @@ class tcLoteRps(pyxb.binding.basis.complexTypeDefinition):
         "NumeroLote",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcLoteRps_httpwww_betha_com_bre_nota_contribuinte_wsNumeroLote",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 695, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 695, 3),
     )
 
     NumeroLote = property(__NumeroLote.value, __NumeroLote.set, None, None)
@@ -5936,9 +5486,7 @@ class tcLoteRps(pyxb.binding.basis.complexTypeDefinition):
         "CpfCnpj",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcLoteRps_httpwww_betha_com_bre_nota_contribuinte_wsCpfCnpj",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 697, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 697, 3),
     )
 
     CpfCnpj = property(__CpfCnpj.value, __CpfCnpj.set, None, None)
@@ -5949,9 +5497,7 @@ class tcLoteRps(pyxb.binding.basis.complexTypeDefinition):
         "InscricaoMunicipal",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcLoteRps_httpwww_betha_com_bre_nota_contribuinte_wsInscricaoMunicipal",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 699, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 699, 3),
     )
 
     InscricaoMunicipal = property(__InscricaoMunicipal.value, __InscricaoMunicipal.set, None, None)
@@ -5962,9 +5508,7 @@ class tcLoteRps(pyxb.binding.basis.complexTypeDefinition):
         "QuantidadeRps",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcLoteRps_httpwww_betha_com_bre_nota_contribuinte_wsQuantidadeRps",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 701, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 701, 3),
     )
 
     QuantidadeRps = property(__QuantidadeRps.value, __QuantidadeRps.set, None, None)
@@ -5975,9 +5519,7 @@ class tcLoteRps(pyxb.binding.basis.complexTypeDefinition):
         "ListaRps",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_tcLoteRps_httpwww_betha_com_bre_nota_contribuinte_wsListaRps",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 703, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 703, 3),
     )
 
     ListaRps = property(__ListaRps.value, __ListaRps.set, None, None)
@@ -5990,10 +5532,10 @@ class tcLoteRps(pyxb.binding.basis.complexTypeDefinition):
         _module_typeBindings.tsIdTag,
     )
     __Id._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 713, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 713, 2
     )
     __Id._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 713, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 713, 2
     )
 
     Id = property(__Id.value, __Id.set, None, None)
@@ -6007,10 +5549,10 @@ class tcLoteRps(pyxb.binding.basis.complexTypeDefinition):
         required=True,
     )
     __versao._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 714, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 714, 2
     )
     __versao._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 714, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 714, 2
     )
 
     versao = property(__versao.value, __versao.set, None, None)
@@ -6040,7 +5582,7 @@ class CTD_ANON_38(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 745, 2
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 745, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -6052,9 +5594,7 @@ class CTD_ANON_38(pyxb.binding.basis.complexTypeDefinition):
         "versaoDados",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_38_httpwww_betha_com_bre_nota_contribuinte_wsversaoDados",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 747, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 747, 4),
     )
 
     versaoDados = property(__versaoDados.value, __versaoDados.set, None, None)
@@ -6068,10 +5608,10 @@ class CTD_ANON_38(pyxb.binding.basis.complexTypeDefinition):
         required=True,
     )
     __versao._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 750, 3
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 750, 3
     )
     __versao._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 750, 3
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 750, 3
     )
 
     versao = property(__versao.value, __versao.set, None, None)
@@ -6092,7 +5632,7 @@ class CTD_ANON_39(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 872, 5
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 872, 5
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -6104,9 +5644,7 @@ class CTD_ANON_39(pyxb.binding.basis.complexTypeDefinition):
         "Pedido",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_39_httpwww_betha_com_bre_nota_contribuinte_wsPedido",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 874, 7
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 874, 7),
     )
 
     Pedido = property(__Pedido.value, __Pedido.set, None, None)
@@ -6117,9 +5655,7 @@ class CTD_ANON_39(pyxb.binding.basis.complexTypeDefinition):
         "Rps",
         "__httpwww_betha_com_bre_nota_contribuinte_ws_CTD_ANON_39_httpwww_betha_com_bre_nota_contribuinte_wsRps",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 875, 7
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 875, 7),
     )
 
     Rps = property(__Rps.value, __Rps.set, None, None)
@@ -6132,10 +5668,10 @@ class CTD_ANON_39(pyxb.binding.basis.complexTypeDefinition):
         _module_typeBindings.tsIdTag,
     )
     __Id._DeclarationLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 877, 6
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 877, 6
     )
     __Id._UseLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 877, 6
+        "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 877, 6
     )
 
     Id = property(__Id.value, __Id.set, None, None)
@@ -6150,9 +5686,7 @@ _module_typeBindings.CTD_ANON_39 = CTD_ANON_39
 ListaMensagemRetornoLote = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "ListaMensagemRetornoLote"),
     CTD_ANON_,
-    location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 717, 2
-    ),
+    location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 717, 2),
 )
 Namespace.addCategoryObject(
     "elementBinding", ListaMensagemRetornoLote.name().localName(), ListaMensagemRetornoLote
@@ -6161,9 +5695,7 @@ Namespace.addCategoryObject(
 ListaMensagemRetorno = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "ListaMensagemRetorno"),
     CTD_ANON_2,
-    location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1
-    ),
+    location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1),
 )
 Namespace.addCategoryObject(
     "elementBinding", ListaMensagemRetorno.name().localName(), ListaMensagemRetorno
@@ -6172,9 +5704,7 @@ Namespace.addCategoryObject(
 ListaMensagemAlertaRetorno = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "ListaMensagemAlertaRetorno"),
     CTD_ANON_3,
-    location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 735, 1
-    ),
+    location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 735, 1),
 )
 Namespace.addCategoryObject(
     "elementBinding", ListaMensagemAlertaRetorno.name().localName(), ListaMensagemAlertaRetorno
@@ -6183,18 +5713,14 @@ Namespace.addCategoryObject(
 CompNfse = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "CompNfse"),
     tcCompNfse,
-    location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1
-    ),
+    location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1),
 )
 Namespace.addCategoryObject("elementBinding", CompNfse.name().localName(), CompNfse)
 
 EnviarLoteRpsEnvio = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "EnviarLoteRpsEnvio"),
     CTD_ANON_4,
-    location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 756, 2
-    ),
+    location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 756, 2),
 )
 Namespace.addCategoryObject(
     "elementBinding", EnviarLoteRpsEnvio.name().localName(), EnviarLoteRpsEnvio
@@ -6203,9 +5729,7 @@ Namespace.addCategoryObject(
 EnviarLoteRpsResposta = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "EnviarLoteRpsResposta"),
     CTD_ANON_5,
-    location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 766, 1
-    ),
+    location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 766, 1),
 )
 Namespace.addCategoryObject(
     "elementBinding", EnviarLoteRpsResposta.name().localName(), EnviarLoteRpsResposta
@@ -6214,9 +5738,7 @@ Namespace.addCategoryObject(
 EnviarLoteRpsSincronoEnvio = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "EnviarLoteRpsSincronoEnvio"),
     CTD_ANON_6,
-    location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 783, 1
-    ),
+    location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 783, 1),
 )
 Namespace.addCategoryObject(
     "elementBinding", EnviarLoteRpsSincronoEnvio.name().localName(), EnviarLoteRpsSincronoEnvio
@@ -6225,9 +5747,7 @@ Namespace.addCategoryObject(
 EnviarLoteRpsSincronoResposta = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "EnviarLoteRpsSincronoResposta"),
     CTD_ANON_7,
-    location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 794, 1
-    ),
+    location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 794, 1),
 )
 Namespace.addCategoryObject(
     "elementBinding",
@@ -6238,18 +5758,14 @@ Namespace.addCategoryObject(
 GerarNfseEnvio = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "GerarNfseEnvio"),
     CTD_ANON_9,
-    location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 822, 1
-    ),
+    location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 822, 1),
 )
 Namespace.addCategoryObject("elementBinding", GerarNfseEnvio.name().localName(), GerarNfseEnvio)
 
 GerarNfseResposta = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "GerarNfseResposta"),
     CTD_ANON_10,
-    location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 830, 1
-    ),
+    location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 830, 1),
 )
 Namespace.addCategoryObject(
     "elementBinding", GerarNfseResposta.name().localName(), GerarNfseResposta
@@ -6258,9 +5774,7 @@ Namespace.addCategoryObject(
 CancelarNfseEnvio = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "CancelarNfseEnvio"),
     CTD_ANON_12,
-    location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 850, 1
-    ),
+    location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 850, 1),
 )
 Namespace.addCategoryObject(
     "elementBinding", CancelarNfseEnvio.name().localName(), CancelarNfseEnvio
@@ -6269,9 +5783,7 @@ Namespace.addCategoryObject(
 CancelarNfseResposta = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "CancelarNfseResposta"),
     CTD_ANON_13,
-    location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 858, 1
-    ),
+    location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 858, 1),
 )
 Namespace.addCategoryObject(
     "elementBinding", CancelarNfseResposta.name().localName(), CancelarNfseResposta
@@ -6280,9 +5792,7 @@ Namespace.addCategoryObject(
 SubstituirNfseEnvio = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "SubstituirNfseEnvio"),
     CTD_ANON_14,
-    location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 867, 1
-    ),
+    location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 867, 1),
 )
 Namespace.addCategoryObject(
     "elementBinding", SubstituirNfseEnvio.name().localName(), SubstituirNfseEnvio
@@ -6291,9 +5801,7 @@ Namespace.addCategoryObject(
 SubstituirNfseResposta = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "SubstituirNfseResposta"),
     CTD_ANON_15,
-    location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 886, 1
-    ),
+    location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 886, 1),
 )
 Namespace.addCategoryObject(
     "elementBinding", SubstituirNfseResposta.name().localName(), SubstituirNfseResposta
@@ -6302,9 +5810,7 @@ Namespace.addCategoryObject(
 ConsultarLoteRpsEnvio = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "ConsultarLoteRpsEnvio"),
     CTD_ANON_19,
-    location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 917, 1
-    ),
+    location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 917, 1),
 )
 Namespace.addCategoryObject(
     "elementBinding", ConsultarLoteRpsEnvio.name().localName(), ConsultarLoteRpsEnvio
@@ -6313,9 +5819,7 @@ Namespace.addCategoryObject(
 ConsultarLoteRpsResposta = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "ConsultarLoteRpsResposta"),
     CTD_ANON_20,
-    location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 928, 1
-    ),
+    location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 928, 1),
 )
 Namespace.addCategoryObject(
     "elementBinding", ConsultarLoteRpsResposta.name().localName(), ConsultarLoteRpsResposta
@@ -6324,9 +5828,7 @@ Namespace.addCategoryObject(
 ConsultarNfseRpsEnvio = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "ConsultarNfseRpsEnvio"),
     CTD_ANON_22,
-    location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 951, 1
-    ),
+    location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 951, 1),
 )
 Namespace.addCategoryObject(
     "elementBinding", ConsultarNfseRpsEnvio.name().localName(), ConsultarNfseRpsEnvio
@@ -6335,9 +5837,7 @@ Namespace.addCategoryObject(
 ConsultarNfseRpsResposta = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "ConsultarNfseRpsResposta"),
     CTD_ANON_23,
-    location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 962, 1
-    ),
+    location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 962, 1),
 )
 Namespace.addCategoryObject(
     "elementBinding", ConsultarNfseRpsResposta.name().localName(), ConsultarNfseRpsResposta
@@ -6346,9 +5846,7 @@ Namespace.addCategoryObject(
 ConsultarNfseServicoPrestadoEnvio = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "ConsultarNfseServicoPrestadoEnvio"),
     CTD_ANON_24,
-    location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 972, 1
-    ),
+    location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 972, 1),
 )
 Namespace.addCategoryObject(
     "elementBinding",
@@ -6359,9 +5857,7 @@ Namespace.addCategoryObject(
 ConsultarNfseServicoPrestadoResposta = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "ConsultarNfseServicoPrestadoResposta"),
     CTD_ANON_27,
-    location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1012, 1
-    ),
+    location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1012, 1),
 )
 Namespace.addCategoryObject(
     "elementBinding",
@@ -6372,9 +5868,7 @@ Namespace.addCategoryObject(
 ConsultarNfseServicoTomadoEnvio = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "ConsultarNfseServicoTomadoEnvio"),
     CTD_ANON_29,
-    location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1029, 1
-    ),
+    location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1029, 1),
 )
 Namespace.addCategoryObject(
     "elementBinding",
@@ -6385,9 +5879,7 @@ Namespace.addCategoryObject(
 ConsultarNfseServicoTomadoResposta = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "ConsultarNfseServicoTomadoResposta"),
     CTD_ANON_32,
-    location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1071, 1
-    ),
+    location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1071, 1),
 )
 Namespace.addCategoryObject(
     "elementBinding",
@@ -6398,9 +5890,7 @@ Namespace.addCategoryObject(
 ConsultarNfseFaixaEnvio = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "ConsultarNfseFaixaEnvio"),
     CTD_ANON_34,
-    location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1088, 1
-    ),
+    location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1088, 1),
 )
 Namespace.addCategoryObject(
     "elementBinding", ConsultarNfseFaixaEnvio.name().localName(), ConsultarNfseFaixaEnvio
@@ -6409,9 +5899,7 @@ Namespace.addCategoryObject(
 ConsultarNfseFaixaResposta = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "ConsultarNfseFaixaResposta"),
     CTD_ANON_36,
-    location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1108, 1
-    ),
+    location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1108, 1),
 )
 Namespace.addCategoryObject(
     "elementBinding", ConsultarNfseFaixaResposta.name().localName(), ConsultarNfseFaixaResposta
@@ -6420,9 +5908,7 @@ Namespace.addCategoryObject(
 cabecalho = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "cabecalho"),
     CTD_ANON_38,
-    location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 744, 1
-    ),
+    location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 744, 1),
 )
 Namespace.addCategoryObject("elementBinding", cabecalho.name().localName(), cabecalho)
 
@@ -6432,9 +5918,7 @@ tcCpfCnpj._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Cpf"),
         tsCpf,
         scope=tcCpfCnpj,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 291, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 291, 3),
     )
 )
 
@@ -6443,9 +5927,7 @@ tcCpfCnpj._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Cnpj"),
         tsCnpj,
         scope=tcCpfCnpj,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 293, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 293, 3),
     )
 )
 
@@ -6461,9 +5943,7 @@ def _BuildAutomaton():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcCpfCnpj._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Cpf")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 291, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 291, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -6472,9 +5952,7 @@ def _BuildAutomaton():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcCpfCnpj._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Cnpj")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 293, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 293, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -6495,9 +5973,7 @@ tcEndereco._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Endereco"),
         tsEndereco,
         scope=tcEndereco,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 300, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 300, 3),
     )
 )
 
@@ -6506,9 +5982,7 @@ tcEndereco._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Numero"),
         tsNumeroEndereco,
         scope=tcEndereco,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 302, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 302, 3),
     )
 )
 
@@ -6517,9 +5991,7 @@ tcEndereco._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Complemento"),
         tsComplementoEndereco,
         scope=tcEndereco,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 304, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 304, 3),
     )
 )
 
@@ -6528,9 +6000,7 @@ tcEndereco._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Bairro"),
         tsBairro,
         scope=tcEndereco,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 306, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 306, 3),
     )
 )
 
@@ -6539,9 +6009,7 @@ tcEndereco._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "CodigoMunicipio"),
         tsCodigoMunicipioIbge,
         scope=tcEndereco,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 308, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 308, 3),
     )
 )
 
@@ -6550,9 +6018,7 @@ tcEndereco._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Uf"),
         tsUf,
         scope=tcEndereco,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 310, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 310, 3),
     )
 )
 
@@ -6561,9 +6027,7 @@ tcEndereco._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "CodigoPais"),
         tsCodigoPaisBacen,
         scope=tcEndereco,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 312, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 312, 3),
     )
 )
 
@@ -6572,9 +6036,7 @@ tcEndereco._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Cep"),
         tsCep,
         scope=tcEndereco,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 314, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 314, 3),
     )
 )
 
@@ -6589,65 +6051,49 @@ def _BuildAutomaton_():
     cc_0 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 300, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 300, 3),
     )
     counters.add(cc_0)
     cc_1 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 302, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 302, 3),
     )
     counters.add(cc_1)
     cc_2 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 304, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 304, 3),
     )
     counters.add(cc_2)
     cc_3 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 306, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 306, 3),
     )
     counters.add(cc_3)
     cc_4 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 308, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 308, 3),
     )
     counters.add(cc_4)
     cc_5 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 310, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 310, 3),
     )
     counters.add(cc_5)
     cc_6 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 312, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 312, 3),
     )
     counters.add(cc_6)
     cc_7 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 314, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 314, 3),
     )
     counters.add(cc_7)
     states = []
@@ -6655,9 +6101,7 @@ def _BuildAutomaton_():
     final_update.add(fac.UpdateInstruction(cc_0, False))
     symbol = pyxb.binding.content.ElementUse(
         tcEndereco._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Endereco")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 300, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 300, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -6667,9 +6111,7 @@ def _BuildAutomaton_():
     final_update.add(fac.UpdateInstruction(cc_1, False))
     symbol = pyxb.binding.content.ElementUse(
         tcEndereco._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Numero")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 302, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 302, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -6679,9 +6121,7 @@ def _BuildAutomaton_():
     final_update.add(fac.UpdateInstruction(cc_2, False))
     symbol = pyxb.binding.content.ElementUse(
         tcEndereco._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Complemento")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 304, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 304, 3),
     )
     st_2 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -6691,9 +6131,7 @@ def _BuildAutomaton_():
     final_update.add(fac.UpdateInstruction(cc_3, False))
     symbol = pyxb.binding.content.ElementUse(
         tcEndereco._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Bairro")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 306, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 306, 3),
     )
     st_3 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -6703,9 +6141,7 @@ def _BuildAutomaton_():
     final_update.add(fac.UpdateInstruction(cc_4, False))
     symbol = pyxb.binding.content.ElementUse(
         tcEndereco._UseForTag(pyxb.namespace.ExpandedName(Namespace, "CodigoMunicipio")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 308, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 308, 3),
     )
     st_4 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -6715,9 +6151,7 @@ def _BuildAutomaton_():
     final_update.add(fac.UpdateInstruction(cc_5, False))
     symbol = pyxb.binding.content.ElementUse(
         tcEndereco._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Uf")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 310, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 310, 3),
     )
     st_5 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -6727,9 +6161,7 @@ def _BuildAutomaton_():
     final_update.add(fac.UpdateInstruction(cc_6, False))
     symbol = pyxb.binding.content.ElementUse(
         tcEndereco._UseForTag(pyxb.namespace.ExpandedName(Namespace, "CodigoPais")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 312, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 312, 3),
     )
     st_6 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -6739,9 +6171,7 @@ def _BuildAutomaton_():
     final_update.add(fac.UpdateInstruction(cc_7, False))
     symbol = pyxb.binding.content.ElementUse(
         tcEndereco._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Cep")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 314, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 314, 3),
     )
     st_7 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -6810,9 +6240,7 @@ tcContato._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Telefone"),
         tsTelefone,
         scope=tcContato,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 321, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 321, 3),
     )
 )
 
@@ -6821,9 +6249,7 @@ tcContato._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Email"),
         tsEmail,
         scope=tcContato,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 323, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 323, 3),
     )
 )
 
@@ -6838,17 +6264,13 @@ def _BuildAutomaton_2():
     cc_0 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 321, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 321, 3),
     )
     counters.add(cc_0)
     cc_1 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 323, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 323, 3),
     )
     counters.add(cc_1)
     states = []
@@ -6856,9 +6278,7 @@ def _BuildAutomaton_2():
     final_update.add(fac.UpdateInstruction(cc_0, False))
     symbol = pyxb.binding.content.ElementUse(
         tcContato._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Telefone")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 321, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 321, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -6868,9 +6288,7 @@ def _BuildAutomaton_2():
     final_update.add(fac.UpdateInstruction(cc_1, False))
     symbol = pyxb.binding.content.ElementUse(
         tcContato._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Email")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 323, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 323, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -6894,9 +6312,7 @@ tcIdentificacaoOrgaoGerador._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "CodigoMunicipio"),
         tsCodigoMunicipioIbge,
         scope=tcIdentificacaoOrgaoGerador,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 330, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 330, 3),
     )
 )
 
@@ -6905,9 +6321,7 @@ tcIdentificacaoOrgaoGerador._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Uf"),
         tsUf,
         scope=tcIdentificacaoOrgaoGerador,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 332, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 332, 3),
     )
 )
 
@@ -6925,9 +6339,7 @@ def _BuildAutomaton_3():
         tcIdentificacaoOrgaoGerador._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "CodigoMunicipio")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 330, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 330, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -6936,9 +6348,7 @@ def _BuildAutomaton_3():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcIdentificacaoOrgaoGerador._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Uf")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 332, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 332, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -6960,9 +6370,7 @@ tcIdentificacaoRps._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Numero"),
         tsNumeroRps,
         scope=tcIdentificacaoRps,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 339, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 339, 3),
     )
 )
 
@@ -6971,9 +6379,7 @@ tcIdentificacaoRps._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Serie"),
         tsSerieRps,
         scope=tcIdentificacaoRps,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 341, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 341, 3),
     )
 )
 
@@ -6982,9 +6388,7 @@ tcIdentificacaoRps._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Tipo"),
         tsTipoRps,
         scope=tcIdentificacaoRps,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 343, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 343, 3),
     )
 )
 
@@ -7000,9 +6404,7 @@ def _BuildAutomaton_4():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcIdentificacaoRps._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Numero")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 339, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 339, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -7011,9 +6413,7 @@ def _BuildAutomaton_4():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcIdentificacaoRps._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Serie")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 341, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 341, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7022,9 +6422,7 @@ def _BuildAutomaton_4():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcIdentificacaoRps._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Tipo")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 343, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 343, 3),
     )
     st_2 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7049,9 +6447,7 @@ tcIdentificacaoPrestador._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "CpfCnpj"),
         tcCpfCnpj,
         scope=tcIdentificacaoPrestador,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 350, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 350, 3),
     )
 )
 
@@ -7060,9 +6456,7 @@ tcIdentificacaoPrestador._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "InscricaoMunicipal"),
         tsInscricaoMunicipal,
         scope=tcIdentificacaoPrestador,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 352, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 352, 3),
     )
 )
 
@@ -7077,17 +6471,13 @@ def _BuildAutomaton_5():
     cc_0 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 350, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 350, 3),
     )
     counters.add(cc_0)
     cc_1 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 352, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 352, 3),
     )
     counters.add(cc_1)
     states = []
@@ -7095,9 +6485,7 @@ def _BuildAutomaton_5():
     final_update.add(fac.UpdateInstruction(cc_0, False))
     symbol = pyxb.binding.content.ElementUse(
         tcIdentificacaoPrestador._UseForTag(pyxb.namespace.ExpandedName(Namespace, "CpfCnpj")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 350, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 350, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -7109,9 +6497,7 @@ def _BuildAutomaton_5():
         tcIdentificacaoPrestador._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "InscricaoMunicipal")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 352, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 352, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -7135,9 +6521,7 @@ tcIdentificacaoTomador._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "CpfCnpj"),
         tcCpfCnpj,
         scope=tcIdentificacaoTomador,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 359, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 359, 3),
     )
 )
 
@@ -7146,9 +6530,7 @@ tcIdentificacaoTomador._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "InscricaoMunicipal"),
         tsInscricaoMunicipal,
         scope=tcIdentificacaoTomador,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 361, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 361, 3),
     )
 )
 
@@ -7163,17 +6545,13 @@ def _BuildAutomaton_6():
     cc_0 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 359, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 359, 3),
     )
     counters.add(cc_0)
     cc_1 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 361, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 361, 3),
     )
     counters.add(cc_1)
     states = []
@@ -7181,9 +6559,7 @@ def _BuildAutomaton_6():
     final_update.add(fac.UpdateInstruction(cc_0, False))
     symbol = pyxb.binding.content.ElementUse(
         tcIdentificacaoTomador._UseForTag(pyxb.namespace.ExpandedName(Namespace, "CpfCnpj")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 359, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 359, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -7195,9 +6571,7 @@ def _BuildAutomaton_6():
         tcIdentificacaoTomador._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "InscricaoMunicipal")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 361, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 361, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -7221,9 +6595,7 @@ tcIdentificacaoConsulente._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "CpfCnpj"),
         tcCpfCnpj,
         scope=tcIdentificacaoConsulente,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 368, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 368, 3),
     )
 )
 
@@ -7232,9 +6604,7 @@ tcIdentificacaoConsulente._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "InscricaoMunicipal"),
         tsInscricaoMunicipal,
         scope=tcIdentificacaoConsulente,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 370, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 370, 3),
     )
 )
 
@@ -7249,18 +6619,14 @@ def _BuildAutomaton_7():
     cc_0 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 370, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 370, 3),
     )
     counters.add(cc_0)
     states = []
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcIdentificacaoConsulente._UseForTag(pyxb.namespace.ExpandedName(Namespace, "CpfCnpj")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 368, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 368, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -7272,9 +6638,7 @@ def _BuildAutomaton_7():
         tcIdentificacaoConsulente._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "InscricaoMunicipal")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 370, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 370, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7298,7 +6662,7 @@ tcIdentificacaoIntermediario._AddElement(
         tcCpfCnpj,
         scope=tcIdentificacaoIntermediario,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 377, 15
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 377, 15
         ),
     )
 )
@@ -7309,7 +6673,7 @@ tcIdentificacaoIntermediario._AddElement(
         tsInscricaoMunicipal,
         scope=tcIdentificacaoIntermediario,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 378, 14
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 378, 14
         ),
     )
 )
@@ -7326,7 +6690,7 @@ def _BuildAutomaton_8():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 377, 15
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 377, 15
         ),
     )
     counters.add(cc_0)
@@ -7334,7 +6698,7 @@ def _BuildAutomaton_8():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 378, 14
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 378, 14
         ),
     )
     counters.add(cc_1)
@@ -7343,9 +6707,7 @@ def _BuildAutomaton_8():
     final_update.add(fac.UpdateInstruction(cc_0, False))
     symbol = pyxb.binding.content.ElementUse(
         tcIdentificacaoIntermediario._UseForTag(pyxb.namespace.ExpandedName(Namespace, "CpfCnpj")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 377, 15
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 377, 15),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -7357,9 +6719,7 @@ def _BuildAutomaton_8():
         tcIdentificacaoIntermediario._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "InscricaoMunicipal")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 378, 14
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 378, 14),
     )
     st_1 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -7383,9 +6743,7 @@ tcDadosTomador._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "IdentificacaoTomador"),
         tcIdentificacaoTomador,
         scope=tcDadosTomador,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 384, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 384, 3),
     )
 )
 
@@ -7394,9 +6752,7 @@ tcDadosTomador._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "RazaoSocial"),
         tsRazaoSocial,
         scope=tcDadosTomador,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 386, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 386, 3),
     )
 )
 
@@ -7405,9 +6761,7 @@ tcDadosTomador._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Endereco"),
         tcEndereco,
         scope=tcDadosTomador,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 388, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 388, 3),
     )
 )
 
@@ -7416,9 +6770,7 @@ tcDadosTomador._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Contato"),
         tcContato,
         scope=tcDadosTomador,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 390, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 390, 3),
     )
 )
 
@@ -7433,33 +6785,25 @@ def _BuildAutomaton_9():
     cc_0 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 384, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 384, 3),
     )
     counters.add(cc_0)
     cc_1 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 386, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 386, 3),
     )
     counters.add(cc_1)
     cc_2 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 388, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 388, 3),
     )
     counters.add(cc_2)
     cc_3 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 390, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 390, 3),
     )
     counters.add(cc_3)
     states = []
@@ -7467,9 +6811,7 @@ def _BuildAutomaton_9():
     final_update.add(fac.UpdateInstruction(cc_0, False))
     symbol = pyxb.binding.content.ElementUse(
         tcDadosTomador._UseForTag(pyxb.namespace.ExpandedName(Namespace, "IdentificacaoTomador")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 384, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 384, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -7479,9 +6821,7 @@ def _BuildAutomaton_9():
     final_update.add(fac.UpdateInstruction(cc_1, False))
     symbol = pyxb.binding.content.ElementUse(
         tcDadosTomador._UseForTag(pyxb.namespace.ExpandedName(Namespace, "RazaoSocial")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 386, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 386, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -7491,9 +6831,7 @@ def _BuildAutomaton_9():
     final_update.add(fac.UpdateInstruction(cc_2, False))
     symbol = pyxb.binding.content.ElementUse(
         tcDadosTomador._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Endereco")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 388, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 388, 3),
     )
     st_2 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -7503,9 +6841,7 @@ def _BuildAutomaton_9():
     final_update.add(fac.UpdateInstruction(cc_3, False))
     symbol = pyxb.binding.content.ElementUse(
         tcDadosTomador._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Contato")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 390, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 390, 3),
     )
     st_3 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -7541,7 +6877,7 @@ tcDadosIntermediario._AddElement(
         tcIdentificacaoIntermediario,
         scope=tcDadosIntermediario,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 397, 12
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 397, 12
         ),
     )
 )
@@ -7552,7 +6888,7 @@ tcDadosIntermediario._AddElement(
         tsRazaoSocial,
         scope=tcDadosIntermediario,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 398, 12
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 398, 12
         ),
     )
 )
@@ -7571,9 +6907,7 @@ def _BuildAutomaton_10():
         tcDadosIntermediario._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "IdentificacaoIntermediario")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 397, 12
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 397, 12),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -7582,9 +6916,7 @@ def _BuildAutomaton_10():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcDadosIntermediario._UseForTag(pyxb.namespace.ExpandedName(Namespace, "RazaoSocial")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 398, 12
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 398, 12),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7606,9 +6938,7 @@ tcValoresDeclaracaoServico._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "ValorServicos"),
         tsValor,
         scope=tcValoresDeclaracaoServico,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 404, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 404, 3),
     )
 )
 
@@ -7617,9 +6947,7 @@ tcValoresDeclaracaoServico._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "ValorDeducoes"),
         tsValor,
         scope=tcValoresDeclaracaoServico,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 406, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 406, 3),
     )
 )
 
@@ -7628,9 +6956,7 @@ tcValoresDeclaracaoServico._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "ValorPis"),
         tsValor,
         scope=tcValoresDeclaracaoServico,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 408, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 408, 3),
     )
 )
 
@@ -7639,9 +6965,7 @@ tcValoresDeclaracaoServico._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "ValorCofins"),
         tsValor,
         scope=tcValoresDeclaracaoServico,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 410, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 410, 3),
     )
 )
 
@@ -7650,9 +6974,7 @@ tcValoresDeclaracaoServico._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "ValorInss"),
         tsValor,
         scope=tcValoresDeclaracaoServico,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 412, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 412, 3),
     )
 )
 
@@ -7661,9 +6983,7 @@ tcValoresDeclaracaoServico._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "ValorIr"),
         tsValor,
         scope=tcValoresDeclaracaoServico,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 414, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 414, 3),
     )
 )
 
@@ -7672,9 +6992,7 @@ tcValoresDeclaracaoServico._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "ValorCsll"),
         tsValor,
         scope=tcValoresDeclaracaoServico,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 416, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 416, 3),
     )
 )
 
@@ -7683,9 +7001,7 @@ tcValoresDeclaracaoServico._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "OutrasRetencoes"),
         tsValor,
         scope=tcValoresDeclaracaoServico,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 418, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 418, 3),
     )
 )
 
@@ -7694,9 +7010,7 @@ tcValoresDeclaracaoServico._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "ValorIss"),
         tsValor,
         scope=tcValoresDeclaracaoServico,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 420, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 420, 3),
     )
 )
 
@@ -7705,9 +7019,7 @@ tcValoresDeclaracaoServico._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Aliquota"),
         tsAliquota,
         scope=tcValoresDeclaracaoServico,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 422, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 422, 3),
     )
 )
 
@@ -7716,9 +7028,7 @@ tcValoresDeclaracaoServico._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "DescontoIncondicionado"),
         tsValor,
         scope=tcValoresDeclaracaoServico,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 424, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 424, 3),
     )
 )
 
@@ -7727,9 +7037,7 @@ tcValoresDeclaracaoServico._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "DescontoCondicionado"),
         tsValor,
         scope=tcValoresDeclaracaoServico,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 426, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 426, 3),
     )
 )
 
@@ -7744,89 +7052,67 @@ def _BuildAutomaton_11():
     cc_0 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 406, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 406, 3),
     )
     counters.add(cc_0)
     cc_1 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 408, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 408, 3),
     )
     counters.add(cc_1)
     cc_2 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 410, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 410, 3),
     )
     counters.add(cc_2)
     cc_3 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 412, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 412, 3),
     )
     counters.add(cc_3)
     cc_4 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 414, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 414, 3),
     )
     counters.add(cc_4)
     cc_5 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 416, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 416, 3),
     )
     counters.add(cc_5)
     cc_6 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 418, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 418, 3),
     )
     counters.add(cc_6)
     cc_7 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 420, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 420, 3),
     )
     counters.add(cc_7)
     cc_8 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 422, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 422, 3),
     )
     counters.add(cc_8)
     cc_9 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 424, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 424, 3),
     )
     counters.add(cc_9)
     cc_10 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 426, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 426, 3),
     )
     counters.add(cc_10)
     states = []
@@ -7835,9 +7121,7 @@ def _BuildAutomaton_11():
         tcValoresDeclaracaoServico._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "ValorServicos")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 404, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 404, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -7849,9 +7133,7 @@ def _BuildAutomaton_11():
         tcValoresDeclaracaoServico._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "ValorDeducoes")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 406, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 406, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7861,9 +7143,7 @@ def _BuildAutomaton_11():
     final_update.add(fac.UpdateInstruction(cc_1, False))
     symbol = pyxb.binding.content.ElementUse(
         tcValoresDeclaracaoServico._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ValorPis")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 408, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 408, 3),
     )
     st_2 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7875,9 +7155,7 @@ def _BuildAutomaton_11():
         tcValoresDeclaracaoServico._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "ValorCofins")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 410, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 410, 3),
     )
     st_3 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7887,9 +7165,7 @@ def _BuildAutomaton_11():
     final_update.add(fac.UpdateInstruction(cc_3, False))
     symbol = pyxb.binding.content.ElementUse(
         tcValoresDeclaracaoServico._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ValorInss")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 412, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 412, 3),
     )
     st_4 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7899,9 +7175,7 @@ def _BuildAutomaton_11():
     final_update.add(fac.UpdateInstruction(cc_4, False))
     symbol = pyxb.binding.content.ElementUse(
         tcValoresDeclaracaoServico._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ValorIr")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 414, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 414, 3),
     )
     st_5 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7911,9 +7185,7 @@ def _BuildAutomaton_11():
     final_update.add(fac.UpdateInstruction(cc_5, False))
     symbol = pyxb.binding.content.ElementUse(
         tcValoresDeclaracaoServico._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ValorCsll")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 416, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 416, 3),
     )
     st_6 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7925,9 +7197,7 @@ def _BuildAutomaton_11():
         tcValoresDeclaracaoServico._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "OutrasRetencoes")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 418, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 418, 3),
     )
     st_7 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7937,9 +7207,7 @@ def _BuildAutomaton_11():
     final_update.add(fac.UpdateInstruction(cc_7, False))
     symbol = pyxb.binding.content.ElementUse(
         tcValoresDeclaracaoServico._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ValorIss")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 420, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 420, 3),
     )
     st_8 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7949,9 +7217,7 @@ def _BuildAutomaton_11():
     final_update.add(fac.UpdateInstruction(cc_8, False))
     symbol = pyxb.binding.content.ElementUse(
         tcValoresDeclaracaoServico._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Aliquota")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 422, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 422, 3),
     )
     st_9 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7963,9 +7229,7 @@ def _BuildAutomaton_11():
         tcValoresDeclaracaoServico._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "DescontoIncondicionado")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 424, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 424, 3),
     )
     st_10 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -7977,9 +7241,7 @@ def _BuildAutomaton_11():
         tcValoresDeclaracaoServico._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "DescontoCondicionado")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 426, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 426, 3),
     )
     st_11 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -8097,9 +7359,7 @@ tcValoresNfse._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "BaseCalculo"),
         tsValor,
         scope=tcValoresNfse,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 433, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 433, 3),
     )
 )
 
@@ -8108,9 +7368,7 @@ tcValoresNfse._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Aliquota"),
         tsAliquota,
         scope=tcValoresNfse,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 435, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 435, 3),
     )
 )
 
@@ -8119,9 +7377,7 @@ tcValoresNfse._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "ValorIss"),
         tsValor,
         scope=tcValoresNfse,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 437, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 437, 3),
     )
 )
 
@@ -8130,9 +7386,7 @@ tcValoresNfse._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "ValorLiquidoNfse"),
         tsValor,
         scope=tcValoresNfse,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 439, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 439, 3),
     )
 )
 
@@ -8147,34 +7401,26 @@ def _BuildAutomaton_12():
     cc_0 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 433, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 433, 3),
     )
     counters.add(cc_0)
     cc_1 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 435, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 435, 3),
     )
     counters.add(cc_1)
     cc_2 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 437, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 437, 3),
     )
     counters.add(cc_2)
     states = []
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcValoresNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "BaseCalculo")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 433, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 433, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -8183,9 +7429,7 @@ def _BuildAutomaton_12():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcValoresNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Aliquota")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 435, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 435, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -8194,9 +7438,7 @@ def _BuildAutomaton_12():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcValoresNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ValorIss")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 437, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 437, 3),
     )
     st_2 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -8205,9 +7447,7 @@ def _BuildAutomaton_12():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcValoresNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ValorLiquidoNfse")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 439, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 439, 3),
     )
     st_3 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -8241,9 +7481,7 @@ tcDadosServico._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Valores"),
         tcValoresDeclaracaoServico,
         scope=tcDadosServico,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 446, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 446, 3),
     )
 )
 
@@ -8252,9 +7490,7 @@ tcDadosServico._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "IssRetido"),
         tsSimNao,
         scope=tcDadosServico,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 448, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 448, 3),
     )
 )
 
@@ -8263,9 +7499,7 @@ tcDadosServico._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "ResponsavelRetencao"),
         tsResponsavelRetencao,
         scope=tcDadosServico,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 450, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 450, 3),
     )
 )
 
@@ -8274,9 +7508,7 @@ tcDadosServico._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "ItemListaServico"),
         tsItemListaServico,
         scope=tcDadosServico,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 452, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 452, 3),
     )
 )
 
@@ -8285,9 +7517,7 @@ tcDadosServico._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "CodigoCnae"),
         tsCodigoCnae,
         scope=tcDadosServico,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 454, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 454, 3),
     )
 )
 
@@ -8296,9 +7526,7 @@ tcDadosServico._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "CodigoTributacaoMunicipio"),
         tsCodigoTributacao,
         scope=tcDadosServico,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 456, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 456, 3),
     )
 )
 
@@ -8307,9 +7535,7 @@ tcDadosServico._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Discriminacao"),
         tsDiscriminacao,
         scope=tcDadosServico,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 458, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 458, 3),
     )
 )
 
@@ -8318,9 +7544,7 @@ tcDadosServico._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "CodigoMunicipio"),
         tsCodigoMunicipioIbge,
         scope=tcDadosServico,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 460, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 460, 3),
     )
 )
 
@@ -8329,9 +7553,7 @@ tcDadosServico._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "CodigoPais"),
         tsCodigoPaisBacen,
         scope=tcDadosServico,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 462, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 462, 3),
     )
 )
 
@@ -8340,9 +7562,7 @@ tcDadosServico._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "ExigibilidadeISS"),
         tsExigibilidadeISS,
         scope=tcDadosServico,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 464, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 464, 3),
     )
 )
 
@@ -8351,9 +7571,7 @@ tcDadosServico._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "MunicipioIncidencia"),
         tsCodigoMunicipioIbge,
         scope=tcDadosServico,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 466, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 466, 3),
     )
 )
 
@@ -8362,9 +7580,7 @@ tcDadosServico._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "NumeroProcesso"),
         tsNumeroProcesso,
         scope=tcDadosServico,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 468, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 468, 3),
     )
 )
 
@@ -8379,58 +7595,44 @@ def _BuildAutomaton_13():
     cc_0 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 450, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 450, 3),
     )
     counters.add(cc_0)
     cc_1 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 454, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 454, 3),
     )
     counters.add(cc_1)
     cc_2 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 456, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 456, 3),
     )
     counters.add(cc_2)
     cc_3 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 462, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 462, 3),
     )
     counters.add(cc_3)
     cc_4 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 466, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 466, 3),
     )
     counters.add(cc_4)
     cc_5 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 468, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 468, 3),
     )
     counters.add(cc_5)
     states = []
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcDadosServico._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Valores")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 446, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 446, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -8439,9 +7641,7 @@ def _BuildAutomaton_13():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcDadosServico._UseForTag(pyxb.namespace.ExpandedName(Namespace, "IssRetido")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 448, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 448, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -8450,9 +7650,7 @@ def _BuildAutomaton_13():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcDadosServico._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ResponsavelRetencao")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 450, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 450, 3),
     )
     st_2 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -8461,9 +7659,7 @@ def _BuildAutomaton_13():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcDadosServico._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ItemListaServico")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 452, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 452, 3),
     )
     st_3 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -8472,9 +7668,7 @@ def _BuildAutomaton_13():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcDadosServico._UseForTag(pyxb.namespace.ExpandedName(Namespace, "CodigoCnae")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 454, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 454, 3),
     )
     st_4 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -8485,9 +7679,7 @@ def _BuildAutomaton_13():
         tcDadosServico._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "CodigoTributacaoMunicipio")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 456, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 456, 3),
     )
     st_5 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -8496,9 +7688,7 @@ def _BuildAutomaton_13():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcDadosServico._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Discriminacao")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 458, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 458, 3),
     )
     st_6 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -8507,9 +7697,7 @@ def _BuildAutomaton_13():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcDadosServico._UseForTag(pyxb.namespace.ExpandedName(Namespace, "CodigoMunicipio")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 460, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 460, 3),
     )
     st_7 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -8518,9 +7706,7 @@ def _BuildAutomaton_13():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcDadosServico._UseForTag(pyxb.namespace.ExpandedName(Namespace, "CodigoPais")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 462, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 462, 3),
     )
     st_8 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -8529,9 +7715,7 @@ def _BuildAutomaton_13():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcDadosServico._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ExigibilidadeISS")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 464, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 464, 3),
     )
     st_9 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -8541,9 +7725,7 @@ def _BuildAutomaton_13():
     final_update.add(fac.UpdateInstruction(cc_4, False))
     symbol = pyxb.binding.content.ElementUse(
         tcDadosServico._UseForTag(pyxb.namespace.ExpandedName(Namespace, "MunicipioIncidencia")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 466, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 466, 3),
     )
     st_10 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -8553,9 +7735,7 @@ def _BuildAutomaton_13():
     final_update.add(fac.UpdateInstruction(cc_5, False))
     symbol = pyxb.binding.content.ElementUse(
         tcDadosServico._UseForTag(pyxb.namespace.ExpandedName(Namespace, "NumeroProcesso")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 468, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 468, 3),
     )
     st_11 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -8619,9 +7799,7 @@ tcDadosConstrucaoCivil._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "CodigoObra"),
         tsCodigoObra,
         scope=tcDadosConstrucaoCivil,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 476, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 476, 3),
     )
 )
 
@@ -8630,9 +7808,7 @@ tcDadosConstrucaoCivil._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Art"),
         tsArt,
         scope=tcDadosConstrucaoCivil,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 478, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 478, 3),
     )
 )
 
@@ -8647,18 +7823,14 @@ def _BuildAutomaton_14():
     cc_0 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 476, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 476, 3),
     )
     counters.add(cc_0)
     states = []
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcDadosConstrucaoCivil._UseForTag(pyxb.namespace.ExpandedName(Namespace, "CodigoObra")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 476, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 476, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -8667,9 +7839,7 @@ def _BuildAutomaton_14():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcDadosConstrucaoCivil._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Art")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 478, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 478, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -8692,9 +7862,7 @@ tcDadosPrestador._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "IdentificacaoPrestador"),
         tcIdentificacaoPrestador,
         scope=tcDadosPrestador,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 485, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 485, 3),
     )
 )
 
@@ -8703,9 +7871,7 @@ tcDadosPrestador._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "RazaoSocial"),
         tsRazaoSocial,
         scope=tcDadosPrestador,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 487, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 487, 3),
     )
 )
 
@@ -8714,9 +7880,7 @@ tcDadosPrestador._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "NomeFantasia"),
         tsNomeFantasia,
         scope=tcDadosPrestador,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 489, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 489, 3),
     )
 )
 
@@ -8725,9 +7889,7 @@ tcDadosPrestador._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Endereco"),
         tcEndereco,
         scope=tcDadosPrestador,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 491, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 491, 3),
     )
 )
 
@@ -8736,9 +7898,7 @@ tcDadosPrestador._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Contato"),
         tcContato,
         scope=tcDadosPrestador,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 493, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 493, 3),
     )
 )
 
@@ -8753,17 +7913,13 @@ def _BuildAutomaton_15():
     cc_0 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 489, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 489, 3),
     )
     counters.add(cc_0)
     cc_1 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 493, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 493, 3),
     )
     counters.add(cc_1)
     states = []
@@ -8772,9 +7928,7 @@ def _BuildAutomaton_15():
         tcDadosPrestador._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "IdentificacaoPrestador")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 485, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 485, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -8783,9 +7937,7 @@ def _BuildAutomaton_15():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcDadosPrestador._UseForTag(pyxb.namespace.ExpandedName(Namespace, "RazaoSocial")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 487, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 487, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -8794,9 +7946,7 @@ def _BuildAutomaton_15():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcDadosPrestador._UseForTag(pyxb.namespace.ExpandedName(Namespace, "NomeFantasia")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 489, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 489, 3),
     )
     st_2 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -8805,9 +7955,7 @@ def _BuildAutomaton_15():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcDadosPrestador._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Endereco")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 491, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 491, 3),
     )
     st_3 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -8817,9 +7965,7 @@ def _BuildAutomaton_15():
     final_update.add(fac.UpdateInstruction(cc_1, False))
     symbol = pyxb.binding.content.ElementUse(
         tcDadosPrestador._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Contato")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 493, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 493, 3),
     )
     st_4 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -8853,9 +7999,7 @@ tcDeclaracaoPrestacaoServico._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "InfDeclaracaoPrestacaoServico"),
         tcInfDeclaracaoPrestacaoServico,
         scope=tcDeclaracaoPrestacaoServico,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 540, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 540, 3),
     )
 )
 
@@ -8865,9 +8009,7 @@ tcDeclaracaoPrestacaoServico._AddElement(
         _ImportedBinding__dsig.SignatureType,
         scope=tcDeclaracaoPrestacaoServico,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            41,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 41, 0
         ),
     )
 )
@@ -8883,9 +8025,7 @@ def _BuildAutomaton_16():
     cc_0 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 542, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 542, 3),
     )
     counters.add(cc_0)
     states = []
@@ -8894,9 +8034,7 @@ def _BuildAutomaton_16():
         tcDeclaracaoPrestacaoServico._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "InfDeclaracaoPrestacaoServico")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 540, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 540, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -8908,9 +8046,7 @@ def _BuildAutomaton_16():
         tcDeclaracaoPrestacaoServico._UseForTag(
             pyxb.namespace.ExpandedName(_Namespace_dsig, "Signature")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 542, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 542, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -8933,9 +8069,7 @@ tcIdentificacaoNfse._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Numero"),
         tsNumeroNfse,
         scope=tcIdentificacaoNfse,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 549, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 549, 3),
     )
 )
 
@@ -8944,9 +8078,7 @@ tcIdentificacaoNfse._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "CpfCnpj"),
         tcCpfCnpj,
         scope=tcIdentificacaoNfse,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 551, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 551, 3),
     )
 )
 
@@ -8955,9 +8087,7 @@ tcIdentificacaoNfse._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "InscricaoMunicipal"),
         tsInscricaoMunicipal,
         scope=tcIdentificacaoNfse,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 553, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 553, 3),
     )
 )
 
@@ -8966,9 +8096,7 @@ tcIdentificacaoNfse._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "CodigoMunicipio"),
         tsCodigoMunicipioIbge,
         scope=tcIdentificacaoNfse,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 555, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 555, 3),
     )
 )
 
@@ -8983,18 +8111,14 @@ def _BuildAutomaton_17():
     cc_0 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 553, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 553, 3),
     )
     counters.add(cc_0)
     states = []
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcIdentificacaoNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Numero")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 549, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 549, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -9003,9 +8127,7 @@ def _BuildAutomaton_17():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcIdentificacaoNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "CpfCnpj")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 551, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 551, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -9016,9 +8138,7 @@ def _BuildAutomaton_17():
         tcIdentificacaoNfse._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "InscricaoMunicipal")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 553, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 553, 3),
     )
     st_2 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -9027,9 +8147,7 @@ def _BuildAutomaton_17():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcIdentificacaoNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "CodigoMunicipio")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 555, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 555, 3),
     )
     st_3 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -9059,9 +8177,7 @@ tcPedidoCancelamento._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "InfPedidoCancelamento"),
         tcInfPedidoCancelamento,
         scope=tcPedidoCancelamento,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 607, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 607, 3),
     )
 )
 
@@ -9071,9 +8187,7 @@ tcPedidoCancelamento._AddElement(
         _ImportedBinding__dsig.SignatureType,
         scope=tcPedidoCancelamento,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            41,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 41, 0
         ),
     )
 )
@@ -9089,9 +8203,7 @@ def _BuildAutomaton_18():
     cc_0 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 609, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 609, 3),
     )
     counters.add(cc_0)
     states = []
@@ -9100,9 +8212,7 @@ def _BuildAutomaton_18():
         tcPedidoCancelamento._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "InfPedidoCancelamento")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 607, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 607, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -9112,9 +8222,7 @@ def _BuildAutomaton_18():
     final_update.add(fac.UpdateInstruction(cc_0, False))
     symbol = pyxb.binding.content.ElementUse(
         tcPedidoCancelamento._UseForTag(pyxb.namespace.ExpandedName(_Namespace_dsig, "Signature")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 609, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 609, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -9137,9 +8245,7 @@ tcRetCancelamento._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "NfseCancelamento"),
         tcCancelamentoNfse,
         scope=tcRetCancelamento,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 636, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 636, 3),
     )
 )
 
@@ -9155,9 +8261,7 @@ def _BuildAutomaton_19():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcRetCancelamento._UseForTag(pyxb.namespace.ExpandedName(Namespace, "NfseCancelamento")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 636, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 636, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -9176,9 +8280,7 @@ tcCompNfse._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Nfse"),
         tcNfse,
         scope=tcCompNfse,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 662, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 662, 3),
     )
 )
 
@@ -9187,9 +8289,7 @@ tcCompNfse._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "NfseCancelamento"),
         tcCancelamentoNfse,
         scope=tcCompNfse,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 664, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 664, 3),
     )
 )
 
@@ -9198,9 +8298,7 @@ tcCompNfse._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "NfseSubstituicao"),
         tcSubstituicaoNfse,
         scope=tcCompNfse,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 666, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 666, 3),
     )
 )
 
@@ -9215,26 +8313,20 @@ def _BuildAutomaton_20():
     cc_0 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 664, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 664, 3),
     )
     counters.add(cc_0)
     cc_1 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 666, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 666, 3),
     )
     counters.add(cc_1)
     states = []
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcCompNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Nfse")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 662, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 662, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -9244,9 +8336,7 @@ def _BuildAutomaton_20():
     final_update.add(fac.UpdateInstruction(cc_0, False))
     symbol = pyxb.binding.content.ElementUse(
         tcCompNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "NfseCancelamento")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 664, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 664, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -9256,9 +8346,7 @@ def _BuildAutomaton_20():
     final_update.add(fac.UpdateInstruction(cc_1, False))
     symbol = pyxb.binding.content.ElementUse(
         tcCompNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "NfseSubstituicao")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 666, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 666, 3),
     )
     st_2 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -9286,9 +8374,7 @@ tcMensagemRetorno._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Codigo"),
         tsCodigoMensagemAlerta,
         scope=tcMensagemRetorno,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 673, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 673, 3),
     )
 )
 
@@ -9297,9 +8383,7 @@ tcMensagemRetorno._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Mensagem"),
         tsDescricaoMensagemAlerta,
         scope=tcMensagemRetorno,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 675, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 675, 3),
     )
 )
 
@@ -9308,9 +8392,7 @@ tcMensagemRetorno._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Correcao"),
         tsDescricaoMensagemAlerta,
         scope=tcMensagemRetorno,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 677, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 677, 3),
     )
 )
 
@@ -9325,18 +8407,14 @@ def _BuildAutomaton_21():
     cc_0 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 677, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 677, 3),
     )
     counters.add(cc_0)
     states = []
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcMensagemRetorno._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Codigo")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 673, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 673, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -9345,9 +8423,7 @@ def _BuildAutomaton_21():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcMensagemRetorno._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Mensagem")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 675, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 675, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -9357,9 +8433,7 @@ def _BuildAutomaton_21():
     final_update.add(fac.UpdateInstruction(cc_0, False))
     symbol = pyxb.binding.content.ElementUse(
         tcMensagemRetorno._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Correcao")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 677, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 677, 3),
     )
     st_2 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -9385,9 +8459,7 @@ tcMensagemRetornoLote._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "IdentificacaoRps"),
         tcIdentificacaoRps,
         scope=tcMensagemRetornoLote,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 684, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 684, 3),
     )
 )
 
@@ -9396,9 +8468,7 @@ tcMensagemRetornoLote._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Codigo"),
         tsCodigoMensagemAlerta,
         scope=tcMensagemRetornoLote,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 686, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 686, 3),
     )
 )
 
@@ -9407,9 +8477,7 @@ tcMensagemRetornoLote._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Mensagem"),
         tsDescricaoMensagemAlerta,
         scope=tcMensagemRetornoLote,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 688, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 688, 3),
     )
 )
 
@@ -9427,9 +8495,7 @@ def _BuildAutomaton_22():
         tcMensagemRetornoLote._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "IdentificacaoRps")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 684, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 684, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -9438,9 +8504,7 @@ def _BuildAutomaton_22():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcMensagemRetornoLote._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Codigo")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 686, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 686, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -9449,9 +8513,7 @@ def _BuildAutomaton_22():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcMensagemRetornoLote._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Mensagem")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 688, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 688, 3),
     )
     st_2 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -9476,9 +8538,7 @@ CTD_ANON._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Rps"),
         tcDeclaracaoPrestacaoServico,
         scope=CTD_ANON,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 706, 6
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 706, 6),
     )
 )
 
@@ -9494,9 +8554,7 @@ def _BuildAutomaton_23():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Rps")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 706, 6
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 706, 6),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -9516,9 +8574,7 @@ CTD_ANON_._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "MensagemRetorno"),
         tcMensagemRetornoLote,
         scope=CTD_ANON_,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 720, 4
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 720, 4),
     )
 )
 
@@ -9534,9 +8590,7 @@ def _BuildAutomaton_24():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_._UseForTag(pyxb.namespace.ExpandedName(Namespace, "MensagemRetorno")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 720, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 720, 4),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -9556,9 +8610,7 @@ CTD_ANON_2._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "MensagemRetorno"),
         tcMensagemRetorno,
         scope=CTD_ANON_2,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 729, 4
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 729, 4),
     )
 )
 
@@ -9574,9 +8626,7 @@ def _BuildAutomaton_25():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_2._UseForTag(pyxb.namespace.ExpandedName(Namespace, "MensagemRetorno")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 729, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 729, 4),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -9596,9 +8646,7 @@ CTD_ANON_3._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "MensagemRetorno"),
         tcMensagemRetorno,
         scope=CTD_ANON_3,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 738, 4
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 738, 4),
     )
 )
 
@@ -9614,9 +8662,7 @@ def _BuildAutomaton_26():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_3._UseForTag(pyxb.namespace.ExpandedName(Namespace, "MensagemRetorno")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 738, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 738, 4),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -9636,9 +8682,7 @@ CTD_ANON_4._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "LoteRps"),
         tcLoteRps,
         scope=CTD_ANON_4,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 759, 4
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 759, 4),
     )
 )
 
@@ -9648,9 +8692,7 @@ CTD_ANON_4._AddElement(
         _ImportedBinding__dsig.SignatureType,
         scope=CTD_ANON_4,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            41,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 41, 0
         ),
     )
 )
@@ -9666,18 +8708,14 @@ def _BuildAutomaton_27():
     cc_0 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 760, 4
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 760, 4),
     )
     counters.add(cc_0)
     states = []
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_4._UseForTag(pyxb.namespace.ExpandedName(Namespace, "LoteRps")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 759, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 759, 4),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -9687,9 +8725,7 @@ def _BuildAutomaton_27():
     final_update.add(fac.UpdateInstruction(cc_0, False))
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_4._UseForTag(pyxb.namespace.ExpandedName(_Namespace_dsig, "Signature")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 760, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 760, 4),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -9712,9 +8748,7 @@ CTD_ANON_5._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "ListaMensagemRetorno"),
         CTD_ANON_2,
         scope=CTD_ANON_5,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1),
     )
 )
 
@@ -9723,9 +8757,7 @@ CTD_ANON_5._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "NumeroLote"),
         tsNumeroLote,
         scope=CTD_ANON_5,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 770, 5
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 770, 5),
     )
 )
 
@@ -9734,9 +8766,7 @@ CTD_ANON_5._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "DataRecebimento"),
         pyxb.binding.datatypes.dateTime,
         scope=CTD_ANON_5,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 772, 5
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 772, 5),
     )
 )
 
@@ -9745,9 +8775,7 @@ CTD_ANON_5._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Protocolo"),
         tsNumeroProtocolo,
         scope=CTD_ANON_5,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 774, 5
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 774, 5),
     )
 )
 
@@ -9763,9 +8791,7 @@ def _BuildAutomaton_28():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_5._UseForTag(pyxb.namespace.ExpandedName(Namespace, "NumeroLote")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 770, 5
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 770, 5),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -9774,9 +8800,7 @@ def _BuildAutomaton_28():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_5._UseForTag(pyxb.namespace.ExpandedName(Namespace, "DataRecebimento")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 772, 5
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 772, 5),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -9785,9 +8809,7 @@ def _BuildAutomaton_28():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_5._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Protocolo")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 774, 5
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 774, 5),
     )
     st_2 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -9796,9 +8818,7 @@ def _BuildAutomaton_28():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_5._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ListaMensagemRetorno")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 777, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 777, 4),
     )
     st_3 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -9825,9 +8845,7 @@ CTD_ANON_6._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "LoteRps"),
         tcLoteRps,
         scope=CTD_ANON_6,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 786, 4
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 786, 4),
     )
 )
 
@@ -9837,9 +8855,7 @@ CTD_ANON_6._AddElement(
         _ImportedBinding__dsig.SignatureType,
         scope=CTD_ANON_6,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            41,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 41, 0
         ),
     )
 )
@@ -9855,18 +8871,14 @@ def _BuildAutomaton_29():
     cc_0 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 787, 4
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 787, 4),
     )
     counters.add(cc_0)
     states = []
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_6._UseForTag(pyxb.namespace.ExpandedName(Namespace, "LoteRps")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 786, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 786, 4),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -9876,9 +8888,7 @@ def _BuildAutomaton_29():
     final_update.add(fac.UpdateInstruction(cc_0, False))
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_6._UseForTag(pyxb.namespace.ExpandedName(_Namespace_dsig, "Signature")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 787, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 787, 4),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -9901,9 +8911,7 @@ CTD_ANON_7._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "ListaMensagemRetornoLote"),
         CTD_ANON_,
         scope=CTD_ANON_7,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 717, 2
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 717, 2),
     )
 )
 
@@ -9912,9 +8920,7 @@ CTD_ANON_7._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "ListaMensagemRetorno"),
         CTD_ANON_2,
         scope=CTD_ANON_7,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1),
     )
 )
 
@@ -9923,9 +8929,7 @@ CTD_ANON_7._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "NumeroLote"),
         tsNumeroLote,
         scope=CTD_ANON_7,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 797, 4
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 797, 4),
     )
 )
 
@@ -9934,9 +8938,7 @@ CTD_ANON_7._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "DataRecebimento"),
         pyxb.binding.datatypes.dateTime,
         scope=CTD_ANON_7,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 799, 4
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 799, 4),
     )
 )
 
@@ -9945,9 +8947,7 @@ CTD_ANON_7._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Protocolo"),
         tsNumeroProtocolo,
         scope=CTD_ANON_7,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 801, 4
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 801, 4),
     )
 )
 
@@ -9956,9 +8956,7 @@ CTD_ANON_7._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "ListaNfse"),
         CTD_ANON_8,
         scope=CTD_ANON_7,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 804, 5
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 804, 5),
     )
 )
 
@@ -9973,34 +8971,26 @@ def _BuildAutomaton_30():
     cc_0 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 797, 4
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 797, 4),
     )
     counters.add(cc_0)
     cc_1 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 799, 4
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 799, 4),
     )
     counters.add(cc_1)
     cc_2 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 801, 4
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 801, 4),
     )
     counters.add(cc_2)
     states = []
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_7._UseForTag(pyxb.namespace.ExpandedName(Namespace, "NumeroLote")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 797, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 797, 4),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -10009,9 +8999,7 @@ def _BuildAutomaton_30():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_7._UseForTag(pyxb.namespace.ExpandedName(Namespace, "DataRecebimento")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 799, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 799, 4),
     )
     st_1 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -10020,9 +9008,7 @@ def _BuildAutomaton_30():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_7._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Protocolo")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 801, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 801, 4),
     )
     st_2 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -10031,9 +9017,7 @@ def _BuildAutomaton_30():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_7._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ListaNfse")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 804, 5
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 804, 5),
     )
     st_3 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -10042,9 +9026,7 @@ def _BuildAutomaton_30():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_7._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ListaMensagemRetorno")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 813, 5
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 813, 5),
     )
     st_4 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -10053,9 +9035,7 @@ def _BuildAutomaton_30():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_7._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ListaMensagemRetornoLote")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 815, 5
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 815, 5),
     )
     st_5 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -10099,9 +9079,7 @@ CTD_ANON_8._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "ListaMensagemAlertaRetorno"),
         CTD_ANON_3,
         scope=CTD_ANON_8,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 735, 1
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 735, 1),
     )
 )
 
@@ -10110,9 +9088,7 @@ CTD_ANON_8._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "CompNfse"),
         tcCompNfse,
         scope=CTD_ANON_8,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1),
     )
 )
 
@@ -10127,18 +9103,14 @@ def _BuildAutomaton_31():
     cc_0 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 809, 8
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 809, 8),
     )
     counters.add(cc_0)
     states = []
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_8._UseForTag(pyxb.namespace.ExpandedName(Namespace, "CompNfse")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 807, 8
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 807, 8),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -10148,9 +9120,7 @@ def _BuildAutomaton_31():
     final_update.add(fac.UpdateInstruction(cc_0, False))
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_8._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ListaMensagemAlertaRetorno")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 809, 8
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 809, 8),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -10174,9 +9144,7 @@ CTD_ANON_9._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Rps"),
         tcDeclaracaoPrestacaoServico,
         scope=CTD_ANON_9,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 825, 4
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 825, 4),
     )
 )
 
@@ -10192,9 +9160,7 @@ def _BuildAutomaton_32():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_9._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Rps")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 825, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 825, 4),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -10213,9 +9179,7 @@ CTD_ANON_10._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "ListaMensagemRetorno"),
         CTD_ANON_2,
         scope=CTD_ANON_10,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1),
     )
 )
 
@@ -10224,9 +9188,7 @@ CTD_ANON_10._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "ListaNfse"),
         CTD_ANON_11,
         scope=CTD_ANON_10,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 834, 5
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 834, 5),
     )
 )
 
@@ -10242,9 +9204,7 @@ def _BuildAutomaton_33():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_10._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ListaNfse")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 834, 5
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 834, 5),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -10253,9 +9213,7 @@ def _BuildAutomaton_33():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_10._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ListaMensagemRetorno")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 843, 5
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 843, 5),
     )
     st_1 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -10276,9 +9234,7 @@ CTD_ANON_11._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "ListaMensagemAlertaRetorno"),
         CTD_ANON_3,
         scope=CTD_ANON_11,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 735, 1
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 735, 1),
     )
 )
 
@@ -10287,9 +9243,7 @@ CTD_ANON_11._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "CompNfse"),
         tcCompNfse,
         scope=CTD_ANON_11,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1),
     )
 )
 
@@ -10304,18 +9258,14 @@ def _BuildAutomaton_34():
     cc_0 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 839, 8
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 839, 8),
     )
     counters.add(cc_0)
     states = []
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_11._UseForTag(pyxb.namespace.ExpandedName(Namespace, "CompNfse")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 837, 8
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 837, 8),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -10327,9 +9277,7 @@ def _BuildAutomaton_34():
         CTD_ANON_11._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "ListaMensagemAlertaRetorno")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 839, 8
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 839, 8),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -10352,9 +9300,7 @@ CTD_ANON_12._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Pedido"),
         tcPedidoCancelamento,
         scope=CTD_ANON_12,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 853, 4
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 853, 4),
     )
 )
 
@@ -10370,9 +9316,7 @@ def _BuildAutomaton_35():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_12._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Pedido")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 853, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 853, 4),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -10391,9 +9335,7 @@ CTD_ANON_13._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "ListaMensagemRetorno"),
         CTD_ANON_2,
         scope=CTD_ANON_13,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1),
     )
 )
 
@@ -10402,9 +9344,7 @@ CTD_ANON_13._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "RetCancelamento"),
         tcRetCancelamento,
         scope=CTD_ANON_13,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 861, 4
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 861, 4),
     )
 )
 
@@ -10420,9 +9360,7 @@ def _BuildAutomaton_36():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_13._UseForTag(pyxb.namespace.ExpandedName(Namespace, "RetCancelamento")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 861, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 861, 4),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -10431,9 +9369,7 @@ def _BuildAutomaton_36():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_13._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ListaMensagemRetorno")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 862, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 862, 4),
     )
     st_1 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -10454,9 +9390,7 @@ CTD_ANON_14._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "SubstituicaoNfse"),
         CTD_ANON_39,
         scope=CTD_ANON_14,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 870, 4
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 870, 4),
     )
 )
 
@@ -10466,9 +9400,7 @@ CTD_ANON_14._AddElement(
         _ImportedBinding__dsig.SignatureType,
         scope=CTD_ANON_14,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            41,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 41, 0
         ),
     )
 )
@@ -10484,18 +9416,14 @@ def _BuildAutomaton_37():
     cc_0 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 880, 4
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 880, 4),
     )
     counters.add(cc_0)
     states = []
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_14._UseForTag(pyxb.namespace.ExpandedName(Namespace, "SubstituicaoNfse")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 870, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 870, 4),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -10505,9 +9433,7 @@ def _BuildAutomaton_37():
     final_update.add(fac.UpdateInstruction(cc_0, False))
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_14._UseForTag(pyxb.namespace.ExpandedName(_Namespace_dsig, "Signature")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 880, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 880, 4),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -10530,9 +9456,7 @@ CTD_ANON_15._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "ListaMensagemRetorno"),
         CTD_ANON_2,
         scope=CTD_ANON_15,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1),
     )
 )
 
@@ -10541,9 +9465,7 @@ CTD_ANON_15._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "RetSubstituicao"),
         CTD_ANON_16,
         scope=CTD_ANON_15,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 889, 5
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 889, 5),
     )
 )
 
@@ -10559,9 +9481,7 @@ def _BuildAutomaton_38():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_15._UseForTag(pyxb.namespace.ExpandedName(Namespace, "RetSubstituicao")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 889, 5
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 889, 5),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -10570,9 +9490,7 @@ def _BuildAutomaton_38():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_15._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ListaMensagemRetorno")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 912, 5
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 912, 5),
     )
     st_1 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -10593,9 +9511,7 @@ CTD_ANON_16._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "NfseSubstituida"),
         CTD_ANON_17,
         scope=CTD_ANON_16,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 892, 8
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 892, 8),
     )
 )
 
@@ -10604,9 +9520,7 @@ CTD_ANON_16._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "NfseSubstituidora"),
         CTD_ANON_18,
         scope=CTD_ANON_16,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 901, 8
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 901, 8),
     )
 )
 
@@ -10622,9 +9536,7 @@ def _BuildAutomaton_39():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_16._UseForTag(pyxb.namespace.ExpandedName(Namespace, "NfseSubstituida")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 892, 8
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 892, 8),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -10633,9 +9545,7 @@ def _BuildAutomaton_39():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_16._UseForTag(pyxb.namespace.ExpandedName(Namespace, "NfseSubstituidora")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 901, 8
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 901, 8),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -10657,9 +9567,7 @@ CTD_ANON_17._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "ListaMensagemAlertaRetorno"),
         CTD_ANON_3,
         scope=CTD_ANON_17,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 735, 1
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 735, 1),
     )
 )
 
@@ -10668,9 +9576,7 @@ CTD_ANON_17._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "CompNfse"),
         tcCompNfse,
         scope=CTD_ANON_17,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1),
     )
 )
 
@@ -10686,7 +9592,7 @@ def _BuildAutomaton_40():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 897, 11
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 897, 11
         ),
     )
     counters.add(cc_0)
@@ -10694,9 +9600,7 @@ def _BuildAutomaton_40():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_17._UseForTag(pyxb.namespace.ExpandedName(Namespace, "CompNfse")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 895, 11
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 895, 11),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -10708,9 +9612,7 @@ def _BuildAutomaton_40():
         CTD_ANON_17._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "ListaMensagemAlertaRetorno")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 897, 11
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 897, 11),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -10733,9 +9635,7 @@ CTD_ANON_18._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "CompNfse"),
         tcCompNfse,
         scope=CTD_ANON_18,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1),
     )
 )
 
@@ -10751,9 +9651,7 @@ def _BuildAutomaton_41():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_18._UseForTag(pyxb.namespace.ExpandedName(Namespace, "CompNfse")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 904, 11
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 904, 11),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -10772,9 +9670,7 @@ CTD_ANON_19._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Prestador"),
         tcIdentificacaoPrestador,
         scope=CTD_ANON_19,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 920, 4
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 920, 4),
     )
 )
 
@@ -10783,9 +9679,7 @@ CTD_ANON_19._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Protocolo"),
         tsNumeroProtocolo,
         scope=CTD_ANON_19,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 922, 4
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 922, 4),
     )
 )
 
@@ -10801,9 +9695,7 @@ def _BuildAutomaton_42():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_19._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Prestador")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 920, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 920, 4),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -10812,9 +9704,7 @@ def _BuildAutomaton_42():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_19._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Protocolo")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 922, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 922, 4),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -10836,9 +9726,7 @@ CTD_ANON_20._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "ListaMensagemRetornoLote"),
         CTD_ANON_,
         scope=CTD_ANON_20,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 717, 2
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 717, 2),
     )
 )
 
@@ -10847,9 +9735,7 @@ CTD_ANON_20._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "ListaMensagemRetorno"),
         CTD_ANON_2,
         scope=CTD_ANON_20,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1),
     )
 )
 
@@ -10859,7 +9745,7 @@ CTD_ANON_20._AddElement(
         tsSituacaoLoteRps,
         scope=CTD_ANON_20,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 931, 11
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 931, 11
         ),
     )
 )
@@ -10869,9 +9755,7 @@ CTD_ANON_20._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "ListaNfse"),
         CTD_ANON_21,
         scope=CTD_ANON_20,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 933, 4
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 933, 4),
     )
 )
 
@@ -10887,9 +9771,7 @@ def _BuildAutomaton_43():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_20._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Situacao")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 931, 11
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 931, 11),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -10898,9 +9780,7 @@ def _BuildAutomaton_43():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_20._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ListaNfse")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 933, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 933, 4),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -10909,9 +9789,7 @@ def _BuildAutomaton_43():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_20._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ListaMensagemRetorno")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 942, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 942, 4),
     )
     st_2 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -10920,9 +9798,7 @@ def _BuildAutomaton_43():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_20._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ListaMensagemRetornoLote")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 944, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 944, 4),
     )
     st_3 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -10950,9 +9826,7 @@ CTD_ANON_21._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "ListaMensagemAlertaRetorno"),
         CTD_ANON_3,
         scope=CTD_ANON_21,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 735, 1
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 735, 1),
     )
 )
 
@@ -10961,9 +9835,7 @@ CTD_ANON_21._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "CompNfse"),
         tcCompNfse,
         scope=CTD_ANON_21,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1),
     )
 )
 
@@ -10978,17 +9850,13 @@ def _BuildAutomaton_44():
     cc_0 = fac.CounterCondition(
         min=1,
         max=50,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 936, 7
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 936, 7),
     )
     counters.add(cc_0)
     cc_1 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 938, 7
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 938, 7),
     )
     counters.add(cc_1)
     states = []
@@ -10996,9 +9864,7 @@ def _BuildAutomaton_44():
     final_update.add(fac.UpdateInstruction(cc_0, False))
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_21._UseForTag(pyxb.namespace.ExpandedName(Namespace, "CompNfse")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 936, 7
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 936, 7),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -11010,9 +9876,7 @@ def _BuildAutomaton_44():
         CTD_ANON_21._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "ListaMensagemAlertaRetorno")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 938, 7
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 938, 7),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -11036,9 +9900,7 @@ CTD_ANON_22._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "IdentificacaoRps"),
         tcIdentificacaoRps,
         scope=CTD_ANON_22,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 954, 4
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 954, 4),
     )
 )
 
@@ -11047,9 +9909,7 @@ CTD_ANON_22._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Prestador"),
         tcIdentificacaoPrestador,
         scope=CTD_ANON_22,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 956, 4
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 956, 4),
     )
 )
 
@@ -11065,9 +9925,7 @@ def _BuildAutomaton_45():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_22._UseForTag(pyxb.namespace.ExpandedName(Namespace, "IdentificacaoRps")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 954, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 954, 4),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -11076,9 +9934,7 @@ def _BuildAutomaton_45():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_22._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Prestador")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 956, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 956, 4),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -11100,9 +9956,7 @@ CTD_ANON_23._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "ListaMensagemRetorno"),
         CTD_ANON_2,
         scope=CTD_ANON_23,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1),
     )
 )
 
@@ -11111,9 +9965,7 @@ CTD_ANON_23._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "CompNfse"),
         tcCompNfse,
         scope=CTD_ANON_23,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1),
     )
 )
 
@@ -11129,9 +9981,7 @@ def _BuildAutomaton_46():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_23._UseForTag(pyxb.namespace.ExpandedName(Namespace, "CompNfse")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 965, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 965, 4),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -11140,9 +9990,7 @@ def _BuildAutomaton_46():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_23._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ListaMensagemRetorno")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 966, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 966, 4),
     )
     st_1 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -11163,9 +10011,7 @@ CTD_ANON_24._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Prestador"),
         tcIdentificacaoPrestador,
         scope=CTD_ANON_24,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 975, 4
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 975, 4),
     )
 )
 
@@ -11174,9 +10020,7 @@ CTD_ANON_24._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "NumeroNfse"),
         tsNumeroNfse,
         scope=CTD_ANON_24,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 977, 4
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 977, 4),
     )
 )
 
@@ -11185,9 +10029,7 @@ CTD_ANON_24._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "PeriodoEmissao"),
         CTD_ANON_25,
         scope=CTD_ANON_24,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 980, 5
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 980, 5),
     )
 )
 
@@ -11196,9 +10038,7 @@ CTD_ANON_24._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "PeriodoCompetencia"),
         CTD_ANON_26,
         scope=CTD_ANON_24,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 991, 5
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 991, 5),
     )
 )
 
@@ -11208,7 +10048,7 @@ CTD_ANON_24._AddElement(
         tcIdentificacaoTomador,
         scope=CTD_ANON_24,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1003, 4
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1003, 4
         ),
     )
 )
@@ -11219,7 +10059,7 @@ CTD_ANON_24._AddElement(
         tcIdentificacaoIntermediario,
         scope=CTD_ANON_24,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1005, 4
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1005, 4
         ),
     )
 )
@@ -11230,7 +10070,7 @@ CTD_ANON_24._AddElement(
         tsPagina,
         scope=CTD_ANON_24,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1007, 4
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1007, 4
         ),
     )
 )
@@ -11246,32 +10086,26 @@ def _BuildAutomaton_47():
     cc_0 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 977, 4
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 977, 4),
     )
     counters.add(cc_0)
     cc_1 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 980, 5
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 980, 5),
     )
     counters.add(cc_1)
     cc_2 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 991, 5
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 991, 5),
     )
     counters.add(cc_2)
     cc_3 = fac.CounterCondition(
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1003, 4
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1003, 4
         ),
     )
     counters.add(cc_3)
@@ -11279,7 +10113,7 @@ def _BuildAutomaton_47():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1005, 4
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1005, 4
         ),
     )
     counters.add(cc_4)
@@ -11287,9 +10121,7 @@ def _BuildAutomaton_47():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_24._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Prestador")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 975, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 975, 4),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -11298,9 +10130,7 @@ def _BuildAutomaton_47():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_24._UseForTag(pyxb.namespace.ExpandedName(Namespace, "NumeroNfse")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 977, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 977, 4),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -11309,9 +10139,7 @@ def _BuildAutomaton_47():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_24._UseForTag(pyxb.namespace.ExpandedName(Namespace, "PeriodoEmissao")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 980, 5
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 980, 5),
     )
     st_2 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -11320,9 +10148,7 @@ def _BuildAutomaton_47():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_24._UseForTag(pyxb.namespace.ExpandedName(Namespace, "PeriodoCompetencia")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 991, 5
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 991, 5),
     )
     st_3 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -11331,9 +10157,7 @@ def _BuildAutomaton_47():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_24._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Tomador")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1003, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1003, 4),
     )
     st_4 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -11342,9 +10166,7 @@ def _BuildAutomaton_47():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_24._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Intermediario")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1005, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1005, 4),
     )
     st_5 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -11353,9 +10175,7 @@ def _BuildAutomaton_47():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_24._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Pagina")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1007, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1007, 4),
     )
     st_6 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -11411,9 +10231,7 @@ CTD_ANON_25._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "DataInicial"),
         pyxb.binding.datatypes.date,
         scope=CTD_ANON_25,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 984, 8
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 984, 8),
     )
 )
 
@@ -11422,9 +10240,7 @@ CTD_ANON_25._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "DataFinal"),
         pyxb.binding.datatypes.date,
         scope=CTD_ANON_25,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 986, 8
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 986, 8),
     )
 )
 
@@ -11440,9 +10256,7 @@ def _BuildAutomaton_48():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_25._UseForTag(pyxb.namespace.ExpandedName(Namespace, "DataInicial")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 984, 8
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 984, 8),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -11451,9 +10265,7 @@ def _BuildAutomaton_48():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_25._UseForTag(pyxb.namespace.ExpandedName(Namespace, "DataFinal")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 986, 8
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 986, 8),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -11475,9 +10287,7 @@ CTD_ANON_26._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "DataInicial"),
         pyxb.binding.datatypes.date,
         scope=CTD_ANON_26,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 995, 8
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 995, 8),
     )
 )
 
@@ -11486,9 +10296,7 @@ CTD_ANON_26._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "DataFinal"),
         pyxb.binding.datatypes.date,
         scope=CTD_ANON_26,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 997, 8
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 997, 8),
     )
 )
 
@@ -11504,9 +10312,7 @@ def _BuildAutomaton_49():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_26._UseForTag(pyxb.namespace.ExpandedName(Namespace, "DataInicial")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 995, 8
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 995, 8),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -11515,9 +10321,7 @@ def _BuildAutomaton_49():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_26._UseForTag(pyxb.namespace.ExpandedName(Namespace, "DataFinal")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 997, 8
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 997, 8),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -11539,9 +10343,7 @@ CTD_ANON_27._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "ListaMensagemRetorno"),
         CTD_ANON_2,
         scope=CTD_ANON_27,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1),
     )
 )
 
@@ -11551,7 +10353,7 @@ CTD_ANON_27._AddElement(
         CTD_ANON_28,
         scope=CTD_ANON_27,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1015, 4
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1015, 4
         ),
     )
 )
@@ -11568,9 +10370,7 @@ def _BuildAutomaton_50():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_27._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ListaNfse")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1015, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1015, 4),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -11579,9 +10379,7 @@ def _BuildAutomaton_50():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_27._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ListaMensagemRetorno")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1023, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1023, 4),
     )
     st_1 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -11602,9 +10400,7 @@ CTD_ANON_28._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "CompNfse"),
         tcCompNfse,
         scope=CTD_ANON_28,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1),
     )
 )
 
@@ -11614,7 +10410,7 @@ CTD_ANON_28._AddElement(
         tsPagina,
         scope=CTD_ANON_28,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1019, 7
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1019, 7
         ),
     )
 )
@@ -11631,7 +10427,7 @@ def _BuildAutomaton_51():
         min=1,
         max=50,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1018, 7
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1018, 7
         ),
     )
     counters.add(cc_0)
@@ -11639,7 +10435,7 @@ def _BuildAutomaton_51():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1019, 7
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1019, 7
         ),
     )
     counters.add(cc_1)
@@ -11648,9 +10444,7 @@ def _BuildAutomaton_51():
     final_update.add(fac.UpdateInstruction(cc_0, False))
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_28._UseForTag(pyxb.namespace.ExpandedName(Namespace, "CompNfse")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1018, 7
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1018, 7),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -11660,9 +10454,7 @@ def _BuildAutomaton_51():
     final_update.add(fac.UpdateInstruction(cc_1, False))
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_28._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ProximaPagina")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1019, 7
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1019, 7),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -11687,7 +10479,7 @@ CTD_ANON_29._AddElement(
         tcIdentificacaoConsulente,
         scope=CTD_ANON_29,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1032, 4
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1032, 4
         ),
     )
 )
@@ -11698,7 +10490,7 @@ CTD_ANON_29._AddElement(
         tsNumeroNfse,
         scope=CTD_ANON_29,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1034, 4
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1034, 4
         ),
     )
 )
@@ -11709,7 +10501,7 @@ CTD_ANON_29._AddElement(
         CTD_ANON_30,
         scope=CTD_ANON_29,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1037, 5
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1037, 5
         ),
     )
 )
@@ -11720,7 +10512,7 @@ CTD_ANON_29._AddElement(
         CTD_ANON_31,
         scope=CTD_ANON_29,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1048, 5
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1048, 5
         ),
     )
 )
@@ -11731,7 +10523,7 @@ CTD_ANON_29._AddElement(
         tcIdentificacaoPrestador,
         scope=CTD_ANON_29,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1060, 4
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1060, 4
         ),
     )
 )
@@ -11742,7 +10534,7 @@ CTD_ANON_29._AddElement(
         tcIdentificacaoTomador,
         scope=CTD_ANON_29,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1062, 4
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1062, 4
         ),
     )
 )
@@ -11753,7 +10545,7 @@ CTD_ANON_29._AddElement(
         tcIdentificacaoIntermediario,
         scope=CTD_ANON_29,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1064, 4
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1064, 4
         ),
     )
 )
@@ -11764,7 +10556,7 @@ CTD_ANON_29._AddElement(
         tsPagina,
         scope=CTD_ANON_29,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1066, 4
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1066, 4
         ),
     )
 )
@@ -11781,7 +10573,7 @@ def _BuildAutomaton_52():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1034, 4
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1034, 4
         ),
     )
     counters.add(cc_0)
@@ -11789,7 +10581,7 @@ def _BuildAutomaton_52():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1037, 5
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1037, 5
         ),
     )
     counters.add(cc_1)
@@ -11797,7 +10589,7 @@ def _BuildAutomaton_52():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1048, 5
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1048, 5
         ),
     )
     counters.add(cc_2)
@@ -11805,7 +10597,7 @@ def _BuildAutomaton_52():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1060, 4
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1060, 4
         ),
     )
     counters.add(cc_3)
@@ -11813,7 +10605,7 @@ def _BuildAutomaton_52():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1062, 4
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1062, 4
         ),
     )
     counters.add(cc_4)
@@ -11821,7 +10613,7 @@ def _BuildAutomaton_52():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1064, 4
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1064, 4
         ),
     )
     counters.add(cc_5)
@@ -11829,9 +10621,7 @@ def _BuildAutomaton_52():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_29._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Consulente")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1032, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1032, 4),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -11840,9 +10630,7 @@ def _BuildAutomaton_52():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_29._UseForTag(pyxb.namespace.ExpandedName(Namespace, "NumeroNfse")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1034, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1034, 4),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -11851,9 +10639,7 @@ def _BuildAutomaton_52():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_29._UseForTag(pyxb.namespace.ExpandedName(Namespace, "PeriodoEmissao")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1037, 5
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1037, 5),
     )
     st_2 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -11862,9 +10648,7 @@ def _BuildAutomaton_52():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_29._UseForTag(pyxb.namespace.ExpandedName(Namespace, "PeriodoCompetencia")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1048, 5
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1048, 5),
     )
     st_3 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -11873,9 +10657,7 @@ def _BuildAutomaton_52():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_29._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Prestador")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1060, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1060, 4),
     )
     st_4 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -11884,9 +10666,7 @@ def _BuildAutomaton_52():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_29._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Tomador")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1062, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1062, 4),
     )
     st_5 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -11895,9 +10675,7 @@ def _BuildAutomaton_52():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_29._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Intermediario")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1064, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1064, 4),
     )
     st_6 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -11906,9 +10684,7 @@ def _BuildAutomaton_52():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_29._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Pagina")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1066, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1066, 4),
     )
     st_7 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -11975,7 +10751,7 @@ CTD_ANON_30._AddElement(
         pyxb.binding.datatypes.date,
         scope=CTD_ANON_30,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1041, 8
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1041, 8
         ),
     )
 )
@@ -11986,7 +10762,7 @@ CTD_ANON_30._AddElement(
         pyxb.binding.datatypes.date,
         scope=CTD_ANON_30,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1043, 8
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1043, 8
         ),
     )
 )
@@ -12003,9 +10779,7 @@ def _BuildAutomaton_53():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_30._UseForTag(pyxb.namespace.ExpandedName(Namespace, "DataInicial")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1041, 8
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1041, 8),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -12014,9 +10788,7 @@ def _BuildAutomaton_53():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_30._UseForTag(pyxb.namespace.ExpandedName(Namespace, "DataFinal")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1043, 8
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1043, 8),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -12039,7 +10811,7 @@ CTD_ANON_31._AddElement(
         pyxb.binding.datatypes.date,
         scope=CTD_ANON_31,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1052, 8
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1052, 8
         ),
     )
 )
@@ -12050,7 +10822,7 @@ CTD_ANON_31._AddElement(
         pyxb.binding.datatypes.date,
         scope=CTD_ANON_31,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1054, 8
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1054, 8
         ),
     )
 )
@@ -12067,9 +10839,7 @@ def _BuildAutomaton_54():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_31._UseForTag(pyxb.namespace.ExpandedName(Namespace, "DataInicial")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1052, 8
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1052, 8),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -12078,9 +10848,7 @@ def _BuildAutomaton_54():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_31._UseForTag(pyxb.namespace.ExpandedName(Namespace, "DataFinal")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1054, 8
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1054, 8),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -12102,9 +10870,7 @@ CTD_ANON_32._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "ListaMensagemRetorno"),
         CTD_ANON_2,
         scope=CTD_ANON_32,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1),
     )
 )
 
@@ -12114,7 +10880,7 @@ CTD_ANON_32._AddElement(
         CTD_ANON_33,
         scope=CTD_ANON_32,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1074, 4
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1074, 4
         ),
     )
 )
@@ -12131,9 +10897,7 @@ def _BuildAutomaton_55():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_32._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ListaNfse")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1074, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1074, 4),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -12142,9 +10906,7 @@ def _BuildAutomaton_55():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_32._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ListaMensagemRetorno")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1082, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1082, 4),
     )
     st_1 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -12165,9 +10927,7 @@ CTD_ANON_33._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "CompNfse"),
         tcCompNfse,
         scope=CTD_ANON_33,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1),
     )
 )
 
@@ -12177,7 +10937,7 @@ CTD_ANON_33._AddElement(
         tsPagina,
         scope=CTD_ANON_33,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1078, 7
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1078, 7
         ),
     )
 )
@@ -12194,7 +10954,7 @@ def _BuildAutomaton_56():
         min=1,
         max=50,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1077, 7
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1077, 7
         ),
     )
     counters.add(cc_0)
@@ -12202,7 +10962,7 @@ def _BuildAutomaton_56():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1078, 7
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1078, 7
         ),
     )
     counters.add(cc_1)
@@ -12211,9 +10971,7 @@ def _BuildAutomaton_56():
     final_update.add(fac.UpdateInstruction(cc_0, False))
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_33._UseForTag(pyxb.namespace.ExpandedName(Namespace, "CompNfse")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1077, 7
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1077, 7),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -12223,9 +10981,7 @@ def _BuildAutomaton_56():
     final_update.add(fac.UpdateInstruction(cc_1, False))
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_33._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ProximaPagina")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1078, 7
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1078, 7),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -12250,7 +11006,7 @@ CTD_ANON_34._AddElement(
         tcIdentificacaoPrestador,
         scope=CTD_ANON_34,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1091, 4
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1091, 4
         ),
     )
 )
@@ -12261,7 +11017,7 @@ CTD_ANON_34._AddElement(
         CTD_ANON_35,
         scope=CTD_ANON_34,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1093, 4
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1093, 4
         ),
     )
 )
@@ -12272,7 +11028,7 @@ CTD_ANON_34._AddElement(
         tsPagina,
         scope=CTD_ANON_34,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1103, 4
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1103, 4
         ),
     )
 )
@@ -12289,9 +11045,7 @@ def _BuildAutomaton_57():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_34._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Prestador")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1091, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1091, 4),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -12300,9 +11054,7 @@ def _BuildAutomaton_57():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_34._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Faixa")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1093, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1093, 4),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -12311,9 +11063,7 @@ def _BuildAutomaton_57():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_34._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Pagina")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1103, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1103, 4),
     )
     st_2 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -12339,7 +11089,7 @@ CTD_ANON_35._AddElement(
         tsNumeroNfse,
         scope=CTD_ANON_35,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1096, 7
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1096, 7
         ),
     )
 )
@@ -12350,7 +11100,7 @@ CTD_ANON_35._AddElement(
         tsNumeroNfse,
         scope=CTD_ANON_35,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1098, 7
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1098, 7
         ),
     )
 )
@@ -12367,7 +11117,7 @@ def _BuildAutomaton_58():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1098, 7
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1098, 7
         ),
     )
     counters.add(cc_0)
@@ -12375,9 +11125,7 @@ def _BuildAutomaton_58():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_35._UseForTag(pyxb.namespace.ExpandedName(Namespace, "NumeroNfseInicial")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1096, 7
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1096, 7),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -12387,9 +11135,7 @@ def _BuildAutomaton_58():
     final_update.add(fac.UpdateInstruction(cc_0, False))
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_35._UseForTag(pyxb.namespace.ExpandedName(Namespace, "NumeroNfseFinal")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1098, 7
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1098, 7),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -12412,9 +11158,7 @@ CTD_ANON_36._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "ListaMensagemRetorno"),
         CTD_ANON_2,
         scope=CTD_ANON_36,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 726, 1),
     )
 )
 
@@ -12424,7 +11168,7 @@ CTD_ANON_36._AddElement(
         CTD_ANON_37,
         scope=CTD_ANON_36,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1111, 4
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1111, 4
         ),
     )
 )
@@ -12441,9 +11185,7 @@ def _BuildAutomaton_59():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_36._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ListaNfse")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1111, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1111, 4),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -12452,9 +11194,7 @@ def _BuildAutomaton_59():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_36._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ListaMensagemRetorno")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1119, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1119, 4),
     )
     st_1 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -12475,9 +11215,7 @@ CTD_ANON_37._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "CompNfse"),
         tcCompNfse,
         scope=CTD_ANON_37,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 754, 1),
     )
 )
 
@@ -12487,7 +11225,7 @@ CTD_ANON_37._AddElement(
         tsPagina,
         scope=CTD_ANON_37,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1115, 7
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1115, 7
         ),
     )
 )
@@ -12504,7 +11242,7 @@ def _BuildAutomaton_60():
         min=1,
         max=50,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1114, 7
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1114, 7
         ),
     )
     counters.add(cc_0)
@@ -12512,7 +11250,7 @@ def _BuildAutomaton_60():
         min=0,
         max=1,
         metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1115, 7
+            "pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1115, 7
         ),
     )
     counters.add(cc_1)
@@ -12521,9 +11259,7 @@ def _BuildAutomaton_60():
     final_update.add(fac.UpdateInstruction(cc_0, False))
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_37._UseForTag(pyxb.namespace.ExpandedName(Namespace, "CompNfse")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1114, 7
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1114, 7),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -12533,9 +11269,7 @@ def _BuildAutomaton_60():
     final_update.add(fac.UpdateInstruction(cc_1, False))
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_37._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ProximaPagina")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1115, 7
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 1115, 7),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -12559,9 +11293,7 @@ tcInfRps._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "IdentificacaoRps"),
         tcIdentificacaoRps,
         scope=tcInfRps,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 500, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 500, 3),
     )
 )
 
@@ -12570,9 +11302,7 @@ tcInfRps._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "DataEmissao"),
         pyxb.binding.datatypes.date,
         scope=tcInfRps,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 502, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 502, 3),
     )
 )
 
@@ -12581,9 +11311,7 @@ tcInfRps._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Status"),
         tsStatusRps,
         scope=tcInfRps,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 504, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 504, 3),
     )
 )
 
@@ -12592,9 +11320,7 @@ tcInfRps._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "RpsSubstituido"),
         tcIdentificacaoRps,
         scope=tcInfRps,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 506, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 506, 3),
     )
 )
 
@@ -12609,18 +11335,14 @@ def _BuildAutomaton_61():
     cc_0 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 506, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 506, 3),
     )
     counters.add(cc_0)
     states = []
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfRps._UseForTag(pyxb.namespace.ExpandedName(Namespace, "IdentificacaoRps")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 500, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 500, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -12629,9 +11351,7 @@ def _BuildAutomaton_61():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfRps._UseForTag(pyxb.namespace.ExpandedName(Namespace, "DataEmissao")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 502, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 502, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -12640,9 +11360,7 @@ def _BuildAutomaton_61():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcInfRps._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Status")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 504, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 504, 3),
     )
     st_2 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -12652,9 +11370,7 @@ def _BuildAutomaton_61():
     final_update.add(fac.UpdateInstruction(cc_0, False))
     symbol = pyxb.binding.content.ElementUse(
         tcInfRps._UseForTag(pyxb.namespace.ExpandedName(Namespace, "RpsSubstituido")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 506, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 506, 3),
     )
     st_3 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -12683,9 +11399,7 @@ tcInfDeclaracaoPrestacaoServico._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Rps"),
         tcInfRps,
         scope=tcInfDeclaracaoPrestacaoServico,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 514, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 514, 3),
     )
 )
 
@@ -12694,9 +11408,7 @@ tcInfDeclaracaoPrestacaoServico._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Competencia"),
         pyxb.binding.datatypes.date,
         scope=tcInfDeclaracaoPrestacaoServico,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 516, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 516, 3),
     )
 )
 
@@ -12705,9 +11417,7 @@ tcInfDeclaracaoPrestacaoServico._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Servico"),
         tcDadosServico,
         scope=tcInfDeclaracaoPrestacaoServico,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 518, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 518, 3),
     )
 )
 
@@ -12716,9 +11426,7 @@ tcInfDeclaracaoPrestacaoServico._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Prestador"),
         tcIdentificacaoPrestador,
         scope=tcInfDeclaracaoPrestacaoServico,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 520, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 520, 3),
     )
 )
 
@@ -12727,9 +11435,7 @@ tcInfDeclaracaoPrestacaoServico._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Tomador"),
         tcDadosTomador,
         scope=tcInfDeclaracaoPrestacaoServico,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 522, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 522, 3),
     )
 )
 
@@ -12738,9 +11444,7 @@ tcInfDeclaracaoPrestacaoServico._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Intermediario"),
         tcDadosIntermediario,
         scope=tcInfDeclaracaoPrestacaoServico,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 524, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 524, 3),
     )
 )
 
@@ -12749,9 +11453,7 @@ tcInfDeclaracaoPrestacaoServico._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "ConstrucaoCivil"),
         tcDadosConstrucaoCivil,
         scope=tcInfDeclaracaoPrestacaoServico,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 526, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 526, 3),
     )
 )
 
@@ -12760,9 +11462,7 @@ tcInfDeclaracaoPrestacaoServico._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "RegimeEspecialTributacao"),
         tsRegimeEspecialTributacao,
         scope=tcInfDeclaracaoPrestacaoServico,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 528, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 528, 3),
     )
 )
 
@@ -12771,9 +11471,7 @@ tcInfDeclaracaoPrestacaoServico._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "OptanteSimplesNacional"),
         tsSimNao,
         scope=tcInfDeclaracaoPrestacaoServico,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 530, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 530, 3),
     )
 )
 
@@ -12782,9 +11480,7 @@ tcInfDeclaracaoPrestacaoServico._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "IncentivoFiscal"),
         tsSimNao,
         scope=tcInfDeclaracaoPrestacaoServico,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 532, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 532, 3),
     )
 )
 
@@ -12799,50 +11495,38 @@ def _BuildAutomaton_62():
     cc_0 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 514, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 514, 3),
     )
     counters.add(cc_0)
     cc_1 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 522, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 522, 3),
     )
     counters.add(cc_1)
     cc_2 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 524, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 524, 3),
     )
     counters.add(cc_2)
     cc_3 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 526, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 526, 3),
     )
     counters.add(cc_3)
     cc_4 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 528, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 528, 3),
     )
     counters.add(cc_4)
     states = []
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfDeclaracaoPrestacaoServico._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Rps")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 514, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 514, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -12853,9 +11537,7 @@ def _BuildAutomaton_62():
         tcInfDeclaracaoPrestacaoServico._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "Competencia")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 516, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 516, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -12866,9 +11548,7 @@ def _BuildAutomaton_62():
         tcInfDeclaracaoPrestacaoServico._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "Servico")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 518, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 518, 3),
     )
     st_2 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -12879,9 +11559,7 @@ def _BuildAutomaton_62():
         tcInfDeclaracaoPrestacaoServico._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "Prestador")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 520, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 520, 3),
     )
     st_3 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -12892,9 +11570,7 @@ def _BuildAutomaton_62():
         tcInfDeclaracaoPrestacaoServico._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "Tomador")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 522, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 522, 3),
     )
     st_4 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -12905,9 +11581,7 @@ def _BuildAutomaton_62():
         tcInfDeclaracaoPrestacaoServico._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "Intermediario")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 524, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 524, 3),
     )
     st_5 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -12918,9 +11592,7 @@ def _BuildAutomaton_62():
         tcInfDeclaracaoPrestacaoServico._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "ConstrucaoCivil")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 526, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 526, 3),
     )
     st_6 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -12931,9 +11603,7 @@ def _BuildAutomaton_62():
         tcInfDeclaracaoPrestacaoServico._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "RegimeEspecialTributacao")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 528, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 528, 3),
     )
     st_7 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -12944,9 +11614,7 @@ def _BuildAutomaton_62():
         tcInfDeclaracaoPrestacaoServico._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "OptanteSimplesNacional")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 530, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 530, 3),
     )
     st_8 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -12957,9 +11625,7 @@ def _BuildAutomaton_62():
         tcInfDeclaracaoPrestacaoServico._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "IncentivoFiscal")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 532, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 532, 3),
     )
     st_9 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -13020,9 +11686,7 @@ tcInfNfse._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Numero"),
         tsNumeroNfse,
         scope=tcInfNfse,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 562, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 562, 3),
     )
 )
 
@@ -13031,9 +11695,7 @@ tcInfNfse._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "CodigoVerificacao"),
         tsCodigoVerificacao,
         scope=tcInfNfse,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 564, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 564, 3),
     )
 )
 
@@ -13042,9 +11704,7 @@ tcInfNfse._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "DataEmissao"),
         pyxb.binding.datatypes.dateTime,
         scope=tcInfNfse,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 566, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 566, 3),
     )
 )
 
@@ -13053,9 +11713,7 @@ tcInfNfse._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "NfseSubstituida"),
         tsNumeroNfse,
         scope=tcInfNfse,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 568, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 568, 3),
     )
 )
 
@@ -13064,9 +11722,7 @@ tcInfNfse._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "OutrasInformacoes"),
         tsOutrasInformacoes,
         scope=tcInfNfse,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 570, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 570, 3),
     )
 )
 
@@ -13075,9 +11731,7 @@ tcInfNfse._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "ValoresNfse"),
         tcValoresNfse,
         scope=tcInfNfse,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 572, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 572, 3),
     )
 )
 
@@ -13086,9 +11740,7 @@ tcInfNfse._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "ValorCredito"),
         tsValor,
         scope=tcInfNfse,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 574, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 574, 3),
     )
 )
 
@@ -13097,9 +11749,7 @@ tcInfNfse._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "PrestadorServico"),
         tcDadosPrestador,
         scope=tcInfNfse,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 576, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 576, 3),
     )
 )
 
@@ -13108,9 +11758,7 @@ tcInfNfse._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "OrgaoGerador"),
         tcIdentificacaoOrgaoGerador,
         scope=tcInfNfse,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 578, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 578, 3),
     )
 )
 
@@ -13119,9 +11767,7 @@ tcInfNfse._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "DeclaracaoPrestacaoServico"),
         tcDeclaracaoPrestacaoServico,
         scope=tcInfNfse,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 580, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 580, 3),
     )
 )
 
@@ -13136,34 +11782,26 @@ def _BuildAutomaton_63():
     cc_0 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 568, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 568, 3),
     )
     counters.add(cc_0)
     cc_1 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 570, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 570, 3),
     )
     counters.add(cc_1)
     cc_2 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 574, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 574, 3),
     )
     counters.add(cc_2)
     states = []
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Numero")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 562, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 562, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -13172,9 +11810,7 @@ def _BuildAutomaton_63():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "CodigoVerificacao")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 564, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 564, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -13183,9 +11819,7 @@ def _BuildAutomaton_63():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "DataEmissao")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 566, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 566, 3),
     )
     st_2 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -13194,9 +11828,7 @@ def _BuildAutomaton_63():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "NfseSubstituida")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 568, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 568, 3),
     )
     st_3 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -13205,9 +11837,7 @@ def _BuildAutomaton_63():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "OutrasInformacoes")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 570, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 570, 3),
     )
     st_4 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -13216,9 +11846,7 @@ def _BuildAutomaton_63():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ValoresNfse")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 572, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 572, 3),
     )
     st_5 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -13227,9 +11855,7 @@ def _BuildAutomaton_63():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ValorCredito")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 574, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 574, 3),
     )
     st_6 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -13238,9 +11864,7 @@ def _BuildAutomaton_63():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "PrestadorServico")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 576, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 576, 3),
     )
     st_7 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -13249,9 +11873,7 @@ def _BuildAutomaton_63():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcInfNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "OrgaoGerador")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 578, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 578, 3),
     )
     st_8 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -13260,9 +11882,7 @@ def _BuildAutomaton_63():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcInfNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "DeclaracaoPrestacaoServico")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 580, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 580, 3),
     )
     st_9 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -13315,9 +11935,7 @@ tcNfse._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "InfNfse"),
         tcInfNfse,
         scope=tcNfse,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 587, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 587, 3),
     )
 )
 
@@ -13327,9 +11945,7 @@ tcNfse._AddElement(
         _ImportedBinding__dsig.SignatureType,
         scope=tcNfse,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            41,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 41, 0
         ),
     )
 )
@@ -13345,18 +11961,14 @@ def _BuildAutomaton_64():
     cc_0 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 589, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 589, 3),
     )
     counters.add(cc_0)
     states = []
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "InfNfse")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 587, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 587, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -13366,9 +11978,7 @@ def _BuildAutomaton_64():
     final_update.add(fac.UpdateInstruction(cc_0, False))
     symbol = pyxb.binding.content.ElementUse(
         tcNfse._UseForTag(pyxb.namespace.ExpandedName(_Namespace_dsig, "Signature")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 589, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 589, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -13391,9 +12001,7 @@ tcInfPedidoCancelamento._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "IdentificacaoNfse"),
         tcIdentificacaoNfse,
         scope=tcInfPedidoCancelamento,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 597, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 597, 3),
     )
 )
 
@@ -13402,9 +12010,7 @@ tcInfPedidoCancelamento._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "CodigoCancelamento"),
         tsCodigoCancelamentoNfse,
         scope=tcInfPedidoCancelamento,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 599, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 599, 3),
     )
 )
 
@@ -13419,9 +12025,7 @@ def _BuildAutomaton_65():
     cc_0 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 599, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 599, 3),
     )
     counters.add(cc_0)
     states = []
@@ -13430,9 +12034,7 @@ def _BuildAutomaton_65():
         tcInfPedidoCancelamento._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "IdentificacaoNfse")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 597, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 597, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -13444,9 +12046,7 @@ def _BuildAutomaton_65():
         tcInfPedidoCancelamento._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "CodigoCancelamento")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 599, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 599, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -13469,9 +12069,7 @@ tcConfirmacaoCancelamento._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Pedido"),
         tcPedidoCancelamento,
         scope=tcConfirmacaoCancelamento,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 616, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 616, 3),
     )
 )
 
@@ -13480,9 +12078,7 @@ tcConfirmacaoCancelamento._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "DataHora"),
         pyxb.binding.datatypes.dateTime,
         scope=tcConfirmacaoCancelamento,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 618, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 618, 3),
     )
 )
 
@@ -13498,9 +12094,7 @@ def _BuildAutomaton_66():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcConfirmacaoCancelamento._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Pedido")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 616, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 616, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -13509,9 +12103,7 @@ def _BuildAutomaton_66():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcConfirmacaoCancelamento._UseForTag(pyxb.namespace.ExpandedName(Namespace, "DataHora")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 618, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 618, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -13533,9 +12125,7 @@ tcCancelamentoNfse._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Confirmacao"),
         tcConfirmacaoCancelamento,
         scope=tcCancelamentoNfse,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 626, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 626, 3),
     )
 )
 
@@ -13545,9 +12135,7 @@ tcCancelamentoNfse._AddElement(
         _ImportedBinding__dsig.SignatureType,
         scope=tcCancelamentoNfse,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            41,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 41, 0
         ),
     )
 )
@@ -13563,18 +12151,14 @@ def _BuildAutomaton_67():
     cc_0 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 628, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 628, 3),
     )
     counters.add(cc_0)
     states = []
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcCancelamentoNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Confirmacao")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 626, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 626, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -13584,9 +12168,7 @@ def _BuildAutomaton_67():
     final_update.add(fac.UpdateInstruction(cc_0, False))
     symbol = pyxb.binding.content.ElementUse(
         tcCancelamentoNfse._UseForTag(pyxb.namespace.ExpandedName(_Namespace_dsig, "Signature")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 628, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 628, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -13609,9 +12191,7 @@ tcInfSubstituicaoNfse._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "NfseSubstituidora"),
         tsNumeroNfse,
         scope=tcInfSubstituicaoNfse,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 644, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 644, 3),
     )
 )
 
@@ -13629,9 +12209,7 @@ def _BuildAutomaton_68():
         tcInfSubstituicaoNfse._UseForTag(
             pyxb.namespace.ExpandedName(Namespace, "NfseSubstituidora")
         ),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 644, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 644, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -13650,9 +12228,7 @@ tcSubstituicaoNfse._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "SubstituicaoNfse"),
         tcInfSubstituicaoNfse,
         scope=tcSubstituicaoNfse,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 652, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 652, 3),
     )
 )
 
@@ -13662,9 +12238,7 @@ tcSubstituicaoNfse._AddElement(
         _ImportedBinding__dsig.SignatureType,
         scope=tcSubstituicaoNfse,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd",
-            41,
-            0,
+            "pynotas/data/XSDs/NFS-e/Betha/xmldsig-core-schema20020212.xsd", 41, 0
         ),
     )
 )
@@ -13680,18 +12254,14 @@ def _BuildAutomaton_69():
     cc_0 = fac.CounterCondition(
         min=0,
         max=2,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 654, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 654, 3),
     )
     counters.add(cc_0)
     states = []
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcSubstituicaoNfse._UseForTag(pyxb.namespace.ExpandedName(Namespace, "SubstituicaoNfse")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 652, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 652, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -13701,9 +12271,7 @@ def _BuildAutomaton_69():
     final_update.add(fac.UpdateInstruction(cc_0, False))
     symbol = pyxb.binding.content.ElementUse(
         tcSubstituicaoNfse._UseForTag(pyxb.namespace.ExpandedName(_Namespace_dsig, "Signature")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 654, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 654, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -13726,9 +12294,7 @@ tcLoteRps._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "NumeroLote"),
         tsNumeroLote,
         scope=tcLoteRps,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 695, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 695, 3),
     )
 )
 
@@ -13737,9 +12303,7 @@ tcLoteRps._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "CpfCnpj"),
         tcCpfCnpj,
         scope=tcLoteRps,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 697, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 697, 3),
     )
 )
 
@@ -13748,9 +12312,7 @@ tcLoteRps._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "InscricaoMunicipal"),
         tsInscricaoMunicipal,
         scope=tcLoteRps,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 699, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 699, 3),
     )
 )
 
@@ -13759,9 +12321,7 @@ tcLoteRps._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "QuantidadeRps"),
         tsQuantidadeRps,
         scope=tcLoteRps,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 701, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 701, 3),
     )
 )
 
@@ -13770,9 +12330,7 @@ tcLoteRps._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "ListaRps"),
         CTD_ANON,
         scope=tcLoteRps,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 703, 3
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 703, 3),
     )
 )
 
@@ -13787,18 +12345,14 @@ def _BuildAutomaton_70():
     cc_0 = fac.CounterCondition(
         min=0,
         max=1,
-        metadata=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 699, 3
-        ),
+        metadata=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 699, 3),
     )
     counters.add(cc_0)
     states = []
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcLoteRps._UseForTag(pyxb.namespace.ExpandedName(Namespace, "NumeroLote")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 695, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 695, 3),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -13807,9 +12361,7 @@ def _BuildAutomaton_70():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcLoteRps._UseForTag(pyxb.namespace.ExpandedName(Namespace, "CpfCnpj")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 697, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 697, 3),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -13818,9 +12370,7 @@ def _BuildAutomaton_70():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcLoteRps._UseForTag(pyxb.namespace.ExpandedName(Namespace, "InscricaoMunicipal")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 699, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 699, 3),
     )
     st_2 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -13829,9 +12379,7 @@ def _BuildAutomaton_70():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         tcLoteRps._UseForTag(pyxb.namespace.ExpandedName(Namespace, "QuantidadeRps")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 701, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 701, 3),
     )
     st_3 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -13840,9 +12388,7 @@ def _BuildAutomaton_70():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         tcLoteRps._UseForTag(pyxb.namespace.ExpandedName(Namespace, "ListaRps")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 703, 3
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 703, 3),
     )
     st_4 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False
@@ -13875,9 +12421,7 @@ CTD_ANON_38._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "versaoDados"),
         tsVersao,
         scope=CTD_ANON_38,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 747, 4
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 747, 4),
     )
 )
 
@@ -13893,9 +12437,7 @@ def _BuildAutomaton_71():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_38._UseForTag(pyxb.namespace.ExpandedName(Namespace, "versaoDados")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 747, 4
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 747, 4),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -13914,9 +12456,7 @@ CTD_ANON_39._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Pedido"),
         tcPedidoCancelamento,
         scope=CTD_ANON_39,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 874, 7
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 874, 7),
     )
 )
 
@@ -13925,9 +12465,7 @@ CTD_ANON_39._AddElement(
         pyxb.namespace.ExpandedName(Namespace, "Rps"),
         tcDeclaracaoPrestacaoServico,
         scope=CTD_ANON_39,
-        location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 875, 7
-        ),
+        location=pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 875, 7),
     )
 )
 
@@ -13943,9 +12481,7 @@ def _BuildAutomaton_72():
     final_update = None
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_39._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Pedido")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 874, 7
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 874, 7),
     )
     st_0 = fac.State(
         symbol, is_initial=True, final_update=final_update, is_unordered_catenation=False
@@ -13954,9 +12490,7 @@ def _BuildAutomaton_72():
     final_update = set()
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON_39._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Rps")),
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 875, 7
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Betha/nfse_v202.xsd", 875, 7),
     )
     st_1 = fac.State(
         symbol, is_initial=False, final_update=final_update, is_unordered_catenation=False

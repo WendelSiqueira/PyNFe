@@ -2,7 +2,7 @@
 # pynotas/utils/nfse/ginfes/servico_consultar_situacao_lote_rps_resposta_v03.py
 # -*- coding: utf-8 -*-
 # PyXB bindings for NM:035a28892901c557b51d91d819be756030433d31
-# Generated 2025-04-06 00:00:51.204199 by PyXB version 1.2.6 using Python 3.12.9.final.0
+# Generated 2026-11-25 08:53:28.537177 by PyXB version 1.2.6 using Python 3.13.16.final.0
 # Namespace http://www.ginfes.com.br/servico_consultar_situacao_lote_rps_resposta_v03.xsd
 
 from __future__ import unicode_literals
@@ -17,7 +17,7 @@ import pyxb.utils.six as _six
 
 # Unique identifier for bindings created at the same time
 _GenerationUID = pyxb.utils.utility.UniqueIdentifier(
-    "urn:uuid:fbc5e3c4-ae85-46e7-94d3-4eb6e03e8f0c"
+    "urn:uuid:1f8efd7f-09d8-49e7-972c-b1720f1d875c"
 )
 
 # Version of PyXB used to generate the bindings
@@ -107,9 +107,7 @@ class CTD_ANON(pyxb.binding.basis.complexTypeDefinition):
     _Abstract = False
     _ExpandedName = None
     _XSDLocation = pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_situacao_lote_rps_resposta_v03.xsd",
-        6,
-        2,
+        "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_situacao_lote_rps_resposta_v03.xsd", 6, 2
     )
     _ElementMap = {}
     _AttributeMap = {}
@@ -122,7 +120,7 @@ class CTD_ANON(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_ginfes_com_brservico_consultar_situacao_lote_rps_resposta_v03_xsd_CTD_ANON_httpwww_ginfes_com_brservico_consultar_situacao_lote_rps_resposta_v03_xsdNumeroLote",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_situacao_lote_rps_resposta_v03.xsd",
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_situacao_lote_rps_resposta_v03.xsd",
             9,
             5,
         ),
@@ -137,7 +135,7 @@ class CTD_ANON(pyxb.binding.basis.complexTypeDefinition):
         "__httpwww_ginfes_com_brservico_consultar_situacao_lote_rps_resposta_v03_xsd_CTD_ANON_httpwww_ginfes_com_brservico_consultar_situacao_lote_rps_resposta_v03_xsdSituacao",
         False,
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_situacao_lote_rps_resposta_v03.xsd",
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_situacao_lote_rps_resposta_v03.xsd",
             10,
             5,
         ),
@@ -151,9 +149,7 @@ class CTD_ANON(pyxb.binding.basis.complexTypeDefinition):
         "ListaMensagemRetorno",
         "__httpwww_ginfes_com_brservico_consultar_situacao_lote_rps_resposta_v03_xsd_CTD_ANON_httpwww_ginfes_com_brtipos_v03_xsdListaMensagemRetorno",
         False,
-        pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 508, 1
-        ),
+        pyxb.utils.utility.Location("pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 508, 1),
     )
 
     ListaMensagemRetorno = property(
@@ -177,9 +173,7 @@ ConsultarSituacaoLoteRpsResposta = pyxb.binding.basis.element(
     pyxb.namespace.ExpandedName(Namespace, "ConsultarSituacaoLoteRpsResposta"),
     CTD_ANON,
     location=pyxb.utils.utility.Location(
-        "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_situacao_lote_rps_resposta_v03.xsd",
-        5,
-        1,
+        "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_situacao_lote_rps_resposta_v03.xsd", 5, 1
     ),
 )
 Namespace.addCategoryObject(
@@ -195,7 +189,7 @@ CTD_ANON._AddElement(
         _ImportedBinding__tipos.tsNumeroLote,
         scope=CTD_ANON,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_situacao_lote_rps_resposta_v03.xsd",
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_situacao_lote_rps_resposta_v03.xsd",
             9,
             5,
         ),
@@ -208,7 +202,7 @@ CTD_ANON._AddElement(
         _ImportedBinding__tipos.tsSituacaoLoteRps,
         scope=CTD_ANON,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_situacao_lote_rps_resposta_v03.xsd",
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_situacao_lote_rps_resposta_v03.xsd",
             10,
             5,
         ),
@@ -221,7 +215,7 @@ CTD_ANON._AddElement(
         _ImportedBinding__tipos.CTD_ANON,
         scope=CTD_ANON,
         location=pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 508, 1
+            "pynotas/data/XSDs/NFS-e/Ginfes/tipos_v03.xsd", 508, 1
         ),
     )
 )
@@ -239,7 +233,7 @@ def _BuildAutomaton():
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON._UseForTag(pyxb.namespace.ExpandedName(Namespace, "NumeroLote")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_situacao_lote_rps_resposta_v03.xsd",
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_situacao_lote_rps_resposta_v03.xsd",
             9,
             5,
         ),
@@ -252,7 +246,7 @@ def _BuildAutomaton():
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON._UseForTag(pyxb.namespace.ExpandedName(Namespace, "Situacao")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_situacao_lote_rps_resposta_v03.xsd",
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_situacao_lote_rps_resposta_v03.xsd",
             10,
             5,
         ),
@@ -265,7 +259,7 @@ def _BuildAutomaton():
     symbol = pyxb.binding.content.ElementUse(
         CTD_ANON._UseForTag(pyxb.namespace.ExpandedName(_Namespace_tipos, "ListaMensagemRetorno")),
         pyxb.utils.utility.Location(
-            "/workspaces/pyNotas/pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_situacao_lote_rps_resposta_v03.xsd",
+            "pynotas/data/XSDs/NFS-e/Ginfes/servico_consultar_situacao_lote_rps_resposta_v03.xsd",
             12,
             4,
         ),
