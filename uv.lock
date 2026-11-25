@@ -1448,6 +1448,7 @@ wheels = [
 name = "pynotas"
 source = { editable = "." }
 dependencies = [
+    { name = "certifi" },
     { name = "cryptography" },
     { name = "lxml" },
     { name = "pyopenssl" },
@@ -1472,6 +1473,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "brazilfiscalreport", extras = ["damdfe"], marker = "extra == 'impressao'" },
+    { name = "certifi" },
     { name = "cryptography", specifier = ">=43.0.3" },
     { name = "lxml", specifier = ">=5.4.0" },
     { name = "pyopenssl", specifier = ">=25.1.0,<26" },

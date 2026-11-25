@@ -5,6 +5,7 @@ import requests
 
 from pynotas.entidades.certificado import CertificadoA1
 from pynotas.utils import etree, so_numeros
+from pynotas.utils.tls import resolver_verificacao
 from pynotas.utils.flags import (
     CODIGOS_ESTADOS,
     MODELO_MDFE,
@@ -37,12 +38,19 @@ class Comunicacao(object):
     certificado = None
     certificado_senha = None
     url = None
+    verificar_ssl = True
 
-    def __init__(self, uf, certificado, certificado_senha, homologacao=False):
+    def __init__(self, uf, certificado, certificado_senha, homologacao=False, verificar_ssl=True):
+        """
+        verificar_ssl: True (padrao) verifica o certificado do servidor da SEFAZ
+        com as CAs do certifi e da ICP-Brasil; um caminho usa um arquivo ou pasta
+        de CAs proprio; False desliga a verificacao (inseguro, emite um aviso).
+        """
         self.uf = uf
         self.certificado = certificado
         self.certificado_senha = certificado_senha
         self._ambiente = 2 if homologacao else 1
+        self.verificar_ssl = verificar_ssl
 
 
 class ComunicacaoSefaz(Comunicacao):
@@ -597,7 +605,7 @@ class ComunicacaoSefaz(Comunicacao):
                 xml,
                 headers=self._post_header(),
                 cert=chave_cert,
-                verify=False,
+                verify=resolver_verificacao(self.verificar_ssl),
                 timeout=timeout,
             )
             result.encoding = "utf-8"
@@ -841,7 +849,7 @@ class ComunicacaoMDFe(Comunicacao):
                 xml,
                 headers=self._post_header(),
                 cert=chave_cert,
-                verify=False,
+                verify=resolver_verificacao(self.verificar_ssl),
                 timeout=50,
             )
             result.encoding = "utf-8"
@@ -1089,7 +1097,7 @@ class ComunicacaoCTe(Comunicacao):
                 xml,
                 headers=self._post_header(),
                 cert=chave_cert,
-                verify=False,
+                verify=resolver_verificacao(self.verificar_ssl),
                 timeout=300,
             )
             result.encoding = "utf-8"

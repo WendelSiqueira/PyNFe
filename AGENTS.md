@@ -31,13 +31,16 @@ pynotas/
 │   ├── flags.py        # Constants, namespaces, tax code enumerations
 │   ├── webservices.py  # SEFAZ endpoint URLs by state/environment
 │   ├── bar_code_128.py # Code 128 barcode generation for DANFE
+│   ├── tls.py          # TLS verification for SEFAZ (certifi + ICP-Brasil CAs)
 │   └── xml_writer.py   # XML element writing helpers
 ├── data/               # Reference data files
 │   ├── IBPT/           # Tax tables by state (CSV)
+│   ├── certificados/   # ICP-Brasil CA chain (icp-brasil.pem), see scripts/
 │   ├── ISSQN/          # Service tax classification
 │   ├── MunIBGE/        # Municipality IBGE codes by UF
 │   └── XSDs/           # XML Schema definitions (NF-e, NFC-e, MDF-e, CT-e)
-tests/                  # Test suite
+scripts/                # Maintenance (atualizar_cadeia_icp_brasil.py)
+tests/                  # Test suite (network tests need PYNOTAS_TESTES_REDE=1)
 ```
 
 ## Key Concepts
