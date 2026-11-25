@@ -17,6 +17,7 @@ Verificadas emitindo NF-e (modelo 55) na SEFAZ-SP, em homologação, com emitent
 |-------|--------|-------|-------------|
 | 442 | Descrição do pagamento não permitida | `xPag` informado com `tPag` diferente de 99 | Informar `x_pag` apenas com `t_pag="99"` (Outros). Com `tPag=99` e `xPag`, a nota foi autorizada |
 | 539 | Duplicidade de NF-e com diferença na Chave de Acesso | Número já usado na mesma série (a resposta traz a chave da nota existente) | Controlar a numeração por série no emissor; não há serviço para consultar o último número |
+| 438 | Obrigatória as informações do intermediador da transação para operação por site de terceiros | `indIntermed=1` sem o grupo `infIntermed` (era o que a lib até a 0.8.0 gerava) | Informar `intermediador_cnpj` e `intermediador_id_cadastro` |
 | 879 | Informado item "Produzido em Escala NÃO Relevante" e não informado CNPJ do Fabricante | `indEscala="N"` sem `CNPJFab` | Com `ind_escala="N"`, informar `cnpj_fabricante` |
 | 1022 | Grupo gIBSCBS não informado | `gTribSN` sem `gIBSCBS` | A lib sempre emite o `gIBSCBS` para CST tributado |
 | 1026 | Alíquota do IBS da UF inválida | `gIBSCBS` com alíquotas zeradas | Informar base e alíquotas (a lib recusa o grupo sem valores) |
@@ -33,6 +34,8 @@ Na mesma nota, em homologação SP:
 | Consulta após o cancelamento | 101 - Cancelamento de NF-e homologado |
 | Inutilização de numeração | **998 - Serviço Desativado** (ver abaixo) |
 | Emissão com CEST, com `indEscala` S e com `indEscala` N + `CNPJFab` | 100 - Autorizado o uso da NF-e |
+| Venda pela internet sem intermediador (`indPres=2`, `indIntermed=0`) | 100 - Autorizado o uso da NF-e |
+| Venda por marketplace (Shopee, CNPJ 35.635.824/0001-12) dentro da UF e interestadual (CFOP 6102) | 100 - Autorizado o uso da NF-e |
 
 ### Fim da inutilização e da autorização assíncrona (NT 2023.002)
 
@@ -48,6 +51,16 @@ As regras do `xPag` estão na Nota Técnica 2020.006 (versão 1.31, setembro de 
 |-------|-------|-------------|---------------------------|
 | YA02a-10 | 441 | Quando o código do meio de pagamento (tag: tPag) for preenchido com o código 99-outros, obrigatório o preenchimento da descrição do meio de pagamento (tag: xPag) | não |
 | YA02a-20 | 442 | Quando o código do meio de pagamento for diferente 99-outros (tag: tPag<>99), proibido o preenchimento da descrição do meio de pagamento (tag: xPag) | sim |
+
+### Intermediador (NT 2020.006)
+
+| Regra | cStat | O que exige |
+|-------|-------|-------------|
+| B25c-10 | 434 | `indIntermed` obrigatório em nota de saída normal com `indPres` 2, 3, 4 ou 9. A lib emite o campo sempre nesses casos |
+| B25c-20 | 435 | `indIntermed=1` proibido com `indPres` 0 ou 5 |
+| YB01-10 | 438 | Com `indIntermed=1`, o grupo `infIntermed` (CNPJ e `idCadIntTran`) é obrigatório (verificado em homologação) |
+| YB01-20 | 439 | Sem intermediador, o grupo é proibido |
+| YB02-10 | 440 | CNPJ do intermediador precisa ser válido |
 
 ## Onde está a documentação oficial
 

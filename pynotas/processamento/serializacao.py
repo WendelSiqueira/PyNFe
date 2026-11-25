@@ -1573,6 +1573,24 @@ class SerializacaoXML(Serializacao):
                 etree.SubElement(cartao, "tpIntegra").text = "2"
         return pag
 
+    def _serializar_intermediador(self, nota_fiscal, raiz):
+        """Grupo infIntermed (NT 2020.006), depois do pagamento.
+
+        CNPJ e idCadIntTran sao obrigatorios dentro do grupo: informado so um
+        deles, o XML ficaria invalido pelo schema. A exigencia do grupo quando
+        indIntermed=1 (rejeicao 438) e regra da SEFAZ, documentada em
+        docs/regras_sefaz.md.
+        """
+        cnpj = so_numeros(getattr(nota_fiscal, "intermediador_cnpj", "") or "")
+        id_cadastro = getattr(nota_fiscal, "intermediador_id_cadastro", "") or ""
+        if not (cnpj or id_cadastro):
+            return
+        if not (cnpj and id_cadastro):
+            raise ValueError("infIntermed: informe intermediador_cnpj e intermediador_id_cadastro")
+        grupo = etree.SubElement(raiz, "infIntermed")
+        etree.SubElement(grupo, "CNPJ").text = cnpj
+        etree.SubElement(grupo, "idCadIntTran").text = id_cadastro
+
     def _serializar_pagamentos(
         self, pagamentos: list(), finalidade_emissao="", valor_troco=0.00, retorna_string=True
     ):
@@ -1674,10 +1692,15 @@ class SerializacaoXML(Serializacao):
         else:
             etree.SubElement(ide, "indFinal").text = str(nota_fiscal.cliente_final)
             etree.SubElement(ide, "indPres").text = str(nota_fiscal.indicador_presencial)
-        # Rejeição 435: NF-e não pode ter o indicativo do intermediador quando for modelo 55
-        #               e informando o indicativo de presença (indPres) igual a 0, 1 ou 5.
-        if (nota_fiscal.modelo in [55, 65]) and (nota_fiscal.indicador_presencial not in [0, 1, 5]):
-            etree.SubElement(ide, "indIntermed").text = str(nota_fiscal.indicador_intermediador)
+        # indIntermed (NT 2020.006): obrigatorio para indPres 2, 3, 4 e 9 (rejeicao 434);
+        # proibido para indPres 0 e 5 (435). Na venda presencial (1) e opcional, e so
+        # e emitido quando ha intermediador.
+        presenca = int(nota_fiscal.indicador_presencial or 0)
+        intermediador = int(nota_fiscal.indicador_intermediador or 0)
+        if nota_fiscal.modelo in [55, 65] and (
+            presenca not in [0, 1, 5] or (presenca == 1 and intermediador == 1)
+        ):
+            etree.SubElement(ide, "indIntermed").text = str(intermediador)
         etree.SubElement(ide, "procEmi").text = str(nota_fiscal.processo_emissao)
         etree.SubElement(ide, "verProc").text = "%s %s" % (
             self._nome_aplicacao,
@@ -2043,6 +2066,8 @@ class SerializacaoXML(Serializacao):
                     retorna_string=False,
                 )
             )
+
+        self._serializar_intermediador(nota_fiscal, raiz)
 
         # Informações adicionais
         if (
