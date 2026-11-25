@@ -471,34 +471,6 @@ NFE = {
     },
 }
 
-# Nfs-e
-NFSE = {
-    #
-    "BETHA": {
-        "AUTORIZACAO": "GerarNfse",
-        "CANCELAR": "CancelarNfse",
-        "CONSULTA_RPS": "consultarNfsePorRps",
-        "CONSULTA_FAIXA": "ConsultarNfseFaixa",
-        "CONSULTA_SERVICO": "ConsultarNfseServicoPrestado",
-        "CONSULTA_SERVICO_TOMADO": "ConsultarNfseServicoTomado",
-        "SUBSTITUIR": "SubstituirNfse",
-        "HTTPS": "http://e-gov.betha.com.br/e-nota-contribuinte-ws/nfseWS?wsdl",
-        "HOMOLOGACAO": ("http://e-gov.betha.com.br/e-nota-contribuinte-test-ws/nfseWS?wsdl"),
-    },
-    #
-    "GINFES": {
-        "AUTORIZACAO": "GerarNfse",
-        "CANCELAR": "CancelarNfse",
-        "CONSULTA_RPS": "ConsultarNfsePorRps",
-        "CONSULTA_FAIXA": "ConsultarNfseFaixa",
-        "CONSULTA_SERVICO": "ConsultarNfseServicoPrestado",
-        "CONSULTA_SERVICO_TOMADO": "ConsultarNfseServicoTomado",
-        "SUBSTITUIR": "SubstituirNfse",
-        "HTTPS": "https://producao.ginfes.com.br/ServiceGinfesImpl?wsdl",
-        "HOMOLOGACAO": "https://homologacao.ginfes.com.br/ServiceGinfesImpl?wsdl",
-    },
-}
-
 # MDF-e
 MDFE = {
     # unico autorizador de MDF-e

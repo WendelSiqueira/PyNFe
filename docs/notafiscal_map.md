@@ -1,4 +1,4 @@
-# Source Map: `notafiscal.py` (1303 lines)
+# Source Map: `notafiscal.py` (1313 lines)
 
 Entity models for NF-e/NFC-e invoices and related objects (products, taxes, payments, transport, etc.).
 
@@ -6,25 +6,24 @@ Entity models for NF-e/NFC-e invoices and related objects (products, taxes, paym
 
 | Class | Lines | Purpose |
 |-------|-------|---------|
-| `NotaFiscal` | 14-593 | Main invoice entity |
-| `NotaFiscalReferenciada` | 595-624 | Referenced invoice |
-| `NotaFiscalProduto` | 626-1071 | Product/service item with all tax fields |
-| `NotaFiscalDeclaracaoImportacao` | 1073-1119 | Import declaration |
-| `NotaFiscalDeclaracaoImportacaoAdicao` | 1121-1133 | Import declaration addition |
-| `NotaFiscalTransporteVolume` | 1135-1164 | Transport volume |
-| `NotaFiscalTransporteVolumeLacre` | 1167-1169 | Volume seal |
-| `NotaFiscalCobrancaDuplicata` | 1172-1180 | Billing duplicate |
-| `NotaFiscalObservacaoContribuinte` | 1183-1188 | Taxpayer note |
-| `NotaFiscalProcessoReferenciado` | 1191-1201 | Referenced process |
-| `NotaFiscalEntregaRetirada` | 1204-1240 | Delivery/withdrawal address |
-| `NotaFiscalServico` | 1243-1271 | NFS-e service invoice |
-| `NotaFiscalResponsavelTecnico` | 1274-1280 | Technical responsible (NT2018/003) |
-| `AutorizadosBaixarXML` | 1283-1284 | Authorized XML downloaders |
-| `NotaFiscalPagamentos` | 1287-1303 | Payment details |
+| `NotaFiscal` | 14-602 | Main invoice entity |
+| `NotaFiscalReferenciada` | 605-633 | Referenced invoice |
+| `NotaFiscalProduto` | 636-1111 | Product/service item with all tax fields |
+| `NotaFiscalDeclaracaoImportacao` | 1114-1159 | Import declaration |
+| `NotaFiscalDeclaracaoImportacaoAdicao` | 1162-1173 | Import declaration addition |
+| `NotaFiscalTransporteVolume` | 1176-1205 | Transport volume |
+| `NotaFiscalTransporteVolumeLacre` | 1208-1210 | Volume seal |
+| `NotaFiscalCobrancaDuplicata` | 1213-1221 | Billing duplicate |
+| `NotaFiscalObservacaoContribuinte` | 1224-1229 | Taxpayer note |
+| `NotaFiscalProcessoReferenciado` | 1232-1242 | Referenced process |
+| `NotaFiscalEntregaRetirada` | 1245-1281 | Delivery/withdrawal address |
+| `NotaFiscalResponsavelTecnico` | 1284-1290 | Technical responsible (NT2018/003) |
+| `AutorizadosBaixarXML` | 1293-1294 | Authorized XML downloaders |
+| `NotaFiscalPagamentos` | 1297-1313 | Payment details |
 
 ---
 
-## `NotaFiscal` — Lines 14-593
+## `NotaFiscal` — Lines 14-602
 
 ### Field Groups
 | Section | Lines | Fields |
@@ -58,7 +57,7 @@ Entity models for NF-e/NFC-e invoices and related objects (products, taxes, paym
 
 ---
 
-## `NotaFiscalProduto` — Lines 626-1071
+## `NotaFiscalProduto` — Lines 636-1111
 
 ### Field Groups
 | Section | Lines | Fields |
@@ -76,6 +75,6 @@ Entity models for NF-e/NFC-e invoices and related objects (products, taxes, paym
 
 ---
 
-## Supporting Entities (Lines 1073-1303)
+## Supporting Entities (Lines 1114-1313)
 
 Small entity classes for nested data — see class table above for line ranges. All extend `Entidade` base class and use kwargs initialization.

@@ -1,6 +1,6 @@
 ## pyNotas
 
-Biblioteca Python de interface com os webservices de Nota Fiscal Eletrônica (NF-e) e Nota Fiscal de Consumidor Eletrônica (NFC-e) da SEFAZ e Receita Federal do Brasil, Nota Fiscal de Serviço Eletrônica (NFS-e) para Prefeituras e Manifesto de Documentos Fiscais Eletrônicos (MDF-e).
+Biblioteca Python de interface com os webservices de Nota Fiscal Eletrônica (NF-e) e Nota Fiscal de Consumidor Eletrônica (NFC-e) da SEFAZ e Receita Federal do Brasil, e de Manifesto de Documentos Fiscais Eletrônicos (MDF-e).
 
 Atualizada para a **Reforma Tributária (IBS/CBS)** e para o **pacote de schemas PL_010h** da NF-e, com foco em **NF-e modelo 55 emitida por empresas do Simples Nacional**.
 
@@ -44,18 +44,13 @@ Características
     * Evento de manifestação do destinatário
     * Consultar Distribuição DF-e
 
-* NFS-e:
-    * Emissão de nota fiscal de serviço eletrônico (Abrasf: Ginfes e Betha)
-    * Consultar pelo número da NFS-e
-    * Consultar por RPS (recibo provisório de serviço)
-    * Consultar Lote
-    * Cancelar NFS-e
-
 * MDF-e:
     * Versão 3.00, modelo 58
     * Emissão de Manifesto, consultas e eventos (cancelamento, encerramento, inclusão de condutor e de DF-e, pagamento)
 
 * CT-e: Consultar Distribuição DF-e
+
+NFS-e (nota de serviço) não é suportada. Os provedores municipais Betha e Ginfes foram removidos; o caminho para NFS-e seria o padrão nacional.
 
 
 Instalação
@@ -67,16 +62,15 @@ A lib não é publicada no PyPI. Para usar como dependência de outro projeto, d
 uv add "pynotas @ git+https://github.com/WendelSiqueira/pyNotas.git@main"
 ```
 
-Dependências opcionais:
+Dependência opcional para impressão do DANFE (brazilfiscalreport):
 
 ```sh
-uv add "pynotas[nfse] @ git+https://github.com/WendelSiqueira/pyNotas.git@main"      # NFS-e
-uv add "pynotas[impressao] @ git+https://github.com/WendelSiqueira/pyNotas.git@main"  # DANFE (brazilfiscalreport)
+uv add "pynotas[impressao] @ git+https://github.com/WendelSiqueira/pyNotas.git@main"
 ```
 
 Com pip, o mesmo endereço funciona: `pip install "pynotas @ git+https://github.com/WendelSiqueira/pyNotas.git@main"`.
 
-Dependências principais: `lxml` (XML), `signxml` (assinatura), `pyopenssl` e `cryptography` (certificado A1) e `requests` (webservices da SEFAZ). Para NFS-e, também `suds-community` e `PyXB-X`.
+Dependências principais: `lxml` (XML), `signxml` (assinatura), `pyopenssl` e `cryptography` (certificado A1) e `requests` (webservices da SEFAZ).
 
 
 Exemplo de uso
@@ -106,8 +100,8 @@ Desenvolvimento
 As dependências são gerenciadas com o [uv](https://docs.astral.sh/uv/) (`pyproject.toml` e `uv.lock`).
 
 ```sh
-# Ambiente com as dependências de desenvolvimento e o extra de NFS-e (necessário para os testes de NFS-e)
-uv sync --extra nfse
+# Ambiente com as dependências de desenvolvimento
+uv sync
 
 # Testes
 uv run pytest
@@ -116,8 +110,6 @@ uv run pytest
 uv run ruff check .
 uv run ruff format .
 ```
-
-Para atualizar os bindings XSD da NFS-e, execute `gerarnfsebindings.sh`.
 
 Navegação no código: arquivos grandes têm mapas em `docs/*_map.md` (ver [AGENTS.md](AGENTS.md)).
 

@@ -1461,10 +1461,6 @@ impressao = [
     { name = "brazilfiscalreport", version = "1.1.0", source = { registry = "https://pypi.org/simple" }, extra = ["damdfe"], marker = "python_full_version < '3.10'" },
     { name = "brazilfiscalreport", version = "1.4.0", source = { registry = "https://pypi.org/simple" }, extra = ["damdfe"], marker = "python_full_version >= '3.10'" },
 ]
-nfse = [
-    { name = "pyxb-x" },
-    { name = "suds-community" },
-]
 
 [package.dev-dependencies]
 dev = [
@@ -1479,12 +1475,10 @@ requires-dist = [
     { name = "cryptography", specifier = ">=43.0.3" },
     { name = "lxml", specifier = ">=5.4.0" },
     { name = "pyopenssl", specifier = ">=25.1.0,<26" },
-    { name = "pyxb-x", marker = "extra == 'nfse'", specifier = "==1.2.6.3" },
     { name = "requests", specifier = ">=2.32.4,<3" },
     { name = "signxml", specifier = ">=4.1.0" },
-    { name = "suds-community", marker = "extra == 'nfse'" },
 ]
-provides-extras = ["nfse", "impressao"]
+provides-extras = ["impressao"]
 
 [package.metadata.requires-dev]
 dev = [
@@ -1556,15 +1550,6 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/0e/f2/4c0b07f100e1e184ba682021322c336bbba6aa7adfabd2616f70eff917d9/python_barcode-0.16.1.tar.gz", hash = "sha256:665ed09516b0088b5593061c5ac8662caa0b08d56bdad328388b1cab39939ac5", size = 233777, upload-time = "2025-08-27T11:05:45.614Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/b2/34/810885dca784b02e5ad0f71ced9c06ba5e9d33a6493bc886f7470ce82a39/python_barcode-0.16.1-py3-none-any.whl", hash = "sha256:5776567478c9a0dae473374bb86631ba0b5ea99aaf302763b364e367ac51f367", size = 228046, upload-time = "2025-08-27T11:05:42.776Z" },
-]
-
-[[package]]
-name = "pyxb-x"
-version = "1.2.6.3"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/de/de/2556352e8e4092d835852af63c34500681ba5ab6a5a3047e5daabb6d9ca9/pyxb_x-1.2.6.3.tar.gz", hash = "sha256:bf401fa8d3e6bd6ea6648f49f02c7dc7ef460b4c61dc34bc2f1c4c3a952037b5", size = 1275136, upload-time = "2025-01-07T15:50:05.735Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/8c/03/8154462b23ce8ed229d9be4eee17b8132b746e6a1f1dbfe57b72139ce5a0/PyXB_X-1.2.6.3-py3-none-any.whl", hash = "sha256:4c4a55d6b8c61c2d84ab4c2cb49ee74185599242bbfd1cf0bdd6be4a8a874006", size = 310097, upload-time = "2025-01-07T15:50:02.87Z" },
 ]
 
 [[package]]
@@ -1655,15 +1640,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/0e/db/de98a323bc015c78615150dc3e57068b3eced3c7c73b9c5b50ccefe01719/signxml-5.3.1.tar.gz", hash = "sha256:01ca1d5b7d5829d1622ae3a7ce3d312d3fb28a67297d79c0cfa662fb80a722c8", size = 1718643, upload-time = "2026-11-22T04:00:52.454Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/03/51/ab6ced08a22acc1e01f8458e7a33367e12dfc62e0b371d2a2a4762d85cf0/signxml-5.3.1-py3-none-any.whl", hash = "sha256:c45457cd97b3ce52f7342c6f8f049cebe0b8bba69d8fa84da0e7ef5701c9d14f", size = 67316, upload-time = "2026-11-22T04:00:50.988Z" },
-]
-
-[[package]]
-name = "suds-community"
-version = "1.2.0"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/9e/5d/da767935b4cb869417307fbd6dec93d2bf3723228214302b6e6b277f474b/suds_community-1.2.0.tar.gz", hash = "sha256:ab3b24dc9ba06b5e6598e2a5d34d2a7d06c79e613d81cedc028475bfbd3bb90c", size = 271408, upload-time = "2024-08-24T20:07:23.122Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/a3/0e/513c353018247dc846074d9460f3c9adeeea360ac85abd5a7750eb53fc03/suds_community-1.2.0-py3-none-any.whl", hash = "sha256:505b191865bca125f12e8ff9598b24d9c0108b98826671bdd700ed51def44e36", size = 145270, upload-time = "2024-08-24T20:07:21.588Z" },
 ]
 
 [[package]]

@@ -29,10 +29,6 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-nfse = [
-    "suds-community",
-    "PyXB-X==1.2.6.3",
-]
 impressao = ["brazilfiscalreport[damdfe]"]
 
 [project.urls]
