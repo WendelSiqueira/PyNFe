@@ -1,6 +1,8 @@
 # Changelog
 
-## Não publicado
+## 0.8.1 — 2026-11-25
+
+Correção importante para vendas em marketplace: na 0.8.0, toda nota com intermediador era rejeitada pela SEFAZ (438).
 
 ### Novo
 

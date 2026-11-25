@@ -59,6 +59,11 @@ dev = [
 requires = ["setuptools>=64"]
 build-backend = "setuptools.build_meta"
 
+[tool.uv]
+# A versao e dinamica (lida de pynotas/__init__.py): sem isto, o uv nao
+# reinstala o pacote local quando so a versao muda.
+cache-keys = [{ file = "pyproject.toml" }, { file = "pynotas/__init__.py" }]
+
 [tool.setuptools.dynamic]
 version = {attr = "pynotas.__version__"}
 
