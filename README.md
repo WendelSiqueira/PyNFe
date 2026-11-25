@@ -31,6 +31,7 @@ Características
 * NF-e e NFC-e:
     * Versão 4.00, schemas PL_010h
     * Reforma Tributária: grupos `IBSCBS`, `gRed`, `gTribSN` e totais `IBSCBSTot`
+    * CEST, com indicador de escala relevante e CNPJ do fabricante
     * Modelo de Documento fiscal 55 e 65
     * Configuração para utilização em ambiente de produção e homologação (testes)
     * Emissão de notas fiscais normal e em contingência
@@ -119,6 +120,7 @@ Para testar contra a SEFAZ em **homologação** (notas sem valor fiscal) com o s
 uv run python scripts/homologacao.py status          # status da SEFAZ e cadastro do emitente
 uv run python scripts/homologacao.py emitir          # emite uma NF-e de teste
 uv run python scripts/homologacao.py emitir --reforma
+uv run python scripts/homologacao.py emitir --cest 2003800 --escala N --cnpj-fabricante 11222333000181
 uv run python scripts/homologacao.py notas           # notas emitidas pela ferramenta
 uv run python scripts/homologacao.py consultar       # sem chave: ultima nota emitida
 uv run python scripts/homologacao.py cce --correcao "texto da correcao"

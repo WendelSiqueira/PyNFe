@@ -287,6 +287,7 @@ class SerializacaoXML(Serializacao):
         etree.SubElement(prod, "cEAN").text = produto_servico.ean
         etree.SubElement(prod, "xProd").text = produto_servico.descricao
         etree.SubElement(prod, "NCM").text = produto_servico.ncm
+        self._serializar_cest(produto_servico, prod)
         if produto_servico.cbenef:
             etree.SubElement(prod, "cBenef").text = produto_servico.cbenef
         etree.SubElement(prod, "CFOP").text = produto_servico.cfop
@@ -297,9 +298,6 @@ class SerializacaoXML(Serializacao):
         etree.SubElement(prod, "vUnCom").text = str("{:.10f}").format(
             produto_servico.valor_unitario_comercial or 0
         )
-        # TODO: CEST (Codigo Especificador da Substituicao Tributaria) nao e emitido
-        # e nao existe campo na entidade. E obrigatorio para mercadorias sujeitas a
-        # substituicao tributaria (ex.: CSOSN 500).
         etree.SubElement(prod, "vProd").text = str("{:.2f}").format(
             produto_servico.valor_total_bruto or 0
         )
@@ -1378,6 +1376,25 @@ class SerializacaoXML(Serializacao):
         # gTribSN vem depois de gIBSCBS e antes de gEstornoCred
         if produto_servico.tem_trib_sn():
             self._serializar_gtribsn(produto_servico, ibscbs)
+
+    def _serializar_cest(self, produto_servico, prod):
+        """Grupo opcional CEST, indEscala e CNPJFab, logo apos o NCM.
+
+        indEscala e CNPJFab so existem dentro do grupo do CEST: informados sem
+        CEST, o XML ficaria invalido pelo schema.
+        """
+        cest = getattr(produto_servico, "cest", "")
+        ind_escala = getattr(produto_servico, "ind_escala", "")
+        cnpj_fabricante = getattr(produto_servico, "cnpj_fabricante", "")
+        if not cest:
+            if ind_escala or cnpj_fabricante:
+                raise ValueError("indEscala e CNPJFab so podem ser informados junto com o CEST")
+            return
+        etree.SubElement(prod, "CEST").text = so_numeros(cest)
+        if ind_escala:
+            etree.SubElement(prod, "indEscala").text = ind_escala
+        if cnpj_fabricante:
+            etree.SubElement(prod, "CNPJFab").text = so_numeros(cnpj_fabricante)
 
     def _serializar_gtribsn(self, produto_servico, tag_raiz):
         """Serializa <gTribSN> (tipo TTribSN): IBS e CBS do Simples Nacional.

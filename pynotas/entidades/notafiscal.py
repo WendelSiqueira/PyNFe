@@ -672,6 +672,15 @@ class NotaFiscalProduto(Entidade):
     # - cBenef
     cbenef = str()
 
+    # - CEST: Codigo Especificador da Substituicao Tributaria (7 digitos).
+    #   Grupo opcional apos o NCM; ind_escala e cnpj_fabricante so existem
+    #   dentro dele.
+    cest = str()
+    # - indEscala: "S" (produzido em escala relevante) ou "N"
+    ind_escala = str()
+    # - CNPJFab: CNPJ do fabricante (exigido pela SEFAZ quando indEscala="N")
+    cnpj_fabricante = str()
+
     #  - Quantidade Tributavel (obrigatorio)
     quantidade_tributavel = Decimal()
 
