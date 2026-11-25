@@ -34,7 +34,7 @@ Entity models for NF-e/NFC-e invoices and related objects (products, taxes, paym
 | Read-only fields | 128-144 | digest_value, valor_total_nota, valor_icms_nota, valor_icms_st_nota, protocolo, data |
 | Relationships | 146-173 | notas_fiscais_referenciadas, emitente, destinatario_remetente, entrega, retirada, autorizados_baixar_xml, produtos_e_servicos |
 | ICMS totals | 175-303 | totais_icms_base_calculo, totais_icms_total, totais_icms_desonerado, totais_icms_st_*, totais_icms_total_*, totais_fcp_*, totais_icms_inter_*, totais_icms_*_mono_* |
-| **Reforma Tributaria totals** | 305-314 | totais_vbc_ibscbs, totais_ibs_uf, totais_ibs_mun, totais_ibs, totais_cbs, totais_is, **municipio_fato_gerador_ibs** — IVA Dual totals + Group B field (EC 132/2023) |
+| **Reforma Tributaria totals** | 305-317 | totais_vbc_ibscbs, totais_ibs_uf, totais_ibs_mun, totais_ibs, totais_cbs, totais_is, totais_ibs_sn/totais_cbs_sn (None until an item has gTribSN), **municipio_fato_gerador_ibs** — IVA Dual totals + Group B field (EC 132/2023) |
 | Transport | 317-372 | transporte_modalidade_frete, transporte_transportadora, transporte_retencao_icms_*, transporte_veiculo_*, transporte_reboque_*, transporte_volumes |
 | Billing | 374-389 | fatura_numero, fatura_valor_original, fatura_valor_desconto, fatura_valor_liquido, duplicatas |
 | Additional info | 391-408 | informacoes_adicionais_*, observacoes_contribuinte, processos_referenciados, pagamentos, valor_troco |
@@ -71,7 +71,7 @@ Entity models for NF-e/NFC-e invoices and related objects (products, taxes, paym
 | COFINS fields | 945-989 | cofins_modalidade, cofins_valor_base_calculo, cofins_aliquota_percentual, cofins_aliquota_reais, cofins_valor, cofins_st_* |
 | ISSQN fields | 991-1010 | issqn_valor_base_calculo, issqn_aliquota, issqn_lista_servico, issqn_uf, issqn_municipio, issqn_valor |
 | Import tax fields | 1012-1023 | imposto_importacao_valor_base_calculo, imposto_importacao_valor_despesas_aduaneiras, imposto_importacao_valor_iof, imposto_importacao_valor |
-| **Reforma Tributaria fields** | 1025-1065 | **IBSCBS**: ibscbs_cst, ibscbs_c_class_trib, ibscbs_vbc, ibscbs_p_ibs_uf, ibscbs_v_ibs_uf, ibscbs_p_ibs_mun, ibscbs_v_ibs_mun, ibscbs_v_ibs, ibscbs_p_cbs, ibscbs_v_cbs; **gRed** (default None): ibscbs_p_red_aliq_{ibs_uf,ibs_mun,cbs}, ibscbs_p_aliq_efet_{ibs_uf,ibs_mun,cbs}; **IS**: is_cst_selec, is_c_class_trib, is_vbc, is_aliquota, is_valor |
+| **Reforma Tributaria fields** | 1036-1083 | **IBSCBS**: ibscbs_cst, ibscbs_c_class_trib, ibscbs_vbc, ibscbs_p_ibs_uf, ibscbs_v_ibs_uf, ibscbs_p_ibs_mun, ibscbs_v_ibs_mun, ibscbs_v_ibs, ibscbs_p_cbs, ibscbs_v_cbs; **gRed** (default None): ibscbs_p_red_aliq_{ibs_uf,ibs_mun,cbs}, ibscbs_p_aliq_efet_{ibs_uf,ibs_mun,cbs}; **gTribSN** (default None): ibscbs_p_ibs_sn, ibscbs_v_ibs_sn, ibscbs_p_cbs_sn, ibscbs_v_cbs_sn; `tem_trib_sn()` at 1097; **IS**: is_cst_selec, is_c_class_trib, is_vbc, is_aliquota, is_valor |
 | Additional info | 1056-1071 | informacoes_adicionais, declaracoes_importacao |
 
 ---

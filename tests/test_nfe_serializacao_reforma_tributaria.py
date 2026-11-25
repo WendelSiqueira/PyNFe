@@ -828,6 +828,156 @@ class ReformaTributariaSerializacaoTestCase(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "gCBS.*pAliqEfet"):
             self._serializar_e_assinar()
 
+    # ------------------------------------------------------------------
+    # gTribSN — IBS e CBS do Simples Nacional (valores ficticios)
+    # ------------------------------------------------------------------
+    def _nota_simples(self):
+        emitente = self._emitente()
+        emitente.codigo_de_regime_tributario = "1"
+        return self._nota_fiscal(emitente, self._cliente())
+
+    def _kwargs_simples(self, **extra):
+        kwargs = self._base_product_kwargs()
+        kwargs.update(
+            icms_modalidade="102",
+            icms_csosn="102",
+            ibscbs_cst="000",
+            ibscbs_c_class_trib="000001",
+        )
+        kwargs.update(extra)
+        return kwargs
+
+    def _filhos(self, el):
+        return [c.tag.split("}")[-1] for c in el]
+
+    def test_gtribsn_ibs_e_cbs_sem_gibscbs(self):
+        nf = self._nota_simples()
+        nf.adicionar_produto_servico(
+            **self._kwargs_simples(
+                ibscbs_p_ibs_sn=Decimal("0.1500"),
+                ibscbs_v_ibs_sn=Decimal("1.50"),
+                ibscbs_p_cbs_sn=Decimal("0.6000"),
+                ibscbs_v_cbs_sn=Decimal("6.00"),
+            )
+        )
+        nf.adicionar_pagamento(t_pag="01", x_pag="Dinheiro", v_pag=1000.00, ind_pag=0)
+
+        xml = self._serializar_e_assinar()
+
+        ibscbs = xml.xpath("//ns:det/ns:imposto/ns:IBSCBS", namespaces=self.ns)[0]
+        # Sem base do regime regular: nao emite gIBSCBS zerado
+        self.assertEqual(self._filhos(ibscbs), ["CST", "cClassTrib", "gTribSN"])
+
+        sn = "//ns:IBSCBS/ns:gTribSN"
+        self.assertEqual(
+            xml.xpath(sn + "/ns:gIBSSN/ns:pIBSSN", namespaces=self.ns)[0].text, "0.1500"
+        )
+        self.assertEqual(xml.xpath(sn + "/ns:gIBSSN/ns:vIBSSN", namespaces=self.ns)[0].text, "1.50")
+        self.assertEqual(
+            xml.xpath(sn + "/ns:gCBSSN/ns:pCBSSN", namespaces=self.ns)[0].text, "0.6000"
+        )
+        self.assertEqual(xml.xpath(sn + "/ns:gCBSSN/ns:vCBSSN", namespaces=self.ns)[0].text, "6.00")
+
+        tot = xml.xpath("//ns:total/ns:IBSCBSTot", namespaces=self.ns)[0]
+        self.assertEqual(self._filhos(tot), ["vBCIBSCBS", "gTribSN"])
+        self.assertEqual(tot[0].text, "0.00")
+        self.assertEqual(
+            xml.xpath("//ns:IBSCBSTot/ns:gTribSN/ns:vIBSSN", namespaces=self.ns)[0].text, "1.50"
+        )
+        self.assertEqual(
+            xml.xpath("//ns:IBSCBSTot/ns:gTribSN/ns:vCBSSN", namespaces=self.ns)[0].text, "6.00"
+        )
+
+    def test_gtribsn_so_cbs_crt2(self):
+        """Sem IBS (CRT=2): omite gIBSSN no item; no total vIBSSN e obrigatorio (0.00)."""
+        nf = self._nota_simples()
+        nf.adicionar_produto_servico(
+            **self._kwargs_simples(
+                ibscbs_p_cbs_sn=Decimal("0.6000"),
+                ibscbs_v_cbs_sn=Decimal("6.00"),
+            )
+        )
+        nf.adicionar_pagamento(t_pag="01", x_pag="Dinheiro", v_pag=1000.00, ind_pag=0)
+
+        xml = self._serializar_e_assinar()
+
+        sn = xml.xpath("//ns:IBSCBS/ns:gTribSN", namespaces=self.ns)[0]
+        self.assertEqual(self._filhos(sn), ["gCBSSN"])
+        self.assertEqual(
+            xml.xpath("//ns:IBSCBSTot/ns:gTribSN/ns:vIBSSN", namespaces=self.ns)[0].text, "0.00"
+        )
+
+    def test_gtribsn_totais_varios_itens(self):
+        nf = self._nota_simples()
+        for v_ibs, v_cbs in (("1.50", "6.00"), ("0.75", "3.00")):
+            nf.adicionar_produto_servico(
+                **self._kwargs_simples(
+                    ibscbs_p_ibs_sn=Decimal("0.1500"),
+                    ibscbs_v_ibs_sn=Decimal(v_ibs),
+                    ibscbs_p_cbs_sn=Decimal("0.6000"),
+                    ibscbs_v_cbs_sn=Decimal(v_cbs),
+                )
+            )
+        nf.adicionar_pagamento(t_pag="01", x_pag="Dinheiro", v_pag=2000.00, ind_pag=0)
+
+        xml = self._serializar_e_assinar()
+
+        self.assertEqual(
+            xml.xpath("//ns:IBSCBSTot/ns:gTribSN/ns:vIBSSN", namespaces=self.ns)[0].text, "2.25"
+        )
+        self.assertEqual(
+            xml.xpath("//ns:IBSCBSTot/ns:gTribSN/ns:vCBSSN", namespaces=self.ns)[0].text, "9.00"
+        )
+
+    def test_gtribsn_com_base_regular_emite_os_dois_grupos(self):
+        """Com vBC informado, gIBSCBS continua sendo emitido, antes do gTribSN."""
+        nf = self._nota_simples()
+        nf.adicionar_produto_servico(
+            **self._kwargs_simples(
+                ibscbs_vbc=Decimal("1000.00"),
+                ibscbs_p_ibs_uf=Decimal("0.1000"),
+                ibscbs_v_ibs_uf=Decimal("1.00"),
+                ibscbs_v_ibs=Decimal("1.00"),
+                ibscbs_p_cbs=Decimal("0.9000"),
+                ibscbs_v_cbs=Decimal("9.00"),
+                ibscbs_p_cbs_sn=Decimal("0.6000"),
+                ibscbs_v_cbs_sn=Decimal("6.00"),
+            )
+        )
+        nf.adicionar_pagamento(t_pag="01", x_pag="Dinheiro", v_pag=1000.00, ind_pag=0)
+
+        xml = self._serializar_e_assinar()
+
+        ibscbs = xml.xpath("//ns:det/ns:imposto/ns:IBSCBS", namespaces=self.ns)[0]
+        self.assertEqual(self._filhos(ibscbs), ["CST", "cClassTrib", "gIBSCBS", "gTribSN"])
+        tot = xml.xpath("//ns:total/ns:IBSCBSTot", namespaces=self.ns)[0]
+        self.assertEqual(self._filhos(tot), ["vBCIBSCBS", "gIBS", "gCBS", "gTribSN"])
+
+    def test_gtribsn_sem_gcbssn_levanta_erro(self):
+        nf = self._nota_simples()
+        nf.adicionar_produto_servico(
+            **self._kwargs_simples(
+                ibscbs_p_ibs_sn=Decimal("0.1500"),
+                ibscbs_v_ibs_sn=Decimal("1.50"),
+            )
+        )
+        nf.adicionar_pagamento(t_pag="01", x_pag="Dinheiro", v_pag=1000.00, ind_pag=0)
+
+        with self.assertRaisesRegex(ValueError, "gCBSSN e obrigatorio"):
+            self._serializar_e_assinar()
+
+    def test_gtribsn_aliquota_sem_valor_levanta_erro(self):
+        nf = self._nota_simples()
+        nf.adicionar_produto_servico(
+            **self._kwargs_simples(
+                ibscbs_p_cbs_sn=Decimal("0.6000"),
+            )
+        )
+        nf.adicionar_pagamento(t_pag="01", x_pag="Dinheiro", v_pag=1000.00, ind_pag=0)
+
+        with self.assertRaisesRegex(ValueError, "gCBSSN: informe aliquota e valor"):
+            self._serializar_e_assinar()
+
 
 if __name__ == "__main__":
     unittest.main()

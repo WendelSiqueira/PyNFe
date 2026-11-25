@@ -49,9 +49,10 @@ Abstract base for all serializers. Stores `_fonte_dados`, `_ambiente` (1=prod, 2
 | `_serializar_imposto_cofins()` | 1202-1277 | COFINS tax |
 | `_serializar_imposto_importacao()` | 1279-1301 | Import tax (II) |
 | `_serializar_imposto_ibscbs()` | 1322-1340 | **Reforma Tributaria** — dispatches IBSCBS + IS serialization |
-| `_serializar_ibscbs()` | 1342-1396 | IBSCBS (IBS + CBS) — `<IBSCBS>` as direct child of `<imposto>` |
-| `_serializar_gred()` | 1398-1414 | gRed (TRed) — reducao de aliquota inside gIBSUF/gIBSMun/gCBS; raises ValueError if pAliqEfet missing |
-| `_serializar_is()` | 1416-1431 | IS (Imposto Seletivo) — ready but not called until 2027 |
+| `_serializar_ibscbs()` | 1342-1404 | IBSCBS (IBS + CBS) — `<IBSCBS>` as direct child of `<imposto>` |
+| `_serializar_gtribsn()` | 1406-1433 | gTribSN (TTribSN) — IBS/CBS do Simples Nacional (gIBSSN opcional, gCBSSN obrigatorio); raises ValueError if incomplete |
+| `_serializar_gred()` | 1435-1451 | gRed (TRed) — reducao de aliquota inside gIBSUF/gIBSMun/gCBS; raises ValueError if pAliqEfet missing |
+| `_serializar_is()` | 1453-1468 | IS (Imposto Seletivo) — ready but not called until 2027 |
 | `_serializar_declaracao_importacao()` | 1388-1438 | Import declaration (DI) |
 
 ### ICMS Modalities Detail (within `_serializar_imposto_icms`)
@@ -94,7 +95,7 @@ Abstract base for all serializers. Stores `_fonte_dados`, `_ambiente` (1=prod, 2
 | Authorized XML | 1681-1682 | `<autXML>` |
 | Items | 1684-1691 | `<det>` with nItem |
 | Totals (ICMSTot) | 1693-1786 | `<total><ICMSTot>` all legacy tax totals |
-| **Totals (IBSCBSTot)** | 1788-1833 | `<total><IBSCBSTot>` Reforma Tributaria totals (vBCIBSCBS, gIBS, gCBS) |
+| **Totals (IBSCBSTot)** | 1870-1926 | `<total><IBSCBSTot>` Reforma Tributaria totals (vBCIBSCBS, gIBS, gCBS, gTribSN) |
 | Transport | 1835-1878 | `<transp>` modFrete, carrier, vehicle, volumes |
 | Billing | ~1880-1900 | `<cobr>` fat, dup |
 | Payment | ~1902-1930 | `<pag>` detPag |
