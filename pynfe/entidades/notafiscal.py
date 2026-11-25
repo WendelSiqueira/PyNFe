@@ -1046,6 +1046,17 @@ class NotaFiscalProduto(Entidade):
     ibscbs_p_cbs = Decimal()  # pCBS
     ibscbs_v_cbs = Decimal()  # vCBS
 
+    # gRed - reducao de aliquota (TRed), um grupo por tributo.
+    # O grupo so e emitido quando o percentual de reducao e informado;
+    # None (e nao zero) indica "sem reducao", pois uma reducao de 100%
+    # resulta em aliquota efetiva zero.
+    ibscbs_p_red_aliq_ibs_uf = None  # gIBSUF/gRed/pRedAliq
+    ibscbs_p_aliq_efet_ibs_uf = None  # gIBSUF/gRed/pAliqEfet
+    ibscbs_p_red_aliq_ibs_mun = None  # gIBSMun/gRed/pRedAliq
+    ibscbs_p_aliq_efet_ibs_mun = None  # gIBSMun/gRed/pAliqEfet
+    ibscbs_p_red_aliq_cbs = None  # gCBS/gRed/pRedAliq
+    ibscbs_p_aliq_efet_cbs = None  # gCBS/gRed/pAliqEfet
+
     # IS (Imposto Seletivo) - Group UB-IS
     is_cst_selec = str()  # CSTSelec (2-digit)
     is_c_class_trib = str()  # cClassTribIS 6-digit

@@ -1357,6 +1357,11 @@ class SerializacaoXML(Serializacao):
             etree.SubElement(gibsuf, "pIBSUF").text = "{:.4f}".format(
                 produto_servico.ibscbs_p_ibs_uf or 0
             )
+            self._serializar_gred(
+                gibsuf,
+                produto_servico.ibscbs_p_red_aliq_ibs_uf,
+                produto_servico.ibscbs_p_aliq_efet_ibs_uf,
+            )
             etree.SubElement(gibsuf, "vIBSUF").text = "{:.2f}".format(
                 produto_servico.ibscbs_v_ibs_uf or 0
             )
@@ -1365,6 +1370,11 @@ class SerializacaoXML(Serializacao):
             gibsmun = etree.SubElement(gibscbs, "gIBSMun")
             etree.SubElement(gibsmun, "pIBSMun").text = "{:.4f}".format(
                 produto_servico.ibscbs_p_ibs_mun or 0
+            )
+            self._serializar_gred(
+                gibsmun,
+                produto_servico.ibscbs_p_red_aliq_ibs_mun,
+                produto_servico.ibscbs_p_aliq_efet_ibs_mun,
             )
             etree.SubElement(gibsmun, "vIBSMun").text = "{:.2f}".format(
                 produto_servico.ibscbs_v_ibs_mun or 0
@@ -1378,7 +1388,30 @@ class SerializacaoXML(Serializacao):
             # gCBS
             gcbs = etree.SubElement(gibscbs, "gCBS")
             etree.SubElement(gcbs, "pCBS").text = "{:.4f}".format(produto_servico.ibscbs_p_cbs or 0)
+            self._serializar_gred(
+                gcbs,
+                produto_servico.ibscbs_p_red_aliq_cbs,
+                produto_servico.ibscbs_p_aliq_efet_cbs,
+            )
             etree.SubElement(gcbs, "vCBS").text = "{:.2f}".format(produto_servico.ibscbs_v_cbs or 0)
+
+    def _serializar_gred(self, tag_raiz, p_red_aliq, p_aliq_efet):
+        """Serializa <gRed> (tipo TRed) dentro de gIBSUF, gIBSMun ou gCBS.
+
+        No schema, gRed vem depois de pXXX, gDif e gDevTrib e antes de vXXX.
+        So e emitido quando o percentual de reducao e informado. Os dois campos
+        sao obrigatorios no grupo, e a lib nao calcula a aliquota efetiva.
+        """
+        if p_red_aliq is None:
+            return
+        if p_aliq_efet is None:
+            raise ValueError(
+                "gRed em <%s>: pRedAliq informado sem pAliqEfet "
+                "(informe a aliquota efetiva)" % tag_raiz.tag
+            )
+        gred = etree.SubElement(tag_raiz, "gRed")
+        etree.SubElement(gred, "pRedAliq").text = "{:.4f}".format(p_red_aliq)
+        etree.SubElement(gred, "pAliqEfet").text = "{:.4f}".format(p_aliq_efet)
 
     def _serializar_is(self, produto_servico, tag_raiz):
         """Serializa <IS> (Imposto Seletivo) como filho direto de <imposto>.

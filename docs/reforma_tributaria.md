@@ -37,8 +37,10 @@ A implementacao cobre:
 - `vNF` **NAO inclui** IBS/CBS (proibido em 2025-2026)
 - `finNFe=5` (Nota de Debito) e `finNFe=6` (Nota de Credito)
 - Campos de entidade para IS (Imposto Seletivo) — **armazenados mas nao serializados** ate o schema suportar (2027)
+- Reducao de aliquota per-item (`gRed`) em `gIBSUF`, `gIBSMun` e `gCBS`
+- Schemas validados contra o pacote oficial **PL_010h**
 
-**Nao inclui** (ainda): Split Payment, cashback, eventos de apuracao assistida, Grupo VB (total do item), Grupo VC (referenciamento de DF-e), Grupo BB (antecipacao de pagamento), tributacao monofasica (`gIBSCBSMono`), diferimento per-item (`gDif`), devolucao de tributos per-item (`gDevTrib`), reducao de aliquota per-item (`gRed`), estorno de credito (`gEstornoCred`), credito presumido per-item (`gCredPresOper`, `gCredPresIBSZFM`).
+**Nao inclui** (ainda): Split Payment, cashback, eventos de apuracao assistida, Grupo VB (total do item), Grupo VC (referenciamento de DF-e), Grupo BB (antecipacao de pagamento), tributacao monofasica (`gIBSCBSMono`), diferimento per-item (`gDif`), devolucao de tributos per-item (`gDevTrib`), estorno de credito (`gEstornoCred`), credito presumido per-item (`gCredPresOper`, `gCredPresIBSZFM`), Simples Nacional (`gTribSN`).
 
 ## CSTs disponiveis
 
@@ -150,6 +152,42 @@ nota_fiscal.adicionar_produto_servico(
 )
 ```
 
+### Exemplo: reducao de aliquota (gRed)
+
+Valores do exemplo oficial da calculadora RTC da Receita Federal (reducao de 60%):
+
+```python
+nota_fiscal.adicionar_produto_servico(
+    # ... campos do produto ...
+    ibscbs_cst="200",
+    ibscbs_c_class_trib="200028",
+    ibscbs_vbc=Decimal("1200.00"),
+
+    ibscbs_p_ibs_uf=Decimal("0.05"),
+    ibscbs_p_red_aliq_ibs_uf=Decimal("60.00"),   # gIBSUF/gRed/pRedAliq
+    ibscbs_p_aliq_efet_ibs_uf=Decimal("0.02"),   # gIBSUF/gRed/pAliqEfet
+    ibscbs_v_ibs_uf=Decimal("0.24"),
+
+    ibscbs_p_ibs_mun=Decimal("0.05"),
+    ibscbs_p_red_aliq_ibs_mun=Decimal("60.00"),
+    ibscbs_p_aliq_efet_ibs_mun=Decimal("0.02"),
+    ibscbs_v_ibs_mun=Decimal("0.24"),
+
+    ibscbs_v_ibs=Decimal("0.48"),
+
+    ibscbs_p_cbs=Decimal("8.80"),
+    ibscbs_p_red_aliq_cbs=Decimal("60.00"),
+    ibscbs_p_aliq_efet_cbs=Decimal("3.52"),
+    ibscbs_v_cbs=Decimal("42.24"),
+)
+```
+
+Regras:
+
+- `gRed` e emitido por tributo, apenas quando `ibscbs_p_red_aliq_*` for informado. O padrao e `None` (sem reducao); `0` e um valor valido, pois reducao de 100% gera aliquota efetiva zero.
+- `pAliqEfet` e obrigatorio quando ha reducao. Sem ele, a serializacao levanta `ValueError`. A lib nao calcula a aliquota efetiva nem o valor do tributo.
+- Ordem no XML: `pXXX`, `gRed`, `vXXX`.
+
 ### Exemplo: sem reforma tributaria (compatibilidade retroativa)
 
 Se nenhum campo `ibscbs_*` for informado, o grupo `<IBSCBS>` **nao e emitido** no XML. Isso garante compatibilidade total com NF-e que nao precisam dos novos impostos.
@@ -188,6 +226,12 @@ nota_fiscal = NotaFiscal(
 | `ibscbs_v_ibs` | `Decimal` | Valor total IBS (UF + Mun) |
 | `ibscbs_p_cbs` | `Decimal` | Aliquota CBS (4 casas decimais) |
 | `ibscbs_v_cbs` | `Decimal` | Valor CBS |
+| `ibscbs_p_red_aliq_ibs_uf` | `Decimal \| None` | `gIBSUF/gRed/pRedAliq` — percentual de reducao |
+| `ibscbs_p_aliq_efet_ibs_uf` | `Decimal \| None` | `gIBSUF/gRed/pAliqEfet` — aliquota efetiva |
+| `ibscbs_p_red_aliq_ibs_mun` | `Decimal \| None` | `gIBSMun/gRed/pRedAliq` |
+| `ibscbs_p_aliq_efet_ibs_mun` | `Decimal \| None` | `gIBSMun/gRed/pAliqEfet` |
+| `ibscbs_p_red_aliq_cbs` | `Decimal \| None` | `gCBS/gRed/pRedAliq` |
+| `ibscbs_p_aliq_efet_cbs` | `Decimal \| None` | `gCBS/gRed/pAliqEfet` |
 
 #### IS (Imposto Seletivo) — armazenado, nao serializado em 2026
 
