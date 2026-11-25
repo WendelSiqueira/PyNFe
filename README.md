@@ -57,20 +57,25 @@ NFS-e (nota de serviço) não é suportada. Os provedores municipais Betha e Gin
 Instalação
 -----------
 
-O pacote se chama `pynotas-br` (o nome `pynotas` já é de outro projeto) e o import é `pynotas`. A versão 0.8.0 está no **TestPyPI**, o índice de testes do PyPI:
+O pacote se chama `pynotas-br` (o nome `pynotas` já é de outro projeto) e o import é `pynotas`.
 
-```sh
-uv pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ pynotas-br
-```
-
-Direto do repositório, como dependência de outro projeto:
+Como dependência de outro projeto, pela tag da versão no repositório:
 
 ```sh
 uv add "pynotas-br @ git+https://github.com/WendelSiqueira/pyNotas.git@v0.8.0"
 uv add "pynotas-br[impressao] @ git+https://github.com/WendelSiqueira/pyNotas.git@v0.8.0"  # DANFE (brazilfiscalreport)
 ```
 
-Com pip, o mesmo endereço funciona: `pip install "pynotas-br @ git+https://github.com/WendelSiqueira/pyNotas.git@v0.8.0"`. O histórico de versões está no [CHANGELOG](https://github.com/WendelSiqueira/pyNotas/blob/main/CHANGELOG.md).
+Com pip, o mesmo endereço funciona: `pip install "pynotas-br @ git+https://github.com/WendelSiqueira/pyNotas.git@v0.8.0"`.
+
+A versão 0.8.0 também está no **TestPyPI**, o índice de testes do PyPI. Como lá qualquer pessoa publica qualquer nome, instale só o `pynotas-br` de lá e as dependências do PyPI oficial:
+
+```sh
+uv pip install --no-deps --index-url https://test.pypi.org/simple/ "pynotas-br==0.8.0"
+uv pip install "requests>=2.32.4,<3" certifi "lxml>=5.4.0" "signxml>=4.1.0" "cryptography>=43.0.3" "pyopenssl>=25.1.0,<26"
+```
+
+Evite `--extra-index-url` com o TestPyPI: as dependências podem acabar vindo de lá. O histórico de versões está no [CHANGELOG](https://github.com/WendelSiqueira/pyNotas/blob/main/CHANGELOG.md).
 
 Dependências principais: `lxml` (XML), `signxml` (assinatura), `pyopenssl` e `cryptography` (certificado A1) e `requests` (webservices da SEFAZ).
 
