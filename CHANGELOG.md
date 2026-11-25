@@ -2,6 +2,16 @@
 
 ## Não publicado
 
+### Novo
+
+- **Impressão do DANFE**: `pynotas.processamento.gerar_danfe(xml, caminho=None, config=None)` gera o PDF do DANFE (modelo 55) ou do DANFCE (modelo 65) com a brazilfiscalreport. Sem `config`, usa o layout vigente na data de emissão: o da NT 2026.010, com IBS/CBS, para notas a partir de 01/12/2026. Verificado com notas autorizadas e canceladas em homologação SP.
+- Ferramenta de homologação: comando `danfe [CHAVE]`.
+
+### Alterado
+
+- O extra `impressao` instala `brazilfiscalreport>=1.4.0` (antes, a variante de MDF-e, sem versão mínima), só no Python 3.10+, que é o que ela exige.
+- Removidas as classes vazias `Danfe` e `DanfeNfce` de `pynotas.processamento.danfe`, que não geravam nada. Use `gerar_danfe`.
+
 ### Corrigido
 
 - **Grupo do cartão** (`card`): a bandeira (`tBand`) começava como o número `0` e era gravada mesmo sem ser informada, deixando o XML inválido pelo schema. Agora é opcional e gravada com 2 dígitos (`2` → `02`).

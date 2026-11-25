@@ -8,4 +8,4 @@ from .comunicacao import (
     ComunicacaoMDFe,
     ComunicacaoCTe,
 )
-from .danfe import DanfeNfce
+from .danfe import gerar_danfe
