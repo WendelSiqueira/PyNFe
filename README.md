@@ -1,30 +1,41 @@
 ## PyNFe
 
-[![Active Development](https://img.shields.io/badge/Maintenance%20Level-Actively%20Developed-brightgreen.svg)](https://gist.github.com/cheerfulstoic/d107229326a01ff0f333a1d3476e068d)
-![status](https://img.shields.io/badge/status-stable-green.svg) ![https://github.com/TadaSoftware/PyNFe/actions](https://github.com/TadaSoftware/PyNFe/actions/workflows/ci.yml/badge.svg) ![pyversions](https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue)
-[![PyPI version](https://badge.fury.io/py/pynfe.svg)](https://badge.fury.io/py/pynfe)
+Biblioteca Python de interface com os webservices de Nota Fiscal Eletrônica (NF-e) e Nota Fiscal de Consumidor Eletrônica (NFC-e) da SEFAZ e Receita Federal do Brasil, Nota Fiscal de Serviço Eletrônica (NFS-e) para Prefeituras e Manifesto de Documentos Fiscais Eletrônicos (MDF-e).
+
+Atualizada para a **Reforma Tributária (IBS/CBS)** e para o **pacote de schemas PL_010h** da NF-e, com foco em **NF-e modelo 55 emitida por empresas do Simples Nacional**.
 
 
+Reforma Tributária
+------------
 
+| Item | Situação |
+|---------|----------|
+| Schemas da NF-e atualizados para o **PL_010h** (inclui `DFeTiposBasicos_v1.00.xsd` com os tipos de IBS/CBS) | feito |
+| Testes da Reforma validam o XML gerado contra o schema oficial | feito |
+| **`gRed`**: redução de alíquota em `gIBSUF`, `gIBSMun` e `gCBS` | feito |
+| **`gTribSN`**: IBS e CBS do Simples Nacional, no item e nos totais (`IBSCBSTot`) | feito |
+| Revisão da tabela de CST de IBS/CBS contra os dados oficiais da Receita | a fazer |
+| Demais grupos da Reforma: `gDif`, `gDevTrib`, `gIBSCBSMono`, `gEstornoCred`, `gCredPresOper` | a fazer |
 
-Biblioteca de interface com os webservices de Nota Fiscal Eletrônica (NF-e) e Nota Fiscal de Consumidor Eletrônica (NFC-e) da SEFAZ e Receita Federal do Brasil, Nota Fiscal de Serviço Eletrônica (NFS-e) para Prefeituras e Manifesto de Documentos Fiscais Eletrônicos (MDF-e).
+Detalhes, campos e exemplos de XML em [docs/reforma_tributaria.md](docs/reforma_tributaria.md).
 
-- **NF-e** visa substituir as notas fiscais séries 1 e 1A.
-- **NFC-e** visa substituir as notas fiscais modelo 2 e cupom fiscal emitido por ECF.
-- **NFS-e** padrão Abrasf para autorizadores Ginfes e Betha.
-- **MDF-e** no padrão nacional deverá ser emitido obrigatoriamente no transporte de mercadoria intermunicipais por empresas prestadoras de serviço de transporte ou pelas demais empresas cujo transporte seja realizado em veículos próprios, arrendados ou transportador autônomo.
+A lib **serializa** os valores de IBS/CBS informados, mas **não calcula** alíquotas nem valores. Para o cálculo, a Receita Federal publicou calculadoras oficiais em código aberto:
+
+- [calculadora-rtc-regime-regular](https://github.com/ReceitaFederal/calculadora-rtc-regime-regular): regime regular, com tabelas oficiais de CST, cClassTrib, NCM e alíquotas
+- [calculadora-rtc-simples-nacional](https://github.com/ReceitaFederal/calculadora-rtc-simples-nacional): Simples Nacional
 
 
 Características
 ------------
 
-* NF-e e NFCe:
-    * Atualizado para a versão 4.00
+* NF-e e NFC-e:
+    * Versão 4.00, schemas PL_010h
+    * Reforma Tributária: grupos `IBSCBS`, `gRed`, `gTribSN` e totais `IBSCBSTot`
     * Modelo de Documento fiscal 55 e 65
     * Configuração para utilização em ambiente de produção e homologação (testes)
     * Emissão de notas fiscais normal e em contingência
     * Consulta Status do Serviço
-    * Consultar Cadastro de contribuiente
+    * Consultar Cadastro de contribuinte
     * Consultar nota fiscal pela chave de acesso
     * Consultar protocolo
     * Evento de cancelamento de notas
@@ -34,107 +45,44 @@ Características
     * Consultar Distribuição DF-e
 
 * NFS-e:
-    * Emissão de nota fiscal de serviço eletrônico
+    * Emissão de nota fiscal de serviço eletrônico (Abrasf: Ginfes e Betha)
     * Consultar pelo número da NFS-e
     * Consultar por RPS (recibo provisório de serviço)
     * Consultar Lote
     * Cancelar NFS-e
 
 * MDF-e:
-    * Atualizado para a versão 3.00
-    * Modelo de Documento 58
-    * Emissão de Manifesto
-    * Consultar Status do Serviço
-    * Consultar MDF-e pela chave de acesso
-    * Consultar MDF-es não encerrados
-    * Consultar Recibo
-    * Evento de Cancelamento
-    * Evento de Encerramento de viagem
-    * Evento de Inclusão de Condutor
-    * Evento de Inclusão de DF-e
-    * Evento de Pagamento DF-e
+    * Versão 3.00, modelo 58
+    * Emissão de Manifesto, consultas e eventos (cancelamento, encerramento, inclusão de condutor e de DF-e, pagamento)
 
-* CT-e:
-    * Atualizado para a versão 3.00
-    * Consultar Distribuição DF-e para CT-e
-    * Emissão (A fazer)
-    * Inutilização (A fazer)
-    * Consultar CT-e pela chave de acesso (A fazer)
-    * Consultar Status do Serviço (A fazer)
-    * Eventos relacionados a CT-e (A fazer)
-
-Dependências
-------------
-
-- lxml
-  - Biblioteca de leitura e gravação de arquivos XML, de alta performance e fácil de implementar.
-- signxml
-  - Assinatura e validação do XML
-- pyopenssl
-  - Biblioteca para manuseio do certificado digital
-- requests
-  - Biblioteca para a comunicação com os webservices da SEFAZ
-- suds-community (*apenas para NFS-e)
-  - Biblioteca para a comunicação com os webservices via wsdl
-- PyXB-X (*apenas para NFS-e)
-  - Biblioteca para geração de bindings a partir de XML Schema(xsd)
-- brazilfiscalreport (*apenas para Impressão)
-  - Biblioteca para impressão de DANFE e DAMDFE
-
-Referências
------------
-
-- Sites oficiais:
-  - NFe: http://www.nfe.fazenda.gov.br/
-  - MDF-e: https://dfe-portal.svrs.rs.gov.br/mdfe
-
-- lxml
-  - http://lxml.de/
-
-- requests
-  - http://docs.python-requests.org/en/latest/
-  - https://github.com/psf/requests
-  - https://pypi.python.org/pypi/requests
-
-- Schemas para validação dos arquivos
-  - NFe: http://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=BMPFMBoln3w=
-  - MDFe: https://dfe-portal.svrs.rs.gov.br/Mdfe/Documentos
-
-- Validador de XML
-  - NFe: https://www.sefaz.rs.gov.br/NFE/NFE-VAL.aspx
-  - MDFe: https://dfe-portal.svrs.rs.gov.br/MDFE/ValidadorXML
-
-- Validador de assinaturas
-  - https://servicos.receita.fazenda.gov.br/servicos/assinadoc/ValidadorAssinaturas.app/valida.aspx
-
-- Impressão de Documentos Fiscais
-  - https://github.com/Engenere/BrazilFiscalReport
-  - https://engenere.github.io/BrazilFiscalReport
+* CT-e: Consultar Distribuição DF-e
 
 
 Instalação
 -----------
 
-* Instalar a versão estável: `pip install pynfe`
+A lib não é publicada no PyPI. Para usar como dependência de outro projeto, direto do repositório:
 
-* Instalar as dependências da NFSe: `pip install 'pynfe[nfse]'`
-
-* Instalar as dependências para Impressão: `pip install 'pynfe[impressao]'`
-
-* Instalar versão de desenvolvimento:
 ```sh
-pip install https://github.com/TadaSoftware/PyNFe/archive/refs/heads/main.zip
+uv add "pynfe @ git+https://github.com/WendelSiqueira/PyNFe.git@main"
 ```
 
-* Opcional para NFS-e:
+Dependências opcionais:
+
 ```sh
-pip install --user -r https://github.com/TadaSoftware/PyNFe/blob/main/requirements-nfse.txt
+uv add "pynfe[nfse] @ git+https://github.com/WendelSiqueira/PyNFe.git@main"      # NFS-e
+uv add "pynfe[impressao] @ git+https://github.com/WendelSiqueira/PyNFe.git@main"  # DANFE (brazilfiscalreport)
 ```
 
+Com pip, o mesmo endereço funciona: `pip install "pynfe @ git+https://github.com/WendelSiqueira/PyNFe.git@main"`.
 
-Exemplos de uso
+Dependências principais: `lxml` (XML), `signxml` (assinatura), `pyopenssl` e `cryptography` (certificado A1) e `requests` (webservices da SEFAZ). Para NFS-e, também `suds-community` e `PyXB-X`.
+
+
+Exemplo de uso
 -----------
-  - Consulta Status
+
+Consulta de status do serviço:
 
 ```python
 from pynfe.processamento.comunicacao import ComunicacaoSefaz
@@ -149,47 +97,45 @@ xml = con.status_servico('nfe')
 print(xml.text)
 ```
 
-  Mais exemplos no [Wiki](https://github.com/TadaSoftware/PyNFe/wiki)
+Exemplos de emissão com IBS/CBS em [docs/reforma_tributaria.md](docs/reforma_tributaria.md). Mais exemplos gerais no [Wiki](https://github.com/TadaSoftware/PyNFe/wiki).
 
 
-Testes
+Desenvolvimento
 -----------
+
+As dependências são gerenciadas com o [uv](https://docs.astral.sh/uv/) (`pyproject.toml` e `uv.lock`).
 
 ```sh
-python -m unittest
+# Ambiente com as dependências de desenvolvimento e o extra de NFS-e (necessário para os testes de NFS-e)
+uv sync --extra nfse
+
+# Testes
+uv run pytest
+
+# Lint e formatação (ruff fixado no grupo dev do pyproject.toml)
+uv run ruff check .
+uv run ruff format .
 ```
 
-Lint
+Para atualizar os bindings XSD da NFS-e, execute `gerarnfsebindings.sh`.
+
+Navegação no código: arquivos grandes têm mapas em `docs/*_map.md` (ver [AGENTS.md](AGENTS.md)).
+
+
+Referências
 -----------
 
-* Instalação: `pip install ruff`
-* Checar lint: `ruff check .`
-* Formatar: `ruff format .`
+- Portal da NF-e: http://www.nfe.fazenda.gov.br/
+- Tabela de classificação tributária (cClassTrib): https://dfe-portal.svrs.rs.gov.br/DFE/TabelaClassificacaoTributaria
+- MDF-e: https://dfe-portal.svrs.rs.gov.br/mdfe
+- Validador de XML da NF-e: https://www.sefaz.rs.gov.br/NFE/NFE-VAL.aspx
+- Validador de assinaturas: https://servicos.receita.fazenda.gov.br/servicos/assinadoc/ValidadorAssinaturas.app/valida.aspx
+- Impressão de documentos fiscais: https://github.com/Engenere/BrazilFiscalReport
 
 
-Bindings XSD
+Créditos e licença
 -----------
 
-Para atualizar os bindings XSD da NFSe, execute o script `gerarnfsebindings.sh`.
+Baseado no [PyNFe](https://github.com/TadaSoftware/PyNFe), da TadaSoftware e colaboradores. Autoria original e créditos em [AUTHORS](AUTHORS).
 
-
-Documentação
------------
-- https://github.com/TadaSoftware/PyNFe/wiki
-
-
-Suporte
------------
-Se tiver qualquer problema or sugestão abra uma issue [aqui](https://github.com/TadaSoftware/PyNFe/issues) ou inicie uma discussão sobre um assunto [aqui](https://github.com/TadaSoftware/PyNFe/discussions).
-
-
-Quem utiliza PyNFe
------------
-Lista de empresas/projetos que utilizam a lib PyNFe 
-- Link da lista [aqui](https://github.com/TadaSoftware/PyNFe/wiki/Quem-utiliza-PyNFe).
-- Sinta-se livre para incluir o nome da empresa/projeto na lista.
-
-
-Licença
------------
-PyNFe é licenciada sob a [LGPL-3.0](LICENSE).
+Licenciado sob a [LGPL-3.0](LICENSE).
