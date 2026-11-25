@@ -156,7 +156,7 @@ class ReformaTributariaSerializacaoTestCase(unittest.TestCase):
             ibscbs_v_cbs=Decimal("9.00"),
         )
         nf.adicionar_produto_servico(**kwargs)
-        nf.adicionar_pagamento(t_pag="01", x_pag="Dinheiro", v_pag=1000.00, ind_pag=0)
+        nf.adicionar_pagamento(t_pag="01", v_pag=1000.00, ind_pag=0)
 
         xml = self._serializar_e_assinar()
 
@@ -235,7 +235,7 @@ class ReformaTributariaSerializacaoTestCase(unittest.TestCase):
             ibscbs_c_class_trib="000002",
         )
         nf.adicionar_produto_servico(**kwargs)
-        nf.adicionar_pagamento(t_pag="01", x_pag="Dinheiro", v_pag=50.00, ind_pag=0)
+        nf.adicionar_pagamento(t_pag="01", v_pag=50.00, ind_pag=0)
 
         xml = self._serializar_e_assinar()
 
@@ -296,7 +296,7 @@ class ReformaTributariaSerializacaoTestCase(unittest.TestCase):
             valor_tributos_aprox="0",
         )
 
-        nf.adicionar_pagamento(t_pag="01", x_pag="Dinheiro", v_pag=100.00, ind_pag=0)
+        nf.adicionar_pagamento(t_pag="01", v_pag=100.00, ind_pag=0)
 
         xml = self._serializar_e_assinar()
 
@@ -363,7 +363,7 @@ class ReformaTributariaSerializacaoTestCase(unittest.TestCase):
         )
         nf.adicionar_produto_servico(**p2)
 
-        nf.adicionar_pagamento(t_pag="01", x_pag="Dinheiro", v_pag=1500.00, ind_pag=0)
+        nf.adicionar_pagamento(t_pag="01", v_pag=1500.00, ind_pag=0)
 
         xml = self._serializar_e_assinar()
 
@@ -446,7 +446,7 @@ class ReformaTributariaSerializacaoTestCase(unittest.TestCase):
             ibscbs_v_cbs=Decimal("8.80"),
         )
 
-        nf.adicionar_pagamento(t_pag="01", x_pag="Dinheiro", v_pag=200.00, ind_pag=0)
+        nf.adicionar_pagamento(t_pag="01", v_pag=200.00, ind_pag=0)
 
         xml = self._serializar_e_assinar()
 
@@ -501,7 +501,7 @@ class ReformaTributariaSerializacaoTestCase(unittest.TestCase):
             ibscbs_v_cbs=Decimal("9.00"),
         )
         nf.adicionar_produto_servico(**kwargs)
-        nf.adicionar_pagamento(t_pag="01", x_pag="Dinheiro", v_pag=1000.00, ind_pag=0)
+        nf.adicionar_pagamento(t_pag="01", v_pag=1000.00, ind_pag=0)
 
         xml = self._serializar_e_assinar()
 
@@ -537,7 +537,7 @@ class ReformaTributariaSerializacaoTestCase(unittest.TestCase):
             ibscbs_v_cbs=Decimal("88.00"),
         )
         nf.adicionar_produto_servico(**kwargs)
-        nf.adicionar_pagamento(t_pag="01", x_pag="Dinheiro", v_pag=1000.00, ind_pag=0)
+        nf.adicionar_pagamento(t_pag="01", v_pag=1000.00, ind_pag=0)
 
         xml = self._serializar_e_assinar()
 
@@ -611,7 +611,7 @@ class ReformaTributariaSerializacaoTestCase(unittest.TestCase):
             is_valor=Decimal("10.00"),
         )
         nf.adicionar_produto_servico(**kwargs)
-        nf.adicionar_pagamento(t_pag="01", x_pag="Dinheiro", v_pag=1000.00, ind_pag=0)
+        nf.adicionar_pagamento(t_pag="01", v_pag=1000.00, ind_pag=0)
 
         # Verify entity fields are stored
         produto = nf.produtos_e_servicos[0]
@@ -657,7 +657,7 @@ class ReformaTributariaSerializacaoTestCase(unittest.TestCase):
             ibscbs_v_cbs=Decimal("9.00"),
         )
         nf.adicionar_produto_servico(**kwargs)
-        nf.adicionar_pagamento(t_pag="01", x_pag="Dinheiro", v_pag=1000.00, ind_pag=0)
+        nf.adicionar_pagamento(t_pag="01", v_pag=1000.00, ind_pag=0)
 
         xml = self._serializar_e_assinar()
 
@@ -684,7 +684,7 @@ class ReformaTributariaSerializacaoTestCase(unittest.TestCase):
 
         kwargs = self._base_product_kwargs()
         nf.adicionar_produto_servico(**kwargs)
-        nf.adicionar_pagamento(t_pag="01", x_pag="Dinheiro", v_pag=1000.00, ind_pag=0)
+        nf.adicionar_pagamento(t_pag="01", v_pag=1000.00, ind_pag=0)
 
         xml = self._serializar_e_assinar()
 
@@ -725,7 +725,7 @@ class ReformaTributariaSerializacaoTestCase(unittest.TestCase):
     def test_gred_reducao_60_nos_tres_tributos(self):
         nf = self._nota_fiscal(self._emitente(), self._cliente())
         nf.adicionar_produto_servico(**self._kwargs_gred_60())
-        nf.adicionar_pagamento(t_pag="01", x_pag="Dinheiro", v_pag=1200.00, ind_pag=0)
+        nf.adicionar_pagamento(t_pag="01", v_pag=1200.00, ind_pag=0)
 
         xml = self._serializar_e_assinar()
 
@@ -771,7 +771,7 @@ class ReformaTributariaSerializacaoTestCase(unittest.TestCase):
         )
         nf = self._nota_fiscal(self._emitente(), self._cliente())
         nf.adicionar_produto_servico(**kwargs)
-        nf.adicionar_pagamento(t_pag="01", x_pag="Dinheiro", v_pag=1200.00, ind_pag=0)
+        nf.adicionar_pagamento(t_pag="01", v_pag=1200.00, ind_pag=0)
 
         xml = self._serializar_e_assinar()
 
@@ -789,7 +789,7 @@ class ReformaTributariaSerializacaoTestCase(unittest.TestCase):
             kwargs.pop(campo)
         nf = self._nota_fiscal(self._emitente(), self._cliente())
         nf.adicionar_produto_servico(**kwargs)
-        nf.adicionar_pagamento(t_pag="01", x_pag="Dinheiro", v_pag=1200.00, ind_pag=0)
+        nf.adicionar_pagamento(t_pag="01", v_pag=1200.00, ind_pag=0)
 
         xml = self._serializar_e_assinar()
 
@@ -812,7 +812,7 @@ class ReformaTributariaSerializacaoTestCase(unittest.TestCase):
         )
         nf = self._nota_fiscal(self._emitente(), self._cliente())
         nf.adicionar_produto_servico(**kwargs)
-        nf.adicionar_pagamento(t_pag="01", x_pag="Dinheiro", v_pag=1000.00, ind_pag=0)
+        nf.adicionar_pagamento(t_pag="01", v_pag=1000.00, ind_pag=0)
 
         xml = self._serializar_e_assinar()
 
@@ -823,7 +823,7 @@ class ReformaTributariaSerializacaoTestCase(unittest.TestCase):
         kwargs.pop("ibscbs_p_aliq_efet_cbs")
         nf = self._nota_fiscal(self._emitente(), self._cliente())
         nf.adicionar_produto_servico(**kwargs)
-        nf.adicionar_pagamento(t_pag="01", x_pag="Dinheiro", v_pag=1200.00, ind_pag=0)
+        nf.adicionar_pagamento(t_pag="01", v_pag=1200.00, ind_pag=0)
 
         with self.assertRaisesRegex(ValueError, "gCBS.*pAliqEfet"):
             self._serializar_e_assinar()
@@ -837,12 +837,20 @@ class ReformaTributariaSerializacaoTestCase(unittest.TestCase):
         return self._nota_fiscal(emitente, self._cliente())
 
     def _kwargs_simples(self, **extra):
+        """Item do Simples com gIBSCBS preenchido: a SEFAZ exige o grupo junto com o
+        gTribSN (rejeicoes 1022 sem o grupo e 1026 com o grupo zerado)."""
         kwargs = self._base_product_kwargs()
         kwargs.update(
             icms_modalidade="102",
             icms_csosn="102",
             ibscbs_cst="000",
             ibscbs_c_class_trib="000001",
+            ibscbs_vbc=Decimal("1000.00"),
+            ibscbs_p_ibs_uf=Decimal("0.1000"),
+            ibscbs_v_ibs_uf=Decimal("1.00"),
+            ibscbs_v_ibs=Decimal("1.00"),
+            ibscbs_p_cbs=Decimal("0.9000"),
+            ibscbs_v_cbs=Decimal("9.00"),
         )
         kwargs.update(extra)
         return kwargs
@@ -850,7 +858,7 @@ class ReformaTributariaSerializacaoTestCase(unittest.TestCase):
     def _filhos(self, el):
         return [c.tag.split("}")[-1] for c in el]
 
-    def test_gtribsn_ibs_e_cbs_sem_gibscbs(self):
+    def test_gtribsn_ibs_e_cbs_com_gibscbs(self):
         nf = self._nota_simples()
         nf.adicionar_produto_servico(
             **self._kwargs_simples(
@@ -860,13 +868,13 @@ class ReformaTributariaSerializacaoTestCase(unittest.TestCase):
                 ibscbs_v_cbs_sn=Decimal("6.00"),
             )
         )
-        nf.adicionar_pagamento(t_pag="01", x_pag="Dinheiro", v_pag=1000.00, ind_pag=0)
+        nf.adicionar_pagamento(t_pag="01", v_pag=1000.00, ind_pag=0)
 
         xml = self._serializar_e_assinar()
 
         ibscbs = xml.xpath("//ns:det/ns:imposto/ns:IBSCBS", namespaces=self.ns)[0]
-        # Sem base do regime regular: nao emite gIBSCBS zerado
-        self.assertEqual(self._filhos(ibscbs), ["CST", "cClassTrib", "gTribSN"])
+        # gIBSCBS antes do gTribSN, como na nota autorizada em homologacao SP
+        self.assertEqual(self._filhos(ibscbs), ["CST", "cClassTrib", "gIBSCBS", "gTribSN"])
 
         sn = "//ns:IBSCBS/ns:gTribSN"
         self.assertEqual(
@@ -879,8 +887,8 @@ class ReformaTributariaSerializacaoTestCase(unittest.TestCase):
         self.assertEqual(xml.xpath(sn + "/ns:gCBSSN/ns:vCBSSN", namespaces=self.ns)[0].text, "6.00")
 
         tot = xml.xpath("//ns:total/ns:IBSCBSTot", namespaces=self.ns)[0]
-        self.assertEqual(self._filhos(tot), ["vBCIBSCBS", "gTribSN"])
-        self.assertEqual(tot[0].text, "0.00")
+        self.assertEqual(self._filhos(tot), ["vBCIBSCBS", "gIBS", "gCBS", "gTribSN"])
+        self.assertEqual(tot[0].text, "1000.00")
         self.assertEqual(
             xml.xpath("//ns:IBSCBSTot/ns:gTribSN/ns:vIBSSN", namespaces=self.ns)[0].text, "1.50"
         )
@@ -897,7 +905,7 @@ class ReformaTributariaSerializacaoTestCase(unittest.TestCase):
                 ibscbs_v_cbs_sn=Decimal("6.00"),
             )
         )
-        nf.adicionar_pagamento(t_pag="01", x_pag="Dinheiro", v_pag=1000.00, ind_pag=0)
+        nf.adicionar_pagamento(t_pag="01", v_pag=1000.00, ind_pag=0)
 
         xml = self._serializar_e_assinar()
 
@@ -918,7 +926,7 @@ class ReformaTributariaSerializacaoTestCase(unittest.TestCase):
                     ibscbs_v_cbs_sn=Decimal(v_cbs),
                 )
             )
-        nf.adicionar_pagamento(t_pag="01", x_pag="Dinheiro", v_pag=2000.00, ind_pag=0)
+        nf.adicionar_pagamento(t_pag="01", v_pag=2000.00, ind_pag=0)
 
         xml = self._serializar_e_assinar()
 
@@ -929,29 +937,28 @@ class ReformaTributariaSerializacaoTestCase(unittest.TestCase):
             xml.xpath("//ns:IBSCBSTot/ns:gTribSN/ns:vCBSSN", namespaces=self.ns)[0].text, "9.00"
         )
 
-    def test_gtribsn_com_base_regular_emite_os_dois_grupos(self):
-        """Com vBC informado, gIBSCBS continua sendo emitido, antes do gTribSN."""
-        nf = self._nota_simples()
-        nf.adicionar_produto_servico(
-            **self._kwargs_simples(
-                ibscbs_vbc=Decimal("1000.00"),
-                ibscbs_p_ibs_uf=Decimal("0.1000"),
-                ibscbs_v_ibs_uf=Decimal("1.00"),
-                ibscbs_v_ibs=Decimal("1.00"),
-                ibscbs_p_cbs=Decimal("0.9000"),
-                ibscbs_v_cbs=Decimal("9.00"),
-                ibscbs_p_cbs_sn=Decimal("0.6000"),
-                ibscbs_v_cbs_sn=Decimal("6.00"),
-            )
+    def test_gtribsn_sem_gibscbs_preenchido_levanta_erro(self):
+        """CST tributado sem base nem aliquotas: a lib recusa em vez de emitir um
+        gIBSCBS zerado, que a SEFAZ rejeita (1026)."""
+        kwargs = self._kwargs_simples(
+            ibscbs_p_cbs_sn=Decimal("0.6000"),
+            ibscbs_v_cbs_sn=Decimal("6.00"),
         )
-        nf.adicionar_pagamento(t_pag="01", x_pag="Dinheiro", v_pag=1000.00, ind_pag=0)
+        for campo in (
+            "ibscbs_vbc",
+            "ibscbs_p_ibs_uf",
+            "ibscbs_v_ibs_uf",
+            "ibscbs_v_ibs",
+            "ibscbs_p_cbs",
+            "ibscbs_v_cbs",
+        ):
+            kwargs.pop(campo)
+        nf = self._nota_simples()
+        nf.adicionar_produto_servico(**kwargs)
+        nf.adicionar_pagamento(t_pag="01", v_pag=1000.00, ind_pag=0)
 
-        xml = self._serializar_e_assinar()
-
-        ibscbs = xml.xpath("//ns:det/ns:imposto/ns:IBSCBS", namespaces=self.ns)[0]
-        self.assertEqual(self._filhos(ibscbs), ["CST", "cClassTrib", "gIBSCBS", "gTribSN"])
-        tot = xml.xpath("//ns:total/ns:IBSCBSTot", namespaces=self.ns)[0]
-        self.assertEqual(self._filhos(tot), ["vBCIBSCBS", "gIBS", "gCBS", "gTribSN"])
+        with self.assertRaisesRegex(ValueError, "CST 000: informe base e aliquotas do gIBSCBS"):
+            self._serializar_e_assinar()
 
     def test_gtribsn_sem_gcbssn_levanta_erro(self):
         nf = self._nota_simples()
@@ -961,7 +968,7 @@ class ReformaTributariaSerializacaoTestCase(unittest.TestCase):
                 ibscbs_v_ibs_sn=Decimal("1.50"),
             )
         )
-        nf.adicionar_pagamento(t_pag="01", x_pag="Dinheiro", v_pag=1000.00, ind_pag=0)
+        nf.adicionar_pagamento(t_pag="01", v_pag=1000.00, ind_pag=0)
 
         with self.assertRaisesRegex(ValueError, "gCBSSN e obrigatorio"):
             self._serializar_e_assinar()
@@ -973,10 +980,34 @@ class ReformaTributariaSerializacaoTestCase(unittest.TestCase):
                 ibscbs_p_cbs_sn=Decimal("0.6000"),
             )
         )
-        nf.adicionar_pagamento(t_pag="01", x_pag="Dinheiro", v_pag=1000.00, ind_pag=0)
+        nf.adicionar_pagamento(t_pag="01", v_pag=1000.00, ind_pag=0)
 
         with self.assertRaisesRegex(ValueError, "gCBSSN: informe aliquota e valor"):
             self._serializar_e_assinar()
+
+    # ------------------------------------------------------------------
+    # xPag: a lib serializa o que for informado. A regra da SEFAZ (xPag so com
+    # tPag=99, rejeicao 442) fica com quem usa a lib; ver docs/regras_sefaz.md
+    # ------------------------------------------------------------------
+    def test_xpag_com_tpag_99(self):
+        nf = self._nota_fiscal(self._emitente(), self._cliente())
+        nf.adicionar_produto_servico(**self._base_product_kwargs())
+        nf.adicionar_pagamento(t_pag="99", x_pag="Credito na loja", v_pag=1000.00, ind_pag=0)
+
+        xml = self._serializar_e_assinar()
+
+        self.assertEqual(
+            xml.xpath("//ns:detPag/ns:xPag", namespaces=self.ns)[0].text, "Credito na loja"
+        )
+
+    def test_sem_xpag_quando_nao_informado(self):
+        nf = self._nota_fiscal(self._emitente(), self._cliente())
+        nf.adicionar_produto_servico(**self._base_product_kwargs())
+        nf.adicionar_pagamento(t_pag="01", v_pag=1000.00, ind_pag=0)
+
+        xml = self._serializar_e_assinar()
+
+        self.assertEqual(len(xml.xpath("//ns:detPag/ns:xPag", namespaces=self.ns)), 0)
 
 
 if __name__ == "__main__":

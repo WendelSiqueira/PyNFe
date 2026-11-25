@@ -161,7 +161,7 @@ class SerializacaoNFeTestCase(unittest.TestCase):
             pdevol=Decimal("0.00"),
         )
 
-        self.notafiscal.adicionar_pagamento(t_pag="01", x_pag="Dinheiro", v_pag=119.34, ind_pag=0)
+        self.notafiscal.adicionar_pagamento(t_pag="01", v_pag=119.34, ind_pag=0)
 
     def serializa_nfe(self):
         serializador = SerializacaoXML(_fonte_dados, homologacao=self.homologacao)

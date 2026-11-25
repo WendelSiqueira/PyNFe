@@ -182,7 +182,6 @@ class SerializacaoNFeTestCase(unittest.TestCase):
 
         self.notafiscal.adicionar_pagamento(
             t_pag="03",
-            x_pag="Cartao Credito",
             v_pag=117.00,
             ind_pag=0,
             tp_integra="2",
@@ -191,7 +190,6 @@ class SerializacaoNFeTestCase(unittest.TestCase):
 
         self.notafiscal.adicionar_pagamento(
             t_pag="03",
-            x_pag="Cartao Credito",
             v_pag=117.00,
             ind_pag=0,
             tp_integra="2",

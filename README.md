@@ -93,7 +93,7 @@ print(xml.text)
 
 A conexão com a SEFAZ verifica o certificado do servidor usando as CAs padrão (`certifi`) e as da ICP-Brasil, que vêm com a lib (`pynotas/data/certificados/icp-brasil.pem`). Para usar outra cadeia, passe o caminho em `verificar_ssl="/caminho/cas.pem"`. `verificar_ssl=False` desliga a verificação, mas deixa a conexão sujeita a interceptação.
 
-Exemplos de emissão com IBS/CBS em [docs/reforma_tributaria.md](docs/reforma_tributaria.md). Mais exemplos gerais no [Wiki](https://github.com/TadaSoftware/PyNFe/wiki).
+Exemplos de emissão com IBS/CBS em [docs/reforma_tributaria.md](docs/reforma_tributaria.md). O que a lib valida, e as rejeições da SEFAZ já verificadas em homologação, estão em [docs/regras_sefaz.md](docs/regras_sefaz.md). Mais exemplos gerais no [Wiki](https://github.com/TadaSoftware/PyNFe/wiki).
 
 
 Desenvolvimento
