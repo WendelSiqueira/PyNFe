@@ -1313,11 +1313,21 @@ class SerializacaoXML(Serializacao):
         if produto_servico.ibscbs_c_class_trib:
             etree.SubElement(ibscbs, "cClassTrib").text = produto_servico.ibscbs_c_class_trib
 
-        # Item do Simples Nacional (gTribSN) sem base de calculo do regime
-        # regular: nao emite um gIBSCBS zerado, apenas o gTribSN.
-        so_simples = produto_servico.tem_trib_sn() and not produto_servico.ibscbs_vbc
-
-        if produto_servico.ibscbs_cst in self._IBSCBS_CST_TRIBUTADOS and not so_simples:
+        # gIBSCBS e emitido para CST tributado mesmo quando o item tambem informa
+        # gTribSN (Simples Nacional). Verificado em homologacao SP: sem o grupo a
+        # SEFAZ rejeita com 1022 ("Grupo gIBSCBS nao informado") e com o grupo
+        # zerado, com 1026 ("Aliquota do IBS da UF invalida").
+        if produto_servico.ibscbs_cst in self._IBSCBS_CST_TRIBUTADOS:
+            if not (
+                produto_servico.ibscbs_vbc
+                or produto_servico.ibscbs_p_ibs_uf
+                or produto_servico.ibscbs_p_cbs
+            ):
+                raise ValueError(
+                    "IBSCBS CST %s: informe base e aliquotas do gIBSCBS (ibscbs_vbc, "
+                    "ibscbs_p_ibs_uf, ibscbs_p_cbs...). A SEFAZ exige o grupo preenchido, "
+                    "inclusive junto com o gTribSN." % produto_servico.ibscbs_cst
+                )
             gibscbs = etree.SubElement(ibscbs, "gIBSCBS")
 
             etree.SubElement(gibscbs, "vBC").text = "{:.2f}".format(produto_servico.ibscbs_vbc or 0)
@@ -1530,6 +1540,13 @@ class SerializacaoXML(Serializacao):
             etree.SubElement(detpag, "vPag").text = "{:.2f}".format(0)
         else:
             for item in pagamentos:
+                # xPag (descricao do meio de pagamento) so e aceito com tPag=99
+                # (Outros); com outro tipo a SEFAZ rejeita com 442.
+                if item.x_pag and str(item.t_pag) != "99":
+                    raise ValueError(
+                        "Pagamento com tPag=%s nao aceita xPag (descricao); informe xPag "
+                        "apenas com tPag=99 (Outros)." % item.t_pag
+                    )
                 det = etree.Element("detPag")
                 xmlw.write_txt(det, "indPag", item.ind_pag, False)
                 xmlw.write_txt(det, "tPag", item.t_pag, True)

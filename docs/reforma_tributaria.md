@@ -191,7 +191,7 @@ Regras:
 
 ### Exemplo: Simples Nacional (gTribSN)
 
-Composicao do IBS e da CBS para optantes do Simples (valores ilustrativos):
+Composicao do IBS e da CBS para optantes do Simples. O `gIBSCBS` tambem precisa ser informado: a SEFAZ rejeita o `gTribSN` sem ele. Os valores abaixo usam as aliquotas de teste de 2026 e sao ilustrativos:
 
 ```python
 nota_fiscal.adicionar_produto_servico(
@@ -199,22 +199,40 @@ nota_fiscal.adicionar_produto_servico(
     ibscbs_cst="000",
     ibscbs_c_class_trib="000001",
 
-    ibscbs_p_ibs_sn=Decimal("0.1500"),  # gTribSN/gIBSSN/pIBSSN - aliquota efetiva
-    ibscbs_v_ibs_sn=Decimal("1.50"),    # gTribSN/gIBSSN/vIBSSN
-    ibscbs_p_cbs_sn=Decimal("0.6000"),  # gTribSN/gCBSSN/pCBSSN - aliquota efetiva
-    ibscbs_v_cbs_sn=Decimal("6.00"),    # gTribSN/gCBSSN/vCBSSN
+    # gIBSCBS (obrigatorio tambem para o Simples)
+    ibscbs_vbc=Decimal("10.00"),
+    ibscbs_p_ibs_uf=Decimal("0.1000"),
+    ibscbs_v_ibs_uf=Decimal("0.01"),
+    ibscbs_p_ibs_mun=Decimal("0.0000"),
+    ibscbs_v_ibs_mun=Decimal("0.00"),
+    ibscbs_v_ibs=Decimal("0.01"),
+    ibscbs_p_cbs=Decimal("0.9000"),
+    ibscbs_v_cbs=Decimal("0.09"),
+
+    # gTribSN
+    ibscbs_p_ibs_sn=Decimal("0.1000"),  # gTribSN/gIBSSN/pIBSSN - aliquota efetiva
+    ibscbs_v_ibs_sn=Decimal("0.01"),    # gTribSN/gIBSSN/vIBSSN
+    ibscbs_p_cbs_sn=Decimal("0.9000"),  # gTribSN/gCBSSN/pCBSSN - aliquota efetiva
+    ibscbs_v_cbs_sn=Decimal("0.09"),    # gTribSN/gCBSSN/vCBSSN
 )
 ```
 
-XML gerado:
+XML gerado (estrutura de uma NF-e autorizada em homologacao na SEFAZ-SP, emitente MEI):
 
 ```xml
 <IBSCBS>
   <CST>000</CST>
   <cClassTrib>000001</cClassTrib>
+  <gIBSCBS>
+    <vBC>10.00</vBC>
+    <gIBSUF><pIBSUF>0.1000</pIBSUF><vIBSUF>0.01</vIBSUF></gIBSUF>
+    <gIBSMun><pIBSMun>0.0000</pIBSMun><vIBSMun>0.00</vIBSMun></gIBSMun>
+    <vIBS>0.01</vIBS>
+    <gCBS><pCBS>0.9000</pCBS><vCBS>0.09</vCBS></gCBS>
+  </gIBSCBS>
   <gTribSN>
-    <gIBSSN><pIBSSN>0.1500</pIBSSN><vIBSSN>1.50</vIBSSN></gIBSSN>
-    <gCBSSN><pCBSSN>0.6000</pCBSSN><vCBSSN>6.00</vCBSSN></gCBSSN>
+    <gIBSSN><pIBSSN>0.1000</pIBSSN><vIBSSN>0.01</vIBSSN></gIBSSN>
+    <gCBSSN><pCBSSN>0.9000</pCBSSN><vCBSSN>0.09</vCBSSN></gCBSSN>
   </gTribSN>
 </IBSCBS>
 ```
@@ -223,11 +241,18 @@ Regras:
 
 - `gTribSN` e emitido quando algum campo `ibscbs_*_sn` e informado (padrao `None`).
 - `gCBSSN` e obrigatorio; `gIBSSN` e opcional (sem IBS, por exemplo CRT=2). Cada subgrupo exige aliquota e valor, senao a serializacao levanta `ValueError`.
-- Item com `gTribSN` **sem** `ibscbs_vbc` nao emite `gIBSCBS` (evita um grupo do regime regular zerado). Informando `ibscbs_vbc`, os dois grupos sao emitidos, `gIBSCBS` antes de `gTribSN`.
-- Totais: `IBSCBSTot/gTribSN` com `vIBSSN` e `vCBSSN` somados dos itens. `vIBSSN` e sempre emitido (obrigatorio no schema), com `0.00` quando nenhum item tem IBS. Uma nota so com `gTribSN` tambem emite `IBSCBSTot`, com `vBCIBSCBS` igual a `0.00`.
+- `gIBSCBS` e emitido antes do `gTribSN` e precisa estar preenchido. Para CST tributado sem base nem aliquotas, a serializacao levanta `ValueError` em vez de gerar um grupo zerado.
+- Totais: `IBSCBSTot/gTribSN` com `vIBSSN` e `vCBSSN` somados dos itens. `vIBSSN` e sempre emitido (obrigatorio no schema), com `0.00` quando nenhum item tem IBS.
 - A lib nao calcula aliquotas efetivas nem valores. Para o calculo, ver a calculadora oficial da Receita Federal para o Simples Nacional (`ReceitaFederal/calculadora-rtc-simples-nacional`).
 
-> **A confirmar com a contabilidade:** quais CST/cClassTrib usar nos itens do Simples e se a SEFAZ exige `gIBSCBS` junto com `gTribSN`. O schema aceita as duas formas.
+Rejeicoes verificadas em homologacao (SEFAZ-SP):
+
+| cStat | Motivo | Causa |
+|-------|--------|-------|
+| 1022 | Grupo gIBSCBS nao informado | `gTribSN` sem `gIBSCBS` |
+| 1026 | Aliquota do IBS da UF invalida | `gIBSCBS` com aliquotas zeradas |
+
+> **A confirmar com a contabilidade:** quais CST/cClassTrib e quais valores usar nos itens do Simples. A estrutura acima foi aceita pela SEFAZ; os valores sao de teste.
 
 ### Exemplo: sem reforma tributaria (compatibilidade retroativa)
 
