@@ -71,7 +71,7 @@ Entity models for NF-e/NFC-e invoices and related objects (products, taxes, paym
 | COFINS fields | 945-989 | cofins_modalidade, cofins_valor_base_calculo, cofins_aliquota_percentual, cofins_aliquota_reais, cofins_valor, cofins_st_* |
 | ISSQN fields | 991-1010 | issqn_valor_base_calculo, issqn_aliquota, issqn_lista_servico, issqn_uf, issqn_municipio, issqn_valor |
 | Import tax fields | 1012-1023 | imposto_importacao_valor_base_calculo, imposto_importacao_valor_despesas_aduaneiras, imposto_importacao_valor_iof, imposto_importacao_valor |
-| **Reforma Tributaria fields** | 1025-1054 | **IBSCBS**: ibscbs_cst, ibscbs_c_class_trib, ibscbs_vbc, ibscbs_p_ibs_uf, ibscbs_v_ibs_uf, ibscbs_p_ibs_mun, ibscbs_v_ibs_mun, ibscbs_v_ibs, ibscbs_p_cbs, ibscbs_v_cbs; **IS**: is_cst_selec, is_c_class_trib, is_vbc, is_aliquota, is_valor |
+| **Reforma Tributaria fields** | 1025-1065 | **IBSCBS**: ibscbs_cst, ibscbs_c_class_trib, ibscbs_vbc, ibscbs_p_ibs_uf, ibscbs_v_ibs_uf, ibscbs_p_ibs_mun, ibscbs_v_ibs_mun, ibscbs_v_ibs, ibscbs_p_cbs, ibscbs_v_cbs; **gRed** (default None): ibscbs_p_red_aliq_{ibs_uf,ibs_mun,cbs}, ibscbs_p_aliq_efet_{ibs_uf,ibs_mun,cbs}; **IS**: is_cst_selec, is_c_class_trib, is_vbc, is_aliquota, is_valor |
 | Additional info | 1056-1071 | informacoes_adicionais, declaracoes_importacao |
 
 ---

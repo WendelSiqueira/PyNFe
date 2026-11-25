@@ -48,9 +48,10 @@ Abstract base for all serializers. Stores `_fonte_dados`, `_ambiente` (1=prod, 2
 | `_serializar_imposto_pis()` | 1128-1200 | PIS tax |
 | `_serializar_imposto_cofins()` | 1202-1277 | COFINS tax |
 | `_serializar_imposto_importacao()` | 1279-1301 | Import tax (II) |
-| `_serializar_imposto_ibscbs()` | 1310-1328 | **Reforma Tributaria** — dispatches IBSCBS + IS serialization |
-| `_serializar_ibscbs()` | 1330-1369 | IBSCBS (IBS + CBS) — `<IBSCBS>` as direct child of `<imposto>` |
-| `_serializar_is()` | 1371-1386 | IS (Imposto Seletivo) — ready but not called until 2027 |
+| `_serializar_imposto_ibscbs()` | 1322-1340 | **Reforma Tributaria** — dispatches IBSCBS + IS serialization |
+| `_serializar_ibscbs()` | 1342-1396 | IBSCBS (IBS + CBS) — `<IBSCBS>` as direct child of `<imposto>` |
+| `_serializar_gred()` | 1398-1414 | gRed (TRed) — reducao de aliquota inside gIBSUF/gIBSMun/gCBS; raises ValueError if pAliqEfet missing |
+| `_serializar_is()` | 1416-1431 | IS (Imposto Seletivo) — ready but not called until 2027 |
 | `_serializar_declaracao_importacao()` | 1388-1438 | Import declaration (DI) |
 
 ### ICMS Modalities Detail (within `_serializar_imposto_icms`)
