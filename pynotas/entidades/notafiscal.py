@@ -1281,37 +1281,6 @@ class NotaFiscalEntregaRetirada(Entidade):
     endereco_telefone = str()
 
 
-class NotaFiscalServico(Entidade):
-    # id do rps
-    identificador = str()
-    # tag competencia
-    data_emissao = None
-    # Serviço executado pelo prestador
-    servico = None
-    # Emitente da NFS-e
-    emitente = None
-    # Cliente para quem a NFS-e será emitida
-    cliente = None
-    # Optante Simples Nacional
-    simples = int()  # 1-Sim; 2-Não
-    # Incentivo Fiscal
-    incentivo = int()  # 1-Sim; 2-Não
-    # Serie
-    serie = str()
-    # Tipo
-    tipo = str()
-    # Natureza de operação
-    natureza_operacao = int()
-    # Regime especial de tributação
-    regime_especial = int()
-
-    def __init__(self, *args, **kwargs):
-        super(NotaFiscalServico, self).__init__(*args, **kwargs)
-
-    def __str__(self):
-        return " ".join([str(self.identificador)])
-
-
 class NotaFiscalResponsavelTecnico(Entidade):
     # NT 2018/003
     cnpj = str()

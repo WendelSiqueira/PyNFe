@@ -7,8 +7,6 @@ NAMESPACE_XSI = "http://www.w3.org/2001/XMLSchema-instance"
 NAMESPACE_XSD = "http://www.w3.org/2001/XMLSchema"
 NAMESPACE_METODO = "http://www.portalfiscal.inf.br/nfe/wsdl/"
 
-NAMESPACE_SOAP_NFSE = "http://schemas.xmlsoap.org/soap/envelope/"
-NAMESPACE_BETHA = "http://www.betha.com.br/e-nota-contribuinte-ws"
 
 NAMESPACE_MDFE = "http://www.portalfiscal.inf.br/mdfe"
 NAMESPACE_MDFE_METODO = "http://www.portalfiscal.inf.br/mdfe/wsdl/"

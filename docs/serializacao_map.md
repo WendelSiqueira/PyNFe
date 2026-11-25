@@ -1,25 +1,24 @@
-# Source Map: `serializacao.py` (2771 lines)
+# Source Map: `serializacao.py` (2803 lines)
 
-XML serialization of NF-e, NFC-e, NFS-e and MDF-e documents into SEFAZ-compliant XML format.
+XML serialization of NF-e, NFC-e and MDF-e documents into SEFAZ-compliant XML format.
 
 ## Classes Overview
 
 | Class | Lines | Purpose |
 |-------|-------|---------|
-| `Serializacao` | 30-63 | Abstract base class (not instantiable directly) |
-| `SerializacaoXML` | 66-1860 | Main NF-e/NFC-e XML serialization |
-| `SerializacaoQrcode` | 2102-2206 | NFC-e QR Code generation |
-| `SerializacaoNfse` | 2209-2275 | NFS-e serialization (Betha/Ginfes) |
-| `SerializacaoQrcodeMDFe` | 2278-2301 | MDF-e QR Code generation |
-| `SerializacaoMDFe` | 2304-2771 | MDF-e XML serialization |
+| `Serializacao` | 31-64 | Abstract base class (not instantiable directly) |
+| `SerializacaoXML` | 67-2192 | Main NF-e/NFC-e XML serialization |
+| `SerializacaoQrcode` | 2195-2307 | NFC-e QR Code generation |
+| `SerializacaoQrcodeMDFe` | 2310-2333 | MDF-e QR Code generation |
+| `SerializacaoMDFe` | 2336-2803 | MDF-e XML serialization |
 
 ---
 
-## `Serializacao` (base class) — Lines 30-63
+## `Serializacao` (base class) — Lines 31-64
 
 Abstract base for all serializers. Stores `_fonte_dados`, `_ambiente` (1=prod, 2=homolog), `_contingencia`, `_so_cpf`.
 
-## `SerializacaoXML` — Lines 66-1860
+## `SerializacaoXML` — Lines 67-2192
 
 ### Exported Methods
 | Method | Lines | Purpose |
@@ -104,32 +103,28 @@ Abstract base for all serializers. Stores `_fonte_dados`, `_ambiente` (1=prod, 2
 
 ---
 
-## `SerializacaoQrcode` — Lines 2102-2206
+## `SerializacaoQrcode` — Lines 2195-2307
 
 Generates NFC-e QR Code URL. Handles online/offline modes and state-specific URL patterns (SP, BA, MG, etc.).
 
-## `SerializacaoNfse` — Lines 2209-2275
-
-Delegates to Betha or Ginfes serializers. Methods: `gerar`, `gerar_lote`, `consultar_nfse`, `consultar_lote`, `consultar_rps`, `consultar_situacao_lote`, `cancelar`.
-
-## `SerializacaoQrcodeMDFe` — Lines 2278-2301
+## `SerializacaoQrcodeMDFe` — Lines 2310-2333
 
 Generates MDF-e QR Code URL using SVRS endpoint.
 
-## `SerializacaoMDFe` — Lines 2304-2771
+## `SerializacaoMDFe` — Lines 2336-2803
 
 ### Methods
 | Method | Lines | Purpose |
 |--------|-------|---------|
-| `exportar()` | 2309-2335 | Main entry: exports MDF-e XML |
-| `_serializar_emitente()` | 2343-2375 | MDF-e issuer (CPF/CNPJ, IE, address) |
-| `_serializar_municipio_carrega()` | 2377-2387 | Loading municipality |
-| `_serializar_percurso()` | 2389-2396 | Route (UF waypoints) |
-| `_serializar_modal_rodoviario()` | 2398-2557 | **Road modal** (ANTT, CIOT, tolls, contractors, traction vehicle, trailer) |
-| `_serializar_documentos()` | 2559-2583 | Linked documents (NF-e or CT-e) |
-| `_serializar_seguradora()` | 2585-2605 | Insurance info |
-| `_serializar_produto()` | 2607-2617 | Predominant product |
-| `_serializar_totais()` | 2619-2639 | Totals (weight, qty) |
-| `_serializar_lacres()` | 2641-2648 | Seals |
-| `_serializar_responsavel_tecnico()` | 2650-2662 | Technical responsible |
-| `_serializar_manifesto()` | 2664-2771 | **Main MDF-e assembly** (ide, emit, modal, doc, seg, prod, tot, lacres, infAdic, infRespTec) |
+| `exportar()` | 2341-2367 | Main entry: exports MDF-e XML |
+| `_serializar_emitente()` | 2375-2407 | MDF-e issuer (CPF/CNPJ, IE, address) |
+| `_serializar_municipio_carrega()` | 2409-2419 | Loading municipality |
+| `_serializar_percurso()` | 2421-2428 | Route (UF waypoints) |
+| `_serializar_modal_rodoviario()` | 2430-2589 | **Road modal** (ANTT, CIOT, tolls, contractors, traction vehicle, trailer) |
+| `_serializar_documentos()` | 2591-2615 | Linked documents (NF-e or CT-e) |
+| `_serializar_seguradora()` | 2617-2637 | Insurance info |
+| `_serializar_produto()` | 2639-2649 | Predominant product |
+| `_serializar_totais()` | 2651-2671 | Totals (weight, qty) |
+| `_serializar_lacres()` | 2673-2680 | Seals |
+| `_serializar_responsavel_tecnico()` | 2682-2694 | Technical responsible |
+| `_serializar_manifesto()` | 2696-2803 | **Main MDF-e assembly** (ide, emit, modal, doc, seg, prod, tot, lacres, infAdic, infRespTec) |

@@ -1,4 +1,4 @@
-# Source Map: `webservices.py` (572 lines)
+# Source Map: `webservices.py` (545 lines)
 
 SEFAZ webservice endpoint URLs organized by document type, state, and environment.
 
@@ -8,9 +8,8 @@ SEFAZ webservice endpoint URLs organized by document type, state, and environmen
 |---------|-------|----------|---------|
 | NFC-e endpoints | 8-295 | `NFCE` | NFC-e webservice URLs and QR Code URLs by state |
 | NF-e endpoints | 297-471 | `NFE` | NF-e webservice URLs by state |
-| NFS-e endpoints | 473-499 | `NFSE` | NFS-e URLs (Betha, Ginfes) |
-| MDF-e endpoints | 501-516 | `MDFE` | MDF-e URLs (SVRS only) |
-| CT-e endpoints | 518-572 | `CTE` | CT-e URLs by state |
+| MDF-e endpoints | 475-490 | `MDFE` | MDF-e URLs (SVRS only) |
+| CT-e endpoints | 492-546 | `CTE` | CT-e URLs by state |
 
 ## URL Structure
 
@@ -45,19 +44,13 @@ Each state/virtual environment entry contains:
 | `SVC-AN` | 452-460 | Contingency AN |
 | `SVC-RS` | 461-470 | Contingency RS |
 
-### NFS-e (`NFSE`) — Lines 473-499
-| Key | Lines | Description |
-|-----|-------|-------------|
-| `BETHA` | 476-486 | Betha provider (HTTP WSDL) |
-| `GINFES` | 488-498 | Ginfes provider (HTTPS WSDL) |
-
-### MDF-e (`MDFE`) — Lines 501-516
+### MDF-e (`MDFE`) — Lines 475-490
 Only `SVRS` — single authorizer for all states.
 
-### CT-e (`CTE`) — Lines 518-572
+### CT-e (`CTE`) — Lines 492-546
 | Key | Lines | Description |
 |-----|-------|-------------|
-| `AN` | 519-523 | National environment (distribution) |
-| Individual states | 524-558 | MT, MS, MG, PR, RS, SP |
-| `SVRS` | 560-565 | Virtual SEFAZ RS |
-| `SVSP` | 566-571 | Virtual SEFAZ SP (AP, PE, RR) |
+| `AN` | 493-497 | National environment (distribution) |
+| Individual states | 498-532 | MT, MS, MG, PR, RS, SP |
+| `SVRS` | 534-539 | Virtual SEFAZ RS |
+| `SVSP` | 540-545 | Virtual SEFAZ SP (AP, PE, RR) |
