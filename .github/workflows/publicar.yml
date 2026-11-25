@@ -1,0 +1,52 @@
+name: Publicar
+
+# Publica no TestPyPI ao enviar uma tag de versao (ex.: v0.8.0).
+# Usa trusted publishing: o TestPyPI confia neste workflow, sem token guardado.
+# Configuracao no TestPyPI (pending publisher): projeto pynotas-br, dono
+# WendelSiqueira, repositorio pyNotas, workflow publicar.yml, ambiente testpypi.
+on:
+  push:
+    tags: ["v*"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v6
+      - name: Testes
+        run: |
+          uv sync --locked
+          uv run pytest -q
+      - name: Tag igual a versao do pacote
+        run: |
+          versao=$(uv run python -c "import pynotas; print(pynotas.__version__)")
+          if [ "v$versao" != "$GITHUB_REF_NAME" ]; then
+            echo "A tag $GITHUB_REF_NAME nao bate com a versao do pacote ($versao)"
+            exit 1
+          fi
+      - name: Build
+        run: uv build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist/
+
+  testpypi:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: testpypi
+      url: https://test.pypi.org/p/pynotas-br
+    permissions:
+      id-token: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist/
+      - name: Publicar no TestPyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          repository-url: https://test.pypi.org/legacy/
