@@ -15,13 +15,13 @@ This allows you to navigate directly to the specific line-window you need instea
 
 | Source Map | File | Lines | Description |
 |------------|------|-------|-------------|
-| `docs/serializacao_map.md` | `pynotas/processamento/serializacao.py` | 2803 | XML serialization (NF-e, MDF-e, QR codes) |
-| `docs/comunicacao_map.md` | `pynotas/processamento/comunicacao.py` | 1113 | SEFAZ webservice communication |
-| `docs/notafiscal_map.md` | `pynotas/entidades/notafiscal.py` | 1313 | Invoice entities and tax fields |
+| `docs/serializacao_map.md` | `pynotas/processamento/serializacao.py` | 2748 | XML serialization (NF-e, MDF-e, QR codes) |
+| `docs/comunicacao_map.md` | `pynotas/processamento/comunicacao.py` | 1103 | SEFAZ webservice communication |
+| `docs/notafiscal_map.md` | `pynotas/entidades/notafiscal.py` | 1307 | Invoice entities and tax fields |
 | `docs/manifesto_map.md` | `pynotas/entidades/manifesto.py` | 447 | MDF-e manifest entities |
 | `docs/evento_map.md` | `pynotas/entidades/evento.py` | 237 | Event entities (cancel, correction, etc.) |
 | `docs/flags_map.md` | `pynotas/utils/flags.py` | 679 | Constants, namespaces, tax codes |
-| `docs/webservices_map.md` | `pynotas/utils/webservices.py` | 545 | SEFAZ endpoint URLs by state |
+| `docs/webservices_map.md` | `pynotas/utils/webservices.py` | 542 | SEFAZ endpoint URLs by state |
 | `docs/utils_map.md` | `pynotas/utils/__init__.py` | 253 | Utility functions (municipality lookup, signing) |
 
 ### How to Use Source Maps

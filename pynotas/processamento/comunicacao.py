@@ -283,8 +283,6 @@ class ComunicacaoSefaz(Comunicacao):
         # Monta tipo de documento CNPJ, CPF ou IE
         etree.SubElement(info, tipo.upper()).text = documento
 
-        # etree.SubElement(info, 'CPF').text = cpf
-
         # Monta XML para envio da requisição
         xml = self._construir_xml_soap("CadConsultaCadastro4", raiz)
         # Chama método que efetua a requisição POST no servidor SOAP
@@ -660,8 +658,6 @@ class ComunicacaoMDFe(Comunicacao):
         etree.SubElement(raiz, "idLote").text = str(
             id_lote
         )  # numero autoincremental gerado pelo sistema
-        # etree.SubElement(raiz, 'indSinc').text = str(ind_sinc)
-        # # 0 para assincrono, 1 para sincrono
         raiz.append(manifesto)
 
         # Monta XML para envio da requisição
@@ -803,9 +799,6 @@ class ComunicacaoMDFe(Comunicacao):
 
         a = etree.SubElement(body, self._envio_mensagem, xmlns=self._namespace_metodo + metodo)
 
-        # if metodo == 'MDFeRecepcaoSinc':
-        #     body_base64 = base64.b16encode(a).decode()
-
         a.append(dados)
         return raiz
 
@@ -842,9 +835,6 @@ class ComunicacaoMDFe(Comunicacao):
             )
             xml = xml_declaration + xml
             xml = xml.encode("utf8")  # necessário para o evento "CONSULTAR NÃO ENCERRADOS"
-
-            print(xml)
-            print("-" * 20)
 
             # Faz o request com o servidor
             result = requests.post(

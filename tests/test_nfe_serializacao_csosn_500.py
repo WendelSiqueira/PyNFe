@@ -116,7 +116,6 @@ class SerializacaoNFeTestCase(unittest.TestCase):
             codigo="000328",  # id do produto
             descricao="Produto teste",
             ncm="99999999",
-            # cest='0100100',  # NT2015/003
             ean="1234567890121",
             cfop="5102",
             unidade_comercial="UN",

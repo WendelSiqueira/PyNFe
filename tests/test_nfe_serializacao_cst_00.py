@@ -116,7 +116,6 @@ class SerializacaoNFeTestCase(unittest.TestCase):
             codigo="000328",  # id do produto
             descricao="Produto teste",
             ncm="99999999",
-            # cest='0100100',  # NT2015/003
             ean="1234567890121",
             cfop="5102",
             unidade_comercial="UN",
@@ -238,8 +237,6 @@ class SerializacaoNFeTestCase(unittest.TestCase):
         self.assertEqual(vBC, "0")
         self.assertEqual(pICMS, "0.00")
         self.assertEqual(vICMS, "0.00")
-        # self.assertEqual(pFCP, '0.00')
-        # self.assertEqual(vFCP, '0.00')
         self.assertEqual(pFCP, None)
         self.assertEqual(vFCP, None)
 
