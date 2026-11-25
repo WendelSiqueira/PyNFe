@@ -1,3 +1,15 @@
+pyNotas
+=======
+
+O pyNotas é mantido por Wendel Siqueira e deriva do PyNFe
+<https://github.com/TadaSoftware/PyNFe>, mantido pela TadaSoftware. A lista
+completa de quem contribuiu com o código está no histórico do git
+(git shortlog -sn).
+
+O texto abaixo é o registro de autoria original do PyNFe, mantido sem
+alterações.
+
+
 Sobre os autores deste e outros créditos
 ========================================
 

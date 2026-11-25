@@ -1,8 +1,10 @@
-def get_version():
-    return "0.6.0"
-
-
-__version__ = get_version()
+__version__ = "0.7.0"
 __author__ = "Marinho Brandao, Junior Tada, Leonardo Tada"
+__maintainer__ = "Wendel Siqueira"
 __license__ = "GNU Lesser General Public License (LGPL)"
 __url__ = "https://github.com/WendelSiqueira/pyNotas"
+
+
+def get_version():
+    """Versao da lib. Fonte unica: o pyproject.toml le __version__ deste arquivo."""
+    return __version__

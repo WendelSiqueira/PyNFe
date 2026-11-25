@@ -1,9 +1,15 @@
 [project]
 name = "pyNotas"
-version = "0.6.5"
+# Versao lida de pynotas/__init__.py (__version__), a mesma usada no verProc da nota
+dynamic = ["version"]
 description = "Interface library with the Brazilian Electronic Invoice web services"
+# Autores do PyNFe original, do qual o pyNotas deriva (ver AUTHORS)
 authors = [
-    {name = "TadaSoftware", email = "tadasoftware@gmail.com"}
+    {name = "Marinho Brandão"},
+    {name = "TadaSoftware", email = "tadasoftware@gmail.com"},
+]
+maintainers = [
+    {name = "Wendel Siqueira", email = "wendel.don@gmail.com"},
 ]
 readme = "README.md"
 requires-python = ">=3.9, <4"
@@ -43,6 +49,9 @@ dev = [
 [build-system]
 requires = ["setuptools>=64"]
 build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+version = {attr = "pynotas.__version__"}
 
 [tool.setuptools.packages.find]
 include = ["pynotas*"]
