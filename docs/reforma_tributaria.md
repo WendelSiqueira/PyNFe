@@ -45,31 +45,41 @@ A implementacao cobre:
 
 ## CSTs disponiveis
 
-### IBS e CBS — CST de 3 digitos (compartilham a mesma tabela)
+Tabelas oficiais da calculadora RTC da Receita Federal (base V0073: IT 2025.002 v1.71, publicada em 30/10/2026), em `pynotas.utils.flags`.
+
+### IBS e CBS
 
 ```python
-from pynotas.utils.flags import IBS_CBS_TIPOS_TRIBUTACAO
+from pynotas.utils.flags import IBS_CBS_TIPOS_TRIBUTACAO, IBS_CBS_CST_GRUPOS
 ```
 
-| CST | Descricao |
-|-----|-----------|
-| 000 | Tributacao integral |
-| 010 | Tributacao com aliquota reduzida |
-| 100 | Tributacao com suspensao |
-| 110 | Imunidade — exportacao |
-| 200 | Tributacao com diferimento |
-| 222 | Isencao |
-| 300 | Nao incidencia |
-| 400 | Tributacao por substituicao |
-| 410 | Tributacao com aliquota zero |
-| 510 | Tributacao integral — regime especifico |
-| 600 | Tributacao monofasica — incidencia padrao |
-| 620 | Tributacao monofasica — demais operacoes |
-| 800 | Credito presumido |
-| 810 | Credito presumido — ZFM |
-| 900 | Outros |
+| CST | Descricao | Grupos exigidos | Na lib |
+|-----|-----------|-----------------|--------|
+| 000 | Tributação integral | gIBSCBS | sim |
+| 010 | Tributação com alíquotas uniformes | gIBSCBS | sim |
+| 011 | Tributação com alíquotas uniformes reduzidas | gIBSCBS, gRed | sim |
+| 200 | Alíquota reduzida | gIBSCBS, gRed | sim |
+| 220 | Alíquota fixa | gIBSCBS | sim |
+| 221 | Alíquota fixa proporcional | gIBSCBS | sim |
+| 222 | Redução de Base de Cálculo | gIBSCBS | sim |
+| 400 | Isenção | — | sim |
+| 410 | Imunidade e não incidência | — | sim |
+| 510 | Diferimento | gIBSCBS, gDif | nao (gDif) |
+| 515 | Diferimento com redução de alíquota | gIBSCBS, gRed, gDif | nao (gDif) |
+| 550 | Suspensão | gIBSCBS | sim |
+| 620 | Tributação monofásica | gIBSCBSMono | nao |
+| 800 | Transferência de crédito | gTransfCred | nao |
+| 810 | Ajustes de IBS na ZFM | gCredPresIBSZFM | nao |
+| 811 | Ajustes | gAjusteCompet | nao |
+| 820 | Tributação em documento específico | — | sim |
+| 830 | Exclusão de base de cálculo | gIBSCBS | sim |
 
-### IS (Imposto Seletivo) — CSTIS de 2 digitos
+- `gIBSCBS` e emitido conforme a tabela. Para CST que exige um grupo que a lib ainda nao gera, a serializacao levanta `NotImplementedError`. CST fora da tabela gera um aviso e so CST + cClassTrib.
+- `gRed` (reducao de aliquota) e informado pelo usuario (campos `ibscbs_p_red_aliq_*`); a lib nao bloqueia a falta dele nos CSTs 011, 200 e 515 (regra da SEFAZ).
+- Alguns cClassTrib exigem grupos proprios, como `gTribRegular` (rejeicao 1065 em homologacao com o cClassTrib 550001), ainda nao implementado.
+- O cClassTrib precisa ser permitido para o modelo do documento: em homologacao, cClassTrib de 400 e 222 (exportacao e transporte) foram rejeitados em NF-e com 1025.
+
+### IS (Imposto Seletivo) — a partir de 2027
 
 ```python
 from pynotas.utils.flags import IS_TIPOS_TRIBUTACAO
@@ -77,15 +87,15 @@ from pynotas.utils.flags import IS_TIPOS_TRIBUTACAO
 
 | CSTIS | Descricao |
 |-------|-----------|
-| 01 | Tributada integralmente |
-| 02 | Tributada com reducao |
-| 03 | Isencao |
-| 04 | Imunidade |
-| 05 | Suspensao |
-| 06 | Diferimento |
-| 90 | Outros |
+| 000 | Tributado com Imposto Seletivo |
+| 100 | Imunidade |
+| 200 | Não ocorrência do Fato Gerador |
+| 300 | Devolução |
+| 400 | Suspensão |
+| 500 | Alíquota Zero |
+| 600 | Isenção |
 
-> **IS nao e serializado no XML em 2026.** O schema SEFAZ (PL 010b) inclui o tipo `TIS` com tags `CSTIS`, `cClassTribIS`, `vBCIS`, `pIS`, `vIS`, porem a serializacao esta desabilitada ate 2027. Os campos de entidade estao prontos e serao ativados quando necessario.
+> **IS nao e serializado no XML em 2026.** Os campos de entidade (`is_*`) estao prontos; a serializacao fica desabilitada ate 2027.
 
 ## Como usar
 
@@ -133,7 +143,7 @@ nota_fiscal.adicionar_produto_servico(
     ibscbs_v_cbs=Decimal("9.00"),               # Valor CBS
 
     # IS — armazenado na entidade mas NAO serializado no XML (2026)
-    # is_cst_selec="01",
+    # is_cst_selec="000",
     # is_c_class_trib="010001",
     # is_vbc=Decimal("1000.00"),
     # is_aliquota=Decimal("1.0000"),
@@ -141,15 +151,15 @@ nota_fiscal.adicionar_produto_servico(
 )
 ```
 
-### Exemplo: produto isento (CST 222)
+### Exemplo: imunidade e nao incidencia (CST 410, sem gIBSCBS)
 
 ```python
 nota_fiscal.adicionar_produto_servico(
     # ... campos do produto ...
 
-    # IBSCBS isento — apenas CST e cClassTrib, sem valores
-    ibscbs_cst="222",
-    ibscbs_c_class_trib="000002",
+    # Apenas CST e cClassTrib, sem valores (autorizado em homologacao SP)
+    ibscbs_cst="410",
+    ibscbs_c_class_trib="410001",
 )
 ```
 
@@ -307,7 +317,7 @@ nota_fiscal = NotaFiscal(
 
 | Campo | XML Tag | Descricao |
 |-------|---------|-----------|
-| `is_cst_selec` | `CSTIS` | CSTIS 2 digitos (ex: "01", "02") |
+| `is_cst_selec` | `CSTIS` | CSTIS 3 digitos (ex: "000"), a partir de 2027 |
 | `is_c_class_trib` | `cClassTribIS` | cClassTribIS 6 digitos |
 | `is_vbc` | `vBCIS` | Base de calculo IS |
 | `is_aliquota` | `pIS` | Aliquota IS (4 casas decimais) |
@@ -371,12 +381,12 @@ O grupo `<IBSCBS>` e adicionado como filho direto de `<imposto>`, apos `<COFINS>
 </det>
 ```
 
-Para CSTs nao tributados (ex: 222 — isencao):
+Para CSTs sem grupo (ex: 410 — imunidade e nao incidencia):
 
 ```xml
 <IBSCBS>
-  <CST>222</CST>
-  <cClassTrib>000002</cClassTrib>
+  <CST>410</CST>
+  <cClassTrib>410001</cClassTrib>
 </IBSCBS>
 ```
 
@@ -436,17 +446,9 @@ Os totais ficam em um grupo **separado** de `<ICMSTot>`, como irmao dentro de `<
 
 ## Regras de serializacao
 
-### CSTs tributados (emitem `gIBSCBS` com valores)
+### Grupos por CST
 
-CSTs: 000, 010, 200, 400, 510, 600, 620, 800, 810, 900
-
-Esses CSTs geram o subgrupo `<gIBSCBS>` completo com `vBC`, `gIBSUF`, `gIBSMun`, `vIBS` e `gCBS`.
-
-### CSTs nao tributados (apenas CST + cClassTrib)
-
-CSTs: 100, 110, 222, 300, 410
-
-Esses CSTs geram apenas `<CST>` e `<cClassTrib>`, sem `<gIBSCBS>`.
+Definidos por `IBS_CBS_CST_GRUPOS` (ver "CSTs disponiveis"). Os CSTs que exigem `gIBSCBS` geram o subgrupo completo com `vBC`, `gIBSUF`, `gIBSMun`, `vIBS` e `gCBS`; os demais geram apenas `<CST>` e `<cClassTrib>`.
 
 ### Outras regras
 

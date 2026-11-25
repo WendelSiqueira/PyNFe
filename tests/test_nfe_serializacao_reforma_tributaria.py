@@ -217,7 +217,8 @@ class ReformaTributariaSerializacaoTestCase(unittest.TestCase):
     # ------------------------------------------------------------------
     # Test 2: CST 222 — isenção (no vBC, values zero)
     # ------------------------------------------------------------------
-    def test_cst222_isencao_sem_valores(self):
+    def test_cst400_isencao_sem_gibscbs(self):
+        """CST 400 (Isencao) nao leva gIBSCBS, segundo a tabela oficial."""
         emitente = self._emitente()
         cliente = self._cliente()
         nf = self._nota_fiscal(emitente, cliente)
@@ -231,8 +232,8 @@ class ReformaTributariaSerializacaoTestCase(unittest.TestCase):
             valor_total_bruto=Decimal("50.00"),
             quantidade_tributavel=Decimal("1"),
             valor_unitario_tributavel=Decimal("50.00"),
-            ibscbs_cst="222",
-            ibscbs_c_class_trib="000002",
+            ibscbs_cst="400",
+            ibscbs_c_class_trib="400003",
         )
         nf.adicionar_produto_servico(**kwargs)
         nf.adicionar_pagamento(t_pag="01", v_pag=50.00, ind_pag=0)
@@ -245,13 +246,13 @@ class ReformaTributariaSerializacaoTestCase(unittest.TestCase):
 
         # CST present
         cst = xml.xpath("//ns:IBSCBS/ns:CST", namespaces=self.ns)[0].text
-        self.assertEqual(cst, "222")
+        self.assertEqual(cst, "400")
 
         # cClassTrib present
         cclass = xml.xpath("//ns:IBSCBS/ns:cClassTrib", namespaces=self.ns)[0].text
-        self.assertEqual(cclass, "000002")
+        self.assertEqual(cclass, "400003")
 
-        # No gIBSCBS group (CST 222 is not in taxable CSTs)
+        # Sem gIBSCBS: a tabela oficial nao exige grupo para o CST 400
         gibscbs = xml.xpath("//ns:IBSCBS/ns:gIBSCBS", namespaces=self.ns)
         self.assertEqual(len(gibscbs), 0)
 
@@ -1008,6 +1009,57 @@ class ReformaTributariaSerializacaoTestCase(unittest.TestCase):
         xml = self._serializar_e_assinar()
 
         self.assertEqual(len(xml.xpath("//ns:detPag/ns:xPag", namespaces=self.ns)), 0)
+
+    # ------------------------------------------------------------------
+    # Tabela oficial de CST (flags.IBS_CBS_CST_GRUPOS)
+    # ------------------------------------------------------------------
+    def _item_cst(self, cst, cclass, **extra):
+        kwargs = self._base_product_kwargs()
+        kwargs.update(ibscbs_cst=cst, ibscbs_c_class_trib=cclass, **extra)
+        nf = self._nota_fiscal(self._emitente(), self._cliente())
+        nf.adicionar_produto_servico(**kwargs)
+        nf.adicionar_pagamento(t_pag="01", v_pag=1000.00, ind_pag=0)
+
+    def test_cst222_reducao_de_base_emite_gibscbs(self):
+        """222 e Reducao de Base de Calculo e exige gIBSCBS (antes era tratado como isencao)."""
+        self._item_cst(
+            "222",
+            "222001",
+            ibscbs_vbc=Decimal("1000.00"),
+            ibscbs_p_ibs_uf=Decimal("0.1000"),
+            ibscbs_v_ibs_uf=Decimal("1.00"),
+            ibscbs_v_ibs=Decimal("1.00"),
+            ibscbs_p_cbs=Decimal("0.9000"),
+            ibscbs_v_cbs=Decimal("9.00"),
+        )
+        xml = self._serializar_e_assinar()
+        self.assertEqual(len(xml.xpath("//ns:IBSCBS/ns:gIBSCBS", namespaces=self.ns)), 1)
+
+    def test_cst_com_grupo_nao_implementado_levanta_erro(self):
+        for cst, cclass, grupo in (
+            ("620", "620001", "gIBSCBSMono"),
+            ("800", "800001", "gTransfCred"),
+            ("510", "510001", "gDif"),
+        ):
+            with self.subTest(cst=cst):
+                self._item_cst(cst, cclass)
+                with self.assertRaisesRegex(NotImplementedError, grupo):
+                    self._serializar_e_assinar()
+
+    def test_cst_fora_da_tabela_avisa(self):
+        self._item_cst("999", "999999")
+        with self.assertWarnsRegex(UserWarning, "nao esta na tabela"):
+            xml = SerializacaoXML(_fonte_dados, homologacao=self.homologacao).exportar()
+        self.assertEqual(len(xml.xpath("//ns:IBSCBS/ns:gIBSCBS", namespaces=self.ns)), 0)
+
+    def test_tabelas_de_cst_consistentes(self):
+        from pynotas.utils.flags import IBS_CBS_CST_GRUPOS, IBS_CBS_TIPOS_TRIBUTACAO
+
+        self.assertEqual([c for c, _ in IBS_CBS_TIPOS_TRIBUTACAO], list(IBS_CBS_CST_GRUPOS))
+        self.assertEqual(
+            dict(IBS_CBS_TIPOS_TRIBUTACAO)["010"], "Tributação com alíquotas uniformes"
+        )
+        self.assertNotIn("900", IBS_CBS_CST_GRUPOS)
 
 
 if __name__ == "__main__":

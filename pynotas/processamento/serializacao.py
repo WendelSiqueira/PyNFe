@@ -17,6 +17,7 @@ from pynotas.utils import (
 )
 from pynotas.utils.flags import (
     CODIGOS_ESTADOS,
+    IBS_CBS_CST_GRUPOS,
     NAMESPACE_MDFE,
     NAMESPACE_NFE,
     NAMESPACE_SIG,
@@ -1280,8 +1281,18 @@ class SerializacaoXML(Serializacao):
     # Reforma Tributaria - IVA Dual (NT 2025.002-RTC)
     # =============================================
 
-    # CSTs that have taxable values (vBC, rates, amounts)
-    _IBSCBS_CST_TRIBUTADOS = ("000", "010", "200", "400", "510", "600", "620", "800", "810", "900")
+    # CSTs cujo IBSCBS leva o grupo gIBSCBS (tabela oficial em flags.IBS_CBS_CST_GRUPOS)
+    _IBSCBS_CST_TRIBUTADOS = tuple(
+        cst for cst, grupos in IBS_CBS_CST_GRUPOS.items() if "gIBSCBS" in grupos
+    )
+    # Grupos exigidos por algum CST que a lib ainda nao gera
+    _IBSCBS_GRUPOS_NAO_IMPLEMENTADOS = (
+        "gIBSCBSMono",
+        "gTransfCred",
+        "gCredPresIBSZFM",
+        "gAjusteCompet",
+        "gDif",
+    )
 
     def _serializar_imposto_ibscbs(
         self, produto_servico, modelo, tag_raiz="imposto", retorna_string=True
@@ -1310,6 +1321,21 @@ class SerializacaoXML(Serializacao):
 
         if produto_servico.ibscbs_c_class_trib:
             etree.SubElement(ibscbs, "cClassTrib").text = produto_servico.ibscbs_c_class_trib
+
+        cst = produto_servico.ibscbs_cst
+        grupos = IBS_CBS_CST_GRUPOS.get(cst)
+        if grupos is None:
+            warnings.warn(
+                "CST de IBS/CBS %s nao esta na tabela da lib (flags.IBS_CBS_CST_GRUPOS); "
+                "emitindo apenas CST e cClassTrib." % cst,
+                stacklevel=4,
+            )
+            grupos = ()
+        faltando = [g for g in grupos if g in self._IBSCBS_GRUPOS_NAO_IMPLEMENTADOS]
+        if faltando:
+            raise NotImplementedError(
+                "CST %s exige %s, que a lib ainda nao gera." % (cst, ", ".join(faltando))
+            )
 
         # gIBSCBS e emitido para CST tributado mesmo quando o item tambem informa
         # gTribSN (Simples Nacional). Verificado em homologacao SP: sem o grupo a
@@ -1455,7 +1481,7 @@ class SerializacaoXML(Serializacao):
         if produto_servico.is_c_class_trib:
             etree.SubElement(is_tag, "cClassTribIS").text = produto_servico.is_c_class_trib
 
-        if produto_servico.is_cst_selec in ("01", "02"):
+        if produto_servico.is_cst_selec == "000":  # tributado com IS
             etree.SubElement(is_tag, "vBCIS").text = "{:.2f}".format(produto_servico.is_vbc or 0)
             etree.SubElement(is_tag, "pIS").text = "{:.4f}".format(produto_servico.is_aliquota or 0)
             etree.SubElement(is_tag, "vIS").text = "{:.2f}".format(produto_servico.is_valor or 0)
