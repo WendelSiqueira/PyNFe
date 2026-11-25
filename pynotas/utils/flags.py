@@ -555,34 +555,63 @@ COFINS_TIPOS_CALCULO = IPI_TIPOS_CALCULO
 # Reforma Tributaria - IVA Dual (EC 132/2023)
 # =============================================
 
-# CST para IBSCBS (IBS + CBS) — NT 2025.002-RTC (3-digit codes)
+# CST de IBS/CBS e grupos exigidos por CST.
+# Fonte: tabela SITUACAO_TRIBUTARIA da calculadora RTC da Receita Federal
+# (ReceitaFederal/calculadora-rtc-regime-regular, base V0073: IT 2025.002 v1.71,
+# publicada em 30/10/2026), CSTs vigentes para CBS, IBS-UF e IBS-Mun.
 IBS_CBS_TIPOS_TRIBUTACAO = (
     ("000", "Tributação integral"),
-    ("010", "Tributação com alíquota reduzida"),
-    ("100", "Tributação com suspensão"),
-    ("110", "Imunidade — exportação"),
-    ("200", "Tributação com diferimento"),
-    ("222", "Isenção"),
-    ("300", "Não incidência"),
-    ("400", "Tributação por substituição"),
-    ("410", "Tributação com alíquota zero"),
-    ("510", "Tributação integral — regime específico"),
-    ("600", "Tributação monofásica — incidência padrão"),
-    ("620", "Tributação monofásica — demais operações"),
-    ("800", "Crédito presumido"),
-    ("810", "Crédito presumido — ZFM"),
-    ("900", "Outros"),
+    ("010", "Tributação com alíquotas uniformes"),
+    ("011", "Tributação com alíquotas uniformes reduzidas"),
+    ("200", "Alíquota reduzida"),
+    ("220", "Alíquota fixa"),
+    ("221", "Alíquota fixa proporcional"),
+    ("222", "Redução de Base de Cálculo"),
+    ("400", "Isenção"),
+    ("410", "Imunidade e não incidência"),
+    ("510", "Diferimento"),
+    ("515", "Diferimento com redução de alíquota"),
+    ("550", "Suspensão"),
+    ("620", "Tributação monofásica"),
+    ("800", "Transferência de crédito"),
+    ("810", "Ajustes de IBS na ZFM"),
+    ("811", "Ajustes"),
+    ("820", "Tributação em documento específico"),
+    ("830", "Exclusão de base de cálculo"),
 )
 
-# CST para IS (Imposto Seletivo) — CSTSelec (NT 2025.002-RTC)
+# Grupos do IBSCBS que a SEFAZ exige para cada CST (indicadores SITR_IND_* da
+# mesma tabela). CST sem grupo: apenas CST e cClassTrib.
+IBS_CBS_CST_GRUPOS = {
+    "000": ("gIBSCBS",),
+    "010": ("gIBSCBS",),
+    "011": ("gIBSCBS", "gRed"),
+    "200": ("gIBSCBS", "gRed"),
+    "220": ("gIBSCBS",),
+    "221": ("gIBSCBS",),
+    "222": ("gIBSCBS",),
+    "400": (),
+    "410": (),
+    "510": ("gIBSCBS", "gDif"),
+    "515": ("gIBSCBS", "gRed", "gDif"),
+    "550": ("gIBSCBS",),
+    "620": ("gIBSCBSMono",),
+    "800": ("gTransfCred",),
+    "810": ("gCredPresIBSZFM",),
+    "811": ("gAjusteCompet",),
+    "820": (),
+    "830": ("gIBSCBS",),
+}
+
+# CST do Imposto Seletivo (a partir de 2027), mesma fonte.
 IS_TIPOS_TRIBUTACAO = (
-    ("01", "Tributada integralmente"),
-    ("02", "Tributada com redução"),
-    ("03", "Isenção"),
-    ("04", "Imunidade"),
-    ("05", "Suspensão"),
-    ("06", "Diferimento"),
-    ("90", "Outros"),
+    ("000", "Tributado com Imposto Seletivo"),
+    ("100", "Imunidade"),
+    ("200", "Não ocorrência do Fato Gerador"),
+    ("300", "Devolução"),
+    ("400", "Suspensão"),
+    ("500", "Alíquota Zero"),
+    ("600", "Isenção"),
 )
 
 MODALIDADES_FRETE = (

@@ -1069,7 +1069,7 @@ class NotaFiscalProduto(Entidade):
     ibscbs_v_cbs_sn = None  # gTribSN/gCBSSN/vCBSSN
 
     # IS (Imposto Seletivo) - Group UB-IS
-    is_cst_selec = str()  # CSTSelec (2-digit)
+    is_cst_selec = str()  # CSTIS (3 digitos, ex.: "000"; a partir de 2027)
     is_c_class_trib = str()  # cClassTribIS 6-digit
     is_vbc = Decimal()  # vBC
     is_aliquota = Decimal()  # pIS
