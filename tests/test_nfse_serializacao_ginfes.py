@@ -1,8 +1,8 @@
 import unittest
 import re
 
-from pynfe.entidades.notafiscal import NotaFiscalServico
-from pynfe.processamento.serializacao import SerializacaoNfse
+from pynotas.entidades.notafiscal import NotaFiscalServico
+from pynotas.processamento.serializacao import SerializacaoNfse
 from tests.test_nfse_serializacao import SerializacaoNFSeTest
 
 
@@ -26,7 +26,7 @@ class SerializacaoNFSeGinfesTestCase(unittest.TestCase):
         #     nfse_xml,
         #     nfse_xml_assinado,
         #     'servico_enviar_lote_rps_envio_v03.xsd',
-        #     'pynfe/data/XSDs/NFS-e/Ginfes'
+        #     'pynotas/data/XSDs/NFS-e/Ginfes'
         # )
 
         SerializacaoNFSeTest.limpa_namespace()

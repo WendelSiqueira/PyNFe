@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import MagicMock
-from pynfe.processamento.comunicacao import ComunicacaoCTe
-from pynfe.utils import etree
+from pynotas.processamento.comunicacao import ComunicacaoCTe
+from pynotas.utils import etree
 
 
 class TestComunicacaoCTe(unittest.TestCase):

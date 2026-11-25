@@ -1,4 +1,4 @@
-## PyNFe
+## pyNotas
 
 Biblioteca Python de interface com os webservices de Nota Fiscal Eletrônica (NF-e) e Nota Fiscal de Consumidor Eletrônica (NFC-e) da SEFAZ e Receita Federal do Brasil, Nota Fiscal de Serviço Eletrônica (NFS-e) para Prefeituras e Manifesto de Documentos Fiscais Eletrônicos (MDF-e).
 
@@ -64,17 +64,17 @@ Instalação
 A lib não é publicada no PyPI. Para usar como dependência de outro projeto, direto do repositório:
 
 ```sh
-uv add "pynfe @ git+https://github.com/WendelSiqueira/PyNFe.git@main"
+uv add "pynotas @ git+https://github.com/WendelSiqueira/pyNotas.git@main"
 ```
 
 Dependências opcionais:
 
 ```sh
-uv add "pynfe[nfse] @ git+https://github.com/WendelSiqueira/PyNFe.git@main"      # NFS-e
-uv add "pynfe[impressao] @ git+https://github.com/WendelSiqueira/PyNFe.git@main"  # DANFE (brazilfiscalreport)
+uv add "pynotas[nfse] @ git+https://github.com/WendelSiqueira/pyNotas.git@main"      # NFS-e
+uv add "pynotas[impressao] @ git+https://github.com/WendelSiqueira/pyNotas.git@main"  # DANFE (brazilfiscalreport)
 ```
 
-Com pip, o mesmo endereço funciona: `pip install "pynfe @ git+https://github.com/WendelSiqueira/PyNFe.git@main"`.
+Com pip, o mesmo endereço funciona: `pip install "pynotas @ git+https://github.com/WendelSiqueira/pyNotas.git@main"`.
 
 Dependências principais: `lxml` (XML), `signxml` (assinatura), `pyopenssl` e `cryptography` (certificado A1) e `requests` (webservices da SEFAZ). Para NFS-e, também `suds-community` e `PyXB-X`.
 
@@ -85,7 +85,7 @@ Exemplo de uso
 Consulta de status do serviço:
 
 ```python
-from pynfe.processamento.comunicacao import ComunicacaoSefaz
+from pynotas.processamento.comunicacao import ComunicacaoSefaz
 
 certificado = "/home/user/certificado.pfx"
 senha = 'senha'

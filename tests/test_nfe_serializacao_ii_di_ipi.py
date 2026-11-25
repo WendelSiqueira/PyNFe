@@ -3,18 +3,18 @@
 
 import unittest
 
-from pynfe.entidades.cliente import Cliente
-from pynfe.entidades.emitente import Emitente
-from pynfe.entidades.notafiscal import (
+from pynotas.entidades.cliente import Cliente
+from pynotas.entidades.emitente import Emitente
+from pynotas.entidades.notafiscal import (
     NotaFiscal,
     NotaFiscalDeclaracaoImportacaoAdicao,
     NotaFiscalDeclaracaoImportacao,
 )
-from pynfe.entidades.fonte_dados import _fonte_dados
-from pynfe.processamento.serializacao import SerializacaoXML
-from pynfe.processamento.assinatura import AssinaturaA1
-from pynfe.processamento.validacao import Validacao
-from pynfe.utils.flags import (
+from pynotas.entidades.fonte_dados import _fonte_dados
+from pynotas.processamento.serializacao import SerializacaoXML
+from pynotas.processamento.assinatura import AssinaturaA1
+from pynotas.processamento.validacao import Validacao
+from pynotas.utils.flags import (
     CODIGO_BRASIL,
     NAMESPACE_NFE,
     NAMESPACE_SIG,
@@ -494,7 +494,7 @@ class SerializacaoNFeTestCase(unittest.TestCase):
         self.assertEqual(vTotTrib, "21.06")
 
     def test_notafiscal_produto_cst00(self):
-        # Preenche as classes do pynfe
+        # Preenche as classes do pynotas
         self.emitente = self.preenche_emitente()
         self.cliente = self.preenche_destinatario()
         self.notafiscal = self.preenche_notafiscal_produto_cst00()

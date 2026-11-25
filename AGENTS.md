@@ -1,4 +1,4 @@
-# AGENTS.md - PyNFe
+# AGENTS.md - pyNotas
 
 Brazilian electronic fiscal document library (NF-e, NFC-e, NFS-e, MDF-e, CT-e) for SEFAZ webservice communication.
 
@@ -15,28 +15,28 @@ This allows you to navigate directly to the specific line-window you need instea
 
 | Source Map | File | Lines | Description |
 |------------|------|-------|-------------|
-| `docs/serializacao_map.md` | `pynfe/processamento/serializacao.py` | 2630 | XML serialization (NF-e, MDF-e, QR codes) |
-| `docs/comunicacao_map.md` | `pynfe/processamento/comunicacao.py` | 1348 | SEFAZ webservice communication |
-| `docs/autorizador_nfse_map.md` | `pynfe/processamento/autorizador_nfse.py` | 538 | NFS-e authorization (Betha/Ginfes) |
-| `docs/notafiscal_map.md` | `pynfe/entidades/notafiscal.py` | 1253 | Invoice entities and tax fields |
-| `docs/manifesto_map.md` | `pynfe/entidades/manifesto.py` | 447 | MDF-e manifest entities |
-| `docs/evento_map.md` | `pynfe/entidades/evento.py` | 237 | Event entities (cancel, correction, etc.) |
-| `docs/flags_map.md` | `pynfe/utils/flags.py` | 645 | Constants, namespaces, tax codes |
-| `docs/webservices_map.md` | `pynfe/utils/webservices.py` | 572 | SEFAZ endpoint URLs by state |
-| `docs/utils_map.md` | `pynfe/utils/__init__.py` | 253 | Utility functions (municipality lookup, signing) |
+| `docs/serializacao_map.md` | `pynotas/processamento/serializacao.py` | 2630 | XML serialization (NF-e, MDF-e, QR codes) |
+| `docs/comunicacao_map.md` | `pynotas/processamento/comunicacao.py` | 1348 | SEFAZ webservice communication |
+| `docs/autorizador_nfse_map.md` | `pynotas/processamento/autorizador_nfse.py` | 538 | NFS-e authorization (Betha/Ginfes) |
+| `docs/notafiscal_map.md` | `pynotas/entidades/notafiscal.py` | 1253 | Invoice entities and tax fields |
+| `docs/manifesto_map.md` | `pynotas/entidades/manifesto.py` | 447 | MDF-e manifest entities |
+| `docs/evento_map.md` | `pynotas/entidades/evento.py` | 237 | Event entities (cancel, correction, etc.) |
+| `docs/flags_map.md` | `pynotas/utils/flags.py` | 645 | Constants, namespaces, tax codes |
+| `docs/webservices_map.md` | `pynotas/utils/webservices.py` | 572 | SEFAZ endpoint URLs by state |
+| `docs/utils_map.md` | `pynotas/utils/__init__.py` | 253 | Utility functions (municipality lookup, signing) |
 
 ### How to Use Source Maps
 
 1. **Read the `_map.md` file first** to understand the file structure
 2. **Identify the line range** you need from the map tables
 3. **Read only that section** using `offset` and `limit` parameters
-4. Example: To understand ICMS CST 60 serialization, read `docs/serializacao_map.md`, find it's at lines 747-770, then read `pynfe/processamento/serializacao.py` with `offset=747, limit=25`
+4. Example: To understand ICMS CST 60 serialization, read `docs/serializacao_map.md`, find it's at lines 747-770, then read `pynotas/processamento/serializacao.py` with `offset=747, limit=25`
 
 ## Project Structure
 
 ```
 docs/                   # Documentation and source maps (*_map.md, reforma_tributaria.md)
-pynfe/
+pynotas/
 ├── entidades/          # Domain entities (data models)
 │   ├── base.py         # Base entity class with kwargs init
 │   ├── certificado.py  # A1 certificate handling
@@ -114,7 +114,7 @@ uv run ruff format .
 
 ## Important Notes
 
-- Files under `pynfe/utils/nfse/` are **auto-generated** PyXB bindings — do not edit manually
-- The `pynfe/data/` directory contains reference data files that should not be modified casually
+- Files under `pynotas/utils/nfse/` are **auto-generated** PyXB bindings — do not edit manually
+- The `pynotas/data/` directory contains reference data files that should not be modified casually
 - Tax code serialization follows strict SEFAZ XML schema ordering — field order matters
 - Each Brazilian state has its own SEFAZ endpoint configuration in `webservices.py`

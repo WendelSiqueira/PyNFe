@@ -1,9 +1,15 @@
 [project]
-name = "PyNFe"
-version = "0.6.5"
+name = "pyNotas"
+# Versao lida de pynotas/__init__.py (__version__), a mesma usada no verProc da nota
+dynamic = ["version"]
 description = "Interface library with the Brazilian Electronic Invoice web services"
+# Autores do PyNFe original, do qual o pyNotas deriva (ver AUTHORS)
 authors = [
-    {name = "TadaSoftware", email = "tadasoftware@gmail.com"}
+    {name = "Marinho Brandão"},
+    {name = "TadaSoftware", email = "tadasoftware@gmail.com"},
+]
+maintainers = [
+    {name = "Wendel Siqueira", email = "wendel.don@gmail.com"},
 ]
 readme = "README.md"
 requires-python = ">=3.9, <4"
@@ -30,7 +36,7 @@ nfse = [
 impressao = ["brazilfiscalreport[damdfe]"]
 
 [project.urls]
-Repository = "https://github.com/WendelSiqueira/PyNFe"
+Repository = "https://github.com/WendelSiqueira/pyNotas"
 Upstream = "https://github.com/TadaSoftware/PyNFe"
 Wiki = "https://github.com/TadaSoftware/PyNFe/wiki"
 
@@ -44,15 +50,18 @@ dev = [
 requires = ["setuptools>=64"]
 build-backend = "setuptools.build_meta"
 
+[tool.setuptools.dynamic]
+version = {attr = "pynotas.__version__"}
+
 [tool.setuptools.packages.find]
-include = ["pynfe*"]
+include = ["pynotas*"]
 
 [tool.setuptools.package-data]
-pynfe = ["data/**/*.txt"]
+pynotas = ["data/**/*.txt"]
 
 [tool.ruff]
 exclude = [
-    'pynfe/entidades/__init__.py'
+    'pynotas/entidades/__init__.py'
 ]
 line-length = 100
 

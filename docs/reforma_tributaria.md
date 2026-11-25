@@ -48,7 +48,7 @@ A implementacao cobre:
 ### IBS e CBS — CST de 3 digitos (compartilham a mesma tabela)
 
 ```python
-from pynfe.utils.flags import IBS_CBS_TIPOS_TRIBUTACAO
+from pynotas.utils.flags import IBS_CBS_TIPOS_TRIBUTACAO
 ```
 
 | CST | Descricao |
@@ -72,7 +72,7 @@ from pynfe.utils.flags import IBS_CBS_TIPOS_TRIBUTACAO
 ### IS (Imposto Seletivo) — CSTIS de 2 digitos
 
 ```python
-from pynfe.utils.flags import IS_TIPOS_TRIBUTACAO
+from pynotas.utils.flags import IS_TIPOS_TRIBUTACAO
 ```
 
 | CSTIS | Descricao |
@@ -476,7 +476,7 @@ Quando a serializacao do IS for ativada (previsto para 2027):
 - Os nomes das tags XML seguem estritamente os tipos XSD do PL 010b (`DFeTiposBasicos_v1.00.xsd`):
   - Per-item: `TTribNFe` (`IBSCBS`), `TCIBS` (`gIBSCBS`), `TIS` (`IS`)
   - Totais: `TIBSCBSMonoTot` (`IBSCBSTot`), `TISTot` (`ISTot`)
-- O calculo dos valores (base de calculo, aliquota, valor) deve ser feito pela aplicacao consumidora. PyNFe apenas serializa os valores informados.
+- O calculo dos valores (base de calculo, aliquota, valor) deve ser feito pela aplicacao consumidora. pyNotas apenas serializa os valores informados.
 - Durante a fase de transicao (2026-2033), os impostos legados e os novos coexistem no mesmo XML.
 - Aliquotas de teste para 2026: CBS=0,9%, IBS-UF=0,1%, IBS-Mun=0%.
 - Campos de diferimento (`vDif`), devolucao de tributos (`vDevTrib`) e credito presumido (`vCredPres`, `vCredPresCondSus`) sao emitidos como "0.00" nos totais. Suporte completo para esses campos sera adicionado conforme necessidade.

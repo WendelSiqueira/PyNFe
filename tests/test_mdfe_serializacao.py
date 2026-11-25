@@ -3,9 +3,9 @@
 
 import unittest
 
-from pynfe import get_version
-from pynfe.entidades.fonte_dados import _fonte_dados
-from pynfe.entidades.manifesto import (
+from pynotas import get_version
+from pynotas.entidades.fonte_dados import _fonte_dados
+from pynotas.entidades.manifesto import (
     Manifesto,
     ManifestoCondutor,
     ManifestoContratante,
@@ -21,10 +21,10 @@ from pynfe.entidades.manifesto import (
     ManifestoPedagio,
     ManifestoAverbacao,
 )
-from pynfe.processamento.assinatura import AssinaturaA1
-from pynfe.processamento.serializacao import SerializacaoMDFe, SerializacaoQrcodeMDFe
-from pynfe.processamento.validacao import Validacao
-from pynfe.utils.flags import (
+from pynotas.processamento.assinatura import AssinaturaA1
+from pynotas.processamento.serializacao import SerializacaoMDFe, SerializacaoQrcodeMDFe
+from pynotas.processamento.validacao import Validacao
+from pynotas.utils.flags import (
     NAMESPACE_MDFE,
     NAMESPACE_SIG,
     XSD_FOLDER_MDFE,
@@ -242,8 +242,8 @@ class SerializacaoMDFeTestCase(unittest.TestCase):
         # Responsável técnico
         manifesto.adicionar_responsavel_tecnico(
             cnpj="99999999000199",
-            contato="Teste PyNFe",
-            email="pynfe@pynfe.io",
+            contato="Teste pyNotas",
+            email="pynotas@pynotas.io",
             fone="11912341234",
         )
 
@@ -370,8 +370,8 @@ class SerializacaoMDFeTestCase(unittest.TestCase):
         # Responsável técnico
         manifesto.adicionar_responsavel_tecnico(
             cnpj="99999999000199",
-            contato="Teste PyNFe",
-            email="pynfe@pynfe.io",
+            contato="Teste pyNotas",
+            email="pynotas@pynotas.io",
             fone="11912341234",
         )
 
@@ -421,7 +421,7 @@ class SerializacaoMDFeTestCase(unittest.TestCase):
         self.assertEqual(dhEmi, "2021-01-14T12:00:00+00:00")
         self.assertEqual(tpEmis, "1")
         self.assertEqual(procEmi, "0")
-        self.assertEqual(verProc, f"PyNFe {get_version()}")
+        self.assertEqual(verProc, f"pyNotas {get_version()}")
         self.assertEqual(UFIni, "MT")
         self.assertEqual(UFFim, "SP")
         self.assertEqual(dhIniViagem, "2021-01-14T13:10:20+00:00")
@@ -452,7 +452,7 @@ class SerializacaoMDFeTestCase(unittest.TestCase):
         self.assertEqual(dhEmi, "2021-01-14T12:00:00+00:00")
         self.assertEqual(tpEmis, "1")
         self.assertEqual(procEmi, "0")
-        self.assertEqual(verProc, f"PyNFe {get_version()}")
+        self.assertEqual(verProc, f"pyNotas {get_version()}")
         self.assertEqual(UFIni, "MT")
         self.assertEqual(UFFim, "MT")
         self.assertEqual(dhIniViagem, "2021-01-14T13:10:20+00:00")
@@ -921,8 +921,8 @@ class SerializacaoMDFeTestCase(unittest.TestCase):
         fone = self.xml_assinado.xpath("//ns:infRespTec/ns:fone", namespaces=self.ns)[0].text
 
         self.assertEqual(cnpj, "99999999000199")
-        self.assertEqual(contato, "Teste PyNFe")
-        self.assertEqual(email, "pynfe@pynfe.io")
+        self.assertEqual(contato, "Teste pyNotas")
+        self.assertEqual(email, "pynotas@pynotas.io")
         self.assertEqual(fone, "11912341234")
 
     def digestvalue_da_assinatura(self):
@@ -939,7 +939,7 @@ class SerializacaoMDFeTestCase(unittest.TestCase):
         self.assertTrue(len(qrCodMDFe) > 0)
 
     def test_manifesto(self):
-        # Preenche as classes do pynfe
+        # Preenche as classes do pynotas
         self.manifesto = self.preenche_manifesto()
 
         # Serializa e assina o XML
@@ -973,7 +973,7 @@ class SerializacaoMDFeTestCase(unittest.TestCase):
         self.validacao_com_xsd_do_xml_gerado_sem_processar()
 
     def test_manifesto_sem_rntrc(self):
-        # Preenche as classes do pynfe
+        # Preenche as classes do pynotas
         self.manifesto = self.preenche_manifesto_sem_rntrc()
 
         # Serializa e assina o XML

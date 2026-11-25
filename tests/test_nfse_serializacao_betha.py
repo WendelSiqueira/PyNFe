@@ -1,6 +1,6 @@
 import unittest
 
-from pynfe.entidades.notafiscal import NotaFiscalServico
+from pynotas.entidades.notafiscal import NotaFiscalServico
 from tests.test_nfse_serializacao import SerializacaoNFSeTest
 
 
@@ -21,7 +21,7 @@ class SerializacaoNFSeBethaTestCase(unittest.TestCase):
         #     nfse_xml,
         #     nfse_xml_assinado,
         #     'nfse_v202.xsd',
-        #     'pynfe/data/XSDs/NFS-e/Betha'
+        #     'pynotas/data/XSDs/NFS-e/Betha'
         # )
 
         SerializacaoNFSeTest.limpa_namespace()

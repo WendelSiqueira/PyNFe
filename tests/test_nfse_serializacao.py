@@ -1,12 +1,12 @@
 import pyxb.namespace
-from pynfe.entidades.cliente import Cliente
-from pynfe.entidades.emitente import Emitente
-from pynfe.entidades.notafiscal import NotaFiscalServico
-from pynfe.entidades.servico import Servico
-from pynfe.processamento.assinatura import AssinaturaA1
-from pynfe.processamento.serializacao import SerializacaoNfse
-from pynfe.utils import obter_codigo_por_municipio
-from pynfe.utils.flags import (
+from pynotas.entidades.cliente import Cliente
+from pynotas.entidades.emitente import Emitente
+from pynotas.entidades.notafiscal import NotaFiscalServico
+from pynotas.entidades.servico import Servico
+from pynotas.processamento.assinatura import AssinaturaA1
+from pynotas.processamento.serializacao import SerializacaoNfse
+from pynotas.utils import obter_codigo_por_municipio
+from pynotas.utils.flags import (
     CODIGO_BRASIL,
 )
 from decimal import Decimal

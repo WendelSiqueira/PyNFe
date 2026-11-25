@@ -5,13 +5,13 @@ import datetime
 import unittest
 from decimal import Decimal
 
-from pynfe.entidades.emitente import Emitente
-from pynfe.entidades.fonte_dados import _fonte_dados
-from pynfe.entidades.notafiscal import NotaFiscal
-from pynfe.processamento.assinatura import AssinaturaA1
-from pynfe.processamento.serializacao import SerializacaoXML
-from pynfe.processamento.validacao import Validacao
-from pynfe.utils.flags import (
+from pynotas.entidades.emitente import Emitente
+from pynotas.entidades.fonte_dados import _fonte_dados
+from pynotas.entidades.notafiscal import NotaFiscal
+from pynotas.processamento.assinatura import AssinaturaA1
+from pynotas.processamento.serializacao import SerializacaoXML
+from pynotas.processamento.validacao import Validacao
+from pynotas.utils.flags import (
     CODIGO_BRASIL,
     NAMESPACE_NFE,
     NAMESPACE_SIG,
@@ -19,7 +19,7 @@ from pynfe.utils.flags import (
     XSD_NFE,
     XSD_NFE_PROCESSADA,
 )
-# from pynfe.utils import etree
+# from pynotas.utils import etree
 
 
 class SerializacaoNFeTestCase(unittest.TestCase):
@@ -251,7 +251,7 @@ class SerializacaoNFeTestCase(unittest.TestCase):
         self.assertEqual(vCOFINS, "3.48")
 
     def test_notafiscal_com_pis_cofins_opcional_sem_informar(self):
-        # Preenche as classes do pynfe
+        # Preenche as classes do pynotas
         self.emitente = self.preenche_emitente()
         self.notafiscal = self.preenche_notafiscal_produto_sem_piscofins()
 
@@ -264,7 +264,7 @@ class SerializacaoNFeTestCase(unittest.TestCase):
         self.validacao_pis_cofins_nao_informado()
 
     def test_notafiscal_com_pis_cofins_informado(self):
-        # Preenche as classes do pynfe
+        # Preenche as classes do pynotas
         self.emitente = self.preenche_emitente()
         self.notafiscal = self.preenche_notafiscal_produto_com_piscofins()
 
