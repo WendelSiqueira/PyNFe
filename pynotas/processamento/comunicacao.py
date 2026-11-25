@@ -1,5 +1,6 @@
 import datetime
 import re
+import warnings
 
 import requests
 
@@ -53,6 +54,21 @@ class Comunicacao(object):
         self.verificar_ssl = verificar_ssl
 
 
+# NT 2023.002 v1.02 (outubro de 2026): fim da autorizacao assincrona de NF-e/NFC-e
+# (ate 01/02/2027) e desativacao da inutilizacao nas UFs abaixo, que passam a
+# responder HTTP 404 ou a rejeicao 998 - "Servico Desativado".
+UFS_SEM_INUTILIZACAO = ("AC", "BA", "SP")
+
+
+def _avisar_assincrono():
+    warnings.warn(
+        "Autorizacao assincrona (indSinc=0) sera eliminada pela NT 2023.002 ate "
+        "01/02/2027; use ind_sinc=1.",
+        FutureWarning,
+        stacklevel=3,
+    )
+
+
 class ComunicacaoSefaz(Comunicacao):
     """Classe de comunicação que segue o padrão definido para as SEFAZ dos Estados."""
 
@@ -72,6 +88,8 @@ class ComunicacaoSefaz(Comunicacao):
         :return:  Uma tupla que em caso de sucesso, retorna xml com nfe e protocolo de autorização.
         Caso contrário, envia todo o soap de resposta da Sefaz para decisão do usuário.
         """
+        if ind_sinc == 0:
+            _avisar_assincrono()
         # url do serviço
         url = self._get_url(modelo=modelo, consulta="AUTORIZACAO", contingencia=contingencia)
 
@@ -147,6 +165,8 @@ class ComunicacaoSefaz(Comunicacao):
         :param contingencia: Indica se o envio é em contingência ou não
         :return:
         """
+        # Consulta de recibo so existe no fluxo assincrono
+        _avisar_assincrono()
 
         # url do serviço
         url = self._get_url(modelo=modelo, consulta="RECIBO", contingencia=contingencia)
@@ -359,6 +379,15 @@ class ComunicacaoSefaz(Comunicacao):
         :param serie:  Série
         :return:
         """
+
+        if self.uf.upper() in UFS_SEM_INUTILIZACAO:
+            warnings.warn(
+                "Inutilizacao desativada em %s pela NT 2023.002: a SEFAZ responde HTTP 404 ou "
+                "998 (Servico Desativado). Havendo salto na numeracao, siga a partir do "
+                "numero seguinte." % self.uf.upper(),
+                FutureWarning,
+                stacklevel=2,
+            )
 
         # url do servico
         url = self._get_url(modelo=modelo, consulta="INUTILIZACAO")
