@@ -63,18 +63,20 @@ Características
 Instalação
 -----------
 
-Este fork não é publicado no PyPI. Para instalar direto do repositório:
+Este fork não é publicado no PyPI. Para usar como dependência de outro projeto, direto do repositório:
 
 ```sh
-pip install git+https://github.com/WendelSiqueira/PyNFe.git@main
+uv add "pynfe @ git+https://github.com/WendelSiqueira/PyNFe.git@main"
 ```
 
 Dependências opcionais:
 
 ```sh
-pip install 'pynfe[nfse] @ git+https://github.com/WendelSiqueira/PyNFe.git@main'      # NFS-e
-pip install 'pynfe[impressao] @ git+https://github.com/WendelSiqueira/PyNFe.git@main'  # DANFE (brazilfiscalreport)
+uv add "pynfe[nfse] @ git+https://github.com/WendelSiqueira/PyNFe.git@main"      # NFS-e
+uv add "pynfe[impressao] @ git+https://github.com/WendelSiqueira/PyNFe.git@main"  # DANFE (brazilfiscalreport)
 ```
+
+Com pip, o mesmo endereço funciona: `pip install "pynfe @ git+https://github.com/WendelSiqueira/PyNFe.git@main"`.
 
 Dependências principais: `lxml` (XML), `signxml` (assinatura), `pyopenssl` e `cryptography` (certificado A1) e `requests` (webservices da SEFAZ). Para NFS-e, também `suds-community` e `PyXB-X`.
 
@@ -103,17 +105,18 @@ Exemplos de emissão com IBS/CBS em [docs/reforma_tributaria.md](docs/reforma_tr
 Desenvolvimento
 -----------
 
+As dependências são gerenciadas com o [uv](https://docs.astral.sh/uv/) (`pyproject.toml` e `uv.lock`).
+
 ```sh
-python -m venv .venv
-.venv/bin/pip install -r requirements.txt -r requirements-dev.txt
-.venv/bin/pip install -e .
+# Ambiente com as dependências de desenvolvimento e o extra de NFS-e (necessário para os testes de NFS-e)
+uv sync --extra nfse
 
-# Testes (os de NFS-e precisam também de requirements-nfse.txt)
-.venv/bin/pytest
+# Testes
+uv run pytest
 
-# Lint e formatação (ruff 0.12, versão declarada no pyproject.toml)
-.venv/bin/ruff check .
-.venv/bin/ruff format .
+# Lint e formatação (ruff fixado no grupo dev do pyproject.toml)
+uv run ruff check .
+uv run ruff format .
 ```
 
 Para atualizar os bindings XSD da NFS-e, execute `gerarnfsebindings.sh`.
