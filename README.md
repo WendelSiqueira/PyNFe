@@ -64,7 +64,7 @@ O pacote se chama `pynotas-br` e o import é `pynotas`. Está no [PyPI](https://
 
 ```sh
 uv add pynotas-br
-uv add "pynotas-br[impressao]"   # com impressão do DANFE (brazilfiscalreport)
+uv add "pynotas-br[impressao]"   # com impressão do DANFE (brazilfiscalreport, Python 3.10+)
 ```
 
 Com pip: `pip install pynotas-br`.
@@ -100,6 +100,16 @@ print(xml.text)
 
 A conexão com a SEFAZ verifica o certificado do servidor usando as CAs padrão (`certifi`) e as da ICP-Brasil, que vêm com a lib (`pynotas/data/certificados/icp-brasil.pem`). Para usar outra cadeia, passe o caminho em `verificar_ssl="/caminho/cas.pem"`. `verificar_ssl=False` desliga a verificação, mas deixa a conexão sujeita a interceptação.
 
+Impressão do DANFE (NF-e) ou do DANFCE (NFC-e) a partir do XML autorizado, com o extra `impressao`:
+
+```python
+from pynotas.processamento import gerar_danfe
+
+gerar_danfe("nfeProc_3526....xml", caminho="danfe.pdf")  # também aceita o XML em texto, bytes ou lxml
+```
+
+O DANFE usa o layout vigente na data de emissão da nota: a partir de 01/12/2026, o da NT 2026.010, que mostra IBS e CBS. Para logo, margens, layout ou marca de nota cancelada, passe um `DanfeConfig` da [brazilfiscalreport](https://github.com/Engenere/BrazilFiscalReport) em `config=`.
+
 Exemplos de emissão com IBS/CBS em [docs/reforma_tributaria.md](https://github.com/WendelSiqueira/pyNotas/blob/main/docs/reforma_tributaria.md). O que a lib valida, e as rejeições da SEFAZ já verificadas em homologação, estão em [docs/regras_sefaz.md](https://github.com/WendelSiqueira/pyNotas/blob/main/docs/regras_sefaz.md). Mais exemplos gerais no [Wiki](https://github.com/TadaSoftware/PyNFe/wiki).
 
 
@@ -133,6 +143,7 @@ uv run python scripts/homologacao.py consultar       # sem chave: ultima nota em
 uv run python scripts/homologacao.py cce --correcao "texto da correcao"
 uv run python scripts/homologacao.py cancelar
 uv run python scripts/homologacao.py inutilizar --inicio 10 --fim 12
+uv run python scripts/homologacao.py danfe           # PDF do DANFE da ultima nota
 ```
 
 Para atualizar as ACs da ICP-Brasil a partir do pacote oficial do ITI: `uv run python scripts/atualizar_cadeia_icp_brasil.py`. Testes que acessam a SEFAZ só rodam com `PYNOTAS_TESTES_REDE=1`.

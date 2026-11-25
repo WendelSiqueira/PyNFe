@@ -40,7 +40,9 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-impressao = ["brazilfiscalreport[damdfe]"]
+# DANFE e DANFCE (pynotas.processamento.gerar_danfe). A 1.4.0 ja traz o layout
+# da NT 2026.010 (IBS/CBS). A brazilfiscalreport exige Python 3.10+.
+impressao = ["brazilfiscalreport>=1.4.0; python_version >= '3.10'"]
 
 [project.urls]
 Homepage = "https://github.com/WendelSiqueira/pyNotas"
@@ -53,6 +55,7 @@ Changelog = "https://github.com/WendelSiqueira/pyNotas/blob/main/CHANGELOG.md"
 dev = [
     "pytest>=8.4.1",
     "ruff>=0.12.5,<0.13",
+    "brazilfiscalreport>=1.4.0; python_version >= '3.10'",
 ]
 
 [build-system]

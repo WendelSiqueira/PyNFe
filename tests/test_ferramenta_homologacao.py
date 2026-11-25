@@ -48,7 +48,7 @@ class FerramentaHomologacaoTestCase(unittest.TestCase):
     def test_comandos_disponiveis(self):
         self.assertEqual(
             set(homologacao.COMANDOS),
-            {"status", "emitir", "notas", "consultar", "cce", "cancelar", "inutilizar"},
+            {"status", "emitir", "notas", "consultar", "cce", "cancelar", "inutilizar", "danfe"},
         )
 
 

@@ -21,8 +21,10 @@ Uso (na raiz do projeto):
     uv run python scripts/homologacao.py cce [CHAVE] --correcao "texto da correcao"
     uv run python scripts/homologacao.py cancelar [CHAVE]
     uv run python scripts/homologacao.py inutilizar --inicio N --fim N
+    uv run python scripts/homologacao.py danfe [CHAVE]
 
-Sem CHAVE, consultar, cce e cancelar usam a ultima nota emitida.
+Sem CHAVE, consultar, cce, cancelar e danfe usam a ultima nota emitida. O danfe
+usa a brazilfiscalreport (grupo dev ou extra impressao) e nao acessa a SEFAZ.
 
 A ferramenta usa sempre o ambiente de homologacao; nao ha opcao de producao.
 """
@@ -47,6 +49,7 @@ from pynotas.entidades.fonte_dados import _fonte_dados
 from pynotas.entidades.notafiscal import NotaFiscal
 from pynotas.processamento.assinatura import AssinaturaA1
 from pynotas.processamento.comunicacao import ComunicacaoSefaz
+from pynotas.processamento.danfe import gerar_danfe
 from pynotas.processamento.serializacao import SerializacaoXML
 from pynotas.processamento.validacao import Validacao
 from pynotas.utils import obter_codigo_por_municipio
@@ -499,6 +502,22 @@ def cmd_inutilizar(ctx, args):
     return 0 if "102" in cstats else 1
 
 
+def cmd_danfe(ctx, args):
+    nota = nota_do_registro(args.chave)
+    xml = os.path.join(SAIDA, f"nfeProc_{nota['chave']}.xml")
+    if not os.path.isfile(xml):
+        raise SystemExit(f"XML autorizado nao encontrado: {xml}")
+    config = None
+    if nota.get("situacao") == "cancelada":
+        from brazilfiscalreport.danfe import DanfeConfig
+
+        config = DanfeConfig(watermark_cancelled=True)
+    destino = os.path.join(SAIDA, f"danfe_{nota['chave']}.pdf")
+    gerar_danfe(xml, caminho=destino, config=config)
+    print(f"DANFE gerado: {destino}")
+    return 0
+
+
 def criar_parser():
     parser = argparse.ArgumentParser(description="Testes contra a SEFAZ em homologacao.")
     parser.add_argument("--uf", help="UF do emitente (padrao: UF do arquivo de configuracao)")
@@ -553,6 +572,9 @@ def criar_parser():
         default="Inutilizacao de teste em ambiente de homologacao.",
         help="justificativa (15 a 255 caracteres)",
     )
+
+    danfe = sub.add_parser("danfe", help="gera o PDF do DANFE de uma NF-e autorizada")
+    danfe.add_argument("chave", nargs="?", help="chave (padrao: ultima emitida)")
     return parser
 
 
@@ -564,12 +586,14 @@ COMANDOS = {
     "cce": cmd_cce,
     "cancelar": cmd_cancelar,
     "inutilizar": cmd_inutilizar,
+    "danfe": cmd_danfe,
 }
 
 
 def main(argv=None):
     args = criar_parser().parse_args(argv)
-    ctx = montar_contexto(ler_config(), args.uf)
+    # O DANFE sai do XML ja salvo: nao precisa de certificado nem da SEFAZ
+    ctx = None if args.comando == "danfe" else montar_contexto(ler_config(), args.uf)
     return COMANDOS[args.comando](ctx, args)
 
 
