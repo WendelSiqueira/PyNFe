@@ -1,8 +1,9 @@
 [project]
-name = "pyNotas"
+# Nome no PyPI: "pynotas" ja e de outro projeto. O import continua `pynotas`.
+name = "pynotas-br"
 # Versao lida de pynotas/__init__.py (__version__), a mesma usada no verProc da nota
 dynamic = ["version"]
-description = "Interface library with the Brazilian Electronic Invoice web services"
+description = "Emissão de NF-e e NFC-e em Python, com Reforma Tributária (IBS/CBS) e Simples Nacional"
 # Autores do PyNFe original, do qual o pyNotas deriva (ver AUTHORS)
 authors = [
     {name = "Marinho Brandão"},
@@ -13,8 +14,17 @@ maintainers = [
 ]
 readme = "README.md"
 requires-python = ">=3.9, <4"
+keywords = ["nfe", "nfce", "nota fiscal", "sefaz", "reforma tributaria", "ibs", "cbs"]
 classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Natural Language :: Portuguese (Brazilian)",
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
     "Topic :: Software Development :: Libraries",
     "Topic :: Software Development :: Libraries :: Python Modules",
@@ -33,9 +43,11 @@ dependencies = [
 impressao = ["brazilfiscalreport[damdfe]"]
 
 [project.urls]
+Homepage = "https://github.com/WendelSiqueira/pyNotas"
 Repository = "https://github.com/WendelSiqueira/pyNotas"
-Upstream = "https://github.com/TadaSoftware/PyNFe"
-Wiki = "https://github.com/TadaSoftware/PyNFe/wiki"
+Issues = "https://github.com/WendelSiqueira/pyNotas/issues"
+Changelog = "https://github.com/WendelSiqueira/pyNotas/blob/main/CHANGELOG.md"
+"PyNFe original" = "https://github.com/TadaSoftware/PyNFe"
 
 [dependency-groups]
 dev = [

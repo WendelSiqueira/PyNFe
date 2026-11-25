@@ -17,7 +17,7 @@ Reforma Tributária
 | Revisão da tabela de CST de IBS/CBS contra os dados oficiais da Receita | a fazer |
 | Demais grupos da Reforma: `gDif`, `gDevTrib`, `gIBSCBSMono`, `gEstornoCred`, `gCredPresOper` | a fazer |
 
-Detalhes, campos e exemplos de XML em [docs/reforma_tributaria.md](docs/reforma_tributaria.md).
+Detalhes, campos e exemplos de XML em [docs/reforma_tributaria.md](https://github.com/WendelSiqueira/pyNotas/blob/main/docs/reforma_tributaria.md).
 
 A lib **serializa** os valores de IBS/CBS informados, mas **não calcula** alíquotas nem valores. Para o cálculo, a Receita Federal publicou calculadoras oficiais em código aberto:
 
@@ -57,19 +57,20 @@ NFS-e (nota de serviço) não é suportada. Os provedores municipais Betha e Gin
 Instalação
 -----------
 
-A lib não é publicada no PyPI. Para usar como dependência de outro projeto, direto do repositório:
+O pacote se chama `pynotas-br` (o nome `pynotas` já é de outro projeto) e o import é `pynotas`. A versão 0.8.0 está no **TestPyPI**, o índice de testes do PyPI:
 
 ```sh
-uv add "pynotas @ git+https://github.com/WendelSiqueira/pyNotas.git@main"
+uv pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ pynotas-br
 ```
 
-Dependência opcional para impressão do DANFE (brazilfiscalreport):
+Direto do repositório, como dependência de outro projeto:
 
 ```sh
-uv add "pynotas[impressao] @ git+https://github.com/WendelSiqueira/pyNotas.git@main"
+uv add "pynotas-br @ git+https://github.com/WendelSiqueira/pyNotas.git@v0.8.0"
+uv add "pynotas-br[impressao] @ git+https://github.com/WendelSiqueira/pyNotas.git@v0.8.0"  # DANFE (brazilfiscalreport)
 ```
 
-Com pip, o mesmo endereço funciona: `pip install "pynotas @ git+https://github.com/WendelSiqueira/pyNotas.git@main"`.
+Com pip, o mesmo endereço funciona: `pip install "pynotas-br @ git+https://github.com/WendelSiqueira/pyNotas.git@v0.8.0"`. O histórico de versões está no [CHANGELOG](https://github.com/WendelSiqueira/pyNotas/blob/main/CHANGELOG.md).
 
 Dependências principais: `lxml` (XML), `signxml` (assinatura), `pyopenssl` e `cryptography` (certificado A1) e `requests` (webservices da SEFAZ).
 
@@ -94,7 +95,7 @@ print(xml.text)
 
 A conexão com a SEFAZ verifica o certificado do servidor usando as CAs padrão (`certifi`) e as da ICP-Brasil, que vêm com a lib (`pynotas/data/certificados/icp-brasil.pem`). Para usar outra cadeia, passe o caminho em `verificar_ssl="/caminho/cas.pem"`. `verificar_ssl=False` desliga a verificação, mas deixa a conexão sujeita a interceptação.
 
-Exemplos de emissão com IBS/CBS em [docs/reforma_tributaria.md](docs/reforma_tributaria.md). O que a lib valida, e as rejeições da SEFAZ já verificadas em homologação, estão em [docs/regras_sefaz.md](docs/regras_sefaz.md). Mais exemplos gerais no [Wiki](https://github.com/TadaSoftware/PyNFe/wiki).
+Exemplos de emissão com IBS/CBS em [docs/reforma_tributaria.md](https://github.com/WendelSiqueira/pyNotas/blob/main/docs/reforma_tributaria.md). O que a lib valida, e as rejeições da SEFAZ já verificadas em homologação, estão em [docs/regras_sefaz.md](https://github.com/WendelSiqueira/pyNotas/blob/main/docs/regras_sefaz.md). Mais exemplos gerais no [Wiki](https://github.com/TadaSoftware/PyNFe/wiki).
 
 
 Desenvolvimento
@@ -130,7 +131,7 @@ uv run python scripts/homologacao.py inutilizar --inicio 10 --fim 12
 
 Para atualizar as ACs da ICP-Brasil a partir do pacote oficial do ITI: `uv run python scripts/atualizar_cadeia_icp_brasil.py`. Testes que acessam a SEFAZ só rodam com `PYNOTAS_TESTES_REDE=1`.
 
-Orientações para agentes de IA que trabalham no código estão no [AGENTS.md](AGENTS.md).
+Orientações para agentes de IA que trabalham no código estão no [AGENTS.md](https://github.com/WendelSiqueira/pyNotas/blob/main/AGENTS.md).
 
 
 Referências
@@ -147,6 +148,6 @@ Referências
 Créditos e licença
 -----------
 
-Baseado no [PyNFe](https://github.com/TadaSoftware/PyNFe), da TadaSoftware e colaboradores. Autoria original e créditos em [AUTHORS](AUTHORS).
+Baseado no [PyNFe](https://github.com/TadaSoftware/PyNFe), da TadaSoftware e colaboradores. Autoria original e créditos em [AUTHORS](https://github.com/WendelSiqueira/pyNotas/blob/main/AUTHORS).
 
-Licenciado sob a [LGPL-3.0](LICENSE).
+Licenciado sob a [LGPL-3.0](https://github.com/WendelSiqueira/pyNotas/blob/main/LICENSE).

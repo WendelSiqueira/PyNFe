@@ -1445,7 +1445,7 @@ wheels = [
 ]
 
 [[package]]
-name = "pynotas"
+name = "pynotas-br"
 source = { editable = "." }
 dependencies = [
     { name = "certifi" },
