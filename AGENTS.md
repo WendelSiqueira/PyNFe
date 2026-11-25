@@ -39,7 +39,7 @@ pynotas/
 │   ├── ISSQN/          # Service tax classification
 │   ├── MunIBGE/        # Municipality IBGE codes by UF
 │   └── XSDs/           # XML Schema definitions (NF-e, NFC-e, MDF-e, CT-e)
-scripts/                # Maintenance (atualizar_cadeia_icp_brasil.py)
+scripts/                # atualizar_cadeia_icp_brasil.py; homologacao.py (SEFAZ homologation tests, config in ~/.config/pynotas/homologacao.env, never production)
 tests/                  # Test suite (network tests need PYNOTAS_TESTES_REDE=1)
 ```
 

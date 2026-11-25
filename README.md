@@ -113,6 +113,14 @@ uv run ruff check .
 uv run ruff format .
 ```
 
+Para testar contra a SEFAZ em **homologação** (notas sem valor fiscal) com o seu certificado A1, use `scripts/homologacao.py`. A configuração fica fora do repositório, em `~/.config/pynotas/homologacao.env` (caminho do certificado, senha e UF), e os dados do emitente vêm do certificado e da consulta de cadastro da SEFAZ:
+
+```sh
+uv run python scripts/homologacao.py status          # status da SEFAZ e cadastro do emitente
+uv run python scripts/homologacao.py emitir          # emite uma NF-e de teste
+uv run python scripts/homologacao.py emitir --reforma
+```
+
 Para atualizar as ACs da ICP-Brasil a partir do pacote oficial do ITI: `uv run python scripts/atualizar_cadeia_icp_brasil.py`. Testes que acessam a SEFAZ só rodam com `PYNOTAS_TESTES_REDE=1`.
 
 Orientações para agentes de IA que trabalham no código estão no [AGENTS.md](AGENTS.md).
