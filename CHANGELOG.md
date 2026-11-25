@@ -1,5 +1,14 @@
 # Changelog
 
+## Não publicado
+
+### Corrigido
+
+- **Grupo do cartão** (`card`): a bandeira (`tBand`) começava como o número `0` e era gravada mesmo sem ser informada, deixando o XML inválido pelo schema. Agora é opcional e gravada com 2 dígitos (`2` → `02`).
+- **Pesos dos volumes** (`pesoL`, `pesoB`): gravados sempre com 3 casas decimais, como exige o schema (antes, `0.85` saía inválido).
+
+Encontrados com um pedido realista de marketplace (3 itens, frete e desconto rateados, volume, cartão, intermediador, interestadual), autorizado em homologação na SEFAZ-SP.
+
 ## 0.8.1 — 2026-11-25
 
 Correção importante para vendas em marketplace: na 0.8.0, toda nota com intermediador era rejeitada pela SEFAZ (438).

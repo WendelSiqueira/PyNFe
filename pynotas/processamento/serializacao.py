@@ -1610,7 +1610,8 @@ class SerializacaoXML(Serializacao):
                     card = etree.SubElement(det, "card")
                     xmlw.write_txt(card, "tpIntegra", item.tp_integra, True)
                     xmlw.write_txt(card, "CNPJ", item.cnpj, False)
-                    xmlw.write_txt(card, "tBand", item.t_band, False)
+                    if item.t_band not in (None, "", 0):
+                        xmlw.write_txt(card, "tBand", str(item.t_band).zfill(2), False)
                     xmlw.write_txt(card, "cAut", item.c_aut, False)
                 pag.append(det)
 
@@ -2003,8 +2004,13 @@ class SerializacaoXML(Serializacao):
                             etree.SubElement(vol, "marca").text = volume.marca
                         if volume.numeracao:
                             etree.SubElement(vol, "nVol").text = volume.numeracao
-                        etree.SubElement(vol, "pesoL").text = str(volume.peso_liquido)
-                        etree.SubElement(vol, "pesoB").text = str(volume.peso_bruto)
+                        # Pesos com 3 casas decimais, como exige o schema (TDec_1203)
+                        etree.SubElement(vol, "pesoL").text = "{:.3f}".format(
+                            Decimal(str(volume.peso_liquido or 0))
+                        )
+                        etree.SubElement(vol, "pesoB").text = "{:.3f}".format(
+                            Decimal(str(volume.peso_bruto or 0))
+                        )
 
                         # Lacres
                         if volume.lacres:
